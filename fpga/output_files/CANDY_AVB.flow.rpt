@@ -1,0 +1,148 @@
+Flow report for CANDY_AVB
+Thu Nov 22 22:52:49 2018
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Nov 22 22:52:25 2018       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; CANDY_AVB                                   ;
+; Top-level Entity Name              ; CANDY_AVB                                   ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M16SAU169C8G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 13,117 / 15,840 ( 83 % )                    ;
+;     Total combinational functions  ; 9,992 / 15,840 ( 63 % )                     ;
+;     Dedicated logic registers      ; 9,424 / 15,840 ( 59 % )                     ;
+; Total registers                    ; 9492                                        ;
+; Total pins                         ; 76 / 130 ( 58 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 321,168 / 562,176 ( 57 % )                  ;
+; Embedded Multiplier 9-bit elements ; 6 / 90 ( 7 % )                              ;
+; Total PLLs                         ; 1 / 1 ( 100 % )                             ;
+; UFM blocks                         ; 1 / 1 ( 100 % )                             ;
+; ADC blocks                         ; 0 / 1 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/22/2018 22:46:19 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; CANDY_AVB           ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                               ;
++-------------------------------------+-----------------------------------------------------------------------+---------------+---------------------+------------+
+; Assignment Name                     ; Value                                                                 ; Default Value ; Entity Name         ; Section Id ;
++-------------------------------------+-----------------------------------------------------------------------+---------------+---------------------+------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION     ; Always                                                                ; Auto          ; --                  ; --         ;
+; COMPILER_SIGNATURE_ID               ; 84440843672872.154289437818508                                        ; --            ; --                  ; --         ;
+; CYCLONEII_OPTIMIZATION_TECHNIQUE    ; Area                                                                  ; Balanced      ; --                  ; --         ;
+; ENABLE_SIGNALTAP                    ; On                                                                    ; --            ; --                  ; --         ;
+; FLOW_ENABLE_POWER_ANALYZER          ; On                                                                    ; Off           ; --                  ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                    ; --            ; --                  ; --         ;
+; MESSAGE_DISABLE                     ; 332060                                                                ; --            ; altera_onchip_flash ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                     ; --            ; --                  ; --         ;
+; MISC_FILE                           ; candy_avb_test_qsys/synthesis/../candy_avb_test_qsys.cmp              ; --            ; --                  ; --         ;
+; MISC_FILE                           ; candy_avb_test_qsys/synthesis/../../candy_avb_test_qsys.qsys          ; --            ; --                  ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                     ; --            ; --                  ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                     ; --            ; --                  ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                            ; --            ; --                  ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                            ; --            ; --                  ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                ; --            ; --                  ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                ; --            ; --                  ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                ; --            ; --                  ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                   ; --            ; --                  ; --         ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE  ; 12.5 %                                                                ; 12.5%         ; --                  ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                 ; --            ; --                  ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                          ; --            ; --                  ; --         ;
+; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.regmap              ; --            ; --                  ; --         ;
+; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.debuginfo           ; --            ; --                  ; --         ;
+; SLD_FILE                            ; db/stp2_auto_stripped.stp                                             ; --            ; --                  ; --         ;
+; SLD_INFO                            ; QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1542894280 ; --            ; candy_avb_test_qsys ; --         ;
+; SOPCINFO_FILE                       ; candy_avb_test_qsys/synthesis/../../candy_avb_test_qsys.sopcinfo      ; --            ; --                  ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                    ; --            ; --                  ; --         ;
+; USE_SIGNALTAP_FILE                  ; output_files/stp2.stp                                                 ; --            ; --                  ; --         ;
++-------------------------------------+-----------------------------------------------------------------------+---------------+---------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:02:41     ; 1.0                     ; 5271 MB             ; 00:02:59                           ;
+; Fitter               ; 00:02:34     ; 1.4                     ; 5868 MB             ; 00:03:59                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4766 MB             ; 00:00:06                           ;
+; Power Analyzer       ; 00:00:18     ; 2.0                     ; 4985 MB             ; 00:00:33                           ;
+; Timing Analyzer      ; 00:00:22     ; 2.2                     ; 4996 MB             ; 00:00:40                           ;
+; Total                ; 00:06:00     ; --                      ; --                  ; 00:08:17                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; tkrdev-gs43      ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; tkrdev-gs43      ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; tkrdev-gs43      ; Windows 10 ; 10.0       ; x86_64         ;
+; Power Analyzer       ; tkrdev-gs43      ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; tkrdev-gs43      ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off CANDY_AVB -c CANDY_AVB
+quartus_fit --read_settings_files=off --write_settings_files=off CANDY_AVB -c CANDY_AVB
+quartus_asm --read_settings_files=off --write_settings_files=off CANDY_AVB -c CANDY_AVB
+quartus_pow --read_settings_files=off --write_settings_files=off CANDY_AVB -c CANDY_AVB
+quartus_sta CANDY_AVB -c CANDY_AVB
+
+
+
