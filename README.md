@@ -21,3 +21,6 @@ we have to make extended board by ourselves) or too high functionality
 
 ## Board
 ![CANBY_AVB Board](https://github.com/tkrworks/CANDY_AVB/blob/master/candy_avb_brd.png "CANDY_AVB Board")
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">CANDY_AVB</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Shunichi Yamamoto</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
