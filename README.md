@@ -2,7 +2,11 @@
 ## Description
 This board is adopted Intel MAX10 series FPGA and Analog Devices SigmaDSP audio codec and then aimed at easier to prototyping and studying with a FPGA based on an audio signal and an ethernet.
 
-I wanted simple FPGA board for sound and music. So I started to develop this board.
+A FPGA board in the market is too simple(it has only GPIO ports and
+we have to make extended board by ourselves) or too high functionality
+(DDR memory, HDMI, Gigabit ethernet...).
+
+**I wanted simple FPGA board for sound and music.** So I started to develop this board.
 
 ## Specifications
 * FPGA: Intel 10M16SAU(MAX10) x1
