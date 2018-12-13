@@ -1,11 +1,14 @@
 # CANDY_AVB
 ## Description
-Intel MAX10(10M16SA) board for 100Base-T Ethernet and DSP.
+This board is adopted Intel MAX10 series FPGA and Analog Devices SigmaDSP audio codec and then aimed at easier to prototyping and studying with a FPGA based on an audio signal and an ethernet.
+
+I wanted simple FPGA board for sound and music. So I started to develop this board.
 
 ## Specifications
 * FPGA: Intel 10M16SAU(MAX10) x1
+* SDRAM: Alliance Memory 64Mb(AS4C4M16SA-7BCN)
 * ETH: TI DP83848 x1
-* DSP: Analog Devices ADAU1761 x2
+* CODEC: Analog Devices ADAU1761 x2
 * USB Serial: Silabs CP2102N x1
 * CLOCK: 48MHz Crystal
 
