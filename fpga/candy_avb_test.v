@@ -16,22 +16,26 @@ module CANDY_AVB (
   input  UART_CTS,
   
   /* A/D Converter */
-  //input [] ADC,
+  input [8:0] ADC_IN,
   
   /* 3.3V <-> 5V GPIO */
-  inout LS_A1,
-  inout LS_A3,
-  inout LS_A2,
-  inout LS_A5,
-  inout LS_A4,
-  inout LS_A7,
-  inout LS_A6,
-  inout LS_A8,
+  output LS_OE,
+  inout [7:0] LS_A,
+  
+  /* 3.3V GPIO */
+  inout GPIO_M1,
+  inout GPIO_M2,
+  inout GPIO_L3,
+  inout GPIO_N2,
   
   /* I2S - ADAU1761 x2 */
-  //output CODEC_SCL,
-  inout CODEC_SCL,
-  inout CODEC_SDA,
+  inout        CODEC_SCL,
+  inout        CODEC_SDA,
+  output       CODEC_RESET,
+  output [1:0] CODEC_BITCLOCK,
+  output [1:0] CODEC_LRCLOCK,
+  input  [1:0] CODEC_DATA_OUT,
+  output [1:0] CODEC_DATA_IN,
 
   /* Ethernet DP83848 */
   inout        ETH_INTRRUPT,
@@ -84,7 +88,10 @@ candy_avb_test_qsys u0 (
   .new_sdram_controller_0_wire_ras_n (DRAM_RAS),
   .new_sdram_controller_0_wire_we_n  (DRAM_WE),
   .user_led_export                   (LED),
+  .codec_scl_export                  (CODEC_SCL),
+  .codec_sda_export                  (CODEC_SDA),
   .codec_clk_clk                     (CODEC_CLKOUT),
+  .codec_reset_export                (CODEC_RESET),
   .eth_clk_clk                       (ETH_CLKOUT),
   .eth_tx_clk_clk                    (ETH_TX_CLK),
   .eth_rx_clk_clk                    (ETH_RX_CLK),

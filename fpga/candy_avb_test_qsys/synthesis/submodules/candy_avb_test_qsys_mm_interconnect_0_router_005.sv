@@ -50,9 +50,9 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005_default_decode
                DEFAULT_DESTID = 3 
    )
   (output [96 - 92 : 0] default_destination_id,
-   output [19-1 : 0] default_wr_channel,
-   output [19-1 : 0] default_rd_channel,
-   output [19-1 : 0] default_src_channel
+   output [22-1 : 0] default_wr_channel,
+   output [22-1 : 0] default_rd_channel,
+   output [22-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
@@ -63,7 +63,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005_default_decode
       assign default_src_channel = '0;
     end
     else begin : default_channel_assignment
-      assign default_src_channel = 19'b1 << DEFAULT_CHANNEL;
+      assign default_src_channel = 22'b1 << DEFAULT_CHANNEL;
     end
   endgenerate
 
@@ -73,8 +73,8 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005_default_decode
       assign default_rd_channel = '0;
     end
     else begin : default_rw_channel_assignment
-      assign default_wr_channel = 19'b1 << DEFAULT_WR_CHANNEL;
-      assign default_rd_channel = 19'b1 << DEFAULT_RD_CHANNEL;
+      assign default_wr_channel = 22'b1 << DEFAULT_WR_CHANNEL;
+      assign default_rd_channel = 22'b1 << DEFAULT_RD_CHANNEL;
     end
   endgenerate
 
@@ -103,7 +103,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005
     // -------------------
     output                          src_valid,
     output reg [110-1    : 0] src_data,
-    output reg [19-1 : 0] src_channel,
+    output reg [22-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -119,7 +119,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005
     localparam PKT_PROTECTION_H = 100;
     localparam PKT_PROTECTION_L = 98;
     localparam ST_DATA_W = 110;
-    localparam ST_CHANNEL_W = 19;
+    localparam ST_CHANNEL_W = 22;
     localparam DECODER_TYPE = 0;
 
     localparam PKT_TRANS_WRITE = 63;
@@ -136,13 +136,13 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005
     // -------------------------------------------------------
     localparam PAD0 = log2ceil(64'h1000000 - 64'h800000); 
     localparam PAD1 = log2ceil(64'h1080000 - 64'h1040000); 
-    localparam PAD2 = log2ceil(64'h1083000 - 64'h1082800); 
+    localparam PAD2 = log2ceil(64'h1082000 - 64'h1081800); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h1083000;
+    localparam ADDR_RANGE = 64'h1082000;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -166,7 +166,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005
     assign src_startofpacket = sink_startofpacket;
     assign src_endofpacket   = sink_endofpacket;
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [19-1 : 0] default_src_channel;
+    wire [22-1 : 0] default_src_channel;
 
 
 
@@ -192,19 +192,19 @@ module candy_avb_test_qsys_mm_interconnect_0_router_005
 
     // ( 0x800000 .. 0x1000000 )
     if ( {address[RG:PAD0],{PAD0{1'b0}}} == 25'h800000   ) begin
-            src_channel = 19'b100;
+            src_channel = 22'b100;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 3;
     end
 
     // ( 0x1040000 .. 0x1080000 )
     if ( {address[RG:PAD1],{PAD1{1'b0}}} == 25'h1040000   ) begin
-            src_channel = 19'b001;
+            src_channel = 22'b001;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;
     end
 
-    // ( 0x1082800 .. 0x1083000 )
-    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 25'h1082800   ) begin
-            src_channel = 19'b010;
+    // ( 0x1081800 .. 0x1082000 )
+    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 25'h1081800   ) begin
+            src_channel = 22'b010;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;
     end
 

@@ -213,20 +213,20 @@ set_location_assignment PIN_A10 -to UART_CTS
 set_location_assignment PIN_A9 -to UART_RTS
 set_location_assignment PIN_J8 -to ETH_MDC
 set_location_assignment PIN_K8 -to ETH_MDIO
-set_location_assignment PIN_L10 -to ETH_MII_COL
-set_location_assignment PIN_M11 -to ETH_MII_CRS
-set_location_assignment PIN_N12 -to ETH_MII_RX_ER
-set_location_assignment PIN_M8 -to ETH_MII_TX_EN
-set_location_assignment PIN_N9 -to ETH_TX_CLK
-set_location_assignment PIN_M12 -to ETH_RX_CLK
-set_location_assignment PIN_N8 -to ETH_MII_TXD[0]
-set_location_assignment PIN_M7 -to ETH_MII_TXD[1]
-set_location_assignment PIN_N7 -to ETH_MII_TXD[2]
-set_location_assignment PIN_K6 -to ETH_MII_TXD[3]
-set_location_assignment PIN_M9 -to ETH_MII_RXD[3]
-set_location_assignment PIN_N10 -to ETH_MII_RXD[2]
-set_location_assignment PIN_M10 -to ETH_MII_RXD[1]
-set_location_assignment PIN_N11 -to ETH_MII_RXD[0]
+set_location_assignment PIN_N11 -to ETH_MII_COL
+set_location_assignment PIN_N12 -to ETH_MII_CRS
+set_location_assignment PIN_M11 -to ETH_MII_RX_ER
+set_location_assignment PIN_N8 -to ETH_MII_TX_EN
+set_location_assignment PIN_M9 -to ETH_TX_CLK
+set_location_assignment PIN_L11 -to ETH_RX_CLK
+set_location_assignment PIN_M8 -to ETH_MII_TXD[0]
+set_location_assignment PIN_N7 -to ETH_MII_TXD[1]
+set_location_assignment PIN_M7 -to ETH_MII_TXD[2]
+set_location_assignment PIN_N6 -to ETH_MII_TXD[3]
+set_location_assignment PIN_N9 -to ETH_MII_RXD[3]
+set_location_assignment PIN_M10 -to ETH_MII_RXD[2]
+set_location_assignment PIN_N10 -to ETH_MII_RXD[1]
+set_location_assignment PIN_L10 -to ETH_MII_RXD[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ETH_MDC
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ETH_MDIO
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ETH_MII_COL
@@ -246,22 +246,6 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ETH_RX_CLK
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ETH_TX_CLK
 set_location_assignment PIN_K7 -to ETH_INTRRUPT
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ETH_INTRRUPT
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A2
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A3
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A4
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A5
-set_location_assignment PIN_A2 -to LS_A2
-set_location_assignment PIN_B3 -to LS_A3
-set_location_assignment PIN_A4 -to LS_A4
-set_location_assignment PIN_A3 -to LS_A5
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A1
-set_location_assignment PIN_B2 -to LS_A1
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A8
-set_location_assignment PIN_B6 -to LS_A8
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A6
-set_location_assignment PIN_A5 -to LS_A6
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A7
-set_location_assignment PIN_B5 -to LS_A7
 set_location_assignment PIN_J6 -to CODEC_SCL
 set_location_assignment PIN_J5 -to CODEC_SDA
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_SCL
@@ -279,7 +263,7 @@ set_global_assignment -name ALLOW_ANY_SHIFT_REGISTER_SIZE_FOR_RECOGNITION OFF
 set_global_assignment -name ALLOW_SHIFT_REGISTER_MERGING_ACROSS_HIERARCHIES AUTO
 set_global_assignment -name ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP OFF
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
-set_location_assignment PIN_M1 -to ETH_MII_RX_DV
+set_location_assignment PIN_M12 -to ETH_MII_RX_DV
 set_global_assignment -name QIP_FILE candy_avb_test_qsys/synthesis/candy_avb_test_qsys.qip
 set_global_assignment -name SDC_FILE candy_avb_test.sdc
 set_global_assignment -name VERILOG_FILE candy_avb_test.v
@@ -287,5 +271,67 @@ set_global_assignment -name CDF_FILE output_files/CANDY_AVB.cdf
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp2.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/stp2.stp
+set_location_assignment PIN_L1 -to CODEC_RESET
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_RESET
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_M1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_M2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_N2
+set_location_assignment PIN_M1 -to GPIO_M1
+set_location_assignment PIN_M2 -to GPIO_M2
+set_location_assignment PIN_L3 -to GPIO_L3
+set_location_assignment PIN_N2 -to GPIO_N2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[0]
+set_location_assignment PIN_B2 -to LS_A[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[1]
+set_location_assignment PIN_A2 -to LS_A[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[2]
+set_location_assignment PIN_B3 -to LS_A[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[3]
+set_location_assignment PIN_A4 -to LS_A[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[4]
+set_location_assignment PIN_A3 -to LS_A[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[5]
+set_location_assignment PIN_A5 -to LS_A[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[6]
+set_location_assignment PIN_B5 -to LS_A[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_A[7]
+set_location_assignment PIN_B6 -to LS_A[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_BITCLOCK[0]
+set_location_assignment PIN_M5 -to CODEC_BITCLOCK[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_LRCLOCK[0]
+set_location_assignment PIN_N4 -to CODEC_LRCLOCK[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_DATA_IN[0]
+set_location_assignment PIN_N5 -to CODEC_DATA_IN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_DATA_OUT[0]
+set_location_assignment PIN_K6 -to CODEC_DATA_OUT[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_BITCLOCK[1]
+set_location_assignment PIN_J7 -to CODEC_BITCLOCK[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_LRCLOCK[1]
+set_location_assignment PIN_L4 -to CODEC_LRCLOCK[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_DATA_IN[1]
+set_location_assignment PIN_M4 -to CODEC_DATA_IN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CODEC_DATA_OUT[1]
+set_location_assignment PIN_L5 -to CODEC_DATA_OUT[1]
+set_location_assignment PIN_B4 -to LS_OE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LS_OE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[0]
+set_location_assignment PIN_H1 -to ADC_IN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[1]
+set_location_assignment PIN_F1 -to ADC_IN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[2]
+set_location_assignment PIN_E1 -to ADC_IN[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[3]
+set_location_assignment PIN_D1 -to ADC_IN[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[4]
+set_location_assignment PIN_C1 -to ADC_IN[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[5]
+set_location_assignment PIN_C2 -to ADC_IN[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[6]
+set_location_assignment PIN_B1 -to ADC_IN[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[7]
+set_location_assignment PIN_E4 -to ADC_IN[7]
+set_location_assignment PIN_E3 -to ADC_IN[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_IN[8]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SLD_FILE db/stp2_auto_stripped.stp

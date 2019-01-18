@@ -6,6 +6,9 @@
 module candy_avb_test_qsys (
 		input  wire        clk_clk,                           //                         clk.clk
 		output wire        codec_clk_clk,                     //                   codec_clk.clk
+		output wire        codec_reset_export,                //                 codec_reset.export
+		inout  wire        codec_scl_export,                  //                   codec_scl.export
+		inout  wire        codec_sda_export,                  //                   codec_sda.export
 		input  wire [3:0]  eth_mii_rx_d,                      //                         eth.mii_rx_d
 		input  wire        eth_mii_rx_dv,                     //                            .mii_rx_dv
 		input  wire        eth_mii_rx_err,                    //                            .mii_rx_err
@@ -61,7 +64,7 @@ module candy_avb_test_qsys (
 	wire         tse_0_dma_tx_st_source_endofpacket;                         // tse_0_dma_tx:st_source_endofpacket -> tse_0_tse:ff_tx_eop
 	wire         tse_0_dma_tx_st_source_error;                               // tse_0_dma_tx:st_source_error -> tse_0_tse:ff_tx_err
 	wire   [1:0] tse_0_dma_tx_st_source_empty;                               // tse_0_dma_tx:st_source_empty -> tse_0_tse:ff_tx_mod
-	wire         altpll_0_c0_clk;                                            // altpll_0:c0 -> [descriptor_memory:clk, irq_mapper:clk, irq_synchronizer:sender_clk, irq_synchronizer_001:sender_clk, jtaguart_0:clk, mm_interconnect_0:altpll_0_c0_clk, new_sdram_controller_0:clk, nios2_0:clk, onchip_flash_0:clock, pio_0:clk, pio_1:clk, rst_controller_001:clk, sysid_qsys_0:clock, timer_0:clk, timer_1:clk, timer_2:clk, tse_0_tse:clk, uart_0:clk]
+	wire         altpll_0_c0_clk;                                            // altpll_0:c0 -> [descriptor_memory:clk, irq_mapper:clk, irq_synchronizer:sender_clk, irq_synchronizer_001:sender_clk, jtaguart_0:clk, mm_interconnect_0:altpll_0_c0_clk, new_sdram_controller_0:clk, nios2_0:clk, onchip_flash_0:clock, pio_0:clk, pio_1:clk, pio_2:clk, pio_3:clk, pio_4:clk, rst_controller_001:clk, sysid_qsys_0:clock, timer_0:clk, timer_1:clk, timer_2:clk, tse_0_tse:clk, uart_0:clk]
 	wire         altpll_0_c4_clk;                                            // altpll_0:c4 -> [avalon_st_adapter:in_clk_0_clk, irq_synchronizer:receiver_clk, irq_synchronizer_001:receiver_clk, mm_interconnect_0:altpll_0_c4_clk, rst_controller_002:clk, tse_0_dma_rx:clock_clk, tse_0_dma_tx:clock_clk, tse_0_tse:ff_rx_clk, tse_0_tse:ff_tx_clk]
 	wire  [31:0] nios2_0_data_master_readdata;                               // mm_interconnect_0:nios2_0_data_master_readdata -> nios2_0:d_readdata
 	wire         nios2_0_data_master_waitrequest;                            // mm_interconnect_0:nios2_0_data_master_waitrequest -> nios2_0:d_waitrequest
@@ -227,6 +230,21 @@ module candy_avb_test_qsys (
 	wire         mm_interconnect_0_descriptor_memory_s1_write;               // mm_interconnect_0:descriptor_memory_s1_write -> descriptor_memory:write
 	wire  [31:0] mm_interconnect_0_descriptor_memory_s1_writedata;           // mm_interconnect_0:descriptor_memory_s1_writedata -> descriptor_memory:writedata
 	wire         mm_interconnect_0_descriptor_memory_s1_clken;               // mm_interconnect_0:descriptor_memory_s1_clken -> descriptor_memory:clken
+	wire         mm_interconnect_0_pio_2_s1_chipselect;                      // mm_interconnect_0:pio_2_s1_chipselect -> pio_2:chipselect
+	wire  [31:0] mm_interconnect_0_pio_2_s1_readdata;                        // pio_2:readdata -> mm_interconnect_0:pio_2_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_2_s1_address;                         // mm_interconnect_0:pio_2_s1_address -> pio_2:address
+	wire         mm_interconnect_0_pio_2_s1_write;                           // mm_interconnect_0:pio_2_s1_write -> pio_2:write_n
+	wire  [31:0] mm_interconnect_0_pio_2_s1_writedata;                       // mm_interconnect_0:pio_2_s1_writedata -> pio_2:writedata
+	wire         mm_interconnect_0_pio_3_s1_chipselect;                      // mm_interconnect_0:pio_3_s1_chipselect -> pio_3:chipselect
+	wire  [31:0] mm_interconnect_0_pio_3_s1_readdata;                        // pio_3:readdata -> mm_interconnect_0:pio_3_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_3_s1_address;                         // mm_interconnect_0:pio_3_s1_address -> pio_3:address
+	wire         mm_interconnect_0_pio_3_s1_write;                           // mm_interconnect_0:pio_3_s1_write -> pio_3:write_n
+	wire  [31:0] mm_interconnect_0_pio_3_s1_writedata;                       // mm_interconnect_0:pio_3_s1_writedata -> pio_3:writedata
+	wire         mm_interconnect_0_pio_4_s1_chipselect;                      // mm_interconnect_0:pio_4_s1_chipselect -> pio_4:chipselect
+	wire  [31:0] mm_interconnect_0_pio_4_s1_readdata;                        // pio_4:readdata -> mm_interconnect_0:pio_4_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_4_s1_address;                         // mm_interconnect_0:pio_4_s1_address -> pio_4:address
+	wire         mm_interconnect_0_pio_4_s1_write;                           // mm_interconnect_0:pio_4_s1_write -> pio_4:write_n
+	wire  [31:0] mm_interconnect_0_pio_4_s1_writedata;                       // mm_interconnect_0:pio_4_s1_writedata -> pio_4:writedata
 	wire         irq_mapper_receiver2_irq;                                   // jtaguart_0:av_irq -> irq_mapper:receiver2_irq
 	wire         irq_mapper_receiver3_irq;                                   // uart_0:irq -> irq_mapper:receiver3_irq
 	wire         irq_mapper_receiver4_irq;                                   // timer_0:irq -> irq_mapper:receiver4_irq
@@ -253,7 +271,7 @@ module candy_avb_test_qsys (
 	wire   [1:0] avalon_st_adapter_out_0_empty;                              // avalon_st_adapter:out_0_empty -> tse_0_dma_rx:st_sink_empty
 	wire         rst_controller_reset_out_reset;                             // rst_controller:reset_out -> [altpll_0:reset, mm_interconnect_0:altpll_0_inclk_interface_reset_reset_bridge_in_reset_reset]
 	wire         nios2_0_debug_reset_request_reset;                          // nios2_0:debug_reset_request -> [rst_controller:reset_in1, rst_controller_001:reset_in1, rst_controller_002:reset_in1]
-	wire         rst_controller_001_reset_out_reset;                         // rst_controller_001:reset_out -> [descriptor_memory:reset, irq_mapper:reset, irq_synchronizer:sender_reset, irq_synchronizer_001:sender_reset, jtaguart_0:rst_n, mm_interconnect_0:nios2_0_reset_reset_bridge_in_reset_reset, new_sdram_controller_0:reset_n, nios2_0:reset_n, onchip_flash_0:reset_n, pio_0:reset_n, pio_1:reset_n, rst_translator:in_reset, sysid_qsys_0:reset_n, timer_0:reset_n, timer_1:reset_n, timer_2:reset_n, tse_0_tse:reset, uart_0:reset_n]
+	wire         rst_controller_001_reset_out_reset;                         // rst_controller_001:reset_out -> [descriptor_memory:reset, irq_mapper:reset, irq_synchronizer:sender_reset, irq_synchronizer_001:sender_reset, jtaguart_0:rst_n, mm_interconnect_0:nios2_0_reset_reset_bridge_in_reset_reset, new_sdram_controller_0:reset_n, nios2_0:reset_n, onchip_flash_0:reset_n, pio_0:reset_n, pio_1:reset_n, pio_2:reset_n, pio_3:reset_n, pio_4:reset_n, rst_translator:in_reset, sysid_qsys_0:reset_n, timer_0:reset_n, timer_1:reset_n, timer_2:reset_n, tse_0_tse:reset, uart_0:reset_n]
 	wire         rst_controller_001_reset_out_reset_req;                     // rst_controller_001:reset_req -> [descriptor_memory:reset_req, nios2_0:reset_req, rst_translator:reset_req_in]
 	wire         rst_controller_002_reset_out_reset;                         // rst_controller_002:reset_out -> [avalon_st_adapter:in_rst_0_reset, irq_synchronizer:receiver_reset, irq_synchronizer_001:receiver_reset, mm_interconnect_0:tse_0_dma_tx_reset_n_reset_bridge_in_reset_reset, tse_0_dma_rx:reset_n_reset_n, tse_0_dma_tx:reset_n_reset_n]
 
@@ -450,6 +468,39 @@ module candy_avb_test_qsys (
 		.chipselect (mm_interconnect_0_pio_1_s1_chipselect), //                    .chipselect
 		.readdata   (mm_interconnect_0_pio_1_s1_readdata),   //                    .readdata
 		.bidir_port (eth_interrupt_export)                   // external_connection.export
+	);
+
+	candy_avb_test_qsys_pio_2 pio_2 (
+		.clk        (altpll_0_c0_clk),                       //                 clk.clk
+		.reset_n    (~rst_controller_001_reset_out_reset),   //               reset.reset_n
+		.address    (mm_interconnect_0_pio_2_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_pio_2_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_pio_2_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_pio_2_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_pio_2_s1_readdata),   //                    .readdata
+		.bidir_port (codec_scl_export)                       // external_connection.export
+	);
+
+	candy_avb_test_qsys_pio_2 pio_3 (
+		.clk        (altpll_0_c0_clk),                       //                 clk.clk
+		.reset_n    (~rst_controller_001_reset_out_reset),   //               reset.reset_n
+		.address    (mm_interconnect_0_pio_3_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_pio_3_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_pio_3_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_pio_3_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_pio_3_s1_readdata),   //                    .readdata
+		.bidir_port (codec_sda_export)                       // external_connection.export
+	);
+
+	candy_avb_test_qsys_pio_4 pio_4 (
+		.clk        (altpll_0_c0_clk),                       //                 clk.clk
+		.reset_n    (~rst_controller_001_reset_out_reset),   //               reset.reset_n
+		.address    (mm_interconnect_0_pio_4_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_pio_4_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_pio_4_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_pio_4_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_pio_4_s1_readdata),   //                    .readdata
+		.out_port   (codec_reset_export)                     // external_connection.export
 	);
 
 	candy_avb_test_qsys_sysid_qsys_0 sysid_qsys_0 (
@@ -770,6 +821,21 @@ module candy_avb_test_qsys (
 		.pio_1_s1_readdata                                          (mm_interconnect_0_pio_1_s1_readdata),                        //                                                     .readdata
 		.pio_1_s1_writedata                                         (mm_interconnect_0_pio_1_s1_writedata),                       //                                                     .writedata
 		.pio_1_s1_chipselect                                        (mm_interconnect_0_pio_1_s1_chipselect),                      //                                                     .chipselect
+		.pio_2_s1_address                                           (mm_interconnect_0_pio_2_s1_address),                         //                                             pio_2_s1.address
+		.pio_2_s1_write                                             (mm_interconnect_0_pio_2_s1_write),                           //                                                     .write
+		.pio_2_s1_readdata                                          (mm_interconnect_0_pio_2_s1_readdata),                        //                                                     .readdata
+		.pio_2_s1_writedata                                         (mm_interconnect_0_pio_2_s1_writedata),                       //                                                     .writedata
+		.pio_2_s1_chipselect                                        (mm_interconnect_0_pio_2_s1_chipselect),                      //                                                     .chipselect
+		.pio_3_s1_address                                           (mm_interconnect_0_pio_3_s1_address),                         //                                             pio_3_s1.address
+		.pio_3_s1_write                                             (mm_interconnect_0_pio_3_s1_write),                           //                                                     .write
+		.pio_3_s1_readdata                                          (mm_interconnect_0_pio_3_s1_readdata),                        //                                                     .readdata
+		.pio_3_s1_writedata                                         (mm_interconnect_0_pio_3_s1_writedata),                       //                                                     .writedata
+		.pio_3_s1_chipselect                                        (mm_interconnect_0_pio_3_s1_chipselect),                      //                                                     .chipselect
+		.pio_4_s1_address                                           (mm_interconnect_0_pio_4_s1_address),                         //                                             pio_4_s1.address
+		.pio_4_s1_write                                             (mm_interconnect_0_pio_4_s1_write),                           //                                                     .write
+		.pio_4_s1_readdata                                          (mm_interconnect_0_pio_4_s1_readdata),                        //                                                     .readdata
+		.pio_4_s1_writedata                                         (mm_interconnect_0_pio_4_s1_writedata),                       //                                                     .writedata
+		.pio_4_s1_chipselect                                        (mm_interconnect_0_pio_4_s1_chipselect),                      //                                                     .chipselect
 		.sysid_qsys_0_control_slave_address                         (mm_interconnect_0_sysid_qsys_0_control_slave_address),       //                           sysid_qsys_0_control_slave.address
 		.sysid_qsys_0_control_slave_readdata                        (mm_interconnect_0_sysid_qsys_0_control_slave_readdata),      //                                                     .readdata
 		.timer_0_s1_address                                         (mm_interconnect_0_timer_0_s1_address),                       //                                           timer_0_s1.address

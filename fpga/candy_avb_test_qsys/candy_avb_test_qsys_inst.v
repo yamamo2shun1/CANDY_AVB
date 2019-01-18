@@ -1,6 +1,9 @@
 	candy_avb_test_qsys u0 (
 		.clk_clk                           (<connected-to-clk_clk>),                           //                         clk.clk
 		.codec_clk_clk                     (<connected-to-codec_clk_clk>),                     //                   codec_clk.clk
+		.codec_reset_export                (<connected-to-codec_reset_export>),                //                 codec_reset.export
+		.codec_scl_export                  (<connected-to-codec_scl_export>),                  //                   codec_scl.export
+		.codec_sda_export                  (<connected-to-codec_sda_export>),                  //                   codec_sda.export
 		.eth_mii_rx_d                      (<connected-to-eth_mii_rx_d>),                      //                         eth.mii_rx_d
 		.eth_mii_rx_dv                     (<connected-to-eth_mii_rx_dv>),                     //                            .mii_rx_dv
 		.eth_mii_rx_err                    (<connected-to-eth_mii_rx_err>),                    //                            .mii_rx_err
@@ -25,10 +28,12 @@
 		.eth_misc_ff_rx_dsav               (<connected-to-eth_misc_ff_rx_dsav>),               //                            .ff_rx_dsav
 		.eth_misc_ff_rx_a_full             (<connected-to-eth_misc_ff_rx_a_full>),             //                            .ff_rx_a_full
 		.eth_misc_ff_rx_a_empty            (<connected-to-eth_misc_ff_rx_a_empty>),            //                            .ff_rx_a_empty
+		.eth_rx_clk_clk                    (<connected-to-eth_rx_clk_clk>),                    //                  eth_rx_clk.clk
 		.eth_status_set_10                 (<connected-to-eth_status_set_10>),                 //                  eth_status.set_10
 		.eth_status_set_1000               (<connected-to-eth_status_set_1000>),               //                            .set_1000
 		.eth_status_eth_mode               (<connected-to-eth_status_eth_mode>),               //                            .eth_mode
 		.eth_status_ena_10                 (<connected-to-eth_status_ena_10>),                 //                            .ena_10
+		.eth_tx_clk_clk                    (<connected-to-eth_tx_clk_clk>),                    //                  eth_tx_clk.clk
 		.new_sdram_controller_0_wire_addr  (<connected-to-new_sdram_controller_0_wire_addr>),  // new_sdram_controller_0_wire.addr
 		.new_sdram_controller_0_wire_ba    (<connected-to-new_sdram_controller_0_wire_ba>),    //                            .ba
 		.new_sdram_controller_0_wire_cas_n (<connected-to-new_sdram_controller_0_wire_cas_n>), //                            .cas_n
@@ -44,8 +49,6 @@
 		.uart0_txd                         (<connected-to-uart0_txd>),                         //                            .txd
 		.uart0_cts_n                       (<connected-to-uart0_cts_n>),                       //                            .cts_n
 		.uart0_rts_n                       (<connected-to-uart0_rts_n>),                       //                            .rts_n
-		.user_led_export                   (<connected-to-user_led_export>),                   //                    user_led.export
-		.eth_rx_clk_clk                    (<connected-to-eth_rx_clk_clk>),                    //                  eth_rx_clk.clk
-		.eth_tx_clk_clk                    (<connected-to-eth_tx_clk_clk>)                     //                  eth_tx_clk.clk
+		.user_led_export                   (<connected-to-user_led_export>)                    //                    user_led.export
 	);
 

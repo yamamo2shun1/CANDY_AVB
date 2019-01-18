@@ -29,7 +29,7 @@
 // Generation parameters:
 //   output_name:         candy_avb_test_qsys_mm_interconnect_0_rsp_demux
 //   ST_DATA_W:           110
-//   ST_CHANNEL_W:        19
+//   ST_CHANNEL_W:        22
 //   NUM_OUTPUTS:         1
 //   VALID_WIDTH:         1
 // ------------------------------------------
@@ -47,7 +47,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_demux
     // -------------------
     input  [1-1      : 0]   sink_valid,
     input  [110-1    : 0]   sink_data, // ST_DATA_W=110
-    input  [19-1 : 0]   sink_channel, // ST_CHANNEL_W=19
+    input  [22-1 : 0]   sink_channel, // ST_CHANNEL_W=22
     input                         sink_startofpacket,
     input                         sink_endofpacket,
     output                        sink_ready,
@@ -57,7 +57,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_demux
     // -------------------
     output reg                      src0_valid,
     output reg [110-1    : 0] src0_data, // ST_DATA_W=110
-    output reg [19-1 : 0] src0_channel, // ST_CHANNEL_W=19
+    output reg [22-1 : 0] src0_channel, // ST_CHANNEL_W=22
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,
     input                           src0_ready,
@@ -94,7 +94,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_demux
     // -------------------
     assign ready_vector[0] = src0_ready;
 
-    assign sink_ready = |(sink_channel & {{18{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{21{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 

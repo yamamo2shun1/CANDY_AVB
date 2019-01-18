@@ -2,6 +2,9 @@
 module candy_avb_test_qsys (
 	clk_clk,
 	codec_clk_clk,
+	codec_reset_export,
+	codec_scl_export,
+	codec_sda_export,
 	eth_mii_rx_d,
 	eth_mii_rx_dv,
 	eth_mii_rx_err,
@@ -26,10 +29,12 @@ module candy_avb_test_qsys (
 	eth_misc_ff_rx_dsav,
 	eth_misc_ff_rx_a_full,
 	eth_misc_ff_rx_a_empty,
+	eth_rx_clk_clk,
 	eth_status_set_10,
 	eth_status_set_1000,
 	eth_status_eth_mode,
 	eth_status_ena_10,
+	eth_tx_clk_clk,
 	new_sdram_controller_0_wire_addr,
 	new_sdram_controller_0_wire_ba,
 	new_sdram_controller_0_wire_cas_n,
@@ -45,12 +50,13 @@ module candy_avb_test_qsys (
 	uart0_txd,
 	uart0_cts_n,
 	uart0_rts_n,
-	user_led_export,
-	eth_rx_clk_clk,
-	eth_tx_clk_clk);	
+	user_led_export);	
 
 	input		clk_clk;
 	output		codec_clk_clk;
+	output		codec_reset_export;
+	inout		codec_scl_export;
+	inout		codec_sda_export;
 	input	[3:0]	eth_mii_rx_d;
 	input		eth_mii_rx_dv;
 	input		eth_mii_rx_err;
@@ -75,10 +81,12 @@ module candy_avb_test_qsys (
 	output		eth_misc_ff_rx_dsav;
 	output		eth_misc_ff_rx_a_full;
 	output		eth_misc_ff_rx_a_empty;
+	input		eth_rx_clk_clk;
 	input		eth_status_set_10;
 	input		eth_status_set_1000;
 	output		eth_status_eth_mode;
 	output		eth_status_ena_10;
+	input		eth_tx_clk_clk;
 	output	[11:0]	new_sdram_controller_0_wire_addr;
 	output	[1:0]	new_sdram_controller_0_wire_ba;
 	output		new_sdram_controller_0_wire_cas_n;
@@ -95,6 +103,4 @@ module candy_avb_test_qsys (
 	input		uart0_cts_n;
 	output		uart0_rts_n;
 	output	[1:0]	user_led_export;
-	input		eth_rx_clk_clk;
-	input		eth_tx_clk_clk;
 endmodule

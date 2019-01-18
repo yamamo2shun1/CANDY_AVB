@@ -2,6 +2,9 @@
 		port (
 			clk_clk                           : in    std_logic                     := 'X';             -- clk
 			codec_clk_clk                     : out   std_logic;                                        -- clk
+			codec_reset_export                : out   std_logic;                                        -- export
+			codec_scl_export                  : inout std_logic                     := 'X';             -- export
+			codec_sda_export                  : inout std_logic                     := 'X';             -- export
 			eth_mii_rx_d                      : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mii_rx_d
 			eth_mii_rx_dv                     : in    std_logic                     := 'X';             -- mii_rx_dv
 			eth_mii_rx_err                    : in    std_logic                     := 'X';             -- mii_rx_err

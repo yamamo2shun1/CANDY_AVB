@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="b82531f9fb9237e22ade"/>
+    <hash md5_digest_80b="790a816899bc2b5ec268"/>
   </project>
   <file_info>
     <file device="10M16SAU169C8G" path="CANDY_AVB.sof" usercode="0xFFFFFFFF"/>
@@ -139,7 +139,7 @@
   <sld_infos>
     <sld_info hpath="candy_avb_test_qsys:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1542894280"/>
+        <assignment_value text="QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1547736925"/>
       </assignment_values>
       <parameters/>
     </sld_info>

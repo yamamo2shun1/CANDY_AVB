@@ -2,6 +2,9 @@
 		port (
 			clk_clk                           : in    std_logic                     := 'X';             -- clk
 			codec_clk_clk                     : out   std_logic;                                        -- clk
+			codec_reset_export                : out   std_logic;                                        -- export
+			codec_scl_export                  : inout std_logic                     := 'X';             -- export
+			codec_sda_export                  : inout std_logic                     := 'X';             -- export
 			eth_mii_rx_d                      : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mii_rx_d
 			eth_mii_rx_dv                     : in    std_logic                     := 'X';             -- mii_rx_dv
 			eth_mii_rx_err                    : in    std_logic                     := 'X';             -- mii_rx_err
@@ -26,10 +29,12 @@
 			eth_misc_ff_rx_dsav               : out   std_logic;                                        -- ff_rx_dsav
 			eth_misc_ff_rx_a_full             : out   std_logic;                                        -- ff_rx_a_full
 			eth_misc_ff_rx_a_empty            : out   std_logic;                                        -- ff_rx_a_empty
+			eth_rx_clk_clk                    : in    std_logic                     := 'X';             -- clk
 			eth_status_set_10                 : in    std_logic                     := 'X';             -- set_10
 			eth_status_set_1000               : in    std_logic                     := 'X';             -- set_1000
 			eth_status_eth_mode               : out   std_logic;                                        -- eth_mode
 			eth_status_ena_10                 : out   std_logic;                                        -- ena_10
+			eth_tx_clk_clk                    : in    std_logic                     := 'X';             -- clk
 			new_sdram_controller_0_wire_addr  : out   std_logic_vector(11 downto 0);                    -- addr
 			new_sdram_controller_0_wire_ba    : out   std_logic_vector(1 downto 0);                     -- ba
 			new_sdram_controller_0_wire_cas_n : out   std_logic;                                        -- cas_n
@@ -45,9 +50,7 @@
 			uart0_txd                         : out   std_logic;                                        -- txd
 			uart0_cts_n                       : in    std_logic                     := 'X';             -- cts_n
 			uart0_rts_n                       : out   std_logic;                                        -- rts_n
-			user_led_export                   : out   std_logic_vector(1 downto 0);                     -- export
-			eth_rx_clk_clk                    : in    std_logic                     := 'X';             -- clk
-			eth_tx_clk_clk                    : in    std_logic                     := 'X'              -- clk
+			user_led_export                   : out   std_logic_vector(1 downto 0)                      -- export
 		);
 	end component candy_avb_test_qsys;
 
@@ -55,6 +58,9 @@
 		port map (
 			clk_clk                           => CONNECTED_TO_clk_clk,                           --                         clk.clk
 			codec_clk_clk                     => CONNECTED_TO_codec_clk_clk,                     --                   codec_clk.clk
+			codec_reset_export                => CONNECTED_TO_codec_reset_export,                --                 codec_reset.export
+			codec_scl_export                  => CONNECTED_TO_codec_scl_export,                  --                   codec_scl.export
+			codec_sda_export                  => CONNECTED_TO_codec_sda_export,                  --                   codec_sda.export
 			eth_mii_rx_d                      => CONNECTED_TO_eth_mii_rx_d,                      --                         eth.mii_rx_d
 			eth_mii_rx_dv                     => CONNECTED_TO_eth_mii_rx_dv,                     --                            .mii_rx_dv
 			eth_mii_rx_err                    => CONNECTED_TO_eth_mii_rx_err,                    --                            .mii_rx_err
@@ -79,10 +85,12 @@
 			eth_misc_ff_rx_dsav               => CONNECTED_TO_eth_misc_ff_rx_dsav,               --                            .ff_rx_dsav
 			eth_misc_ff_rx_a_full             => CONNECTED_TO_eth_misc_ff_rx_a_full,             --                            .ff_rx_a_full
 			eth_misc_ff_rx_a_empty            => CONNECTED_TO_eth_misc_ff_rx_a_empty,            --                            .ff_rx_a_empty
+			eth_rx_clk_clk                    => CONNECTED_TO_eth_rx_clk_clk,                    --                  eth_rx_clk.clk
 			eth_status_set_10                 => CONNECTED_TO_eth_status_set_10,                 --                  eth_status.set_10
 			eth_status_set_1000               => CONNECTED_TO_eth_status_set_1000,               --                            .set_1000
 			eth_status_eth_mode               => CONNECTED_TO_eth_status_eth_mode,               --                            .eth_mode
 			eth_status_ena_10                 => CONNECTED_TO_eth_status_ena_10,                 --                            .ena_10
+			eth_tx_clk_clk                    => CONNECTED_TO_eth_tx_clk_clk,                    --                  eth_tx_clk.clk
 			new_sdram_controller_0_wire_addr  => CONNECTED_TO_new_sdram_controller_0_wire_addr,  -- new_sdram_controller_0_wire.addr
 			new_sdram_controller_0_wire_ba    => CONNECTED_TO_new_sdram_controller_0_wire_ba,    --                            .ba
 			new_sdram_controller_0_wire_cas_n => CONNECTED_TO_new_sdram_controller_0_wire_cas_n, --                            .cas_n
@@ -98,8 +106,6 @@
 			uart0_txd                         => CONNECTED_TO_uart0_txd,                         --                            .txd
 			uart0_cts_n                       => CONNECTED_TO_uart0_cts_n,                       --                            .cts_n
 			uart0_rts_n                       => CONNECTED_TO_uart0_rts_n,                       --                            .rts_n
-			user_led_export                   => CONNECTED_TO_user_led_export,                   --                    user_led.export
-			eth_rx_clk_clk                    => CONNECTED_TO_eth_rx_clk_clk,                    --                  eth_rx_clk.clk
-			eth_tx_clk_clk                    => CONNECTED_TO_eth_tx_clk_clk                     --                  eth_tx_clk.clk
+			user_led_export                   => CONNECTED_TO_user_led_export                    --                    user_led.export
 		);
 
