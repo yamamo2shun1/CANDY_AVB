@@ -17,8 +17,7 @@ we have to make extended board by ourselves) or too high functionality
 * CLOCK: 48MHz Crystal
 
 ## PCB
-![CANBY_AVB PCB_TOP](https://github.com/tkrworks/CANDY_AVB/blob/master/candy_avb_top_pic.jpg "CANDY_AVB PCB TOP")
-![CANBY_AVB PCB_BOTTOM](https://github.com/tkrworks/CANDY_AVB/blob/master/candy_avb_bottom_pic.jpg "CANDY_AVB PCB BOTTOM")
+![CANBY_AVB PCB](https://github.com/tkrworks/CANDY_AVB/blob/master/candy_avb_pic.jpg "CANDY_AVB PCB")
 
 ## Board
 ![CANBY_AVB Board](https://github.com/tkrworks/CANDY_AVB/blob/master/candy_avb_brd.png "CANDY_AVB Board")
