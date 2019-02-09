@@ -23,6 +23,8 @@
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 
+#include "SigmaStudioFW.h"
+
 #include "candy_avb_IC_1.h"
 #include "candy_avb_IC_1_PARAM.h"
 //#include "candy_avb_IC_2.h"
@@ -34,15 +36,26 @@ double dtest = 0.0;
 
 int main()
 {
-	//IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_4_BASE, 1);
+	bool status = false;
+
+	//I2C SCL
+	//IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_2_BASE, 1);
+
+	//CODEC RESET
+	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_4_BASE, 1);
 	IOWR_ALTERA_AVALON_PIO_DATA(PIO_4_BASE, 0);
-	usleep(1000);
+	usleep(1000 * 20);
 	IOWR_ALTERA_AVALON_PIO_DATA(PIO_4_BASE, 1);
 
-	//default_download_IC_1();
+	//i2c_setup(0x00, 0xC7);
+	i2c_setup(0x00, 0xB3);
+	//i2c_setup(0x00, 0x31);
 
-	//usleep(1000);
-	//IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_4_BASE, 0);
+	//status = i2c_start(0x70, 0x00);
+	default_download_IC_1();
+
+	usleep(1000);
+	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_4_BASE, 0);
 
 	itest++;
 	ftest = 3.14f;
