@@ -1,18 +1,9 @@
-21:54:04 **** Incremental Build of configuration Nios II for project candy_avb_test ****
+01:05:23 **** Incremental Build of configuration Nios II for project candy_avb_test ****
 make all 
 Info: Building ../candy_avb_test_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../candy_avb_test_bsp/
 [BSP build complete]
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../candy_avb_test_bsp//drivers/inc -I../candy_avb_test_bsp//HAL/inc -I../candy_avb_test_bsp/ -I../candy_avb_test_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_SINGLE_THREADED -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
-Info: Linking candy_avb_test.elf
-nios2-elf-g++  -T'../candy_avb_test_bsp//linker.x' -msys-crt0='../candy_avb_test_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../candy_avb_test_bsp/   -Wl,-Map=candy_avb_test.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o candy_avb_test.elf obj/default/SigmaStudioFW.o obj/default/hello_world.o obj/default/i2c.o -lm -msys-lib=m
-nios2-elf-insert candy_avb_test.elf --thread_model hal --cpu_name nios2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1082558 --timestamp 1547726831 --stderr_dev jtaguart_0 --stdin_dev jtaguart_0 --stdout_dev jtaguart_0 --sopc_system_name candy_avb_test_qsys --quartus_project_dir "C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga" --jdi ../..//output_files/CANDY_AVB.jdi --sopcinfo C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test_bsp/../../candy_avb_test_qsys.sopcinfo
-Info: (candy_avb_test.elf) 94 KBytes program size (code + initialized data).
-Info:                      8097 KBytes free for stack + heap.
-Info: Creating candy_avb_test.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source candy_avb_test.elf >candy_avb_test.objdump
 [candy_avb_test build complete]
 
-21:54:07 Build Finished (took 3s.1ms)
+01:05:24 Build Finished (took 1s.621ms)
 
