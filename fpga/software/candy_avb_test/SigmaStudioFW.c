@@ -9,6 +9,142 @@
 
 uint8_t i2c_write_data[5120 + 2] = {0x00};
 
+void i2c_setup(uint8_t per_h_reg, uint8_t per_l_reg)
+{
+	//IOWR_ALTERA_AVALON_PIO_DATA(I2C_CTR, 0x00);
+	IOWR(I2C_BASEADDR, I2C_CTR, 0x00);
+	IOWR(I2C_BASEADDR, I2C_CR, 0x01);
+
+	//IOWR_ALTERA_AVALON_PIO_DATA(I2C_PRERL, per_l_reg);
+	//IOWR_ALTERA_AVALON_PIO_DATA(I2C_PRERH, per_h_reg);
+	//IOWR_ALTERA_AVALON_PIO_DATA(I2C_CTR,   0x80);
+
+	IOWR(I2C_BASEADDR, I2C_PRERL, per_l_reg);
+	IOWR(I2C_BASEADDR, I2C_PRERH, per_h_reg);
+	IOWR(I2C_BASEADDR, I2C_CTR,   0x80);
+}
+
+bool i2c_start(uint8_t devAddress, uint8_t rw)
+{
+	IOWR(I2C_BASEADDR, I2C_TXR, (devAddress << 0) + (rw & 0x01));
+	IOWR(I2C_BASEADDR, I2C_CR, 0x90);
+
+	while (IORD(I2C_BASEADDR, I2C_SR) & 0x02)
+	{
+		usleep(10);
+	}
+
+	usleep(10);
+
+	if (IORD(I2C_BASEADDR, I2C_SR) & 0x80)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+bool i2c_write_byte(uint8_t data)
+{
+	IOWR(I2C_BASEADDR, I2C_TXR, data);
+	IOWR(I2C_BASEADDR, I2C_CR,  0x10); //wr
+
+	while (IORD(I2C_BASEADDR, I2C_SR) & 0x02)
+	{
+		usleep(10);
+	}
+
+	usleep(10);
+
+	if (IORD(I2C_BASEADDR, I2C_SR) & 0x80)
+	{
+		printf("I2C_SR %x %x\n", IORD(I2C_BASEADDR, I2C_SR));
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+bool i2c_write_byte_stop(uint8_t data)
+{
+	IOWR(I2C_BASEADDR, I2C_TXR, data);
+	IOWR(I2C_BASEADDR, I2C_CR, 0x50); //stop
+
+	while (IORD(I2C_BASEADDR, I2C_SR) & 0x02)
+	{
+		usleep(10);
+	}
+
+	usleep(10);
+
+	if (IORD(I2C_BASEADDR, I2C_SR) & 0x80)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+bool i2c_multiple_write(uint8_t devAddress, uint16_t controlAddress, uint8_t data[], uint16_t len)
+{
+	bool state = false;
+
+	if (!i2c_start(devAddress, 0x00))
+	{
+		printf("I2C start failed.\n");
+		return false;
+	}
+
+	usleep(100);
+
+	uint8_t test = (controlAddress >> 8) & 0xFF;
+	if (!i2c_write_byte((controlAddress >> 8) & 0xFF))
+	{
+		printf("I2C caddrH write failed.\n");
+		//return false;
+	}
+
+	usleep(100);
+
+	if (!i2c_write_byte(controlAddress & 0xFF))
+	{
+		printf("I2C caddrL write failed.\n");
+		return false;
+	}
+
+	usleep(100);
+
+	for (int i = 0; i < len; i++)
+	{
+		if (i == len - 1)
+		{
+			if (!i2c_write_byte_stop(data[i]))
+			{
+				printf("I2C stop failed.\n");
+				return false;
+			}
+		}
+		else
+		{
+			if (!i2c_write_byte(data[i]))
+			{
+				printf("I2C data[%d] write failed.\n", i);
+				return false;
+			}
+		}
+
+		usleep(100);
+	}
+
+	return true;
+}
+
 bool SIGMA_WRITE_REGISTER_BLOCK(uint8_t devAddress, uint16_t address, uint16_t length, ADI_REG_TYPE *pData)
 {
 #if 0
@@ -41,7 +177,10 @@ bool SIGMA_WRITE_REGISTER_BLOCK(uint8_t devAddress, uint16_t address, uint16_t l
   ret = I2CSPM_Transfer(I2C0, &seq);
 #endif
 
-  ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, pData, length);
+  //ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, pData, length);
+  ret = i2c_multiple_write(devAddress, address, pData, length);
+
+  usleep(1000);
 
   //if (ret != i2cTransferDone)
   if (!ret)
@@ -86,7 +225,8 @@ bool SIGMA_WRITE_REGISTER_CONTROL(uint8_t devAddress, uint16_t address, uint16_t
   ret = I2CSPM_Transfer(I2C0, &seq);
 #endif
 
-  ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, pData, length);
+  //ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, pData, length);
+  ret = i2c_multiple_write(devAddress, address, pData, length);
 
   //if (ret != i2cTransferDone)
   if (!ret)
@@ -132,7 +272,8 @@ bool SIGMA_SAFELOAD_WRITE_ADDR(uint8_t devAddress, uint16_t addrAddress, uint16_
 
   wdata[0] = (address >> 8) & 0x00FF;
   wdata[1] = address & 0x00FF;
-  ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, wdata, 2);
+  //ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, wdata, 2);
+  ret = i2c_multiple_write(devAddress, address, wdata, 2);
 
   //if (ret != i2cTransferDone)
   if (!ret)
@@ -181,7 +322,8 @@ bool SIGMA_SAFELOAD_WRITE_DATA(uint8_t devAddress, uint16_t dataAddress, uint16_
 	  wdata[i + 1] = pData[i];
   }
 
-  ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, dataAddress, wdata, length + 1);
+  //ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, dataAddress, wdata, length + 1);
+  ret = i2c_multiple_write(devAddress, dataAddress, wdata, length + 1);
 
   //if (ret != i2cTransferDone)
   if (!ret)
@@ -222,7 +364,8 @@ bool SIGMA_SAFELOAD_WRITE_TRANSFER_BIT(uint8_t devAddress)
   bool ret;
   uint16_t address = 0x081C;
   uint8_t wdata[2] = {0x00, 0x3C};
-  ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, wdata, 2);
+  //ret = i2c_multiple_write(PIO_2_BASE, PIO_3_BASE, devAddress, address, wdata, 2);
+  ret = i2c_multiple_write(devAddress, address, wdata, 2);
 
   //if (ret != i2cTransferDone)
   if (!ret)

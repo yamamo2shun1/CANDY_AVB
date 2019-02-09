@@ -23,10 +23,28 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
-#include "i2c.h"
+#include "io.h"
+//#include "i2c.h"
+#include "oc_i2c_master.h"
+
+// 0x40 = 0100 0000 -> 0x10 = 0001 0000
+// 0x30 ] 0011 0000 -> 0x0C = 0000 1100
+#define I2C_BASEADDR (AVALON_WB_0_BASE + 0x40)
+
+#define I2C_PRERL 0x00//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x00) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x0))
+#define I2C_PRERH 0x01//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x01) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x1))
+#define I2C_CTR   0x02//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x02) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x2))
+#define I2C_TXR   0x03//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x03) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x3))
+#define I2C_RXR   0x03//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x03) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x3))
+#define I2C_CR    0x04//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x04) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x4))
+#define I2C_SR    0x04//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x04) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x4))
+
+void i2c_setup(uint8_t per_h_reg, uint8_t per_l_reg);
+bool i2c_start(uint8_t devAddress, uint8_t rw);
 
 /* 
  * TODO: Update for your system's data type
