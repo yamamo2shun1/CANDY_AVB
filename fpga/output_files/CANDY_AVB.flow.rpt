@@ -1,5 +1,5 @@
 Flow report for CANDY_AVB
-Fri Jan 18 00:04:43 2019
+Sat Feb 09 23:33:29 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Jan 18 00:04:17 2019       ;
+; Flow Status                        ; Successful - Sat Feb 09 23:33:15 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; CANDY_AVB                                   ;
 ; Top-level Entity Name              ; CANDY_AVB                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M16SAU169C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 13,139 / 15,840 ( 83 % )                    ;
-;     Total combinational functions  ; 10,060 / 15,840 ( 64 % )                    ;
-;     Dedicated logic registers      ; 9,458 / 15,840 ( 60 % )                     ;
-; Total registers                    ; 9526                                        ;
-; Total pins                         ; 99 / 130 ( 76 % )                           ;
+; Total logic elements               ; 6,924 / 15,840 ( 44 % )                     ;
+;     Total combinational functions  ; 5,661 / 15,840 ( 36 % )                     ;
+;     Dedicated logic registers      ; 4,561 / 15,840 ( 29 % )                     ;
+; Total registers                    ; 4629                                        ;
+; Total pins                         ; 95 / 130 ( 73 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 321,168 / 562,176 ( 57 % )                  ;
+; Total memory bits                  ; 209,408 / 562,176 ( 37 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 6 / 90 ( 7 % )                              ;
 ; Total PLLs                         ; 1 / 1 ( 100 % )                             ;
 ; UFM blocks                         ; 1 / 1 ( 100 % )                             ;
@@ -66,46 +66,76 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/17/2019 23:57:44 ;
+; Start date & time ; 02/09/2019 23:30:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CANDY_AVB           ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                               ;
-+-------------------------------------+-----------------------------------------------------------------------+---------------+---------------------+------------+
-; Assignment Name                     ; Value                                                                 ; Default Value ; Entity Name         ; Section Id ;
-+-------------------------------------+-----------------------------------------------------------------------+---------------+---------------------+------------+
-; AUTO_SHIFT_REGISTER_RECOGNITION     ; Always                                                                ; Auto          ; --                  ; --         ;
-; COMPILER_SIGNATURE_ID               ; 84440843672872.154773706314064                                        ; --            ; --                  ; --         ;
-; CYCLONEII_OPTIMIZATION_TECHNIQUE    ; Area                                                                  ; Balanced      ; --                  ; --         ;
-; ENABLE_SIGNALTAP                    ; On                                                                    ; --            ; --                  ; --         ;
-; FLOW_ENABLE_POWER_ANALYZER          ; On                                                                    ; Off           ; --                  ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                                    ; --            ; --                  ; --         ;
-; MESSAGE_DISABLE                     ; 332060                                                                ; --            ; altera_onchip_flash ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                                     ; --            ; --                  ; --         ;
-; MISC_FILE                           ; candy_avb_test_qsys/synthesis/../candy_avb_test_qsys.cmp              ; --            ; --                  ; --         ;
-; MISC_FILE                           ; candy_avb_test_qsys/synthesis/../../candy_avb_test_qsys.qsys          ; --            ; --                  ; --         ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                     ; --            ; --                  ; --         ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                     ; --            ; --                  ; --         ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                            ; --            ; --                  ; --         ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                            ; --            ; --                  ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                ; --            ; --                  ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                ; --            ; --                  ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                ; --            ; --                  ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                   ; --            ; --                  ; --         ;
-; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE  ; 12.5 %                                                                ; 12.5%         ; --                  ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                 ; --            ; --                  ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                          ; --            ; --                  ; --         ;
-; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.regmap              ; --            ; --                  ; --         ;
-; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.debuginfo           ; --            ; --                  ; --         ;
-; SLD_FILE                            ; db/stp2_auto_stripped.stp                                             ; --            ; --                  ; --         ;
-; SLD_INFO                            ; QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1547736925 ; --            ; candy_avb_test_qsys ; --         ;
-; SOPCINFO_FILE                       ; candy_avb_test_qsys/synthesis/../../candy_avb_test_qsys.sopcinfo      ; --            ; --                  ; --         ;
-; SYNTHESIS_ONLY_QIP                  ; On                                                                    ; --            ; --                  ; --         ;
-; USE_SIGNALTAP_FILE                  ; output_files/stp2.stp                                                 ; --            ; --                  ; --         ;
-+-------------------------------------+-----------------------------------------------------------------------+---------------+---------------------+------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                            ;
++-------------------------------------+-----------------------------------------------------------------------+--------------------------------------+---------------------+------------------+
+; Assignment Name                     ; Value                                                                 ; Default Value                        ; Entity Name         ; Section Id       ;
++-------------------------------------+-----------------------------------------------------------------------+--------------------------------------+---------------------+------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION     ; Always                                                                ; Auto                                 ; --                  ; --               ;
+; COMPILER_SIGNATURE_ID               ; 84440843672872.154972260123008                                        ; --                                   ; --                  ; --               ;
+; CYCLONEII_OPTIMIZATION_TECHNIQUE    ; Area                                                                  ; Balanced                             ; --                  ; --               ;
+; ENABLE_SIGNALTAP                    ; On                                                                    ; --                                   ; --                  ; --               ;
+; FLOW_ENABLE_POWER_ANALYZER          ; On                                                                    ; Off                                  ; --                  ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                    ; --                                   ; --                  ; --               ;
+; MESSAGE_DISABLE                     ; 332060                                                                ; --                                   ; altera_onchip_flash ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                     ; --                                   ; --                  ; --               ;
+; MISC_FILE                           ; candy_avb_test_qsys/synthesis/../candy_avb_test_qsys.cmp              ; --                                   ; --                  ; --               ;
+; MISC_FILE                           ; candy_avb_test_qsys/synthesis/../../candy_avb_test_qsys.qsys          ; --                                   ; --                  ; --               ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                     ; --                                   ; --                  ; --               ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                                                     ; --                                   ; --                  ; --               ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                            ; --                                   ; --                  ; --               ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                                                            ; --                                   ; --                  ; --               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                                ; --                                   ; --                  ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                                ; --                                   ; --                  ; Top              ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                                ; --                                   ; --                  ; Top              ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                   ; --                                   ; --                  ; --               ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE  ; 12.5 %                                                                ; 12.5%                                ; --                  ; --               ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                 ; --                                   ; --                  ; --               ;
+; PROJECT_IP_REGENERATION_POLICY      ; ALWAYS_REGENERATE_IP                                                  ; SKIP_REGENERATING_IP_IF_HDL_MODIFIED ; --                  ; --               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                          ; --                                   ; --                  ; --               ;
+; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.regmap              ; --                                   ; --                  ; --               ;
+; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.debuginfo           ; --                                   ; --                  ; --               ;
+; SLD_FILE                            ; db/stp2_auto_stripped.stp                                             ; --                                   ; --                  ; --               ;
+; SLD_INFO                            ; QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1549581623 ; --                                   ; candy_avb_test_qsys ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                   ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                         ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                                               ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                               ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                         ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                            ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                        ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                     ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                          ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INCREMENTAL_ROUTING=1                                             ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                   ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                              ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_PIPELINE=0                                                ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_PIPELINE=0                                                    ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_COUNTER_PIPELINE=0                                                ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                  ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                          ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                         ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=1                                                    ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=0000000000000000000000000000                       ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=28                                          ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=2048                                                 ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=2048                                                 ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_BITS=202                                        ; --                                   ; --                  ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=70                                                      ; --                                   ; --                  ; auto_signaltap_0 ;
+; SOPCINFO_FILE                       ; candy_avb_test_qsys/synthesis/../../candy_avb_test_qsys.sopcinfo      ; --                                   ; --                  ; --               ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                    ; --                                   ; --                  ; --               ;
+; USE_SIGNALTAP_FILE                  ; output_files/stp2.stp                                                 ; --                                   ; --                  ; --               ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                                                             ; VHDL_1993                            ; --                  ; --               ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                                                   ; --                                   ; --                  ; --               ;
++-------------------------------------+-----------------------------------------------------------------------+--------------------------------------+---------------------+------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -113,12 +143,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:02:55     ; 1.0                     ; 5284 MB             ; 00:03:08                           ;
-; Fitter               ; 00:02:43     ; 1.4                     ; 5838 MB             ; 00:04:22                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4767 MB             ; 00:00:06                           ;
-; Power Analyzer       ; 00:00:19     ; 2.0                     ; 4981 MB             ; 00:00:37                           ;
-; Timing Analyzer      ; 00:00:24     ; 2.2                     ; 4993 MB             ; 00:00:43                           ;
-; Total                ; 00:06:27     ; --                      ; --                  ; 00:08:56                           ;
+; Analysis & Synthesis ; 00:01:30     ; 1.0                     ; 5067 MB             ; 00:01:54                           ;
+; Fitter               ; 00:01:14     ; 1.5                     ; 5790 MB             ; 00:02:06                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4734 MB             ; 00:00:04                           ;
+; Power Analyzer       ; 00:00:12     ; 2.0                     ; 4922 MB             ; 00:00:22                           ;
+; Timing Analyzer      ; 00:00:13     ; 2.2                     ; 4906 MB             ; 00:00:23                           ;
+; Total                ; 00:03:12     ; --                      ; --                  ; 00:04:49                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

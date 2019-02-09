@@ -1,5 +1,5 @@
 Timing Analyzer report for CANDY_AVB
-Fri Jan 18 00:04:44 2019
+Sat Feb 09 23:33:29 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -94,13 +94,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.19        ;
+; Average used               ; 2.18        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  42.1%      ;
-;     Processor 3            ;  39.3%      ;
+;     Processor 2            ;  41.7%      ;
+;     Processor 3            ;  38.5%      ;
 ;     Processor 4            ;  37.5%      ;
 +----------------------------+-------------+
 
@@ -110,12 +110,11 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                         ; Status ; Read at                  ;
 +---------------------------------------------------------------------------------------+--------+--------------------------+
-; candy_avb_test_qsys/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Fri Jan 18 00:04:28 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Fri Jan 18 00:04:28 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/altera_eth_tse_mac.sdc                       ; OK     ; Fri Jan 18 00:04:28 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/altera_onchip_flash.sdc                      ; OK     ; Fri Jan 18 00:04:28 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/candy_avb_test_qsys_nios2_0_cpu.sdc          ; OK     ; Fri Jan 18 00:04:28 2019 ;
-; candy_avb_test.sdc                                                                    ; OK     ; Fri Jan 18 00:04:28 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Sat Feb 09 23:33:20 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Sat Feb 09 23:33:20 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_onchip_flash.sdc                      ; OK     ; Sat Feb 09 23:33:20 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/candy_avb_test_qsys_nios2_0_cpu.sdc          ; OK     ; Sat Feb 09 23:33:20 2019 ;
+; candy_avb_test.sdc                                                                    ; OK     ; Sat Feb 09 23:33:20 2019 ;
 +---------------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -132,7 +131,6 @@ refer to the applicable agreement for further details.
 ; u0|altpll_0|sd1|pll7|clk[1]                               ; Generated ; 9.999   ; 100.01 MHz ; 7.083 ; 12.082 ; 50.00      ; 12        ; 25          ; -105.0 ;        ;           ;            ; false    ; CLK    ; u0|altpll_0|sd1|pll7|inclk[0] ; { u0|altpll_0|sd1|pll7|clk[1] }                               ;
 ; u0|altpll_0|sd1|pll7|clk[2]                               ; Generated ; 41.666  ; 24.0 MHz   ; 0.000 ; 20.833 ; 50.00      ; 2         ; 1           ;        ;        ;           ;            ; false    ; CLK    ; u0|altpll_0|sd1|pll7|inclk[0] ; { u0|altpll_0|sd1|pll7|clk[2] }                               ;
 ; u0|altpll_0|sd1|pll7|clk[3]                               ; Generated ; 39.999  ; 25.0 MHz   ; 0.000 ; 19.999 ; 50.00      ; 48        ; 25          ;        ;        ;           ;            ; false    ; CLK    ; u0|altpll_0|sd1|pll7|inclk[0] ; { u0|altpll_0|sd1|pll7|clk[3] }                               ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; Generated ; 39.999  ; 25.0 MHz   ; 0.000 ; 19.999 ; 50.00      ; 48        ; 25          ;        ;        ;           ;            ; false    ; CLK    ; u0|altpll_0|sd1|pll7|inclk[0] ; { u0|altpll_0|sd1|pll7|clk[4] }                               ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; Base      ; 181.818 ; 5.5 MHz    ; 0.000 ; 90.909 ;            ;           ;             ;        ;        ;           ;            ;          ;        ;                               ; { u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc } ;
 +-----------------------------------------------------------+-----------+---------+------------+-------+--------+------------+-----------+-------------+--------+--------+-----------+------------+----------+--------+-------------------------------+---------------------------------------------------------------+
 
@@ -142,12 +140,9 @@ refer to the applicable agreement for further details.
 +------------+-----------------+-----------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                  ; Note ;
 +------------+-----------------+-----------------------------+------+
-; 34.14 MHz  ; 34.14 MHz       ; ETH_TX_CLK                  ;      ;
-; 39.13 MHz  ; 39.13 MHz       ; ETH_RX_CLK                  ;      ;
-; 61.75 MHz  ; 61.75 MHz       ; u0|altpll_0|sd1|pll7|clk[4] ;      ;
-; 85.68 MHz  ; 85.68 MHz       ; u0|altpll_0|sd1|pll7|clk[0] ;      ;
-; 125.94 MHz ; 125.94 MHz      ; altera_reserved_tck         ;      ;
-; 208.64 MHz ; 208.64 MHz      ; CLK                         ;      ;
+; 41.29 MHz  ; 41.29 MHz       ; altera_reserved_tck         ;      ;
+; 90.29 MHz  ; 90.29 MHz       ; u0|altpll_0|sd1|pll7|clk[0] ;      ;
+; 247.95 MHz ; 247.95 MHz      ; CLK                         ;      ;
 +------------+-----------------+-----------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -157,27 +152,21 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0] ; -1.673 ; -97.918       ;
-; ETH_TX_CLK                  ; 1.874  ; 0.000         ;
-; ETH_RX_CLK                  ; 14.447 ; 0.000         ;
-; CLK                         ; 16.040 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 23.805 ; 0.000         ;
-; altera_reserved_tck         ; 46.030 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; -1.077 ; -32.562       ;
+; CLK                         ; 16.800 ; 0.000         ;
+; altera_reserved_tck         ; 37.890 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
-+-----------------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary                  ;
-+-----------------------------+-------+---------------+
-; Clock                       ; Slack ; End Point TNS ;
-+-----------------------------+-------+---------------+
-; ETH_RX_CLK                  ; 0.273 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[0] ; 0.291 ; 0.000         ;
-; ETH_TX_CLK                  ; 0.326 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 0.341 ; 0.000         ;
-; altera_reserved_tck         ; 0.362 ; 0.000         ;
-; CLK                         ; 0.363 ; 0.000         ;
-+-----------------------------+-------+---------------+
++------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                   ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; u0|altpll_0|sd1|pll7|clk[0] ; -0.194 ; -0.194        ;
+; altera_reserved_tck         ; 0.362  ; 0.000         ;
+; CLK                         ; 0.363  ; 0.000         ;
++-----------------------------+--------+---------------+
 
 
 +------------------------------------------------------+
@@ -185,12 +174,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0] ; 4.461  ; 0.000         ;
-; CLK                         ; 17.011 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 34.766 ; 0.000         ;
-; ETH_TX_CLK                  ; 35.281 ; 0.000         ;
-; ETH_RX_CLK                  ; 36.267 ; 0.000         ;
-; altera_reserved_tck         ; 47.863 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; 4.235  ; 0.000         ;
+; CLK                         ; 17.957 ; 0.000         ;
+; altera_reserved_tck         ; 47.149 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -199,12 +185,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; CLK                         ; 1.179 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[0] ; 1.375 ; 0.000         ;
-; altera_reserved_tck         ; 1.532 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 2.071 ; 0.000         ;
-; ETH_RX_CLK                  ; 2.218 ; 0.000         ;
-; ETH_TX_CLK                  ; 2.860 ; 0.000         ;
+; CLK                         ; 0.986 ; 0.000         ;
+; altera_reserved_tck         ; 1.206 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; 1.557 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -213,12 +196,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------+--------+---------------+
 ; Clock                                                     ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0]                               ; 2.737  ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0]                               ; 2.810  ; 0.000         ;
 ; CLK                                                       ; 10.146 ; 0.000         ;
-; ETH_RX_CLK                                                ; 19.543 ; 0.000         ;
-; ETH_TX_CLK                                                ; 19.644 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; 19.672 ; 0.000         ;
-; altera_reserved_tck                                       ; 49.617 ; 0.000         ;
+; ETH_RX_CLK                                                ; 36.000 ; 0.000         ;
+; ETH_TX_CLK                                                ; 36.000 ; 0.000         ;
+; altera_reserved_tck                                       ; 49.556 ; 0.000         ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.684 ; 0.000         ;
 +-----------------------------------------------------------+--------+---------------+
 
@@ -226,13 +208,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 -----------------------------------------------
 ; Slow 1200mV 85C Model Metastability Summary ;
 -----------------------------------------------
-Worst-Case MTBF of Design is 4.42e+03 years or 1.39e+11 seconds.
+Worst-Case MTBF of Design is 1.91e+06 years or 6.02e+13 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-Number of Synchronizer Chains Found: 224
+Number of Synchronizer Chains Found: 27
 Shortest Synchronizer Chain: 2 Registers
-Fraction of Chains for which MTBFs Could Not be Calculated: 0.098
-Worst Case Available Settling Time: 7.928 ns
+Fraction of Chains for which MTBFs Could Not be Calculated: 0.556
+Worst Case Available Settling Time: 8.377 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -241,18 +223,15 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+-------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                 ;
-+------------+-----------------+-----------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                  ; Note ;
-+------------+-----------------+-----------------------------+------+
-; 35.92 MHz  ; 35.92 MHz       ; ETH_TX_CLK                  ;      ;
-; 39.08 MHz  ; 39.08 MHz       ; ETH_RX_CLK                  ;      ;
-; 66.54 MHz  ; 66.54 MHz       ; u0|altpll_0|sd1|pll7|clk[4] ;      ;
-; 90.38 MHz  ; 90.38 MHz       ; u0|altpll_0|sd1|pll7|clk[0] ;      ;
-; 135.24 MHz ; 135.24 MHz      ; altera_reserved_tck         ;      ;
-; 218.15 MHz ; 218.15 MHz      ; CLK                         ;      ;
-+------------+-----------------+-----------------------------+------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                                         ;
++-----------+-----------------+-----------------------------+---------------------------------------------------------------+
+; Fmax      ; Restricted Fmax ; Clock Name                  ; Note                                                          ;
++-----------+-----------------+-----------------------------+---------------------------------------------------------------+
+; 42.91 MHz ; 42.91 MHz       ; altera_reserved_tck         ;                                                               ;
+; 95.47 MHz ; 95.47 MHz       ; u0|altpll_0|sd1|pll7|clk[0] ;                                                               ;
+; 259.2 MHz ; 250.0 MHz       ; CLK                         ; limit due to minimum period restriction (max I/O toggle rate) ;
++-----------+-----------------+-----------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -261,27 +240,21 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0] ; -1.066 ; -38.056       ;
-; ETH_TX_CLK                  ; 2.128  ; 0.000         ;
-; ETH_RX_CLK                  ; 14.412 ; 0.000         ;
-; CLK                         ; 16.249 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 24.970 ; 0.000         ;
-; altera_reserved_tck         ; 46.303 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; -0.475 ; -7.668        ;
+; CLK                         ; 16.975 ; 0.000         ;
+; altera_reserved_tck         ; 38.349 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
-+-----------------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary                   ;
-+-----------------------------+-------+---------------+
-; Clock                       ; Slack ; End Point TNS ;
-+-----------------------------+-------+---------------+
-; ETH_RX_CLK                  ; 0.249 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[0] ; 0.263 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 0.304 ; 0.000         ;
-; ETH_TX_CLK                  ; 0.308 ; 0.000         ;
-; altera_reserved_tck         ; 0.324 ; 0.000         ;
-; CLK                         ; 0.326 ; 0.000         ;
-+-----------------------------+-------+---------------+
++------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                    ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; u0|altpll_0|sd1|pll7|clk[0] ; -0.156 ; -0.156        ;
+; altera_reserved_tck         ; 0.324  ; 0.000         ;
+; CLK                         ; 0.325  ; 0.000         ;
++-----------------------------+--------+---------------+
 
 
 +------------------------------------------------------+
@@ -289,12 +262,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0] ; 4.809  ; 0.000         ;
-; CLK                         ; 17.198 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 35.114 ; 0.000         ;
-; ETH_TX_CLK                  ; 35.609 ; 0.000         ;
-; ETH_RX_CLK                  ; 36.579 ; 0.000         ;
-; altera_reserved_tck         ; 47.996 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; 4.574  ; 0.000         ;
+; CLK                         ; 18.116 ; 0.000         ;
+; altera_reserved_tck         ; 47.301 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -303,12 +273,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; CLK                         ; 1.056 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[0] ; 1.223 ; 0.000         ;
-; altera_reserved_tck         ; 1.376 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 1.885 ; 0.000         ;
-; ETH_RX_CLK                  ; 1.984 ; 0.000         ;
-; ETH_TX_CLK                  ; 2.559 ; 0.000         ;
+; CLK                         ; 0.902 ; 0.000         ;
+; altera_reserved_tck         ; 1.128 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; 1.398 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -317,12 +284,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------+--------+---------------+
 ; Clock                                                     ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0]                               ; 2.590  ; 0.000         ;
-; CLK                                                       ; 10.163 ; 0.000         ;
-; ETH_TX_CLK                                                ; 19.521 ; 0.000         ;
-; ETH_RX_CLK                                                ; 19.565 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; 19.671 ; 0.000         ;
-; altera_reserved_tck                                       ; 49.636 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0]                               ; 2.776  ; 0.000         ;
+; CLK                                                       ; 10.164 ; 0.000         ;
+; ETH_RX_CLK                                                ; 36.000 ; 0.000         ;
+; ETH_TX_CLK                                                ; 36.000 ; 0.000         ;
+; altera_reserved_tck                                       ; 49.580 ; 0.000         ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.686 ; 0.000         ;
 +-----------------------------------------------------------+--------+---------------+
 
@@ -330,13 +296,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ----------------------------------------------
 ; Slow 1200mV 0C Model Metastability Summary ;
 ----------------------------------------------
-Worst-Case MTBF of Design is 2.43e+04 years or 7.65e+11 seconds.
+Worst-Case MTBF of Design is 1.38e+07 years or 4.33e+14 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-Number of Synchronizer Chains Found: 224
+Number of Synchronizer Chains Found: 27
 Shortest Synchronizer Chain: 2 Registers
-Fraction of Chains for which MTBFs Could Not be Calculated: 0.098
-Worst Case Available Settling Time: 8.032 ns
+Fraction of Chains for which MTBFs Could Not be Calculated: 0.556
+Worst Case Available Settling Time: 8.468 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -350,27 +316,21 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0] ; 1.903  ; 0.000         ;
-; ETH_TX_CLK                  ; 5.020  ; 0.000         ;
-; ETH_RX_CLK                  ; 15.041 ; 0.000         ;
-; CLK                         ; 18.681 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 33.130 ; 0.000         ;
-; altera_reserved_tck         ; 48.869 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; 1.966  ; 0.000         ;
+; CLK                         ; 19.045 ; 0.000         ;
+; altera_reserved_tck         ; 45.260 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
-+-----------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                   ;
-+-----------------------------+-------+---------------+
-; Clock                       ; Slack ; End Point TNS ;
-+-----------------------------+-------+---------------+
-; ETH_TX_CLK                  ; 0.070 ; 0.000         ;
-; ETH_RX_CLK                  ; 0.092 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[0] ; 0.097 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 0.135 ; 0.000         ;
-; altera_reserved_tck         ; 0.152 ; 0.000         ;
-; CLK                         ; 0.153 ; 0.000         ;
-+-----------------------------+-------+---------------+
++------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                    ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; u0|altpll_0|sd1|pll7|clk[0] ; -0.142 ; -0.142        ;
+; altera_reserved_tck         ; 0.152  ; 0.000         ;
+; CLK                         ; 0.153  ; 0.000         ;
++-----------------------------+--------+---------------+
 
 
 +------------------------------------------------------+
@@ -378,12 +338,9 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0] ; 7.558  ; 0.000         ;
-; CLK                         ; 19.015 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 37.540 ; 0.000         ;
-; ETH_TX_CLK                  ; 37.853 ; 0.000         ;
-; ETH_RX_CLK                  ; 38.214 ; 0.000         ;
-; altera_reserved_tck         ; 49.438 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; 7.417  ; 0.000         ;
+; CLK                         ; 19.516 ; 0.000         ;
+; altera_reserved_tck         ; 49.001 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -392,12 +349,9 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; CLK                         ; 0.480 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[0] ; 0.564 ; 0.000         ;
-; altera_reserved_tck         ; 0.619 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4] ; 0.882 ; 0.000         ;
-; ETH_RX_CLK                  ; 1.050 ; 0.000         ;
-; ETH_TX_CLK                  ; 1.301 ; 0.000         ;
+; CLK                         ; 0.409 ; 0.000         ;
+; altera_reserved_tck         ; 0.488 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0] ; 0.645 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -406,13 +360,12 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------------------------------------+--------+---------------+
 ; Clock                                                     ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[0]                               ; 2.902  ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[0]                               ; 2.964  ; 0.000         ;
 ; CLK                                                       ; 9.742  ; 0.000         ;
-; ETH_TX_CLK                                                ; 19.211 ; 0.000         ;
-; ETH_RX_CLK                                                ; 19.259 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; 19.705 ; 0.000         ;
-; altera_reserved_tck                                       ; 49.280 ; 0.000         ;
-; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.689 ; 0.000         ;
+; ETH_RX_CLK                                                ; 36.000 ; 0.000         ;
+; ETH_TX_CLK                                                ; 36.000 ; 0.000         ;
+; altera_reserved_tck                                       ; 49.383 ; 0.000         ;
+; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.690 ; 0.000         ;
 +-----------------------------------------------------------+--------+---------------+
 
 
@@ -422,10 +375,10 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-Number of Synchronizer Chains Found: 224
+Number of Synchronizer Chains Found: 27
 Shortest Synchronizer Chain: 2 Registers
-Fraction of Chains for which MTBFs Could Not be Calculated: 0.098
-Worst Case Available Settling Time: 9.088 ns
+Fraction of Chains for which MTBFs Could Not be Calculated: 0.556
+Worst Case Available Settling Time: 9.297 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -434,28 +387,26 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                     ;
-+------------------------------------------------------------+---------+-------+----------+---------+---------------------+
-; Clock                                                      ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------------------------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack                                           ; -1.673  ; 0.070 ; 4.461    ; 0.480   ; 2.590               ;
-;  CLK                                                       ; 16.040  ; 0.153 ; 17.011   ; 0.480   ; 9.742               ;
-;  ETH_RX_CLK                                                ; 14.412  ; 0.092 ; 36.267   ; 1.050   ; 19.259              ;
-;  ETH_TX_CLK                                                ; 1.874   ; 0.070 ; 35.281   ; 1.301   ; 19.211              ;
-;  altera_reserved_tck                                       ; 46.030  ; 0.152 ; 47.863   ; 0.619   ; 49.280              ;
-;  u0|altpll_0|sd1|pll7|clk[0]                               ; -1.673  ; 0.097 ; 4.461    ; 0.564   ; 2.590               ;
-;  u0|altpll_0|sd1|pll7|clk[4]                               ; 23.805  ; 0.135 ; 34.766   ; 0.882   ; 19.671              ;
-;  u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; N/A     ; N/A   ; N/A      ; N/A     ; 90.684              ;
-; Design-wide TNS                                            ; -97.918 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
-;  CLK                                                       ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-;  ETH_RX_CLK                                                ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-;  ETH_TX_CLK                                                ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-;  altera_reserved_tck                                       ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-;  u0|altpll_0|sd1|pll7|clk[0]                               ; -97.918 ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-;  u0|altpll_0|sd1|pll7|clk[4]                               ; 0.000   ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
-;  u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; N/A     ; N/A   ; N/A      ; N/A     ; 0.000               ;
-+------------------------------------------------------------+---------+-------+----------+---------+---------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                      ;
++------------------------------------------------------------+---------+--------+----------+---------+---------------------+
+; Clock                                                      ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------------------------------------------------+---------+--------+----------+---------+---------------------+
+; Worst-case Slack                                           ; -1.077  ; -0.194 ; 4.235    ; 0.409   ; 2.776               ;
+;  CLK                                                       ; 16.800  ; 0.153  ; 17.957   ; 0.409   ; 9.742               ;
+;  ETH_RX_CLK                                                ; N/A     ; N/A    ; N/A      ; N/A     ; 36.000              ;
+;  ETH_TX_CLK                                                ; N/A     ; N/A    ; N/A      ; N/A     ; 36.000              ;
+;  altera_reserved_tck                                       ; 37.890  ; 0.152  ; 47.149   ; 0.488   ; 49.383              ;
+;  u0|altpll_0|sd1|pll7|clk[0]                               ; -1.077  ; -0.194 ; 4.235    ; 0.645   ; 2.776               ;
+;  u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; N/A     ; N/A    ; N/A      ; N/A     ; 90.684              ;
+; Design-wide TNS                                            ; -32.562 ; -0.194 ; 0.0      ; 0.0     ; 0.0                 ;
+;  CLK                                                       ; 0.000   ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
+;  ETH_RX_CLK                                                ; N/A     ; N/A    ; N/A      ; N/A     ; 0.000               ;
+;  ETH_TX_CLK                                                ; N/A     ; N/A    ; N/A      ; N/A     ; 0.000               ;
+;  altera_reserved_tck                                       ; 0.000   ; 0.000  ; 0.000    ; 0.000   ; 0.000               ;
+;  u0|altpll_0|sd1|pll7|clk[0]                               ; -32.562 ; -0.194 ; 0.000    ; 0.000   ; 0.000               ;
+;  u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; N/A     ; N/A    ; N/A      ; N/A     ; 0.000               ;
++------------------------------------------------------------+---------+--------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -471,10 +422,6 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; UART_RTS            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; LS_OE               ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; CODEC_RESET         ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; CODEC_DATA_IN[0]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; CODEC_DATA_IN[1]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ETH_MDC             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -513,14 +460,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; LS_A[5]             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; LS_A[6]             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; LS_A[7]             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; GPIO_M1             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; GPIO_M2             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; GPIO_L3             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; GPIO_N2             ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; ETH_INTRRUPT        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ETH_INTERRUPT       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ETH_MDIO            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; CODEC_SCL           ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; CODEC_SDA           ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; ETH_MDIO            ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_DQ[0]          ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_DQ[1]          ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_DQ[2]          ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -537,7 +484,7 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; DRAM_DQ[13]         ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_DQ[14]         ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DRAM_DQ[15]         ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; altera_reserved_tdo ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; altera_reserved_tdo ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
@@ -557,6 +504,16 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; ADC_IN[8]           ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; CODEC_DATA_OUT[0]   ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; CODEC_DATA_OUT[1]   ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_CRS         ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_COL         ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_RX_CLK          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_TX_CLK          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_RX_DV       ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_RX_ER       ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_RXD[0]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_RXD[1]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_RXD[2]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_MII_RXD[3]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; LS_A[0]             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; LS_A[1]             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; LS_A[2]             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
@@ -565,14 +522,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; LS_A[5]             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; LS_A[6]             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; LS_A[7]             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; GPIO_M1             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; GPIO_M2             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; GPIO_L3             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; GPIO_N2             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_INTRRUPT        ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; ETH_INTERRUPT       ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; ETH_MDIO            ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; CODEC_SCL           ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; CODEC_SDA           ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MDIO            ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; DRAM_DQ[0]          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; DRAM_DQ[1]          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; DRAM_DQ[2]          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
@@ -590,23 +547,13 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; DRAM_DQ[14]         ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; DRAM_DQ[15]         ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; CLK                 ; 3.3-V LVCMOS          ; 2640 ps         ; 2640 ps         ;
-; ETH_TX_CLK          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; RST                 ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; UART_CTS            ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_COL         ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_RX_CLK          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; UART_RX             ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_CRS         ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_RX_DV       ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_RXD[3]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_RXD[2]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_RXD[0]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_RXD[1]      ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; ETH_MII_RX_ER       ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; altera_reserved_tms ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
-; altera_reserved_tck ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
-; altera_reserved_tdi ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
-; ~ALTERA_JTAGEN~     ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; altera_reserved_tms ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; altera_reserved_tck ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; altera_reserved_tdi ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_JTAGEN~     ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_CONFIG_SEL~ ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; ~ALTERA_nCONFIG~    ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
 ; ~ALTERA_nSTATUS~    ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
@@ -627,10 +574,6 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; UART_RTS            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; LS_OE               ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; CODEC_RESET         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.09 V              ; -0.0046 V           ; 0.291 V                              ; 0.287 V                              ; 4.58e-09 s                  ; 4.9e-09 s                   ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.09 V             ; -0.0046 V          ; 0.291 V                             ; 0.287 V                             ; 4.58e-09 s                 ; 4.9e-09 s                  ; No                        ; No                        ;
-; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.07e-08 V                   ; 3.18 V              ; -0.115 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.07e-08 V                  ; 3.18 V             ; -0.115 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
-; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.18 V              ; -0.116 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.18 V             ; -0.116 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
 ; CODEC_DATA_IN[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; CODEC_DATA_IN[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; ETH_MDC             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.07e-08 V                   ; 3.18 V              ; -0.115 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.07e-08 V                  ; 3.18 V             ; -0.115 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
@@ -669,14 +612,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; LS_A[5]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; LS_A[6]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; LS_A[7]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; GPIO_M1             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; GPIO_M2             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; GPIO_L3             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; GPIO_N2             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; ETH_INTRRUPT        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.18 V              ; -0.116 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.18 V             ; -0.116 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
+; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
+; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.07e-08 V                   ; 3.18 V              ; -0.115 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.07e-08 V                  ; 3.18 V             ; -0.115 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
+; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
+; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.18 V              ; -0.116 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.18 V             ; -0.116 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
+; ETH_INTERRUPT       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.47e-09 V                   ; 2.4 V               ; -0.0932 V           ; 0.135 V                              ; 0.16 V                               ; 4.43e-10 s                  ; 4.36e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.47e-09 V                  ; 2.4 V              ; -0.0932 V          ; 0.135 V                             ; 0.16 V                              ; 4.43e-10 s                 ; 4.36e-10 s                 ; No                        ; Yes                       ;
+; ETH_MDIO            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.18 V              ; -0.116 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.18 V             ; -0.116 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
 ; CODEC_SCL           ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.07e-08 V                   ; 3.18 V              ; -0.115 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.07e-08 V                  ; 3.18 V             ; -0.115 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
 ; CODEC_SDA           ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.18 V              ; -0.116 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.18 V             ; -0.116 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
-; ETH_MDIO            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.18 V              ; -0.116 V            ; 0.266 V                              ; 0.229 V                              ; 4.69e-10 s                  ; 6.38e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.18 V             ; -0.116 V           ; 0.266 V                             ; 0.229 V                             ; 4.69e-10 s                 ; 6.38e-10 s                 ; No                        ; No                        ;
 ; DRAM_DQ[0]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; DRAM_DQ[1]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; DRAM_DQ[2]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
@@ -693,7 +636,7 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; DRAM_DQ[13]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.128 V            ; 0.216 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.128 V           ; 0.216 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
 ; DRAM_DQ[14]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.09 V              ; -0.0046 V           ; 0.291 V                              ; 0.287 V                              ; 4.58e-09 s                  ; 4.9e-09 s                   ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.09 V             ; -0.0046 V          ; 0.291 V                             ; 0.287 V                             ; 4.58e-09 s                 ; 4.9e-09 s                  ; No                        ; No                        ;
 ; DRAM_DQ[15]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
-; altera_reserved_tdo ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.08e-08 V                   ; 3.19 V              ; -0.126 V            ; 0.218 V                              ; 0.383 V                              ; 4.51e-10 s                  ; 4.73e-10 s                  ; No                         ; No                         ; 3.08 V                      ; 2.08e-08 V                  ; 3.19 V             ; -0.126 V           ; 0.218 V                             ; 0.383 V                             ; 4.51e-10 s                 ; 4.73e-10 s                 ; No                        ; No                        ;
+; altera_reserved_tdo ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.49e-09 V                   ; 2.38 V              ; -0.0505 V           ; 0.23 V                               ; 0.155 V                              ; 4.84e-10 s                  ; 6.18e-10 s                  ; Yes                        ; No                         ; 2.32 V                      ; 7.49e-09 V                  ; 2.38 V             ; -0.0505 V          ; 0.23 V                              ; 0.155 V                             ; 4.84e-10 s                 ; 6.18e-10 s                 ; Yes                       ; No                        ;
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -710,10 +653,6 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; UART_RTS            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; LS_OE               ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; CODEC_RESET         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.09 V              ; -0.0026 V           ; 0.276 V                              ; 0.251 V                              ; 5.46e-09 s                  ; 6.08e-09 s                  ; No                         ; Yes                        ; 3.08 V                      ; 1.3e-06 V                   ; 3.09 V             ; -0.0026 V          ; 0.276 V                             ; 0.251 V                             ; 5.46e-09 s                 ; 6.08e-09 s                 ; No                        ; Yes                       ;
-; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0624 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0624 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
-; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0638 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0638 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
 ; CODEC_DATA_IN[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; CODEC_DATA_IN[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; ETH_MDC             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0624 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0624 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
@@ -752,14 +691,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; LS_A[5]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; LS_A[6]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; LS_A[7]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; GPIO_M1             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; GPIO_M2             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; GPIO_L3             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; GPIO_N2             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; ETH_INTRRUPT        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0638 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0638 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
+; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
+; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0624 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0624 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
+; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
+; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0638 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0638 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
+; ETH_INTERRUPT       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.66e-07 V                   ; 2.37 V              ; -0.0521 V           ; 0.17 V                               ; 0.231 V                              ; 4.74e-10 s                  ; 4.79e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.66e-07 V                  ; 2.37 V             ; -0.0521 V          ; 0.17 V                              ; 0.231 V                             ; 4.74e-10 s                 ; 4.79e-10 s                 ; Yes                       ; Yes                       ;
+; ETH_MDIO            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0638 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0638 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
 ; CODEC_SCL           ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0624 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0624 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
 ; CODEC_SDA           ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0638 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0638 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
-; ETH_MDIO            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0638 V           ; 0.177 V                              ; 0.312 V                              ; 6.42e-10 s                  ; 6.7e-10 s                   ; No                         ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0638 V          ; 0.177 V                             ; 0.312 V                             ; 6.42e-10 s                 ; 6.7e-10 s                  ; No                        ; No                        ;
 ; DRAM_DQ[0]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; DRAM_DQ[1]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; DRAM_DQ[2]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
@@ -776,7 +715,7 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; DRAM_DQ[13]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0684 V           ; 0.28 V                               ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0684 V          ; 0.28 V                              ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
 ; DRAM_DQ[14]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.09 V              ; -0.0026 V           ; 0.276 V                              ; 0.251 V                              ; 5.46e-09 s                  ; 6.08e-09 s                  ; No                         ; Yes                        ; 3.08 V                      ; 1.3e-06 V                   ; 3.09 V             ; -0.0026 V          ; 0.276 V                             ; 0.251 V                             ; 5.46e-09 s                 ; 6.08e-09 s                 ; No                        ; Yes                       ;
 ; DRAM_DQ[15]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
-; altera_reserved_tdo ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 1.3e-06 V                    ; 3.15 V              ; -0.0682 V           ; 0.279 V                              ; 0.237 V                              ; 4.81e-10 s                  ; 6.4e-10 s                   ; Yes                        ; No                         ; 3.08 V                      ; 1.3e-06 V                   ; 3.15 V             ; -0.0682 V          ; 0.279 V                             ; 0.237 V                             ; 4.81e-10 s                 ; 6.4e-10 s                  ; Yes                       ; No                        ;
+; altera_reserved_tdo ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.88e-07 V                   ; 2.36 V              ; -0.0211 V           ; 0.162 V                              ; 0.122 V                              ; 6.58e-10 s                  ; 7.79e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.88e-07 V                  ; 2.36 V             ; -0.0211 V          ; 0.162 V                             ; 0.122 V                             ; 6.58e-10 s                 ; 7.79e-10 s                 ; No                        ; Yes                       ;
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -793,10 +732,6 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; UART_RTS            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; LS_OE               ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; CODEC_RESET         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.48 V              ; -0.00721 V          ; 0.333 V                              ; 0.329 V                              ; 3.62e-09 s                  ; 4.03e-09 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.48 V             ; -0.00721 V         ; 0.333 V                             ; 0.329 V                             ; 3.62e-09 s                 ; 4.03e-09 s                 ; No                        ; Yes                       ;
-; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0257 V           ; 0.468 V                              ; 0.138 V                              ; 3.02e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0257 V          ; 0.468 V                             ; 0.138 V                             ; 3.02e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
-; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0264 V           ; 0.468 V                              ; 0.142 V                              ; 3.02e-10 s                  ; 4.42e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0264 V          ; 0.468 V                             ; 0.142 V                             ; 3.02e-10 s                 ; 4.42e-10 s                 ; No                        ; Yes                       ;
 ; CODEC_DATA_IN[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; CODEC_DATA_IN[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; ETH_MDC             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0257 V           ; 0.468 V                              ; 0.138 V                              ; 3.02e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0257 V          ; 0.468 V                             ; 0.138 V                             ; 3.02e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
@@ -835,14 +770,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; LS_A[5]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; LS_A[6]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; LS_A[7]             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; GPIO_M1             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; GPIO_M2             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; GPIO_L3             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; GPIO_N2             ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; ETH_INTRRUPT        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0264 V           ; 0.468 V                              ; 0.142 V                              ; 3.02e-10 s                  ; 4.42e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0264 V          ; 0.468 V                             ; 0.142 V                             ; 3.02e-10 s                 ; 4.42e-10 s                 ; No                        ; Yes                       ;
+; CODEC_BITCLOCK[0]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
+; CODEC_BITCLOCK[1]   ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0257 V           ; 0.468 V                              ; 0.138 V                              ; 3.02e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0257 V          ; 0.468 V                             ; 0.138 V                             ; 3.02e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
+; CODEC_LRCLOCK[0]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
+; CODEC_LRCLOCK[1]    ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0264 V           ; 0.468 V                              ; 0.142 V                              ; 3.02e-10 s                  ; 4.42e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0264 V          ; 0.468 V                             ; 0.142 V                             ; 3.02e-10 s                 ; 4.42e-10 s                 ; No                        ; Yes                       ;
+; ETH_INTERRUPT       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; ETH_MDIO            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0264 V           ; 0.468 V                              ; 0.142 V                              ; 3.02e-10 s                  ; 4.42e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0264 V          ; 0.468 V                             ; 0.142 V                             ; 3.02e-10 s                 ; 4.42e-10 s                 ; No                        ; Yes                       ;
 ; CODEC_SCL           ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0257 V           ; 0.468 V                              ; 0.138 V                              ; 3.02e-10 s                  ; 4.44e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0257 V          ; 0.468 V                             ; 0.138 V                             ; 3.02e-10 s                 ; 4.44e-10 s                 ; No                        ; Yes                       ;
 ; CODEC_SDA           ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0264 V           ; 0.468 V                              ; 0.142 V                              ; 3.02e-10 s                  ; 4.42e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0264 V          ; 0.468 V                             ; 0.142 V                             ; 3.02e-10 s                 ; 4.42e-10 s                 ; No                        ; Yes                       ;
-; ETH_MDIO            ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.63 V              ; -0.0264 V           ; 0.468 V                              ; 0.142 V                              ; 3.02e-10 s                  ; 4.42e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.63 V             ; -0.0264 V          ; 0.468 V                             ; 0.142 V                             ; 3.02e-10 s                 ; 4.42e-10 s                 ; No                        ; Yes                       ;
 ; DRAM_DQ[0]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; DRAM_DQ[1]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; DRAM_DQ[2]          ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
@@ -859,7 +794,7 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; DRAM_DQ[13]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.65 V              ; -0.0209 V           ; 0.391 V                              ; 0.09 V                               ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.65 V             ; -0.0209 V          ; 0.391 V                             ; 0.09 V                              ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
 ; DRAM_DQ[14]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.48 V              ; -0.00721 V          ; 0.333 V                              ; 0.329 V                              ; 3.62e-09 s                  ; 4.03e-09 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.48 V             ; -0.00721 V         ; 0.333 V                             ; 0.329 V                             ; 3.62e-09 s                 ; 4.03e-09 s                 ; No                        ; Yes                       ;
 ; DRAM_DQ[15]         ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
-; altera_reserved_tdo ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 5.04e-07 V                   ; 3.64 V              ; -0.0201 V           ; 0.391 V                              ; 0.088 V                              ; 2.79e-10 s                  ; 3.95e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 5.04e-07 V                  ; 3.64 V             ; -0.0201 V          ; 0.391 V                             ; 0.088 V                             ; 2.79e-10 s                 ; 3.95e-10 s                 ; No                        ; Yes                       ;
+; altera_reserved_tdo ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.68e-07 V                   ; 2.73 V              ; -0.0395 V           ; 0.361 V                              ; 0.109 V                              ; 3.1e-10 s                   ; 4.41e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.68e-07 V                  ; 2.73 V             ; -0.0395 V          ; 0.361 V                             ; 0.109 V                             ; 3.1e-10 s                  ; 4.41e-10 s                 ; No                        ; Yes                       ;
 +---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
@@ -868,26 +803,14 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                ; To Clock                                                  ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 1569       ; 0          ; 44       ; 4        ;
+; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 7468       ; 0          ; 93       ; 3        ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; altera_reserved_tck                                       ; false path ; 0          ; 0        ; 0        ;
 ; CLK                                                       ; CLK                                                       ; 194        ; 0          ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; CLK                                                       ; 10         ; 0          ; 0        ; 0        ;
-; ETH_RX_CLK                                                ; ETH_RX_CLK                                                ; 2340       ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; ETH_RX_CLK                                                ; 53         ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; ETH_RX_CLK                                                ; 10         ; 0          ; 0        ; 0        ;
-; ETH_TX_CLK                                                ; ETH_TX_CLK                                                ; 22635      ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; ETH_TX_CLK                                                ; 101        ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; ETH_TX_CLK                                                ; 18         ; 0          ; 0        ; 0        ;
 ; altera_reserved_tck                                       ; u0|altpll_0|sd1|pll7|clk[0]                               ; false path ; false path ; 0        ; 0        ;
 ; CLK                                                       ; u0|altpll_0|sd1|pll7|clk[0]                               ; 5          ; 0          ; 0        ; 0        ;
-; ETH_TX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[0]                               ; 3          ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[0]                               ; 1033981    ; 343        ; 190      ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; u0|altpll_0|sd1|pll7|clk[0]                               ; 410        ; 0          ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[0]                               ; 667349     ; 348        ; 190      ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|altpll_0|sd1|pll7|clk[0]                               ; 2          ; 0          ; 0        ; 0        ;
-; ETH_RX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[4]                               ; 19         ; 0          ; 0        ; 0        ;
-; ETH_TX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[4]                               ; 10         ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[4]                               ; 287        ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; u0|altpll_0|sd1|pll7|clk[4]                               ; 484306     ; 0          ; 0        ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 2          ; 0          ; 0        ; 0        ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -898,68 +821,46 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                ; To Clock                                                  ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 1569       ; 0          ; 44       ; 4        ;
+; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 7468       ; 0          ; 93       ; 3        ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; altera_reserved_tck                                       ; false path ; 0          ; 0        ; 0        ;
 ; CLK                                                       ; CLK                                                       ; 194        ; 0          ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; CLK                                                       ; 10         ; 0          ; 0        ; 0        ;
-; ETH_RX_CLK                                                ; ETH_RX_CLK                                                ; 2340       ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; ETH_RX_CLK                                                ; 53         ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; ETH_RX_CLK                                                ; 10         ; 0          ; 0        ; 0        ;
-; ETH_TX_CLK                                                ; ETH_TX_CLK                                                ; 22635      ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; ETH_TX_CLK                                                ; 101        ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; ETH_TX_CLK                                                ; 18         ; 0          ; 0        ; 0        ;
 ; altera_reserved_tck                                       ; u0|altpll_0|sd1|pll7|clk[0]                               ; false path ; false path ; 0        ; 0        ;
 ; CLK                                                       ; u0|altpll_0|sd1|pll7|clk[0]                               ; 5          ; 0          ; 0        ; 0        ;
-; ETH_TX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[0]                               ; 3          ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[0]                               ; 1033981    ; 343        ; 190      ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; u0|altpll_0|sd1|pll7|clk[0]                               ; 410        ; 0          ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[0]                               ; 667349     ; 348        ; 190      ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|altpll_0|sd1|pll7|clk[0]                               ; 2          ; 0          ; 0        ; 0        ;
-; ETH_RX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[4]                               ; 19         ; 0          ; 0        ; 0        ;
-; ETH_TX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[4]                               ; 10         ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[4]                               ; 287        ; 0          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4]                               ; u0|altpll_0|sd1|pll7|clk[4]                               ; 484306     ; 0          ; 0        ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 2          ; 0          ; 0        ; 0        ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Recovery Transfers                                                                                                                  ;
-+-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                  ; To Clock                                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
-; altera_reserved_tck         ; altera_reserved_tck                                       ; 69       ; 0        ; 2        ; 0        ;
-; CLK                         ; CLK                                                       ; 38       ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; CLK                                                       ; 3        ; 0        ; 0        ; 0        ;
-; ETH_RX_CLK                  ; ETH_RX_CLK                                                ; 552      ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; ETH_RX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
-; ETH_TX_CLK                  ; ETH_TX_CLK                                                ; 632      ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; ETH_TX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; u0|altpll_0|sd1|pll7|clk[0]                               ; 4288     ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; u0|altpll_0|sd1|pll7|clk[4]                               ; 9        ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4] ; u0|altpll_0|sd1|pll7|clk[4]                               ; 3001     ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 6        ; 0        ; 0        ; 0        ;
-+-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                                                    ;
++-----------------------------+-----------------------------------------------------------+------------+----------+----------+----------+
+; From Clock                  ; To Clock                                                  ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------+-----------------------------------------------------------+------------+----------+----------+----------+
+; altera_reserved_tck         ; altera_reserved_tck                                       ; 240        ; 0        ; 2        ; 0        ;
+; CLK                         ; CLK                                                       ; 38         ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0] ; CLK                                                       ; 3          ; 0        ; 0        ; 0        ;
+; altera_reserved_tck         ; u0|altpll_0|sd1|pll7|clk[0]                               ; false path ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0] ; u0|altpll_0|sd1|pll7|clk[0]                               ; 2837       ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0] ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 6          ; 0        ; 0        ; 0        ;
++-----------------------------+-----------------------------------------------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Removal Transfers                                                                                                                   ;
-+-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
-; From Clock                  ; To Clock                                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
-; altera_reserved_tck         ; altera_reserved_tck                                       ; 69       ; 0        ; 2        ; 0        ;
-; CLK                         ; CLK                                                       ; 38       ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; CLK                                                       ; 3        ; 0        ; 0        ; 0        ;
-; ETH_RX_CLK                  ; ETH_RX_CLK                                                ; 552      ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; ETH_RX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
-; ETH_TX_CLK                  ; ETH_TX_CLK                                                ; 632      ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; ETH_TX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; u0|altpll_0|sd1|pll7|clk[0]                               ; 4288     ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; u0|altpll_0|sd1|pll7|clk[4]                               ; 9        ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[4] ; u0|altpll_0|sd1|pll7|clk[4]                               ; 3001     ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[0] ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 6        ; 0        ; 0        ; 0        ;
-+-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                                                     ;
++-----------------------------+-----------------------------------------------------------+------------+----------+----------+----------+
+; From Clock                  ; To Clock                                                  ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------+-----------------------------------------------------------+------------+----------+----------+----------+
+; altera_reserved_tck         ; altera_reserved_tck                                       ; 240        ; 0        ; 2        ; 0        ;
+; CLK                         ; CLK                                                       ; 38         ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0] ; CLK                                                       ; 3          ; 0        ; 0        ; 0        ;
+; altera_reserved_tck         ; u0|altpll_0|sd1|pll7|clk[0]                               ; false path ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0] ; u0|altpll_0|sd1|pll7|clk[0]                               ; 2837       ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[0] ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 6          ; 0        ; 0        ; 0        ;
++-----------------------------+-----------------------------------------------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -982,10 +883,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 1     ; 1    ;
-; Unconstrained Input Ports       ; 24    ; 24   ;
-; Unconstrained Input Port Paths  ; 77    ; 77   ;
-; Unconstrained Output Ports      ; 49    ; 49   ;
-; Unconstrained Output Port Paths ; 68    ; 68   ;
+; Unconstrained Input Ports       ; 22    ; 22   ;
+; Unconstrained Input Port Paths  ; 253   ; 253  ;
+; Unconstrained Output Ports      ; 47    ; 47   ;
+; Unconstrained Output Port Paths ; 63    ; 63   ;
 +---------------------------------+-------+------+
 
 
@@ -1003,7 +904,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; u0|altpll_0|sd1|pll7|clk[1]                                                                                                              ; u0|altpll_0|sd1|pll7|clk[1]                               ; Generated ; Constrained   ;
 ; u0|altpll_0|sd1|pll7|clk[2]                                                                                                              ; u0|altpll_0|sd1|pll7|clk[2]                               ; Generated ; Constrained   ;
 ; u0|altpll_0|sd1|pll7|clk[3]                                                                                                              ; u0|altpll_0|sd1|pll7|clk[3]                               ; Generated ; Constrained   ;
-; u0|altpll_0|sd1|pll7|clk[4]                                                                                                              ; u0|altpll_0|sd1|pll7|clk[4]                               ; Generated ; Constrained   ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc                                                                                ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; Base      ; Constrained   ;
 +------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-----------+---------------+
 
@@ -1031,9 +931,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; DRAM_DQ[13]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DRAM_DQ[14]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DRAM_DQ[15]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MDIO            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MII_COL         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MII_CRS         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; RST                 ; Partially constrained                                                                ;
 ; UART_CTS            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; altera_reserved_tdi ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; altera_reserved_tms ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1087,8 +985,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; DRAM_UDQM           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DRAM_WE             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; ETH_CLKOUT          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MDC             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MDIO            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LED[0]              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LED[1]              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; UART_RTS            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1120,9 +1016,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; DRAM_DQ[13]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DRAM_DQ[14]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DRAM_DQ[15]         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MDIO            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MII_COL         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MII_CRS         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; RST                 ; Partially constrained                                                                ;
 ; UART_CTS            ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; altera_reserved_tdi ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; altera_reserved_tms ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1176,8 +1070,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; DRAM_UDQM           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DRAM_WE             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; ETH_CLKOUT          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MDC             ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; ETH_MDIO            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LED[0]              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LED[1]              ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; UART_RTS            ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1192,7 +1084,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Jan 18 00:04:19 2019
+    Info: Processing started: Sat Feb 09 23:33:16 2019
 Info: Command: quartus_sta CANDY_AVB -c CANDY_AVB
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1234,7 +1126,6 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Info (332104): Reading SDC File: 'candy_avb_test_qsys/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'candy_avb_test_qsys/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc'
-Info (332104): Reading SDC File: 'candy_avb_test_qsys/synthesis/submodules/altera_eth_tse_mac.sdc'
 Info (332104): Reading SDC File: 'candy_avb_test_qsys/synthesis/submodules/altera_onchip_flash.sdc'
 Info (332104): Reading SDC File: 'candy_avb_test_qsys/synthesis/submodules/candy_avb_test_qsys_nios2_0_cpu.sdc'
 Info (332104): Reading SDC File: 'candy_avb_test.sdc'
@@ -1244,7 +1135,6 @@ Info (332110): Deriving PLL clocks
     Info (332110): create_generated_clock -source {u0|altpll_0|sd1|pll7|inclk[0]} -divide_by 12 -multiply_by 25 -phase -105.00 -duty_cycle 50.00 -name {u0|altpll_0|sd1|pll7|clk[1]} {u0|altpll_0|sd1|pll7|clk[1]}
     Info (332110): create_generated_clock -source {u0|altpll_0|sd1|pll7|inclk[0]} -divide_by 2 -duty_cycle 50.00 -name {u0|altpll_0|sd1|pll7|clk[2]} {u0|altpll_0|sd1|pll7|clk[2]}
     Info (332110): create_generated_clock -source {u0|altpll_0|sd1|pll7|inclk[0]} -divide_by 48 -multiply_by 25 -duty_cycle 50.00 -name {u0|altpll_0|sd1|pll7|clk[3]} {u0|altpll_0|sd1|pll7|clk[3]}
-    Info (332110): create_generated_clock -source {u0|altpll_0|sd1|pll7|inclk[0]} -divide_by 48 -multiply_by 25 -duty_cycle 50.00 -name {u0|altpll_0|sd1|pll7|clk[4]} {u0|altpll_0|sd1|pll7|clk[4]}
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: altera_internal_jtag  from: tck  to: tckutap
@@ -1253,60 +1143,47 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.673
+Info (332146): Worst-case setup slack is -1.077
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.673             -97.918 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     1.874               0.000 ETH_TX_CLK 
-    Info (332119):    14.447               0.000 ETH_RX_CLK 
-    Info (332119):    16.040               0.000 CLK 
-    Info (332119):    23.805               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    46.030               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.273
+    Info (332119):    -1.077             -32.562 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):    16.800               0.000 CLK 
+    Info (332119):    37.890               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is -0.194
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.273               0.000 ETH_RX_CLK 
-    Info (332119):     0.291               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     0.326               0.000 ETH_TX_CLK 
-    Info (332119):     0.341               0.000 u0|altpll_0|sd1|pll7|clk[4] 
+    Info (332119):    -0.194              -0.194 u0|altpll_0|sd1|pll7|clk[0] 
     Info (332119):     0.362               0.000 altera_reserved_tck 
     Info (332119):     0.363               0.000 CLK 
-Info (332146): Worst-case recovery slack is 4.461
+Info (332146): Worst-case recovery slack is 4.235
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.461               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):    17.011               0.000 CLK 
-    Info (332119):    34.766               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    35.281               0.000 ETH_TX_CLK 
-    Info (332119):    36.267               0.000 ETH_RX_CLK 
-    Info (332119):    47.863               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 1.179
+    Info (332119):     4.235               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):    17.957               0.000 CLK 
+    Info (332119):    47.149               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.986
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.179               0.000 CLK 
-    Info (332119):     1.375               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     1.532               0.000 altera_reserved_tck 
-    Info (332119):     2.071               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):     2.218               0.000 ETH_RX_CLK 
-    Info (332119):     2.860               0.000 ETH_TX_CLK 
-Info (332146): Worst-case minimum pulse width slack is 2.737
+    Info (332119):     0.986               0.000 CLK 
+    Info (332119):     1.206               0.000 altera_reserved_tck 
+    Info (332119):     1.557               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 2.810
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.737               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):     2.810               0.000 u0|altpll_0|sd1|pll7|clk[0] 
     Info (332119):    10.146               0.000 CLK 
-    Info (332119):    19.543               0.000 ETH_RX_CLK 
-    Info (332119):    19.644               0.000 ETH_TX_CLK 
-    Info (332119):    19.672               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    49.617               0.000 altera_reserved_tck 
+    Info (332119):    36.000               0.000 ETH_RX_CLK 
+    Info (332119):    36.000               0.000 ETH_TX_CLK 
+    Info (332119):    49.556               0.000 altera_reserved_tck 
     Info (332119):    90.684               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
-Info (332114): Report Metastability: Found 224 synchronizer chains.
-    Info (332114): Worst-Case MTBF of Design is 4.42e+03 years or 1.39e+11 seconds.
+Info (332114): Report Metastability: Found 27 synchronizer chains.
+    Info (332114): Worst-Case MTBF of Design is 1.91e+06 years or 6.02e+13 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-    Info (332114): Number of Synchronizer Chains Found: 224
+    Info (332114): Number of Synchronizer Chains Found: 27
     Info (332114): Shortest Synchronizer Chain: 2 Registers
-    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.098
-    Info (332114): Worst Case Available Settling Time: 7.928 ns
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.556
+    Info (332114): Worst Case Available Settling Time: 8.377 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -1319,60 +1196,47 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: altera_internal_jtag  from: tck  to: tckutap
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.066
+Info (332146): Worst-case setup slack is -0.475
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.066             -38.056 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     2.128               0.000 ETH_TX_CLK 
-    Info (332119):    14.412               0.000 ETH_RX_CLK 
-    Info (332119):    16.249               0.000 CLK 
-    Info (332119):    24.970               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    46.303               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.249
+    Info (332119):    -0.475              -7.668 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):    16.975               0.000 CLK 
+    Info (332119):    38.349               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is -0.156
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.249               0.000 ETH_RX_CLK 
-    Info (332119):     0.263               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     0.304               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):     0.308               0.000 ETH_TX_CLK 
+    Info (332119):    -0.156              -0.156 u0|altpll_0|sd1|pll7|clk[0] 
     Info (332119):     0.324               0.000 altera_reserved_tck 
-    Info (332119):     0.326               0.000 CLK 
-Info (332146): Worst-case recovery slack is 4.809
+    Info (332119):     0.325               0.000 CLK 
+Info (332146): Worst-case recovery slack is 4.574
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.809               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):    17.198               0.000 CLK 
-    Info (332119):    35.114               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    35.609               0.000 ETH_TX_CLK 
-    Info (332119):    36.579               0.000 ETH_RX_CLK 
-    Info (332119):    47.996               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 1.056
+    Info (332119):     4.574               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):    18.116               0.000 CLK 
+    Info (332119):    47.301               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.902
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.056               0.000 CLK 
-    Info (332119):     1.223               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     1.376               0.000 altera_reserved_tck 
-    Info (332119):     1.885               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):     1.984               0.000 ETH_RX_CLK 
-    Info (332119):     2.559               0.000 ETH_TX_CLK 
-Info (332146): Worst-case minimum pulse width slack is 2.590
+    Info (332119):     0.902               0.000 CLK 
+    Info (332119):     1.128               0.000 altera_reserved_tck 
+    Info (332119):     1.398               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 2.776
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.590               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):    10.163               0.000 CLK 
-    Info (332119):    19.521               0.000 ETH_TX_CLK 
-    Info (332119):    19.565               0.000 ETH_RX_CLK 
-    Info (332119):    19.671               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    49.636               0.000 altera_reserved_tck 
+    Info (332119):     2.776               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):    10.164               0.000 CLK 
+    Info (332119):    36.000               0.000 ETH_RX_CLK 
+    Info (332119):    36.000               0.000 ETH_TX_CLK 
+    Info (332119):    49.580               0.000 altera_reserved_tck 
     Info (332119):    90.686               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
-Info (332114): Report Metastability: Found 224 synchronizer chains.
-    Info (332114): Worst-Case MTBF of Design is 2.43e+04 years or 7.65e+11 seconds.
+Info (332114): Report Metastability: Found 27 synchronizer chains.
+    Info (332114): Worst-Case MTBF of Design is 1.38e+07 years or 4.33e+14 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-    Info (332114): Number of Synchronizer Chains Found: 224
+    Info (332114): Number of Synchronizer Chains Found: 27
     Info (332114): Shortest Synchronizer Chain: 2 Registers
-    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.098
-    Info (332114): Worst Case Available Settling Time: 8.032 ns
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.556
+    Info (332114): Worst Case Available Settling Time: 8.468 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -1382,60 +1246,48 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: altera_internal_jtag  from: tck  to: tckutap
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 1.903
+Info (332146): Worst-case setup slack is 1.966
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.903               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     5.020               0.000 ETH_TX_CLK 
-    Info (332119):    15.041               0.000 ETH_RX_CLK 
-    Info (332119):    18.681               0.000 CLK 
-    Info (332119):    33.130               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    48.869               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.070
+    Info (332119):     1.966               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):    19.045               0.000 CLK 
+    Info (332119):    45.260               0.000 altera_reserved_tck 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -0.142
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.070               0.000 ETH_TX_CLK 
-    Info (332119):     0.092               0.000 ETH_RX_CLK 
-    Info (332119):     0.097               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     0.135               0.000 u0|altpll_0|sd1|pll7|clk[4] 
+    Info (332119):    -0.142              -0.142 u0|altpll_0|sd1|pll7|clk[0] 
     Info (332119):     0.152               0.000 altera_reserved_tck 
     Info (332119):     0.153               0.000 CLK 
-Info (332146): Worst-case recovery slack is 7.558
+Info (332146): Worst-case recovery slack is 7.417
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.558               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):    19.015               0.000 CLK 
-    Info (332119):    37.540               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    37.853               0.000 ETH_TX_CLK 
-    Info (332119):    38.214               0.000 ETH_RX_CLK 
-    Info (332119):    49.438               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.480
+    Info (332119):     7.417               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):    19.516               0.000 CLK 
+    Info (332119):    49.001               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.409
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.480               0.000 CLK 
-    Info (332119):     0.564               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):     0.619               0.000 altera_reserved_tck 
-    Info (332119):     0.882               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):     1.050               0.000 ETH_RX_CLK 
-    Info (332119):     1.301               0.000 ETH_TX_CLK 
-Info (332146): Worst-case minimum pulse width slack is 2.902
+    Info (332119):     0.409               0.000 CLK 
+    Info (332119):     0.488               0.000 altera_reserved_tck 
+    Info (332119):     0.645               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 2.964
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.902               0.000 u0|altpll_0|sd1|pll7|clk[0] 
+    Info (332119):     2.964               0.000 u0|altpll_0|sd1|pll7|clk[0] 
     Info (332119):     9.742               0.000 CLK 
-    Info (332119):    19.211               0.000 ETH_TX_CLK 
-    Info (332119):    19.259               0.000 ETH_RX_CLK 
-    Info (332119):    19.705               0.000 u0|altpll_0|sd1|pll7|clk[4] 
-    Info (332119):    49.280               0.000 altera_reserved_tck 
-    Info (332119):    90.689               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
-Info (332114): Report Metastability: Found 224 synchronizer chains.
+    Info (332119):    36.000               0.000 ETH_RX_CLK 
+    Info (332119):    36.000               0.000 ETH_TX_CLK 
+    Info (332119):    49.383               0.000 altera_reserved_tck 
+    Info (332119):    90.690               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+Info (332114): Report Metastability: Found 27 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
-    Info (332114): Number of Synchronizer Chains Found: 224
+    Info (332114): Number of Synchronizer Chains Found: 27
     Info (332114): Shortest Synchronizer Chain: 2 Registers
-    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.098
-    Info (332114): Worst Case Available Settling Time: 9.088 ns
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.556
+    Info (332114): Worst Case Available Settling Time: 9.297 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -1443,10 +1295,10 @@ Info (332114): Report Metastability: Found 224 synchronizer chains.
     Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 3.7
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4993 megabytes
-    Info: Processing ended: Fri Jan 18 00:04:44 2019
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:43
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4906 megabytes
+    Info: Processing ended: Sat Feb 09 23:33:29 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:24
 
 
