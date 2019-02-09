@@ -1,7 +1,7 @@
 /*
  * File:           defines.h
  *
- * Created:        Thursday, January 17, 2019 11:42:43 AM
+ * Created:        Friday, January 18, 2019 1:45:11 PM
  * Description:    candy_avb IC default download data definitions.
  *
  * This software is distributed in the hope that it will be useful,
