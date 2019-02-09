@@ -1,3 +1,8 @@
 fpga/db/
 fpga/incremental_db/
 fpga/software/candy_avb_test_bsp/obj/
+*.bak
+
+fpga/software/candy_avb_test/obj/default/
+
+*.tcl~
