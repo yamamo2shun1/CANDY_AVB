@@ -1,0 +1,95 @@
+Cell Name         = Single 1
+Parameter Name    = GainS200Alg1gain_target
+Parameter Address = 8
+Parameter Value   = 1
+Parameter Data :
+0x00, 0x80, 0x00, 0x00, 
+
+
+
+Cell Name         = Single 1
+Parameter Name    = GainS200Alg1alpha
+Parameter Address = 8190
+Parameter Data :
+0x00, 0x7F, 0xF2, 0x59, 
+0x00, 0x00, 0x0D, 0xA7, 
+
+
+
+Cell Name         = Single 1
+Parameter Name    = Gain1940AlgNS1
+Parameter Address = 11
+Parameter Value   = 1
+Parameter Data :
+0x00, 0x80, 0x00, 0x00, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = NonModRamAlloc
+Parameter Address = 0
+Parameter Value   = 4094
+Parameter Data :
+0x00, 0x00, 0x0F, 0xFE, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = NonModRamAlloc
+Parameter Address = 0
+Parameter Value   = 4096
+Parameter Data :
+0x00, 0x00, 0x10, 0x00, 
+
+
+
+Parameter data for: IC 1 (Hexadecimal format starting at parameter address 0)
+See also candy_avb.hex file
+0x00 , 	0x00 , 	0x0F , 	0xFE , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x80 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x80 , 	0x00 , 	0x00 , 	
+
+Parameter data for: IC 1 (Binary format starting at parameter address 0)
+00000000	00000000	00001111	11111110	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	10000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	10000000	00000000	00000000	
+
+Parameter data for: IC 2 (Hexadecimal format starting at parameter address 0)
+See also candy_avb.hex file
+0x00 , 	0x00 , 	0x10 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+
+Parameter data for: IC 2 (Binary format starting at parameter address 0)
+00000000	00000000	00010000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+
