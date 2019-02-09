@@ -250,21 +250,6 @@ altera_avalon_uart_driver_C_LIB_SRCS := \
 	$(altera_avalon_uart_driver_SRCS_ROOT)/src/altera_avalon_uart_read.c \
 	$(altera_avalon_uart_driver_SRCS_ROOT)/src/altera_avalon_uart_write.c
 
-# altera_eth_tse_driver_hal sources root 
-altera_eth_tse_driver_hal_SRCS_ROOT := drivers
-
-# altera_eth_tse_driver_hal sources 
-altera_eth_tse_driver_hal_C_LIB_SRCS := \
-	$(altera_eth_tse_driver_hal_SRCS_ROOT)/src/altera_avalon_tse_system_info.c \
-	$(altera_eth_tse_driver_hal_SRCS_ROOT)/src/altera_avalon_tse.c
-
-# altera_msgdma_driver sources root 
-altera_msgdma_driver_SRCS_ROOT := drivers
-
-# altera_msgdma_driver sources 
-altera_msgdma_driver_C_LIB_SRCS := \
-	$(altera_msgdma_driver_SRCS_ROOT)/src/altera_msgdma.c
-
 # altera_nios2_gen2_hal_driver sources root 
 altera_nios2_gen2_hal_driver_SRCS_ROOT := HAL
 
@@ -375,8 +360,6 @@ COMPONENT_C_LIB_SRCS += \
 	$(altera_avalon_sysid_qsys_driver_C_LIB_SRCS) \
 	$(altera_avalon_timer_driver_C_LIB_SRCS) \
 	$(altera_avalon_uart_driver_C_LIB_SRCS) \
-	$(altera_eth_tse_driver_hal_C_LIB_SRCS) \
-	$(altera_msgdma_driver_C_LIB_SRCS) \
 	$(altera_nios2_gen2_hal_driver_C_LIB_SRCS) \
 	$(altera_onchip_flash_driver_C_LIB_SRCS) \
 	$(hal_C_LIB_SRCS)

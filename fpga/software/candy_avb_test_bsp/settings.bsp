@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2019/01/17 21:35:26</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1547728526405</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2019/02/09 23:34:01</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1549722841789</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_test_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\candy_avb_test_qsys.sopcinfo</SopcDesignFile>
@@ -875,42 +875,6 @@
                 <Group>none</Group>
         </Setting>
         <Setting>
-                <SettingName>altera_eth_tse_driver_hal.autoneg_timeout</SettingName>
-                <Identifier>ALTERA_AUTONEG_TIMEOUT_THRESHOLD</Identifier>
-                <Type>DecimalNumber</Type>
-                <Value>2500</Value>
-                <DefaultValue>2500</DefaultValue>
-                <DestinationFile>public_mk_define</DestinationFile>
-                <Description>Auto Negotiation Timeout in milliseconds</Description>
-                <Restrictions>none</Restrictions>
-                <Enabled>false</Enabled>
-                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        </Setting>
-        <Setting>
-                <SettingName>altera_eth_tse_driver_hal.checklink_timeout</SettingName>
-                <Identifier>ALTERA_CHECKLINK_TIMEOUT_THRESHOLD</Identifier>
-                <Type>DecimalNumber</Type>
-                <Value>10000</Value>
-                <DefaultValue>10000</DefaultValue>
-                <DestinationFile>public_mk_define</DestinationFile>
-                <Description>CheckLink Timeout in milliseconds</Description>
-                <Restrictions>none</Restrictions>
-                <Enabled>false</Enabled>
-                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        </Setting>
-        <Setting>
-                <SettingName>altera_eth_tse_driver_hal.nomdio_timeout</SettingName>
-                <Identifier>ALTERA_NOMDIO_TIMEOUT_THRESHOLD</Identifier>
-                <Type>DecimalNumber</Type>
-                <Value>1000000</Value>
-                <DefaultValue>1000000</DefaultValue>
-                <DestinationFile>public_mk_define</DestinationFile>
-                <Description>"No MDIO" Timeout in microseconds</Description>
-                <Restrictions>none</Restrictions>
-                <Enabled>false</Enabled>
-                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        </Setting>
-        <Setting>
                 <SettingName>altera_avalon_uart_driver.enable_small_driver</SettingName>
                 <Identifier>ALTERA_AVALON_UART_SMALL</Identifier>
                 <Type>BooleanDefineOnly</Type>
@@ -959,128 +923,86 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>pio_4</slaveDescriptor>
-                <addressRange>0x00000000 - 0x0000000F</addressRange>
-                <addressSpan>16</addressSpan>
+                <slaveDescriptor>avalon_wb_0</slaveDescriptor>
+                <addressRange>0x00000000 - 0x3FFFFFFF</addressRange>
+                <addressSpan>1073741824</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>new_sdram_controller_0</slaveDescriptor>
-                <addressRange>0x00800000 - 0x00FFFFFF</addressRange>
+                <addressRange>0x40800000 - 0x40FFFFFF</addressRange>
                 <addressSpan>8388608</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_flash_0_data</slaveDescriptor>
-                <addressRange>0x01040000 - 0x0106DFFF</addressRange>
+                <addressRange>0x41040000 - 0x4106DFFF</addressRange>
                 <addressSpan>188416</addressSpan>
                 <attributes>flash, memory, non-volatile</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>descriptor_memory</slaveDescriptor>
-                <addressRange>0x01080000 - 0x01080FFF</addressRange>
-                <addressSpan>4096</addressSpan>
-                <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>tse_0_tse</slaveDescriptor>
-                <addressRange>0x01082000 - 0x010823FF</addressRange>
-                <addressSpan>1024</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>timer_2</slaveDescriptor>
-                <addressRange>0x01082400 - 0x0108241F</addressRange>
+                <addressRange>0x41081000 - 0x4108101F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>timer_0</slaveDescriptor>
-                <addressRange>0x01082420 - 0x0108243F</addressRange>
+                <addressRange>0x41081020 - 0x4108103F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>timer_1</slaveDescriptor>
-                <addressRange>0x01082440 - 0x0108245F</addressRange>
+                <addressRange>0x41081040 - 0x4108105F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>uart_0</slaveDescriptor>
-                <addressRange>0x01082460 - 0x0108247F</addressRange>
+                <addressRange>0x41081060 - 0x4108107F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>tse_0_dma_tx_prefetcher_csr</slaveDescriptor>
-                <addressRange>0x01082480 - 0x0108249F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>tse_0_dma_rx_prefetcher_csr</slaveDescriptor>
-                <addressRange>0x010824A0 - 0x010824BF</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>tse_0_dma_tx_csr</slaveDescriptor>
-                <addressRange>0x010824C0 - 0x010824DF</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>tse_0_dma_rx_csr</slaveDescriptor>
-                <addressRange>0x010824E0 - 0x010824FF</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>pio_3</slaveDescriptor>
-                <addressRange>0x01082500 - 0x0108250F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>pio_2</slaveDescriptor>
-                <addressRange>0x01082510 - 0x0108251F</addressRange>
+                <slaveDescriptor>pio_4</slaveDescriptor>
+                <addressRange>0x41081080 - 0x4108108F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_1</slaveDescriptor>
-                <addressRange>0x01082520 - 0x0108252F</addressRange>
+                <addressRange>0x41081090 - 0x4108109F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_0</slaveDescriptor>
-                <addressRange>0x01082530 - 0x0108253F</addressRange>
+                <addressRange>0x410810A0 - 0x410810AF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>altpll_0</slaveDescriptor>
-                <addressRange>0x01082540 - 0x0108254F</addressRange>
+                <addressRange>0x410810B0 - 0x410810BF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_flash_0_csr</slaveDescriptor>
-                <addressRange>0x01082550 - 0x01082557</addressRange>
+                <addressRange>0x410810C0 - 0x410810C7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x01082558 - 0x0108255F</addressRange>
+                <addressRange>0x410810C8 - 0x410810CF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtaguart_0</slaveDescriptor>
-                <addressRange>0x01082560 - 0x01082567</addressRange>
+                <addressRange>0x410810D0 - 0x410810D7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

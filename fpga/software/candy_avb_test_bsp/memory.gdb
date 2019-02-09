@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_0' in SOPC Builder design 'candy_avb_test_qsys'
 # SOPC Builder design path: ../../candy_avb_test_qsys.sopcinfo
 #
-# Generated: Thu Jan 17 08:47:53 JST 2019
+# Generated: Sun Feb 03 23:15:48 JST 2019
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,10 +47,7 @@
 # by allowing GDB to cache memory contents on the host.
 
 # new_sdram_controller_0
-memory 0x800000 0x1000000 cache
+memory 0x40800000 0x41000000 cache
 
 # onchip_flash_0_data
-memory 0x1040000 0x106e000 cache
-
-# descriptor_memory
-memory 0x1080000 0x1081000 cache
+memory 0x41040000 0x4106e000 cache

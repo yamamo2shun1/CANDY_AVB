@@ -152,14 +152,14 @@ SOPC_SYSID_FLAG += --id=0
 ELF_PATCH_FLAG  += --id 0
 
 # The SOPC System ID Base Address 
-# setting SOPC_SYSID_BASE_ADDRESS is 0x1082558
-SOPC_SYSID_FLAG += --sidp=0x1082558
-ELF_PATCH_FLAG  += --sidp 0x1082558
+# setting SOPC_SYSID_BASE_ADDRESS is 0x410810c8
+SOPC_SYSID_FLAG += --sidp=0x410810c8
+ELF_PATCH_FLAG  += --sidp 0x410810c8
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1547726831
-SOPC_SYSID_FLAG += --timestamp=1547726831
-ELF_PATCH_FLAG  += --timestamp 1547726831
+# setting SOPC_TIMESTAMP is 1549581623
+SOPC_SYSID_FLAG += --timestamp=1549581623
+ELF_PATCH_FLAG  += --timestamp 1549581623
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 
@@ -176,15 +176,6 @@ ELF_PATCH_FLAG  += --timestamp 1547726831
 
 # Small-footprint (polled mode) driver none 
 # setting altera_avalon_uart_driver.enable_small_driver is false
-
-# Auto Negotiation Timeout in milliseconds none 
-# setting altera_eth_tse_driver_hal.autoneg_timeout is 2500
-
-# CheckLink Timeout in milliseconds none 
-# setting altera_eth_tse_driver_hal.checklink_timeout is 10000
-
-# "No MDIO" Timeout in microseconds none 
-# setting altera_eth_tse_driver_hal.nomdio_timeout is 1000000
 
 # Build a custom version of newlib with the specified space-separated compiler 
 # flags. The custom newlib build will be placed in the <bsp root>/newlib 
@@ -380,23 +371,13 @@ ELF_PATCH_FLAG  += --stdout_dev jtaguart_0
 #                 SOFTWARE COMPONENT & DRIVER INCLUDE PATHS
 #------------------------------------------------------------------------------
 
-ALT_INCLUDE_DIRS += $(ALT_LIBRARY_ROOT_DIR)/drivers/inc
 ALT_INCLUDE_DIRS += $(ALT_LIBRARY_ROOT_DIR)/HAL/inc
 
 #------------------------------------------------------------------------------
 #        SOFTWARE COMPONENT & DRIVER PRODUCED ALT_CPPFLAGS ADDITIONS
 #------------------------------------------------------------------------------
 
-ALT_CPPFLAGS += -DALTERA_TRIPLE_SPEED_MAC
 ALT_CPPFLAGS += -DALT_SINGLE_THREADED
-
-#------------------------------------------------------------------------------
-#        SOFTWARE COMPONENT & DRIVER SETTING-PRODUCED DEFINITIONS
-#------------------------------------------------------------------------------
-
-ALT_CPPFLAGS += -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500
-ALT_CPPFLAGS += -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000
-ALT_CPPFLAGS += -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000
 
 #END MANAGED
 

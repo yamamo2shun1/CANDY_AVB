@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_0' in SOPC Builder design 'candy_avb_test_qsys'
  * SOPC Builder design path: ../../candy_avb_test_qsys.sopcinfo
  *
- * Generated: Thu Jan 17 08:47:53 JST 2019
+ * Generated: Fri Feb 01 10:58:51 JST 2019
  */
 
 /*
@@ -63,8 +63,6 @@
 #include "altera_avalon_sysid_qsys.h"
 #include "altera_avalon_timer.h"
 #include "altera_avalon_uart.h"
-#include "altera_eth_tse.h"
-#include "altera_msgdma.h"
 #include "altera_onchip_flash.h"
 
 /*
@@ -78,9 +76,6 @@ ALTERA_AVALON_TIMER_INSTANCE ( TIMER_0, timer_0);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER_1, timer_1);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER_2, timer_2);
 ALTERA_AVALON_UART_INSTANCE ( UART_0, uart_0);
-ALTERA_ETH_TSE_INSTANCE ( TSE_0_TSE, tse_0_tse);
-ALTERA_MSGDMA_CSR_PREFETCHER_CSR_INSTANCE ( TSE_0_DMA_RX, TSE_0_DMA_RX_CSR, TSE_0_DMA_RX_PREFETCHER_CSR, tse_0_dma_rx);
-ALTERA_MSGDMA_CSR_PREFETCHER_CSR_INSTANCE ( TSE_0_DMA_TX, TSE_0_DMA_TX_CSR, TSE_0_DMA_TX_PREFETCHER_CSR, tse_0_dma_tx);
 ALTERA_ONCHIP_FLASH_DATA_CSR_INSTANCE ( ONCHIP_FLASH_0, ONCHIP_FLASH_0_DATA, ONCHIP_FLASH_0_CSR, onchip_flash_0);
 
 /*
@@ -110,8 +105,5 @@ void alt_sys_init( void )
     ALTERA_AVALON_JTAG_UART_INIT ( JTAGUART_0, jtaguart_0);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
     ALTERA_AVALON_UART_INIT ( UART_0, uart_0);
-    ALTERA_ETH_TSE_INIT ( TSE_0_TSE, tse_0_tse);
-    ALTERA_MSGDMA_INIT ( TSE_0_DMA_RX, tse_0_dma_rx);
-    ALTERA_MSGDMA_INIT ( TSE_0_DMA_TX, tse_0_dma_tx);
     ALTERA_ONCHIP_FLASH_INIT ( ONCHIP_FLASH_0, onchip_flash_0);
 }
