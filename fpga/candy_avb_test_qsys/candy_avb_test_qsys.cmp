@@ -3,38 +3,8 @@
 			clk_clk                           : in    std_logic                     := 'X';             -- clk
 			codec_clk_clk                     : out   std_logic;                                        -- clk
 			codec_reset_export                : out   std_logic;                                        -- export
-			codec_scl_export                  : inout std_logic                     := 'X';             -- export
-			codec_sda_export                  : inout std_logic                     := 'X';             -- export
-			eth_mii_rx_d                      : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mii_rx_d
-			eth_mii_rx_dv                     : in    std_logic                     := 'X';             -- mii_rx_dv
-			eth_mii_rx_err                    : in    std_logic                     := 'X';             -- mii_rx_err
-			eth_mii_tx_d                      : out   std_logic_vector(3 downto 0);                     -- mii_tx_d
-			eth_mii_tx_en                     : out   std_logic;                                        -- mii_tx_en
-			eth_mii_tx_err                    : out   std_logic;                                        -- mii_tx_err
-			eth_mii_crs                       : in    std_logic                     := 'X';             -- mii_crs
-			eth_mii_col                       : in    std_logic                     := 'X';             -- mii_col
 			eth_clk_clk                       : out   std_logic;                                        -- clk
 			eth_interrupt_export              : inout std_logic                     := 'X';             -- export
-			eth_mdio_mdc                      : out   std_logic;                                        -- mdc
-			eth_mdio_mdio_in                  : in    std_logic                     := 'X';             -- mdio_in
-			eth_mdio_mdio_out                 : out   std_logic;                                        -- mdio_out
-			eth_mdio_mdio_oen                 : out   std_logic;                                        -- mdio_oen
-			eth_misc_ff_tx_crc_fwd            : in    std_logic                     := 'X';             -- ff_tx_crc_fwd
-			eth_misc_ff_tx_septy              : out   std_logic;                                        -- ff_tx_septy
-			eth_misc_tx_ff_uflow              : out   std_logic;                                        -- tx_ff_uflow
-			eth_misc_ff_tx_a_full             : out   std_logic;                                        -- ff_tx_a_full
-			eth_misc_ff_tx_a_empty            : out   std_logic;                                        -- ff_tx_a_empty
-			eth_misc_rx_err_stat              : out   std_logic_vector(17 downto 0);                    -- rx_err_stat
-			eth_misc_rx_frm_type              : out   std_logic_vector(3 downto 0);                     -- rx_frm_type
-			eth_misc_ff_rx_dsav               : out   std_logic;                                        -- ff_rx_dsav
-			eth_misc_ff_rx_a_full             : out   std_logic;                                        -- ff_rx_a_full
-			eth_misc_ff_rx_a_empty            : out   std_logic;                                        -- ff_rx_a_empty
-			eth_rx_clk_clk                    : in    std_logic                     := 'X';             -- clk
-			eth_status_set_10                 : in    std_logic                     := 'X';             -- set_10
-			eth_status_set_1000               : in    std_logic                     := 'X';             -- set_1000
-			eth_status_eth_mode               : out   std_logic;                                        -- eth_mode
-			eth_status_ena_10                 : out   std_logic;                                        -- ena_10
-			eth_tx_clk_clk                    : in    std_logic                     := 'X';             -- clk
 			new_sdram_controller_0_wire_addr  : out   std_logic_vector(11 downto 0);                    -- addr
 			new_sdram_controller_0_wire_ba    : out   std_logic_vector(1 downto 0);                     -- ba
 			new_sdram_controller_0_wire_cas_n : out   std_logic;                                        -- cas_n
@@ -50,7 +20,19 @@
 			uart0_txd                         : out   std_logic;                                        -- txd
 			uart0_cts_n                       : in    std_logic                     := 'X';             -- cts_n
 			uart0_rts_n                       : out   std_logic;                                        -- rts_n
-			user_led_export                   : out   std_logic_vector(1 downto 0)                      -- export
+			user_led_export                   : out   std_logic_vector(1 downto 0);                     -- export
+			wb_clk_o                          : out   std_logic;                                        -- clk_o
+			wb_rst_o                          : out   std_logic;                                        -- rst_o
+			wb_cyc_o                          : out   std_logic;                                        -- cyc_o
+			wb_stb_o                          : out   std_logic;                                        -- stb_o
+			wb_adr_o                          : out   std_logic_vector(31 downto 0);                    -- adr_o
+			wb_sel_o                          : out   std_logic_vector(3 downto 0);                     -- sel_o
+			wb_we_o                           : out   std_logic;                                        -- we_o
+			wb_dat_o                          : out   std_logic_vector(31 downto 0);                    -- dat_o
+			wb_dat_i                          : in    std_logic_vector(31 downto 0) := (others => 'X'); -- dat_i
+			wb_ack_i                          : in    std_logic                     := 'X';             -- ack_i
+			wb_err_i                          : in    std_logic                     := 'X';             -- err_i
+			wb_rty_i                          : in    std_logic                     := 'X'              -- rty_i
 		);
 	end component candy_avb_test_qsys;
 

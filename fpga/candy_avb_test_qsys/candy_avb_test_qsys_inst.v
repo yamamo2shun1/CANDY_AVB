@@ -2,38 +2,8 @@
 		.clk_clk                           (<connected-to-clk_clk>),                           //                         clk.clk
 		.codec_clk_clk                     (<connected-to-codec_clk_clk>),                     //                   codec_clk.clk
 		.codec_reset_export                (<connected-to-codec_reset_export>),                //                 codec_reset.export
-		.codec_scl_export                  (<connected-to-codec_scl_export>),                  //                   codec_scl.export
-		.codec_sda_export                  (<connected-to-codec_sda_export>),                  //                   codec_sda.export
-		.eth_mii_rx_d                      (<connected-to-eth_mii_rx_d>),                      //                         eth.mii_rx_d
-		.eth_mii_rx_dv                     (<connected-to-eth_mii_rx_dv>),                     //                            .mii_rx_dv
-		.eth_mii_rx_err                    (<connected-to-eth_mii_rx_err>),                    //                            .mii_rx_err
-		.eth_mii_tx_d                      (<connected-to-eth_mii_tx_d>),                      //                            .mii_tx_d
-		.eth_mii_tx_en                     (<connected-to-eth_mii_tx_en>),                     //                            .mii_tx_en
-		.eth_mii_tx_err                    (<connected-to-eth_mii_tx_err>),                    //                            .mii_tx_err
-		.eth_mii_crs                       (<connected-to-eth_mii_crs>),                       //                            .mii_crs
-		.eth_mii_col                       (<connected-to-eth_mii_col>),                       //                            .mii_col
 		.eth_clk_clk                       (<connected-to-eth_clk_clk>),                       //                     eth_clk.clk
 		.eth_interrupt_export              (<connected-to-eth_interrupt_export>),              //               eth_interrupt.export
-		.eth_mdio_mdc                      (<connected-to-eth_mdio_mdc>),                      //                    eth_mdio.mdc
-		.eth_mdio_mdio_in                  (<connected-to-eth_mdio_mdio_in>),                  //                            .mdio_in
-		.eth_mdio_mdio_out                 (<connected-to-eth_mdio_mdio_out>),                 //                            .mdio_out
-		.eth_mdio_mdio_oen                 (<connected-to-eth_mdio_mdio_oen>),                 //                            .mdio_oen
-		.eth_misc_ff_tx_crc_fwd            (<connected-to-eth_misc_ff_tx_crc_fwd>),            //                    eth_misc.ff_tx_crc_fwd
-		.eth_misc_ff_tx_septy              (<connected-to-eth_misc_ff_tx_septy>),              //                            .ff_tx_septy
-		.eth_misc_tx_ff_uflow              (<connected-to-eth_misc_tx_ff_uflow>),              //                            .tx_ff_uflow
-		.eth_misc_ff_tx_a_full             (<connected-to-eth_misc_ff_tx_a_full>),             //                            .ff_tx_a_full
-		.eth_misc_ff_tx_a_empty            (<connected-to-eth_misc_ff_tx_a_empty>),            //                            .ff_tx_a_empty
-		.eth_misc_rx_err_stat              (<connected-to-eth_misc_rx_err_stat>),              //                            .rx_err_stat
-		.eth_misc_rx_frm_type              (<connected-to-eth_misc_rx_frm_type>),              //                            .rx_frm_type
-		.eth_misc_ff_rx_dsav               (<connected-to-eth_misc_ff_rx_dsav>),               //                            .ff_rx_dsav
-		.eth_misc_ff_rx_a_full             (<connected-to-eth_misc_ff_rx_a_full>),             //                            .ff_rx_a_full
-		.eth_misc_ff_rx_a_empty            (<connected-to-eth_misc_ff_rx_a_empty>),            //                            .ff_rx_a_empty
-		.eth_rx_clk_clk                    (<connected-to-eth_rx_clk_clk>),                    //                  eth_rx_clk.clk
-		.eth_status_set_10                 (<connected-to-eth_status_set_10>),                 //                  eth_status.set_10
-		.eth_status_set_1000               (<connected-to-eth_status_set_1000>),               //                            .set_1000
-		.eth_status_eth_mode               (<connected-to-eth_status_eth_mode>),               //                            .eth_mode
-		.eth_status_ena_10                 (<connected-to-eth_status_ena_10>),                 //                            .ena_10
-		.eth_tx_clk_clk                    (<connected-to-eth_tx_clk_clk>),                    //                  eth_tx_clk.clk
 		.new_sdram_controller_0_wire_addr  (<connected-to-new_sdram_controller_0_wire_addr>),  // new_sdram_controller_0_wire.addr
 		.new_sdram_controller_0_wire_ba    (<connected-to-new_sdram_controller_0_wire_ba>),    //                            .ba
 		.new_sdram_controller_0_wire_cas_n (<connected-to-new_sdram_controller_0_wire_cas_n>), //                            .cas_n
@@ -49,6 +19,18 @@
 		.uart0_txd                         (<connected-to-uart0_txd>),                         //                            .txd
 		.uart0_cts_n                       (<connected-to-uart0_cts_n>),                       //                            .cts_n
 		.uart0_rts_n                       (<connected-to-uart0_rts_n>),                       //                            .rts_n
-		.user_led_export                   (<connected-to-user_led_export>)                    //                    user_led.export
+		.user_led_export                   (<connected-to-user_led_export>),                   //                    user_led.export
+		.wb_clk_o                          (<connected-to-wb_clk_o>),                          //                          wb.clk_o
+		.wb_rst_o                          (<connected-to-wb_rst_o>),                          //                            .rst_o
+		.wb_cyc_o                          (<connected-to-wb_cyc_o>),                          //                            .cyc_o
+		.wb_stb_o                          (<connected-to-wb_stb_o>),                          //                            .stb_o
+		.wb_adr_o                          (<connected-to-wb_adr_o>),                          //                            .adr_o
+		.wb_sel_o                          (<connected-to-wb_sel_o>),                          //                            .sel_o
+		.wb_we_o                           (<connected-to-wb_we_o>),                           //                            .we_o
+		.wb_dat_o                          (<connected-to-wb_dat_o>),                          //                            .dat_o
+		.wb_dat_i                          (<connected-to-wb_dat_i>),                          //                            .dat_i
+		.wb_ack_i                          (<connected-to-wb_ack_i>),                          //                            .ack_i
+		.wb_err_i                          (<connected-to-wb_err_i>),                          //                            .err_i
+		.wb_rty_i                          (<connected-to-wb_rty_i>)                           //                            .rty_i
 	);
 
