@@ -143,7 +143,6 @@ ELF := candy_avb_test.elf
 
 # Paths to C, C++, and assembly source files.
 C_SRCS += hello_world.c
-C_SRCS += i2c.c
 C_SRCS += SigmaStudioFW.c
 CXX_SRCS :=
 ASM_SRCS :=
