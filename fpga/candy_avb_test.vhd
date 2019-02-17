@@ -164,10 +164,23 @@ architecture RTL of CANDY_AVB is
 		);
 	end component;
 	
+	component i2s_to_codec
+		generic(
+			DATA_WIDTH: integer range 0 to 32 := 32
+		);
+		port(
+			RESET:    in std_logic;
+			LRCLK_I:  in std_logic;
+			BITCLK_I: in std_logic;
+			DATA_I:   in std_logic;
+			DATA_O:   out std_logic
+		);
+	end component;
+	
 	constant p_wb_offset_low: std_logic_vector(31 downto 0) := X"00000000";
 	constant p_wb_offset_hi:  std_logic_vector(31 downto 0) := X"3FFFFFFF";
-	constant p_wb_codec0_low: std_logic_vector(31 downto 0) := p_wb_offset_low + X"00000040";
-	constant p_wb_codec0_hi:  std_logic_vector(31 downto 0) := p_wb_offset_low + X"0000007F";
+	constant p_wb_i2c_low:    std_logic_vector(31 downto 0) := p_wb_offset_low + X"00000040";
+	constant p_wb_i2c_hi:     std_logic_vector(31 downto 0) := p_wb_offset_low + X"0000007F";
 	
 --	signal mdio_out: std_logic;
 --	signal mdio_oen: std_logic;
@@ -187,17 +200,15 @@ architecture RTL of CANDY_AVB is
 	signal wb_err:     std_logic;
 	signal wb_rty:     std_logic;
 	
-	-- codec0
-	signal cyc_i_codec0: std_logic;
-	signal stb_i_codec0: std_logic;
-	signal we_i_codec0:  std_logic;
-	signal adr_i_codec0: std_logic_vector(2 downto 0);
-	signal dat_o_codec0: std_logic_vector(7 downto 0);
-	signal ack_o_codec0: std_logic;
-	signal sel_i_codec0: std_logic;
-	signal inta_codec0:  std_logic;
-	
-	-- codec1
+	-- i2c
+	signal cyc_i_i2c: std_logic;
+	signal stb_i_i2c: std_logic;
+	signal we_i_i2c:  std_logic;
+	signal adr_i_i2c: std_logic_vector(2 downto 0);
+	signal dat_o_i2c: std_logic_vector(7 downto 0);
+	signal ack_o_i2c: std_logic;
+	signal sel_i_i2c: std_logic;
+	signal inta_i2c:  std_logic;
 	
 	signal rstn:    std_logic;
 	signal scl_i:   std_logic;
@@ -268,14 +279,14 @@ architecture RTL of CANDY_AVB is
 				wb_clk_i  => wb_clk,
             wb_rst_i  => wb_rst,
             arst_i    => rstn,
-            wb_adr_i  => adr_i_codec0,
+            wb_adr_i  => adr_i_i2c,
 				wb_dat_i  => wb_dati(7 downto 0),
-				wb_dat_o  => dat_o_codec0,
-            wb_we_i   => we_i_codec0,
-            wb_stb_i  => stb_i_codec0,
-            wb_cyc_i  => cyc_i_codec0,
-            wb_ack_o  => ack_o_codec0,
-            wb_inta_o => inta_codec0,
+				wb_dat_o  => dat_o_i2c,
+            wb_we_i   => we_i_i2c,
+            wb_stb_i  => stb_i_i2c,
+            wb_cyc_i  => cyc_i_i2c,
+            wb_ack_o  => ack_o_i2c,
+            wb_inta_o => inta_i2c,
 
             -- i2c lines
             scl_pad_i    => scl_i,
@@ -286,23 +297,33 @@ architecture RTL of CANDY_AVB is
             sda_padoen_o => sda_oen
 			);
 	
-		sel_i_codec0 <= '1' when ((wb_adr >= p_wb_codec0_low) and (wb_adr <= p_wb_codec0_hi)) else '0';
-		cyc_i_codec0 <= wb_cyc when (sel_i_codec0 = '1') else '0';
-		stb_i_codec0 <= wb_stb when (sel_i_codec0 = '1') else '0';
-		adr_i_codec0 <= wb_adr(4 downto 2);
-		we_i_codec0  <= wb_we when (sel_i_codec0 = '1') else '0';
-
-      wb_dato <= (dat_o_codec0 & dat_o_codec0 & dat_o_codec0 & dat_o_codec0) when (sel_i_codec0 = '1') else X"00000000";
-
+		u2 : i2s_to_codec generic map (DATA_WIDTH => 32) port map (
+				RESET    => RST,
+				LRCLK_I  => CODEC_LRCLOCK(0),
+				BITCLK_I => CODEC_BITCLOCK(0),
+				DATA_I   => CODEC_DATA_OUT(0),
+				DATA_O   => CODEC_DATA_IN(0)
+			);
+		
+		-- I2C
+		sel_i_i2c <= '1' when ((wb_adr >= p_wb_i2c_low) and (wb_adr <= p_wb_i2c_hi)) else '0';
+		cyc_i_i2c <= wb_cyc when (sel_i_i2c = '1') else '0';
+		stb_i_i2c <= wb_stb when (sel_i_i2c = '1') else '0';
+		adr_i_i2c <= wb_adr(4 downto 2);
+		we_i_i2c  <= wb_we when (sel_i_i2c = '1') else '0';
+		
+		wb_dato <= (dat_o_i2c & dat_o_i2c & dat_o_i2c & dat_o_i2c) when (sel_i_i2c = '1') else X"00000000";
+		
 		wb_ack <= '1' when (wb_ack_dff = '1') else
-                ack_o_codec0 when (sel_i_codec0 = '1') else wb_stb;
-
+					 ack_o_i2c when (sel_i_i2c = '1') else
+					 wb_stb;
+		
 		process(wb_clk, rstn)
 		begin
 			if rstn = '0' then
 				wb_ack_dff <= '0';
 			elsif (wb_clk'event and wb_clk = '1') then
-				if ((sel_i_codec0 = '1') and (ack_o_codec0 = '1')) then
+				if ((sel_i_i2c = '1') and (ack_o_i2c = '1')) then
 					wb_ack_dff <= '1';
 				else
 					if (wb_stb = '0') then
