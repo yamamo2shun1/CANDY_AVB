@@ -1,6 +1,6 @@
-23:34:09 **** Incremental Build of configuration Nios II for project candy_avb_test_bsp ****
+12:47:08 **** Incremental Build of configuration Nios II for project candy_avb_test_bsp ****
 make all 
 [BSP build complete]
 
-23:34:10 Build Finished (took 1s.50ms)
+12:47:09 Build Finished (took 1s.253ms)
 

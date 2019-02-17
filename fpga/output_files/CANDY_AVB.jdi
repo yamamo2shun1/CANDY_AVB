@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="33eb56b1110bafced199"/>
+    <hash md5_digest_80b="0edc0829c92be35492b9"/>
   </project>
   <file_info>
     <file device="10M16SAU169C8G" path="CANDY_AVB.sof" usercode="0xFFFFFFFF"/>
@@ -143,7 +143,7 @@
         <parameter name="SLD_IP_VERSION" type="dec" value="6"/>
         <parameter name="SLD_IP_MINOR_VERSION" type="dec" value="0"/>
         <parameter name="SLD_COMMON_IP_VERSION" type="dec" value="0"/>
-        <parameter name="sld_data_bits" type="unknown" value="70"/>
+        <parameter name="sld_data_bits" type="unknown" value="108"/>
         <parameter name="sld_trigger_bits" type="unknown" value="1"/>
         <parameter name="SLD_NODE_CRC_BITS" type="dec" value="32"/>
         <parameter name="SLD_NODE_CRC_HIWORD" type="dec" value="41394"/>
@@ -185,7 +185,7 @@
         <parameter name="sld_state_flow_use_generated" type="unknown" value="0"/>
         <parameter name="sld_current_resource_width" type="unknown" value="1"/>
         <parameter name="sld_attribute_mem_mode" type="unknown" value="OFF"/>
-        <parameter name="sld_storage_qualifier_bits" type="unknown" value="202"/>
+        <parameter name="sld_storage_qualifier_bits" type="unknown" value="240"/>
         <parameter name="SLD_STORAGE_QUALIFIER_GAP_RECORD" type="dec" value="0"/>
         <parameter name="SLD_STORAGE_QUALIFIER_MODE" type="string" value="OFF"/>
         <parameter name="SLD_STORAGE_QUALIFIER_ENABLE_ADVANCED_CONDITION" type="dec" value="0"/>
@@ -202,7 +202,7 @@
   <sld_infos>
     <sld_info hpath="candy_avb_test_qsys:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1549581623"/>
+        <assignment_value text="QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1549732459"/>
       </assignment_values>
       <parameters/>
     </sld_info>

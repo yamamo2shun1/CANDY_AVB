@@ -7393,3 +7393,1143 @@ org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
 
 !ENTRY com.altera.sbtgui.launch 1 0 2019-02-10 01:05:28.599
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549581623]
+!SESSION 2019-02-13 08:58:27.090 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:00:26.878
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:00:29.568
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:23:13.808
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:23:16.155
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:38:13.896
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:38:16.266
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:45:20.705
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 09:45:23.033
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 10:12:59.233
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 10:13:01.512
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 10:24:56.750
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 10:24:59.177
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:09:50.504
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:09:52.781
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:16:35.542
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:16:37.960
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:24:10.387
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:24:12.806
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:28:12.637
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:28:15.069
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:29:24.481
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:29:26.869
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:42:05.484
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:42:07.782
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:54:31.652
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 13:54:34.063
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 14:26:19.173
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 14:26:21.599
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:15:12.114
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:15:14.653
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:25:11.101
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:25:13.735
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:34:13.144
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:34:15.718
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:41:01.186
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:41:03.699
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:51:34.346
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 15:51:36.882
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:01:13.725
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:01:16.265
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:17:09.057
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:17:11.503
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:21:38.826
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:21:41.311
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:23:13.792
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:23:16.368
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:24:49.572
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:24:52.182
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:29:21.509
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:29:24.036
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:39:10.187
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:39:12.791
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:43:35.900
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 16:43:38.444
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:07:16.176
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:07:18.760
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:25:33.051
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:25:35.620
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-13 17:27:46.625
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:28:00.301
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:28:02.817
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:30:16.550
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:30:19.076
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:43:43.575
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:43:46.129
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-13 17:44:20.919
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:44:42.182
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:44:44.744
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:46:18.597
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:46:21.133
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:52:51.654
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:52:54.216
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:55:55.920
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:55:58.483
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:59:17.541
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 17:59:20.091
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:06:43.062
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:06:45.656
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-13 18:10:56.368
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:11:25.326
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:11:27.875
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:13:50.415
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:13:52.936
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:14:36.495
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:14:39.063
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-13 18:17:07.422
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:17:14.453
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:17:17.039
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:17:41.757
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:17:44.276
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:20:20.930
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:20:23.513
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:30:29.196
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:30:31.749
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:30:51.294
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-13 18:30:53.813
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+!SESSION 2019-02-14 08:33:24.894 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.ui 4 0 2019-02-14 08:35:16.060
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element SigmaStudioFW.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:573)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2019-02-14 08:35:16.063
+!MESSAGE Element SigmaStudioFW.c does not exist.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 08:38:19.250
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 08:38:22.240
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 08:40:05.464
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 08:40:08.354
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 08:44:33.252
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 08:50:19.431
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 08:50:22.310
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:00:52.550
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:00:55.435
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:03:48.496
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:03:51.368
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:13:10.857
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:13:13.822
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:21:50.973
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:21:53.814
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:30:46.729
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:30:49.684
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:36:20.431
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:36:23.418
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:37:48.672
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:37:51.546
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:43:23.394
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:43:26.288
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:45:46.842
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:45:49.665
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:52:40.179
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:52:43.003
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:56:25.681
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 09:56:28.686
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:07:39.650
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:07:42.664
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:13:24.153
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:13:27.031
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:15:31.032
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:15:33.998
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:26:03.378
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:26:06.263
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:29:19.425
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:29:22.238
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:41:35.856
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:41:38.761
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:44:20.053
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 10:44:23.060
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:09:56.900
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:09:59.858
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 11:11:53.068
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:20:48.103
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:20:51.006
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:21:23.681
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:21:26.615
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:24:55.980
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:24:58.987
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:51:07.804
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:51:10.743
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:52:18.354
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:52:21.220
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:53:23.961
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:53:26.964
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:56:57.136
+!MESSAGE Terminated Launch with connection: 10USB-BlasterII on localhost [USB-1]
+
+!ENTRY com.altera.sbtgui.launch 4 4 2019-02-14 11:57:12.656
+!MESSAGE Target request failed: Failed to interrupt.
+!STACK 1
+org.eclipse.debug.core.DebugException: Target request failed: Failed to interrupt.
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:259)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.cleanupExistingLaunches(AbstractNios2CLaunchDelegate.java:249)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.handleMultipleLaunches(AbstractNios2CLaunchDelegate.java:213)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.initialize(AbstractNios2CLaunchDelegate.java:176)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:90)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.debug.core 4 5010 2019-02-14 11:57:12.656
+!MESSAGE Target request failed: Failed to interrupt.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:57:13.244
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:57:13.640
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 11:57:16.093
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-02-14 11:57:16.159
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-BlasterII on localhost [USB-1]', --device=1, --instance=0, --sidp=0x410810c8, --id=0x0, --timestamp=1549732459, /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-02-14 11:57:16.172
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 12:00:33.373
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 12:07:03.306
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 12:07:06.228
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 12:13:42.216
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 12:13:45.180
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:01:12.552
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:01:15.486
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:03:48.484
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:03:51.482
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:31:03.605
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:31:06.609
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:32:40.313
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:32:43.254
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:33:42.401
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:33:45.321
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:34:34.130
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:34:37.004
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:51:02.409
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:51:05.248
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:52:54.414
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:52:57.241
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 13:53:40.076
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.VariableManager.removeMIVar(VariableManager.java:219)
+	at org.eclipse.cdt.debug.mi.core.cdi.VariableManager.destroyVariable(VariableManager.java:588)
+	at org.eclipse.cdt.debug.mi.core.cdi.VariableManager.update(VariableManager.java:706)
+	at org.eclipse.cdt.debug.mi.core.cdi.VariableManager.update(VariableManager.java:642)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:311)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:54:40.820
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:54:43.616
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 13:55:42.612
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:56:09.407
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 13:56:12.323
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:00:51.267
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:00:54.206
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:02:29.190
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:02:32.028
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:03:53.718
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:03:56.602
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 14:06:23.775
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:06:39.369
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:06:42.256
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:08:36.061
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:08:38.973
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:19:41.637
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:19:44.532
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 14:22:48.548
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:23:51.172
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:23:54.069
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:28:33.881
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:28:36.735
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:31:49.086
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:31:51.903
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:46:26.605
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:46:29.463
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:51:18.616
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:51:21.601
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:53:36.507
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 14:53:39.372
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 14:54:54.303
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:02:25.250
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:02:28.116
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:08:39.538
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:08:42.411
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 15:13:31.995
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:13:39.359
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:13:42.323
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:45:17.589
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 15:45:20.523
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 16:04:39.587
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 16:04:42.505
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+!SESSION 2019-02-14 22:21:19.572 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 22:27:28.280
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 22:27:31.437
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2019-02-14 22:31:22.224
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 23:54:20.347
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-14 23:54:23.229
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-15 00:09:59.922
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-15 00:10:02.701
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-15 00:17:36.272
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-15 00:17:39.092
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+!SESSION 2019-02-16 23:30:47.219 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-16 23:33:44.740
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-16 23:33:47.845
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-16 23:45:36.108
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-16 23:45:38.964
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-02-16 23:54:56.258
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2019-02-16 23:54:56.268
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-16 23:55:20.412
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-16 23:55:23.206
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:09:38.745
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:09:41.424
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:19:08.537
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:19:11.254
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:36:28.137
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:36:30.947
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:59:25.682
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 00:59:28.476
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:15:07.649
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:15:10.470
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:28:05.015
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:28:07.711
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:38:35.742
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:38:38.564
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:45:39.777
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:45:42.645
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:55:29.044
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:55:31.731
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:56:38.049
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 01:56:40.832
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 02:02:25.819
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 02:02:28.731
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+!SESSION 2019-02-17 09:09:13.975 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 09:10:45.370
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 09:10:48.461
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:09:44.465
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:09:47.332
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+!SESSION 2019-02-17 10:27:39.900 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:28:32.290
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:28:35.148
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:40:17.417
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:40:20.168
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:48:42.242
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 10:48:45.113
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:03:20.354
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:03:23.214
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:09:29.090
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:09:31.862
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:21:06.216
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:21:09.059
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:30:21.752
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:30:24.637
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:39:28.025
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:39:30.964
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:58:20.399
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 11:58:23.372
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:06:28.977
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:06:31.758
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:14:59.675
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:15:02.539
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:25:07.045
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:25:09.842
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:25:59.203
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:26:02.107
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:27:59.028
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:28:01.938
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:47:15.728
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0x410810c8 --id=0x0 --timestamp=1549732459 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_test/candy_avb_test.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-17 12:47:18.630
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0x410810c8 --id=0x0 --timestamp=1549732459]

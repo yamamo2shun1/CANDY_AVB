@@ -1,12 +1,12 @@
-Power Analyzer Status : Successful - Sat Feb 09 23:33:15 2019
+Power Analyzer Status : Successful - Sun Feb 17 12:46:18 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : CANDY_AVB
 Top-level Entity Name : CANDY_AVB
 Family : MAX 10
 Device : 10M16SAU169C8G
 Power Models : Final
-Total Thermal Power Dissipation : 664.14 mW
-Core Dynamic Thermal Power Dissipation : 361.73 mW
-Core Static Thermal Power Dissipation : 229.04 mW
-I/O Thermal Power Dissipation : 73.38 mW
+Total Thermal Power Dissipation : 685.20 mW
+Core Dynamic Thermal Power Dissipation : 382.09 mW
+Core Static Thermal Power Dissipation : 229.18 mW
+I/O Thermal Power Dissipation : 73.93 mW
 Power Estimation Confidence : Low: user provided insufficient toggle rate data
