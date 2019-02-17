@@ -1,7 +1,7 @@
 /*
  * File:           defines.h
  *
- * Created:        Friday, January 18, 2019 1:45:11 PM
+ * Created:        Sunday, February 17, 2019 12:26:56 PM
  * Description:    candy_avb IC default download data definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -19,7 +19,7 @@
 #ifndef __DEFINES_H__
 #define __DEFINES_H__
 
-#define BufferSize_IC_1     	4597
+#define BufferSize_IC_1     	4637
 #define NumTransactions_IC_1	40
 
 #define BufferSize_IC_2     	4521

@@ -7,31 +7,28 @@ Build date = 8/23/2018 at 9:56 AM
 (Note: Estimates are based on a 48 kHz sample rate)
 
 Instructions used:
-65	(out of a possible 1024 )
+47	(out of a possible 1024 )
 Modulo Data RAM used (X Memory):
-6	(out of a possible 4096 )
-Non Modulo Data RAM used (X Memory):
 2	(out of a possible 4096 )
+Non Modulo Data RAM used (X Memory):
+0	(out of a possible 4096 )
 Parameter RAM used (Y Memory):
-12	(out of a possible 1024 )
+8	(out of a possible 1024 )
 
 Instance                      		Mips	Inst	Data	Coeff	Other
                               			(max)
 Beginning                     		19	19	0	1
 SafeLoadCode                  		15	15	0	7
-Single 1                      		10	10	4	4
-Input1                        		8	8	4	0
 End                           		5	5	0	0
+Input1                        		4	4	2	0
 Output1                       		2	2	0	0
-Output5                       		2	2	0	0
-Output6                       		2	2	0	0
 Output2                       		2	2	0	0
 
 Subroutines called:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Total                      			65	65	8	12
+Total                      			47	47	2	8
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-(%)                          			6%	6%	0%	1%
+(%)                          			5%	5%	0%	1%
 
 Files written:  
 program_data.dat - load file for downloading code using ADI loader

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2019/02/09 23:34:01</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1549722841789</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2019/02/17 12:47:02</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1550375222459</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_test_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\candy_avb_test_qsys.sopcinfo</SopcDesignFile>

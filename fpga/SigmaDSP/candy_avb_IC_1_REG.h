@@ -1,7 +1,7 @@
 /*
- * File:           C:\Users\shun\Desktop\IntelFPGA\CANDY_AVB_10M16\SigmaDSP\candy_avb_IC_1_REG.h
+ * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\SigmaDSP\candy_avb_IC_1_REG.h
  *
- * Created:        Friday, January 18, 2019 1:45:11 PM
+ * Created:        Sunday, February 17, 2019 12:26:56 PM
  * Description:    candy_avb:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -258,12 +258,12 @@
 /* CRC Ideal_3  - Registers (IC 1) */
 #define REG_CRC_IDEAL_3_IC_1_ADDR                 0x40C2
 #define REG_CRC_IDEAL_3_IC_1_BYTE                 1
-#define REG_CRC_IDEAL_3_IC_1_VALUE                0x5D
+#define REG_CRC_IDEAL_3_IC_1_VALUE                0x7F
 
 /* CRC Ideal_4  - Registers (IC 1) */
 #define REG_CRC_IDEAL_4_IC_1_ADDR                 0x40C3
 #define REG_CRC_IDEAL_4_IC_1_BYTE                 1
-#define REG_CRC_IDEAL_4_IC_1_VALUE                0x7B
+#define REG_CRC_IDEAL_4_IC_1_VALUE                0x3D
 
 /* CRC Enable  - Registers (IC 1) */
 #define REG_CRC_ENABLE_IC_1_ADDR                  0x40C4
@@ -368,7 +368,7 @@
 /* Clock Enable Reg 0  - Registers (IC 1) */
 #define REG_CLOCK_ENABLE_REG_0_IC_1_ADDR          0x40F9
 #define REG_CLOCK_ENABLE_REG_0_IC_1_BYTE          1
-#define REG_CLOCK_ENABLE_REG_0_IC_1_VALUE         0x7F
+#define REG_CLOCK_ENABLE_REG_0_IC_1_VALUE         0x5F
 
 /* Clock Enable Reg 1  - Registers (IC 1) */
 #define REG_CLOCK_ENABLE_REG_1_IC_1_ADDR          0x40FA
@@ -885,12 +885,12 @@
 #define R46_CRC_IDEAL_2_IC_1_SHIFT                0
 
 /* CRC Ideal_3 (IC 1) */
-#define R47_CRC_IDEAL_3_IC_1                      0x5D   /* 01011101b	[7:0] */
+#define R47_CRC_IDEAL_3_IC_1                      0x7F   /* 01111111b	[7:0] */
 #define R47_CRC_IDEAL_3_IC_1_MASK                 0xFF
 #define R47_CRC_IDEAL_3_IC_1_SHIFT                0
 
 /* CRC Ideal_4 (IC 1) */
-#define R48_CRC_IDEAL_4_IC_1                      0x7B   /* 01111011b	[7:0] */
+#define R48_CRC_IDEAL_4_IC_1                      0x3D   /* 00111101b	[7:0] */
 #define R48_CRC_IDEAL_4_IC_1_MASK                 0xFF
 #define R48_CRC_IDEAL_4_IC_1_SHIFT                0
 
@@ -1021,7 +1021,7 @@
 #define R69_INTERPOLATOR_RESYNC_IC_1              0x1    /* 1b	[2] */
 #define R69_ROUTING_MATRIX_OUT_IC_1               0x1    /* 1b	[3] */
 #define R69_DECIMATOR_RESYNC_IC_1                 0x1    /* 1b	[4] */
-#define R69_ALC_ON_IC_1                           0x1    /* 1b	[5] */
+#define R69_ALC_ON_IC_1                           0x0    /* 0b	[5] */
 #define R69_SLEW_ON_IC_1                          0x1    /* 1b	[6] */
 #define R69_SERIAL_PORT_IC_1_MASK                 0x1
 #define R69_SERIAL_PORT_IC_1_SHIFT                0

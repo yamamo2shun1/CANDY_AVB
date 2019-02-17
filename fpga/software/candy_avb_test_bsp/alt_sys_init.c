@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_0' in SOPC Builder design 'candy_avb_test_qsys'
  * SOPC Builder design path: ../../candy_avb_test_qsys.sopcinfo
  *
- * Generated: Fri Feb 01 10:58:51 JST 2019
+ * Generated: Wed Feb 13 08:59:48 JST 2019
  */
 
 /*

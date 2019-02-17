@@ -18,36 +18,44 @@
     <IC name=" IC 1 " type="DSPSigmaLP1">
         <Schematic>
             <Algorithm name="ICSigma200In1" friendlyname="Analog+Digital Inputs" cell="Input1 ">
-                <Link pin="O_C0_A0_P1_out" dir="out" link="Link2" />
-                <Link pin="O_C0_A0_P2_out" dir="out" link="Link3" />
+                <Link pin="O_C0_A0_P1_out" dir="out" link="Link0" />
+                <Link pin="O_C0_A0_P2_out" dir="out" link="Link1" />
+                <Link pin="O_C0_A0_P3_out" dir="out" link="Link4" />
+                <Link pin="O_C0_A0_P4_out" dir="out" link="Link5" />
             </Algorithm>
             <Algorithm name="GainS200Alg1" friendlyname="Gain (RC slew)" cell="Single 1 ">
-                <Link pin="I_C23_A0_P1_in" dir="in" link="Link2" />
-                <Link pin="O_C23_A0_P2_out" dir="out" link="Link0" />
+                <Link pin="I_C23_A0_P1_in" dir="in" link="Link0" />
+                <Link pin="O_C23_A0_P2_out" dir="out" link="Link6" />
             </Algorithm>
             <Algorithm name="Gain1940AlgNS1" friendlyname="Gain (no slew)" cell="Single 1 ">
-                <Link pin="I_C23_A1_P1_in" dir="in" link="Link3" />
-                <Link pin="O_C23_A1_P2_out" dir="out" link="Link1" />
+                <Link pin="I_C23_A1_P1_in" dir="in" link="Link1" />
+                <Link pin="O_C23_A1_P2_out" dir="out" link="Link7" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out1" friendlyname="1761 output" cell="Output1 ">
-                <Link pin="I_C11_A0_P1_in" dir="in" link="Link0" />
+                <Link pin="I_C11_A0_P1_in" dir="in" link="Link4" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out2" friendlyname="1761 output" cell="Output2 ">
-                <Link pin="I_C13_A0_P1_in" dir="in" link="Link1" />
+                <Link pin="I_C13_A0_P1_in" dir="in" link="Link5" />
+            </Algorithm>
+            <Algorithm name="ICSigmaLP1Out5" friendlyname="1761 output" cell="Output5 ">
+                <Link pin="I_C73_A0_P1_in" dir="in" link="Link6" />
+            </Algorithm>
+            <Algorithm name="ICSigmaLP1Out6" friendlyname="1761 output" cell="Output6 ">
+                <Link pin="I_C75_A0_P1_in" dir="in" link="Link7" />
             </Algorithm>
         </Schematic>
     </IC>
     <IC name=" IC 2 " type="DSPSigmaLP1">
         <Schematic>
             <Algorithm name="ICSigma200In2" friendlyname="Analog+Digital Inputs" cell="Input2 ">
-                <Link pin="O_C20_A0_P1_out" dir="out" link="Link4" />
-                <Link pin="O_C20_A0_P2_out" dir="out" link="Link5" />
+                <Link pin="O_C20_A0_P1_out" dir="out" link="Link2" />
+                <Link pin="O_C20_A0_P2_out" dir="out" link="Link3" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out3" friendlyname="1761 output" cell="Output3 ">
-                <Link pin="I_C15_A0_P1_in" dir="in" link="Link4" />
+                <Link pin="I_C15_A0_P1_in" dir="in" link="Link2" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out4" friendlyname="1761 output" cell="Output4 ">
-                <Link pin="I_C18_A0_P1_in" dir="in" link="Link5" />
+                <Link pin="I_C18_A0_P1_in" dir="in" link="Link3" />
             </Algorithm>
         </Schematic>
     </IC>
