@@ -170,10 +170,14 @@ architecture RTL of CANDY_AVB is
 		);
 		port(
 			RESET:    in std_logic;
-			LRCLK_I:  in std_logic;
-			BITCLK_I: in std_logic;
-			DATA_I:   in std_logic;
-			DATA_O:   out std_logic
+			LRCLK_I_MST:  in  std_logic;
+			BITCLK_I_MST: in  std_logic;
+			DATA_I_MST:   in  std_logic;
+			DATA_O_MST:   out std_logic;
+			LRCLK_O_SLV:  out std_logic;
+			BITCLK_O_SLV: out std_logic;
+			DATA_I_SLV:   in  std_logic;
+			DATA_O_SLV:   out std_logic
 		);
 	end component;
 	
@@ -298,11 +302,15 @@ architecture RTL of CANDY_AVB is
 			);
 	
 		u2 : i2s_to_codec generic map (DATA_WIDTH => 32) port map (
-				RESET    => RST,
-				LRCLK_I  => CODEC_LRCLOCK(0),
-				BITCLK_I => CODEC_BITCLOCK(0),
-				DATA_I   => CODEC_DATA_OUT(0),
-				DATA_O   => CODEC_DATA_IN(0)
+				RESET        => RST,
+				LRCLK_I_MST  => CODEC_LRCLOCK(0),
+				BITCLK_I_MST => CODEC_BITCLOCK(0),
+				DATA_I_MST   => CODEC_DATA_OUT(0),
+				DATA_O_MST   => CODEC_DATA_IN(0),
+				LRCLK_O_SLV  => CODEC_LRCLOCK(1),
+				BITCLK_O_SLV => CODEC_BITCLOCK(1),
+				DATA_I_SLV   => CODEC_DATA_OUT(1),
+				DATA_O_SLV   => CODEC_DATA_IN(1)
 			);
 		
 		-- I2C

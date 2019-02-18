@@ -7,59 +7,80 @@ entity i2s_to_codec is
 		DATA_WIDTH: integer range 16 to 32 := 32
 	);
 	port(
-		RESET:    in std_logic;
-		LRCLK_I:  in std_logic;
-		BITCLK_I: in std_logic;
-		DATA_I:   in std_logic;
-		DATA_O:   out std_logic
+		RESET:        in  std_logic;
+		LRCLK_I_MST:  in  std_logic;
+		BITCLK_I_MST: in  std_logic;
+		DATA_I_MST:   in  std_logic;
+		DATA_O_MST:   out std_logic;
+		LRCLK_O_SLV:  out std_logic;
+		BITCLK_O_SLV: out std_logic;
+		DATA_I_SLV:   in  std_logic;
+		DATA_O_SLV:   out std_logic
 	);
 end i2s_to_codec;
 
 architecture behavioral of i2s_to_codec is
 	signal counter: integer range 0 to DATA_WIDTH;
 	signal current_lr: std_logic;
-	signal shift_reg: std_logic_vector(DATA_WIDTH - 1 downto 0);
-	signal data_l: std_logic_vector(DATA_WIDTH - 1 downto 0);
-	signal data_r: std_logic_vector(DATA_WIDTH - 1 downto 0);
+	signal shift_reg_mst: std_logic_vector(DATA_WIDTH - 1 downto 0);
+	signal shift_reg_slv: std_logic_vector(DATA_WIDTH - 1 downto 0);
+	signal data_l_mst: std_logic_vector(DATA_WIDTH - 1 downto 0);
+	signal data_r_mst: std_logic_vector(DATA_WIDTH - 1 downto 0);
+	signal data_l_slv: std_logic_vector(DATA_WIDTH - 1 downto 0);
+	signal data_r_slv: std_logic_vector(DATA_WIDTH - 1 downto 0);
 
 	begin
-		rd: process(BITCLK_I, LRCLK_I, RESET)
+		BITCLK_O_SLV <= BITCLK_I_MST;
+		LRCLK_O_SLV <= LRCLK_I_MST;
+	
+		rd: process(BITCLK_I_MST, LRCLK_I_MST, RESET)
 		begin
 			if (RESET = '0') then
 				counter <= DATA_WIDTH - 1;
-				data_l <= (others => '0');
-				data_r <= (others => '0');
-				shift_reg <= (others => '0');
-			elsif (rising_edge(BITCLK_I)) then
-				if (LRCLK_I /= current_lr) then
-					current_lr <= LRCLK_I;
+				
+				shift_reg_mst <= (others => '0');
+				shift_reg_slv <= (others => '0');
+				
+				data_l_mst <= (others => '0');
+				data_r_mst <= (others => '0');
+				data_l_slv <= (others => '0');
+				data_r_slv <= (others => '0');
+			elsif (rising_edge(BITCLK_I_MST)) then
+				if (LRCLK_I_MST /= current_lr) then
+					current_lr <= LRCLK_I_MST;
 					counter <= DATA_WIDTH - 1;
 					
 					if (current_lr = '1') then
-						data_l <= shift_reg;
+						data_l_mst <= shift_reg_mst;
+						data_l_slv <= shift_reg_slv;
 					else
-						data_r <= shift_reg;
+						data_r_mst <= shift_reg_mst;
+						data_r_slv <= shift_reg_slv;
 					end if;
 					
-					shift_reg <= (others => '0');
+					shift_reg_mst <= (others => '0');
+					shift_reg_slv <= (others => '0');
 					
-					shift_reg <= shift_reg(DATA_WIDTH - 2 downto 0) & DATA_I;
+					shift_reg_mst <= shift_reg_mst(DATA_WIDTH - 2 downto 0) & DATA_I_MST;
+					shift_reg_slv <= shift_reg_slv(DATA_WIDTH - 2 downto 0) & DATA_I_SLV;
 					counter <= counter - 1;
 				elsif (counter >= 0) then
-					shift_reg <= shift_reg(DATA_WIDTH - 2 downto 0) & DATA_I;
+					shift_reg_mst <= shift_reg_mst(DATA_WIDTH - 2 downto 0) & DATA_I_MST;
+					shift_reg_slv <= shift_reg_slv(DATA_WIDTH - 2 downto 0) & DATA_I_SLV;
 					counter <= counter - 1;
 				end if;
 			end if;
 		end process;
 		
-		wr: process(BITCLK_I, LRCLK_I)
+		wr: process(BITCLK_I_MST, LRCLK_I_MST)
 		begin
-			if (BITCLK_I'event and BITCLK_I = '0') then
-			--	DATA_O <= data_l(counter) when (LRCLK_I = '1') else data_r(counter);
-				if (LRCLK_I = '1') then
-					DATA_O <= data_l(counter);
+			if (BITCLK_I_MST'event and BITCLK_I_MST = '0') then
+				if (LRCLK_I_MST = '1') then
+					DATA_O_MST <= data_l_mst(counter);
+					DATA_O_SLV <= data_l_slv(counter);
 				else
-					DATA_O <= data_r(counter);
+					DATA_O_MST <= data_r_mst(counter);
+					DATA_O_SLV <= data_r_slv(counter);
 				end if;
 			end if;
 		end process;
