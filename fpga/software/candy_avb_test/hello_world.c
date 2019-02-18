@@ -27,8 +27,8 @@
 
 #include "candy_avb_IC_1.h"
 #include "candy_avb_IC_1_PARAM.h"
-//#include "candy_avb_IC_2.h"
-//#include "candy_avb_IC_2_PARAM.h"
+#include "candy_avb_IC_2.h"
+#include "candy_avb_IC_2_PARAM.h"
 
 int itest = 0;
 float ftest = 0.0f;
@@ -53,6 +53,7 @@ int main()
 
 	//status = i2c_start(0x70, 0x00);
 	default_download_IC_1();
+	default_download_IC_2();
 
 	usleep(1000);
 	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_4_BASE, 0);
