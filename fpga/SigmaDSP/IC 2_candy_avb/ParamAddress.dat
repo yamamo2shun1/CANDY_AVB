@@ -6,3 +6,7 @@ dataLoad3_SafeLoad	4
 dataLoadEnd_SafeLoad	5
 addressLoad_SafeLoad	6
 numLoad_SafeLoad	7
+GainS200Alg2gain_target_1	8
+GainS200Alg2gain_1	9
+GainS200Alg2gainLO_1	10
+Gain1940AlgNS2_2	11

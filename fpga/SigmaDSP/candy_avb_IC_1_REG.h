@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\SigmaDSP\candy_avb_IC_1_REG.h
  *
- * Created:        Sunday, February 17, 2019 12:26:56 PM
+ * Created:        Monday, February 18, 2019 4:34:40 PM
  * Description:    candy_avb:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -33,7 +33,7 @@
 /* PLLCrlRegister  - Registers (IC 1) */
 #define REG_PLLCRLREGISTER_IC_1_ADDR              0x4002
 #define REG_PLLCRLREGISTER_IC_1_BYTE              6
-#define REG_PLLCRLREGISTER_IC_1_VALUE             0x00FD000C2001
+#define REG_PLLCRLREGISTER_IC_1_VALUE             0x007D000C2303
 
 /* MicCtrlRegister  - Registers (IC 1) */
 #define REG_MICCTRLREGISTER_IC_1_ADDR             0x4008
@@ -83,17 +83,17 @@
 /* ALC Control 0  - Registers (IC 1) */
 #define REG_ALC_CONTROL_0_IC_1_ADDR               0x4011
 #define REG_ALC_CONTROL_0_IC_1_BYTE               1
-#define REG_ALC_CONTROL_0_IC_1_VALUE              0x0
+#define REG_ALC_CONTROL_0_IC_1_VALUE              0xF8
 
 /* ALC Control 1  - Registers (IC 1) */
 #define REG_ALC_CONTROL_1_IC_1_ADDR               0x4012
 #define REG_ALC_CONTROL_1_IC_1_BYTE               1
-#define REG_ALC_CONTROL_1_IC_1_VALUE              0x0
+#define REG_ALC_CONTROL_1_IC_1_VALUE              0x30
 
 /* ALC Control 2  - Registers (IC 1) */
 #define REG_ALC_CONTROL_2_IC_1_ADDR               0x4013
 #define REG_ALC_CONTROL_2_IC_1_BYTE               1
-#define REG_ALC_CONTROL_2_IC_1_VALUE              0x0
+#define REG_ALC_CONTROL_2_IC_1_VALUE              0x68
 
 /* ALC Control 3  - Registers (IC 1) */
 #define REG_ALC_CONTROL_3_IC_1_ADDR               0x4014
@@ -103,7 +103,7 @@
 /* Serial Port Control 0  - Registers (IC 1) */
 #define REG_SERIAL_PORT_CONTROL_0_IC_1_ADDR       0x4015
 #define REG_SERIAL_PORT_CONTROL_0_IC_1_BYTE       1
-#define REG_SERIAL_PORT_CONTROL_0_IC_1_VALUE      0x0
+#define REG_SERIAL_PORT_CONTROL_0_IC_1_VALUE      0x1
 
 /* Serail Port Control 1  - Registers (IC 1) */
 #define REG_SERAIL_PORT_CONTROL_1_IC_1_ADDR       0x4016
@@ -158,12 +158,12 @@
 /* Playback LR Left  - Registers (IC 1) */
 #define REG_PLAYBACK_LR_LEFT_IC_1_ADDR            0x4020
 #define REG_PLAYBACK_LR_LEFT_IC_1_BYTE            1
-#define REG_PLAYBACK_LR_LEFT_IC_1_VALUE           0x0
+#define REG_PLAYBACK_LR_LEFT_IC_1_VALUE           0x2
 
 /* Playback LR Right  - Registers (IC 1) */
 #define REG_PLAYBACK_LR_RIGHT_IC_1_ADDR           0x4021
 #define REG_PLAYBACK_LR_RIGHT_IC_1_BYTE           1
-#define REG_PLAYBACK_LR_RIGHT_IC_1_VALUE          0x0
+#define REG_PLAYBACK_LR_RIGHT_IC_1_VALUE          0x8
 
 /* Playback LR Mono Ctrl  - Registers (IC 1) */
 #define REG_PLAYBACK_LR_MONO_CTRL_IC_1_ADDR       0x4022
@@ -183,17 +183,17 @@
 /* Playback Line Out Left  - Registers (IC 1) */
 #define REG_PLAYBACK_LINE_OUT_LEFT_IC_1_ADDR      0x4025
 #define REG_PLAYBACK_LINE_OUT_LEFT_IC_1_BYTE      1
-#define REG_PLAYBACK_LINE_OUT_LEFT_IC_1_VALUE     0x0
+#define REG_PLAYBACK_LINE_OUT_LEFT_IC_1_VALUE     0xE4
 
 /* Playback Line Out Right  - Registers (IC 1) */
 #define REG_PLAYBACK_LINE_OUT_RIGHT_IC_1_ADDR     0x4026
 #define REG_PLAYBACK_LINE_OUT_RIGHT_IC_1_BYTE     1
-#define REG_PLAYBACK_LINE_OUT_RIGHT_IC_1_VALUE    0x0
+#define REG_PLAYBACK_LINE_OUT_RIGHT_IC_1_VALUE    0xE4
 
 /* Playback Line Out Mono  - Registers (IC 1) */
 #define REG_PLAYBACK_LINE_OUT_MONO_IC_1_ADDR      0x4027
 #define REG_PLAYBACK_LINE_OUT_MONO_IC_1_BYTE      1
-#define REG_PLAYBACK_LINE_OUT_MONO_IC_1_VALUE     0xE5
+#define REG_PLAYBACK_LINE_OUT_MONO_IC_1_VALUE     0xE4
 
 /* Playback Control  - Registers (IC 1) */
 #define REG_PLAYBACK_CONTROL_IC_1_ADDR            0x4028
@@ -400,12 +400,12 @@
 
 /* PLLCrlRegister (IC 1) */
 #define R2_PLL_POWER_DOWN_IC_1                    0x1    /* 1b	[0] */
-#define R2_PLL_LOCK_IC_1                          0x0    /* 0b	[1] */
-#define R2_PLL_TYPE_IC_1                          0x0    /* 0b	[8] */
-#define R2_INPUT_DIVIDER_IC_1                     0x0    /* 00b	[10:9] */
+#define R2_PLL_LOCK_IC_1                          0x1    /* 1b	[1] */
+#define R2_PLL_TYPE_IC_1                          0x1    /* 1b	[8] */
+#define R2_INPUT_DIVIDER_IC_1                     0x1    /* 01b	[10:9] */
 #define R2_R_FEEDBACK_IC_1                        0x4    /* 0100b	[14:11] */
 #define R2_N_NUMERATOR_IC_1                       0x000C /* 0000000000001100b	[31:16] */
-#define R2_M_DENOMINATOR_IC_1                     0x00FD /* 0000000011111101b	[47:32] */
+#define R2_M_DENOMINATOR_IC_1                     0x007D /* 0000000001111101b	[47:32] */
 #define R2_PLL_POWER_DOWN_IC_1_MASK               0x1
 #define R2_PLL_POWER_DOWN_IC_1_SHIFT              0
 #define R2_PLL_LOCK_IC_1_MASK                     0x2
@@ -516,8 +516,8 @@
 
 /* ALC Control 0 (IC 1) */
 #define R12_ALC_SELECT_IC_1                       0x0    /* 000b	[2:0] */
-#define R12_MAX_ALC_VOLUME_GAIN_IC_1              0x0    /* 000b	[5:3] */
-#define R12_ALC_VOLUME_SLEW_TIME_IC_1             0x0    /* 00b	[7:6] */
+#define R12_MAX_ALC_VOLUME_GAIN_IC_1              0x7    /* 111b	[5:3] */
+#define R12_ALC_VOLUME_SLEW_TIME_IC_1             0x3    /* 11b	[7:6] */
 #define R12_ALC_SELECT_IC_1_MASK                  0x7
 #define R12_ALC_SELECT_IC_1_SHIFT                 0
 #define R12_MAX_ALC_VOLUME_GAIN_IC_1_MASK         0x38
@@ -527,15 +527,15 @@
 
 /* ALC Control 1 (IC 1) */
 #define R13_ALC_TARGET_IC_1                       0x0    /* 0000b	[3:0] */
-#define R13_ALC_COMPRESSOR_HOLD_TIME_IC_1         0x0    /* 0000b	[7:4] */
+#define R13_ALC_COMPRESSOR_HOLD_TIME_IC_1         0x3    /* 0011b	[7:4] */
 #define R13_ALC_TARGET_IC_1_MASK                  0xF
 #define R13_ALC_TARGET_IC_1_SHIFT                 0
 #define R13_ALC_COMPRESSOR_HOLD_TIME_IC_1_MASK    0xF0
 #define R13_ALC_COMPRESSOR_HOLD_TIME_IC_1_SHIFT   4
 
 /* ALC Control 2 (IC 1) */
-#define R14_ALC_DECAY_TIME_IC_1                   0x0    /* 0000b	[3:0] */
-#define R14_ALC_COMPRESSOR_ATTACK_TIME_IC_1       0x0    /* 0000b	[7:4] */
+#define R14_ALC_DECAY_TIME_IC_1                   0x8    /* 1000b	[3:0] */
+#define R14_ALC_COMPRESSOR_ATTACK_TIME_IC_1       0x6    /* 0110b	[7:4] */
 #define R14_ALC_DECAY_TIME_IC_1_MASK              0xF
 #define R14_ALC_DECAY_TIME_IC_1_SHIFT             0
 #define R14_ALC_COMPRESSOR_ATTACK_TIME_IC_1_MASK  0xF0
@@ -553,7 +553,7 @@
 #define R15_NOISE_GATE_TYPE_IC_1_SHIFT            6
 
 /* Serial Port Control 0 (IC 1) */
-#define R16_SP_CTRL0_SDBUSMSTRMD_IC_1             0x0    /* 0b	[0] */
+#define R16_SP_CTRL0_SDBUSMSTRMD_IC_1             0x1    /* 1b	[0] */
 #define R16_SP_CTRL0_CHANFRM_IC_1                 0x0    /* 00b	[2:1] */
 #define R16_SP_CTRL0_LRCLK_POL_IC_1               0x0    /* 0b	[3] */
 #define R16_SP_CTRL0_BCLK_IC_1                    0x0    /* 0b	[4] */
@@ -684,7 +684,7 @@
 
 /* Playback LR Left (IC 1) */
 #define R27_PBLR_LEFT_MIX_ENABLE_IC_1             0x0    /* 0b	[0] */
-#define R27_PBLR_LEFT_LEFT_MIXER_IC_1             0x0    /* 00b	[2:1] */
+#define R27_PBLR_LEFT_LEFT_MIXER_IC_1             0x1    /* 01b	[2:1] */
 #define R27_PBLR_LEFT_RIGHT_MIXER_IC_1            0x0    /* 00b	[4:3] */
 #define R27_PBLR_LEFT_MIX_ENABLE_IC_1_MASK        0x1
 #define R27_PBLR_LEFT_MIX_ENABLE_IC_1_SHIFT       0
@@ -696,7 +696,7 @@
 /* Playback LR Right (IC 1) */
 #define R28_PBLR_RIGHT_MIX_ENABLE_IC_1            0x0    /* 0b	[0] */
 #define R28_PBLR_RIGHT_LEFT_MIXER_IC_1            0x0    /* 00b	[2:1] */
-#define R28_PBLR_RIGHT_RIGHT_MIXER_IC_1           0x0    /* 00b	[4:3] */
+#define R28_PBLR_RIGHT_RIGHT_MIXER_IC_1           0x1    /* 01b	[4:3] */
 #define R28_PBLR_RIGHT_MIX_ENABLE_IC_1_MASK       0x1
 #define R28_PBLR_RIGHT_MIX_ENABLE_IC_1_SHIFT      0
 #define R28_PBLR_RIGHT_LEFT_MIXER_IC_1_MASK       0x6
@@ -737,7 +737,7 @@
 /* Playback Line Out Left (IC 1) */
 #define R32_PB_LEFT_PWRUP_IC_1                    0x0    /* 0b	[0] */
 #define R32_PB_LEFT_MUTE_IC_1                     0x0    /* 0b	[1] */
-#define R32_PB_LEFT_VOL_IC_1                      0x0    /* 000000b	[7:2] */
+#define R32_PB_LEFT_VOL_IC_1                      0x39   /* 111001b	[7:2] */
 #define R32_PB_LEFT_PWRUP_IC_1_MASK               0x1
 #define R32_PB_LEFT_PWRUP_IC_1_SHIFT              0
 #define R32_PB_LEFT_MUTE_IC_1_MASK                0x2
@@ -748,7 +748,7 @@
 /* Playback Line Out Right (IC 1) */
 #define R33_PB_RIGHT_PWRUP_IC_1                   0x0    /* 0b	[0] */
 #define R33_PB_RIGHT_MUTE_IC_1                    0x0    /* 0b	[1] */
-#define R33_PB_RIGHT_VOL_IC_1                     0x0    /* 000000b	[7:2] */
+#define R33_PB_RIGHT_VOL_IC_1                     0x39   /* 111001b	[7:2] */
 #define R33_PB_RIGHT_PWRUP_IC_1_MASK              0x1
 #define R33_PB_RIGHT_PWRUP_IC_1_SHIFT             0
 #define R33_PB_RIGHT_MUTE_IC_1_MASK               0x2
@@ -757,7 +757,7 @@
 #define R33_PB_RIGHT_VOL_IC_1_SHIFT               2
 
 /* Playback Line Out Mono (IC 1) */
-#define R34_PB_MONO_PWRUP_IC_1                    0x1    /* 1b	[0] */
+#define R34_PB_MONO_PWRUP_IC_1                    0x0    /* 0b	[0] */
 #define R34_PB_MONO_MUTE_IC_1                     0x0    /* 0b	[1] */
 #define R34_PB_MONO_VOL_IC_1                      0x39   /* 111001b	[7:2] */
 #define R34_PB_MONO_PWRUP_IC_1_MASK               0x1

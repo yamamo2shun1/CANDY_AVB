@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\SigmaDSP\candy_avb_IC_1.h
  *
- * Created:        Sunday, February 17, 2019 12:26:56 PM
+ * Created:        Monday, February 18, 2019 4:34:40 PM
  * Description:    candy_avb:IC 1 program data.
  *
  * This software is distributed in the hope that it will be useful,
@@ -182,7 +182,7 @@ ADI_REG_TYPE R9_ADC_CONTROL_REGISTERS_IC_1_Default[R9_ADC_CONTROL_REGISTERS_IC_1
 /* Register Default - IC 1.Playback Output Signal Path Registers */
 #define R10_PLAYBACK_OUTPUT_SIGNAL_PATH_REGISTERS_IC_1_SIZE 14
 ADI_REG_TYPE R10_PLAYBACK_OUTPUT_SIGNAL_PATH_REGISTERS_IC_1_Default[R10_PLAYBACK_OUTPUT_SIGNAL_PATH_REGISTERS_IC_1_SIZE] = {
-0x21, 0x00, 0x41, 0x00, 0x02, 0x08, 0x01, 0xD7, 0xD7, 0xE4, 0xE4, 0xE4, 0x00, 0x03
+0x21, 0x00, 0x41, 0x00, 0x02, 0x08, 0x01, 0xE7, 0xE7, 0xE4, 0xE4, 0xE4, 0x00, 0x03
 };
 
 /* Register Default - IC 1.Converter Control Registers */
