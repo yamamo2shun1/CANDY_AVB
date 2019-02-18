@@ -1,7 +1,7 @@
 /*
- * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\SigmaDSP\candy_avb_IC_1_PARAM.h
+ * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_test\candy_avb_IC_1_PARAM.h
  *
- * Created:        Sunday, February 17, 2019 12:26:56 PM
+ * Created:        Monday, February 18, 2019 4:34:48 PM
  * Description:    candy_avb:IC 1 parameter RAM definitions.
  *
  * This software is distributed in the hope that it will be useful,
