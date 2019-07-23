@@ -23,7 +23,7 @@ entity CANDY_AVB is
 			UART_CTS: in  std_logic;
 			
 			-- A/D Converter
-			ADC_IN: in std_logic_vector(8 downto 0);
+			-- ADC_IN: in std_logic_vector(8 downto 0);
 			
 			-- 3.3V <-> 5V Degital IO
 			LS_OE: out   std_logic;
@@ -73,38 +73,7 @@ architecture RTL of CANDY_AVB is
 			clk_clk                           : in    std_logic                     := 'X';             -- clk
 			codec_clk_clk                     : out   std_logic;                                        -- clk
 			codec_reset_export                : out   std_logic;                                        -- export
-		-- codec_scl_export                  : inout std_logic                     := 'X';             -- export
-		-- codec_sda_export                  : inout std_logic                     := 'X';             -- export
-		-- eth_mii_rx_d                      : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mii_rx_d
-		-- eth_mii_rx_dv                     : in    std_logic                     := 'X';             -- mii_rx_dv
-		-- eth_mii_rx_err                    : in    std_logic                     := 'X';             -- mii_rx_err
-		-- eth_mii_tx_d                      : out   std_logic_vector(3 downto 0);                     -- mii_tx_d
-		-- eth_mii_tx_en                     : out   std_logic;                                        -- mii_tx_en
-		-- eth_mii_tx_err                    : out   std_logic;                                        -- mii_tx_err
-		-- eth_mii_crs                       : in    std_logic                     := 'X';             -- mii_crs
-		-- eth_mii_col                       : in    std_logic                     := 'X';             -- mii_col
 			eth_clk_clk                       : out   std_logic;                                        -- clk
-		-- eth_interrupt_export              : inout std_logic                     := 'X';             -- export
-		-- eth_mdio_mdc                      : out   std_logic;                                        -- mdc
-		-- eth_mdio_mdio_in                  : in    std_logic                     := 'X';             -- mdio_in
-		-- eth_mdio_mdio_out                 : out   std_logic;                                        -- mdio_out
-		-- eth_mdio_mdio_oen                 : out   std_logic;                                        -- mdio_oen
-		-- eth_misc_ff_tx_crc_fwd            : in    std_logic                     := 'X';             -- ff_tx_crc_fwd
-		-- eth_misc_ff_tx_septy              : out   std_logic;                                        -- ff_tx_septy
-		-- eth_misc_tx_ff_uflow              : out   std_logic;                                        -- tx_ff_uflow
-		-- eth_misc_ff_tx_a_full             : out   std_logic;                                        -- ff_tx_a_full
-		-- eth_misc_ff_tx_a_empty            : out   std_logic;                                        -- ff_tx_a_empty
-		-- eth_misc_rx_err_stat              : out   std_logic_vector(17 downto 0);                    -- rx_err_stat
-		-- eth_misc_rx_frm_type              : out   std_logic_vector(3 downto 0);                     -- rx_frm_type
-		-- eth_misc_ff_rx_dsav               : out   std_logic;                                        -- ff_rx_dsav
-		-- eth_misc_ff_rx_a_full             : out   std_logic;                                        -- ff_rx_a_full
-		-- eth_misc_ff_rx_a_empty            : out   std_logic;                                        -- ff_rx_a_empty
-		-- eth_rx_clk_clk                    : in    std_logic                     := 'X';             -- clk
-		-- eth_status_set_10                 : in    std_logic                     := 'X';             -- set_10
-		-- eth_status_set_1000               : in    std_logic                     := 'X';             -- set_1000
-		-- eth_status_eth_mode               : out   std_logic;                                        -- eth_mode
-		-- eth_status_ena_10                 : out   std_logic;                                        -- ena_10
-		-- eth_tx_clk_clk                    : in    std_logic                     := 'X';             -- clk
 			new_sdram_controller_0_wire_addr  : out   std_logic_vector(11 downto 0);                    -- addr
 			new_sdram_controller_0_wire_ba    : out   std_logic_vector(1 downto 0);                     -- ba
 			new_sdram_controller_0_wire_cas_n : out   std_logic;                                        -- cas_n
@@ -132,7 +101,49 @@ architecture RTL of CANDY_AVB is
 			wb_dat_i                          : in    std_logic_vector(31 downto 0) := (others => 'X'); -- dat_i
 			wb_ack_i                          : in    std_logic                     := 'X';             -- ack
 			wb_err_i                          : in    std_logic                     := 'X';             -- err
-			wb_rty_i                          : in    std_logic                     := 'X'              -- rty
+			wb_rty_i                          : in    std_logic                     := 'X';             -- rty
+			adc_pll_locked_export             : in    std_logic                     := 'X';             -- export
+         altpll_locked_export              : out   std_logic;                                        -- export
+--			m_wb_ack_o                        : out   std_logic                     := 'X';             -- ack_i
+--			m_wb_adr_i                        : in    std_logic_vector(31 downto 0);                    -- adr_o
+--			m_wb_cyc_i                        : in    std_logic;                                        -- cyc_o
+--			m_wb_dat_o                        : out   std_logic_vector(31 downto 0) := (others => 'X'); -- dat_i
+--			m_wb_dat_i                        : in    std_logic_vector(31 downto 0);                    -- dat_o
+--			m_wb_err_o                        : out   std_logic                     := 'X';             -- err_i
+--			m_wb_rty_o                        : out   std_logic                     := 'X';             -- rty_i
+--			m_wb_sel_i                        : in    std_logic_vector(3 downto 0);                     -- sel_o
+--			m_wb_stb_i                        : in    std_logic;                                        -- stb_o
+--			m_wb_we_i                         : in    std_logic                                         -- we_o
+--			eth_interrupt_export              : inout std_logic                     := 'X';             -- export
+--			eth_ocm_mtxd_pad_o                : out   std_logic_vector(3 downto 0);                     -- mtxd_pad_o
+--			eth_ocm_mtx_clk_pad_i             : in    std_logic                     := 'X';             -- mtx_clk_pad_i
+--			eth_ocm_mtxen_pad_o               : out   std_logic;                                        -- mtxen_pad_o
+--			eth_ocm_mtxerr_pad_o              : out   std_logic;                                        -- mtxerr_pad_o
+--			eth_ocm_mrx_clk_pad_i             : in    std_logic                     := 'X';             -- mrx_clk_pad_i
+--			eth_ocm_mrxd_pad_i                : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mrxd_pad_i
+--			eth_ocm_mrxdv_pad_i               : in    std_logic                     := 'X';             -- mrxdv_pad_i
+--			eth_ocm_mrxerr_pad_i              : in    std_logic                     := 'X';             -- mrxerr_pad_i
+--			eth_ocm_mcoll_pad_i               : in    std_logic                     := 'X';             -- mcoll_pad_i
+--			eth_ocm_mcrs_pad_i                : in    std_logic                     := 'X';             -- mcrs_pad_i
+--			eth_ocm_mdc_pad_o                 : out   std_logic;                                        -- mdc_pad_o
+--			eth_ocm_md_pad_i                  : in    std_logic                     := 'X';             -- md_pad_i
+--			eth_ocm_md_pad_o                  : out   std_logic;                                        -- md_pad_o
+--			eth_ocm_md_padoe_o                : out   std_logic                                         -- md_padoe_o
+			eth_mii_rx_d                      : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mii_rx_d
+			eth_mii_rx_dv                     : in    std_logic                     := 'X';             -- mii_rx_dv
+         eth_mii_rx_err                    : in    std_logic                     := 'X';             -- mii_rx_err
+         eth_mii_tx_d                      : out   std_logic_vector(3 downto 0);                     -- mii_tx_d
+         eth_mii_tx_en                     : out   std_logic;                                        -- mii_tx_en
+         eth_mii_tx_err                    : out   std_logic;                                        -- mii_tx_err
+         eth_mii_crs                       : in    std_logic                     := 'X';             -- mii_crs
+         eth_mii_col                       : in    std_logic                     := 'X';             -- mii_col
+         eth_interrupt_export              : inout std_logic                     := 'X';             -- export
+         eth_mdio_mdc                      : out   std_logic;                                        -- mdc
+         eth_mdio_mdio_in                  : in    std_logic                     := 'X';             -- mdio_in
+         eth_mdio_mdio_out                 : out   std_logic;                                        -- mdio_out
+         eth_mdio_mdio_oen                 : out   std_logic;                                        -- mdio_oen
+			eth_tx_clk_clk                    : in    std_logic                     := 'X';             -- clk
+         eth_rx_clk_clk                    : in    std_logic                     := 'X'              -- clk
 		);
 	end component candy_avb_test_qsys;
 
@@ -181,14 +192,84 @@ architecture RTL of CANDY_AVB is
 		);
 	end component;
 	
+--	component eth_top
+--		port(
+--			-- WISHBONE common
+--			wb_clk_i: in  std_logic;
+--			wb_rst_i: in  std_logic;
+--			wb_dat_i: in  std_logic_vector(31 downto 0);
+--			wb_dat_o: out std_logic_vector(31 downto 0);
+--
+-- 			-- WISHBONE slave
+--			wb_adr_i: in  std_logic_vector(11 downto 2);
+--			--wb_adr_i: in  std_logic_vector(9 downto 0);
+--			wb_sel_i: in  std_logic_vector(3 downto 0);
+--			wb_we_i:  in  std_logic;
+--			wb_cyc_i: in  std_logic;
+--			wb_stb_i: in  std_logic;
+--			wb_ack_o: out std_logic;
+--			wb_err_o: out std_logic;
+--
+--			-- WISHBONE master
+--			m_wb_adr_o: out std_logic_vector(31 downto 0);
+--			m_wb_sel_o: out std_logic_vector(3 downto 0);
+--			m_wb_we_o:  out std_logic;
+--			m_wb_dat_o: out std_logic_vector(31 downto 0);
+--			m_wb_dat_i: in  std_logic_vector(31 downto 0);
+--			m_wb_cyc_o: out std_logic;
+--			m_wb_stb_o: out std_logic;
+--			m_wb_ack_i: in  std_logic;
+--			m_wb_err_i: in  std_logic;
+--
+----			-- for ETH_WISHBONE_B3
+----			m_wb_cti_o: out std_logic_vector(2 downto 0);
+----			m_wb_bte_o: out std_logic_vector(1 downto 0);
+--
+--			-- TX
+--			mtx_clk_pad_i: in  std_logic;
+--			mtxd_pad_o:    out std_logic_vector(3 downto 0);
+--			mtxen_pad_o:   out std_logic;
+--			mtxerr_pad_o:  out std_logic;
+--
+--			-- RX
+--			mrx_clk_pad_i: in std_logic;
+--			mrxd_pad_i:    in std_logic_vector(3 downto 0);
+--			mrxdv_pad_i:   in std_logic;
+--			mrxerr_pad_i:  in std_logic;
+--			mcoll_pad_i:   in std_logic;
+--			mcrs_pad_i:    in std_logic;
+--  
+--			-- MIIM
+--			mdc_pad_o:  out std_logic;
+--			md_pad_i:   in  std_logic;
+--			md_pad_o:   out std_logic;
+--			md_padoe_o: out std_logic;
+--			int_o:      out std_logic
+--
+--			-- Bist
+--			-- debug chain signals
+--			-- mbist_si_i,  -- bist scan serial in
+--			-- mbist_so_o,  -- bist scan serial out
+--			-- mbist_ctrl_i -- bist chain shift control
+--		);
+--	end component;
+	
 	constant p_wb_offset_low: std_logic_vector(31 downto 0) := X"00000000";
 	constant p_wb_offset_hi:  std_logic_vector(31 downto 0) := X"3FFFFFFF";
+--	constant p_wb_offset_low: std_logic_vector(31 downto 0) := X"40000000";
+--	constant p_wb_offset_hi:  std_logic_vector(31 downto 0) := X"7FFFFFFF";
 	constant p_wb_i2c_low:    std_logic_vector(31 downto 0) := p_wb_offset_low + X"00000040";
 	constant p_wb_i2c_hi:     std_logic_vector(31 downto 0) := p_wb_offset_low + X"0000007F";
+--	constant p_wb_eth_low:    std_logic_vector(31 downto 0) := p_wb_offset_low + X"00001000";
+--	constant p_wb_eth_hi:     std_logic_vector(31 downto 0) := p_wb_offset_low + X"000017FF";
 	
---	signal mdio_out: std_logic;
---	signal mdio_oen: std_logic;
---	signal mdio_in:  std_logic;
+	signal altpll_locked_export:  std_logic;
+	signal adc_pll_locked_export: std_logic;
+	
+	signal eth_mii_tx_err: std_logic;
+	signal mdio_out: std_logic;
+	signal mdio_oen: std_logic;
+	signal mdio_in:  std_logic;
 	
 	signal wb_clk:     std_logic;
 	signal wb_rst:     std_logic;
@@ -222,31 +303,41 @@ architecture RTL of CANDY_AVB is
 	signal sda_o:   std_logic;
 	signal sda_oen: std_logic;
 	
+--	-- eth
+--	signal cyc_i_eth: std_logic;
+--	signal stb_i_eth: std_logic;
+--	signal we_i_eth: std_logic;
+--	signal adr_i_eth: std_logic_vector(11 downto 2);
+--	signal dat_o_eth: std_logic_vector(31 downto 0);
+--	signal ack_o_eth: std_logic;
+--	signal sel_i_eth: std_logic_vector(3 downto 0);
+--	signal err_o_eth: std_logic;
+--	
+--	signal m_adr_i: std_logic_vector(31 downto 0);
+--	signal m_sel_i: std_logic_vector(3 downto 0);
+--	signal m_we_i:  std_logic;
+--	signal m_dat_i: std_logic_vector(31 downto 0);
+--	signal m_dat_o: std_logic_vector(31 downto 0);
+--	signal m_cyc_i: std_logic;
+--	signal m_stb_i: std_logic;
+--	signal m_ack_o: std_logic;
+--	signal m_err_o: std_logic;
+--	signal m_rty_o: std_logic;
+	
+--	signal m_cti_i: std_logic_vector(2 downto 0);
+--	signal m_bte_o: std_logic_vector(1 downto 0);
+	
+	signal eth_mii_tx_er: std_logic;
+	
 	begin
-		rstn <= RST;
+		adc_pll_locked_export <= altpll_locked_export;
+		rstn <= (RST and altpll_locked_export);
 		
 		u0 : candy_avb_test_qsys port map (
 				clk_clk                           => CLK,                   --                         clk.clk
 				codec_clk_clk                     => CODEC_CLKOUT,          --                   codec_clk.clk
 				codec_reset_export                => CODEC_RESET,           --                 codec_reset.export
-			-- codec_scl_export                  => CODEC_SCL,             --                   codec_scl.export
-			-- codec_sda_export                  => CODEC_SDA,             --                   codec_sda.export
---				eth_mii_rx_d                      => ETH_MII_RXD,           --                         eth.mii_rx_d
---				eth_mii_rx_dv                     => ETH_MII_RX_DV,         --                            .mii_rx_dv
---				eth_mii_rx_err                    => ETH_MII_RX_ER,         --                            .mii_rx_err
---				eth_mii_tx_d                      => ETH_MII_TXD,           --                            .mii_tx_d
---				eth_mii_tx_en                     => ETH_MII_TX_EN,         --                            .mii_tx_en
---			-- eth_mii_tx_err                    => ETH_MII_TX_ER,         --                            .mii_tx_err*/
---				eth_mii_crs                       => ETH_MII_CRS,           --                            .mii_crs
---				eth_mii_col                       => ETH_MII_COL,           --                            .mii_col
 				eth_clk_clk                       => ETH_CLKOUT,            --                     eth_clk.clk
---				eth_interrupt_export              => ETH_INTERRUPT,         --               eth_interrupt.export
---				eth_mdio_mdc                      => ETH_MDC,               --                    eth_mdio.mdc
---				eth_mdio_mdio_in                  => mdio_in,               --                            .mdio_in
---				eth_mdio_mdio_out                 => mdio_out,              --                            .mdio_out
---				eth_mdio_mdio_oen                 => mdio_oen,              --                            .mdio_oen
---				eth_rx_clk_clk                    => ETH_RX_CLK,            --                  eth_rx_clk.clk
---				eth_tx_clk_clk                    => ETH_TX_CLK,            --                  eth_tx_clk.clk
 				new_sdram_controller_0_wire_addr  => DRAM_ADDR,             -- new_sdram_controller_0_wire.addr
 				new_sdram_controller_0_wire_ba    => DRAM_BA,               --                            .ba
 				new_sdram_controller_0_wire_cas_n => DRAM_CAS,              --                            .cas_n
@@ -258,7 +349,7 @@ architecture RTL of CANDY_AVB is
 				new_sdram_controller_0_wire_dqm(0) => DRAM_LDQM,            --                            .dqm
 				new_sdram_controller_0_wire_ras_n => DRAM_RAS,              --                            .ras_n
 				new_sdram_controller_0_wire_we_n  => DRAM_WE,               --                            .we_n
-				reset_reset_n                     => RST,                   --                       reset.reset_n
+				reset_reset_n                     => rstn,                  --                       reset.reset_n
 				sdclk_clk_clk                     => DRAM_CLK,              --                   sdclk_clk.clk
 				uart0_rxd                         => UART_RX,               --                       uart0.rxd
 				uart0_txd                         => UART_TX,               --                            .txd
@@ -272,11 +363,53 @@ architecture RTL of CANDY_AVB is
 				wb_adr_o                          => wb_adr,                --                            .adr
 				wb_sel_o                          => wb_sel,                --                            .sel
 				wb_we_o                           => wb_we,                 --                            .we
-				wb_dat_o                          => wb_dati,              --                            .dat_o
-				wb_dat_i                          => wb_dato,              --                            .dat_i
+				wb_dat_o                          => wb_dati,               --                            .dat_o
+				wb_dat_i                          => wb_dato,               --                            .dat_i
 				wb_ack_i                          => wb_ack,                --                            .ack
 				wb_err_i                          => wb_err,                --                            .err
-				wb_rty_i                          => wb_rty                 --                            .rty
+				wb_rty_i                          => wb_rty,                --                            .rty
+				adc_pll_locked_export             => adc_pll_locked_export, --              adc_pll_locked.export
+            altpll_locked_export              => altpll_locked_export,  --               altpll_locked.export
+--				m_wb_ack_o                        => m_ack_o,               --                        m_wb.ack_i
+--				m_wb_adr_i                        => m_adr_i,               --                            .adr_o
+--				m_wb_cyc_i                        => m_cyc_i,               --                            .cyc_o
+--				m_wb_dat_o                        => m_dat_o,               --                            .dat_i
+--				m_wb_dat_i                        => m_dat_i,               --                            .dat_o
+--				m_wb_err_o                        => m_err_o,               --                            .err_i
+--				m_wb_rty_o                        => m_rty_o,               --                            .rty_i
+--				m_wb_sel_i                        => m_sel_i,               --                            .sel_o
+--				m_wb_stb_i                        => m_stb_i,               --                            .stb_o
+--				m_wb_we_i                         => m_we_i                 --                            .we_o
+--				eth_interrupt_export              => ETH_INTERRUPT,         --               eth_interrupt.export
+--				eth_ocm_mtxd_pad_o            	 => ETH_MII_TXD,           --                     eth_ocm.mtxd_pad_o
+--				eth_ocm_mtx_clk_pad_i           	 => ETH_TX_CLK,            --                            .mtx_clk_pad_i
+--				eth_ocm_mtxen_pad_o               => ETH_MII_TX_EN,         --                            .mtxen_pad_o
+--				eth_ocm_mtxerr_pad_o              => eth_mii_tx_err,        --                            .mtxerr_pad_o
+--				eth_ocm_mrx_clk_pad_i             => ETH_RX_CLK,            --                            .mrx_clk_pad_i
+--				eth_ocm_mrxd_pad_i                => ETH_MII_RXD,           --                            .mrxd_pad_i
+--				eth_ocm_mrxdv_pad_i               => ETH_MII_RX_DV,         --                            .mrxdv_pad_i
+--				eth_ocm_mrxerr_pad_i              => ETH_MII_RX_ER,         --                            .mrxerr_pad_i
+--				eth_ocm_mcoll_pad_i               => ETH_MII_COL,           --                            .mcoll_pad_i
+--				eth_ocm_mcrs_pad_i                => ETH_MII_CRS,           --                            .mcrs_pad_i
+--				eth_ocm_mdc_pad_o                 => ETH_MDC,               --                            .mdc_pad_o
+--				eth_ocm_md_pad_i                  => mdio_in,               --                            .md_pad_i
+--				eth_ocm_md_pad_o                  => mdio_out,              --                            .md_pad_o
+--				eth_ocm_md_padoe_o                => mdio_oen               --                            .md_padoe_o
+				eth_mii_rx_d                      => ETH_MII_RXD,           --                         eth.mii_rx_d
+            eth_mii_rx_dv                     => ETH_MII_RX_DV,         --                            .mii_rx_dv
+            eth_mii_rx_err                    => ETH_MII_RX_ER,         --                            .mii_rx_err
+            eth_mii_tx_d                      => ETH_MII_TXD,           --                            .mii_tx_d
+            eth_mii_tx_en                     => ETH_MII_TX_EN,         --                            .mii_tx_en
+            eth_mii_tx_err                    => eth_mii_tx_err,        --                            .mii_tx_err
+            eth_mii_crs                       => ETH_MII_CRS,           --                            .mii_crs
+            eth_mii_col                       => ETH_MII_COL,           --                            .mii_col
+            eth_interrupt_export              => ETH_INTERRUPT,         --               eth_interrupt.export
+            eth_mdio_mdc                      => ETH_MDC,               --                    eth_mdio.mdc
+            eth_mdio_mdio_in                  => mdio_in,               --                            .mdio_in
+            eth_mdio_mdio_out                 => mdio_out,              --                            .mdio_out
+            eth_mdio_mdio_oen                 => mdio_oen,              --                            .mdio_oen
+				eth_tx_clk_clk                    => ETH_TX_CLK,            --                  eth_tx_clk.clk
+            eth_rx_clk_clk                    => ETH_RX_CLK             --                  eth_rx_clk.clk
 			);
 			
 		u1 : i2c_master_top generic map (ARST_LVL => '0') port map (
@@ -313,17 +446,93 @@ architecture RTL of CANDY_AVB is
 				DATA_O_SLV   => CODEC_DATA_IN(1)
 			);
 		
+--		u3 : eth_top port map (
+--				-- WISHBONE common
+--				wb_clk_i => wb_clk,
+--				wb_rst_i => wb_rst,
+--				wb_dat_i => wb_dati,
+--				wb_dat_o => dat_o_eth,
+--
+--				-- WISHBONE slave
+--				wb_adr_i => adr_i_eth,
+--				wb_sel_i => sel_i_eth,
+--				wb_we_i  => we_i_eth,
+--				wb_cyc_i => cyc_i_eth,
+--				wb_stb_i => stb_i_eth,
+--				wb_ack_o => ack_o_eth,
+--				wb_err_o => err_o_eth,
+--
+--				-- WISHBONE master
+--				m_wb_adr_o => m_adr_i,
+--				m_wb_sel_o => m_sel_i,
+--				m_wb_we_o  => m_we_i,
+--				m_wb_dat_o => m_dat_i,
+--				m_wb_dat_i => m_dat_o,
+--				m_wb_cyc_o => m_cyc_i,
+--				m_wb_stb_o => m_stb_i,
+--				m_wb_ack_i => m_ack_o,
+--				m_wb_err_i => m_err_o,
+--
+----				-- for ETH_WISHBONE_B3
+----				m_wb_cti_o => m_cti_o,
+----				m_wb_bte_o => m_bte_o,
+--
+--				-- TX
+--				mtx_clk_pad_i => ETH_TX_CLK,
+--				mtxd_pad_o    => ETH_MII_TXD,
+--				mtxen_pad_o   => ETH_MII_TX_EN,
+--				mtxerr_pad_o  => eth_mii_tx_er,
+--
+--				-- RX
+--				mrx_clk_pad_i => ETH_RX_CLK,
+--				mrxd_pad_i    => ETH_MII_RXD,
+--				mrxdv_pad_i   => ETH_MII_RX_DV,
+--				mrxerr_pad_i  => ETH_MII_RX_ER,
+--				mcoll_pad_i   => ETH_MII_COL,
+--				mcrs_pad_i    => ETH_MII_CRS,
+--  
+--				-- MIIM
+--				mdc_pad_o  => ETH_MDC,
+--				md_pad_i   => mdio_in,
+--				md_pad_o   => mdio_out,
+--				md_padoe_o => mdio_oen,
+--				int_o      => ETH_INTERRUPT
+--
+--				-- Bist
+--				-- debug chain signals
+--				-- mbist_si_i,  -- bist scan serial in
+--				-- mbist_so_o,  -- bist scan serial out
+--				-- mbist_ctrl_i -- bist chain shift control
+--			);
+		
 		-- I2C
 		sel_i_i2c <= '1' when ((wb_adr >= p_wb_i2c_low) and (wb_adr <= p_wb_i2c_hi)) else '0';
 		cyc_i_i2c <= wb_cyc when (sel_i_i2c = '1') else '0';
 		stb_i_i2c <= wb_stb when (sel_i_i2c = '1') else '0';
 		adr_i_i2c <= wb_adr(4 downto 2);
 		we_i_i2c  <= wb_we when (sel_i_i2c = '1') else '0';
+
+--		-- ETH
+--		-- sel_i_eth <= "1111" when ((wb_adr >= p_wb_eth_low) and (wb_adr <= p_wb_eth_hi)) else "0000";
+--		-- cyc_i_eth <= wb_cyc when (sel_i_eth = "1111") else '0';
+--		-- stb_i_eth <= wb_stb when (sel_i_eth = "1111") else '0';
+--		-- adr_i_eth <= wb_adr(11 downto 2);
+--		-- we_i_eth  <= wb_we when (sel_i_eth = "1111") else '0';
+--		sel_i_eth <= wb_sel when ((wb_adr >= p_wb_eth_low) and (wb_adr <= p_wb_eth_hi)) else "0000";
+--		cyc_i_eth <= wb_cyc when (sel_i_eth > "0000") else '0';
+--		stb_i_eth <= wb_stb when (sel_i_eth > "0000") else '0';
+--		adr_i_eth <= wb_adr(11 downto 2);
+--		we_i_eth  <= wb_we when (sel_i_eth > "0000") else '0';
 		
-		wb_dato <= (dat_o_i2c & dat_o_i2c & dat_o_i2c & dat_o_i2c) when (sel_i_i2c = '1') else X"00000000";
+		wb_dato <= (dat_o_i2c & dat_o_i2c & dat_o_i2c & dat_o_i2c) when (sel_i_i2c = '1') else
+----					  dat_o_eth when (sel_i_eth = "1111") else
+--					  dat_o_eth when (sel_i_eth > "0000") else
+					  X"00000000";
 		
 		wb_ack <= '1' when (wb_ack_dff = '1') else
 					 ack_o_i2c when (sel_i_i2c = '1') else
+----					 ack_o_eth when (sel_i_eth = "1111") else
+--					 ack_o_eth when (sel_i_eth > "0000") else
 					 wb_stb;
 		
 		process(wb_clk, rstn)
@@ -332,6 +541,8 @@ architecture RTL of CANDY_AVB is
 				wb_ack_dff <= '0';
 			elsif (wb_clk'event and wb_clk = '1') then
 				if ((sel_i_i2c = '1') and (ack_o_i2c = '1')) then
+----					((sel_i_eth = "1111") and (ack_o_eth = '1')) then
+--					((sel_i_eth > "0000") and (ack_o_eth = '1')) then
 					wb_ack_dff <= '1';
 				else
 					if (wb_stb = '0') then
@@ -345,14 +556,14 @@ architecture RTL of CANDY_AVB is
 					 
 		wb_err <= '0';
 		wb_rty <= '0';
-	
-		-- MDIO
---		mdio_in <= ETH_MDIO;
---		ETH_MDIO <= mdio_out when mdio_oen = '0' else 'Z';
 
 		-- I2C
 		CODEC_SCL <= scl_o when (scl_oen = '0') else 'Z';
 		CODEC_SDA <= sda_o when (sda_oen = '0') else 'Z';
 		scl_i <= CODEC_SCL;
 		sda_i <= CODEC_SDA;
+		
+		-- MDIO
+		ETH_MDIO <= mdio_out when (mdio_oen = '0') else 'Z';
+		mdio_in <= ETH_MDIO;
 end RTL;
