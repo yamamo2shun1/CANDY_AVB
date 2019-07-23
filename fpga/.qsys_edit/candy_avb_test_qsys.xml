@@ -953,9 +953,9 @@
 													<placeholder>dock.single.Messages</placeholder>
 												</placeholders>
 											</leaf>
-											<node nodeId="1372710005721" orientation="HORIZONTAL" divider="0.19561731694281134">
+											<node nodeId="1372710005721" orientation="HORIZONTAL" divider="0.1586387434554974">
 												<node nodeId="1375985011088" orientation="VERTICAL" divider="0.504054054054054">
-													<leaf id="2" nodeId="1375985003630">
+													<leaf id="1" nodeId="1375985003630">
 														<placeholders>
 															<placeholder>dock.single.Clock\ Domains\ \-\ Beta</placeholder>
 															<placeholder>dock.single.IP\ Catalog</placeholder>
@@ -981,7 +981,7 @@
 															</entry>
 														</placeholder-map>
 													</leaf>
-													<leaf id="1" nodeId="1375985011087">
+													<leaf id="0" nodeId="1375985011087">
 														<placeholders>
 															<placeholder>dock.single.Hierarchy</placeholder>
 														</placeholders>
@@ -1074,7 +1074,7 @@
 																			</entry>
 																		</placeholder-map>
 																	</leaf>
-																	<leaf id="0" nodeId="1548041550456">
+																	<leaf id="2" nodeId="1548041550456">
 																		<placeholders>
 																			<placeholder>dock.single.System\ Contents</placeholder>
 																		</placeholders>
@@ -1147,16 +1147,6 @@
 							</adjacent>
 							<children ignore="false">
 								<child>
-									<layout factory="predefined" placeholder="dock.single.System\ Contents">
-										<replacement id="dockablesingle System Contents"/>
-										<delegate id="delegate_ccontrol backup factory id">
-											<id>System Contents</id>
-											<area/>
-										</delegate>
-									</layout>
-									<children ignore="false"/>
-								</child>
-								<child>
 									<layout factory="delegate_StackDockStationFactory">
 										<selected>0</selected>
 										<placeholders>
@@ -1220,6 +1210,16 @@
 										<replacement id="dockablesingle IP Catalog"/>
 										<delegate id="delegate_ccontrol backup factory id">
 											<id>IP Catalog</id>
+											<area/>
+										</delegate>
+									</layout>
+									<children ignore="false"/>
+								</child>
+								<child>
+									<layout factory="predefined" placeholder="dock.single.System\ Contents">
+										<replacement id="dockablesingle System Contents"/>
+										<delegate id="delegate_ccontrol backup factory id">
+											<id>System Contents</id>
 											<area/>
 										</delegate>
 									</layout>
@@ -1972,18 +1972,15 @@
 										<property factory="SplitDockPlaceholderProperty">
 											<placeholder>dock.single.System\ Contents</placeholder>
 											<backup-path>
-												<node location="RIGHT" size="0.5" id="1541580039648"/>
+												<node location="RIGHT" size="0.5" id="1549332214965"/>
 												<node location="RIGHT" size="0.8043826830571886" id="1372710005721"/>
 												<node location="TOP" size="0.75" id="1372710005725"/>
 												<node location="RIGHT" size="0.2875088377779812" id="1372710005727"/>
 												<node location="TOP" size="0.6704331450094162" id="1389812802503"/>
 												<node location="LEFT" size="0.6760730377690467" id="1540907615229"/>
-												<leaf id="1372710005735"/>
+												<node location="BOTTOM" size="0.75" id="1548041550458"/>
+												<leaf id="1548041550456"/>
 											</backup-path>
-										</property>
-										<property factory="StackDockPropertyFactory">
-											<index>0</index>
-											<placeholder>dock.single.System\ Contents</placeholder>
 										</property>
 									</location>
 								</property>
