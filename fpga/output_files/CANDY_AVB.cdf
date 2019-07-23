@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M16SAU169) Path("C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/output_files/") File("CANDY_AVB.sof") MfrSpec(OpMask(1));
+		Device PartName(10M16SAU169) Path("C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/output_files/") File("CANDY_AVB.pof") MfrSpec(OpMask(1) Child_OpMask(2 1 1));
 
 ChainEnd;
 

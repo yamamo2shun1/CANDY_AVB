@@ -1,18 +1,18 @@
-Fitter Status : Successful - Sun Feb 17 12:45:56 2019
+Fitter Status : Successful - Tue Jul 23 16:32:10 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : CANDY_AVB
 Top-level Entity Name : CANDY_AVB
 Family : MAX 10
 Device : 10M16SAU169C8G
 Timing Models : Final
-Total logic elements : 7,329 / 15,840 ( 46 % )
-    Total combinational functions : 5,779 / 15,840 ( 36 % )
-    Dedicated logic registers : 4,893 / 15,840 ( 31 % )
-Total registers : 4961
-Total pins : 95 / 130 ( 73 % )
+Total logic elements : 12,180 / 15,840 ( 77 % )
+    Total combinational functions : 9,427 / 15,840 ( 60 % )
+    Dedicated logic registers : 8,274 / 15,840 ( 52 % )
+Total registers : 8342
+Total pins : 86 / 130 ( 66 % )
 Total virtual pins : 0
-Total memory bits : 287,232 / 562,176 ( 51 % )
+Total memory bits : 232,144 / 562,176 ( 41 % )
 Embedded Multiplier 9-bit elements : 6 / 90 ( 7 % )
 Total PLLs : 1 / 1 ( 100 % )
 UFM blocks : 1 / 1 ( 100 % )
-ADC blocks : 0 / 1 ( 0 % )
+ADC blocks : 1 / 1 ( 100 % )
