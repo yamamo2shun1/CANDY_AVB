@@ -20,9 +20,9 @@
 // Altera IRQ Mapper
 //
 // Parameters
-//   NUM_RCVRS        : 5
+//   NUM_RCVRS        : 6
 //   SENDER_IRW_WIDTH : 32
-//   IRQ_MAP          : 0:0,1:4,2:1,3:2,4:3
+//   IRQ_MAP          : 0:2,1:3,2:1,3:4,4:0,5:5
 //
 // -------------------------------------------------------
 
@@ -44,6 +44,7 @@ module candy_avb_test_qsys_irq_mapper
     input                receiver2_irq,
     input                receiver3_irq,
     input                receiver4_irq,
+    input                receiver5_irq,
 
     // -------------------
     // Command Source (Output)
@@ -55,11 +56,12 @@ module candy_avb_test_qsys_irq_mapper
     always @* begin
 	sender_irq = 0;
 
-        sender_irq[0] = receiver0_irq;
-        sender_irq[4] = receiver1_irq;
+        sender_irq[2] = receiver0_irq;
+        sender_irq[3] = receiver1_irq;
         sender_irq[1] = receiver2_irq;
-        sender_irq[2] = receiver3_irq;
-        sender_irq[3] = receiver4_irq;
+        sender_irq[4] = receiver3_irq;
+        sender_irq[0] = receiver4_irq;
+        sender_irq[5] = receiver5_irq;
     end
 
 endmodule
