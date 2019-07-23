@@ -76,11 +76,11 @@ architecture behavioral of i2s_to_codec is
 		begin
 			if (BITCLK_I_MST'event and BITCLK_I_MST = '0') then
 				if (LRCLK_I_MST = '1') then
-					DATA_O_MST <= data_l_mst(counter);
-					DATA_O_SLV <= data_l_slv(counter);
+					DATA_O_MST <= data_l_slv(counter);
+					DATA_O_SLV <= data_l_mst(counter);
 				else
-					DATA_O_MST <= data_r_mst(counter);
-					DATA_O_SLV <= data_r_slv(counter);
+					DATA_O_MST <= data_r_slv(counter);
+					DATA_O_SLV <= data_r_mst(counter);
 				end if;
 			end if;
 		end process;
