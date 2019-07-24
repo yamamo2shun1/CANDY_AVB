@@ -143,12 +143,13 @@ ELF := candy_avb_sss.elf
 
 # Paths to C, C++, and assembly source files.
 C_SRCS += alt_error_handler.c
-C_SRCS += led.c
 C_SRCS += network_utilities.c
 C_SRCS += iniche_init.c
 C_SRCS += tse_my_system.c
 C_SRCS += osc.c
 C_SRCS += osc_server.c
+C_SRCS += SigmaStudioFW.c
+C_SRCS += sigmadsp.c
 CXX_SRCS :=
 ASM_SRCS :=
 
