@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_0' in SOPC Builder design 'candy_avb_test_qsys'
  * SOPC Builder design path: ../../candy_avb_test_qsys.sopcinfo
  *
- * Generated: Wed Feb 13 08:59:48 JST 2019
+ * Generated: Wed Jul 03 13:24:57 JST 2019
  */
 
 /*
@@ -50,15 +50,15 @@
 
 MEMORY
 {
-    new_sdram_controller_0_BEFORE_EXCEPTION : ORIGIN = 0x40800000, LENGTH = 32
-    new_sdram_controller_0 : ORIGIN = 0x40800020, LENGTH = 8388576
-    reset : ORIGIN = 0x41040000, LENGTH = 32
-    onchip_flash_0_data : ORIGIN = 0x41040020, LENGTH = 188384
+    reset : ORIGIN = 0x80000, LENGTH = 32
+    onchip_flash_0_data : ORIGIN = 0x80020, LENGTH = 188384
+    new_sdram_controller_0_BEFORE_EXCEPTION : ORIGIN = 0x1000000, LENGTH = 32
+    new_sdram_controller_0 : ORIGIN = 0x1000020, LENGTH = 8388576
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_new_sdram_controller_0 = 0x40800000;
-__alt_mem_onchip_flash_0_data = 0x41040000;
+__alt_mem_onchip_flash_0_data = 0x80000;
+__alt_mem_new_sdram_controller_0 = 0x1000000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -277,6 +277,16 @@ SECTIONS
      *
      */
 
+    .onchip_flash_0_data :
+    {
+        PROVIDE (_alt_partition_onchip_flash_0_data_start = ABSOLUTE(.));
+        *(.onchip_flash_0_data .onchip_flash_0_data. onchip_flash_0_data.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_onchip_flash_0_data_end = ABSOLUTE(.));
+    } > onchip_flash_0_data
+
+    PROVIDE (_alt_partition_onchip_flash_0_data_load_addr = LOADADDR(.onchip_flash_0_data));
+
     .new_sdram_controller_0 :
     {
         PROVIDE (_alt_partition_new_sdram_controller_0_start = ABSOLUTE(.));
@@ -289,16 +299,6 @@ SECTIONS
     } > new_sdram_controller_0
 
     PROVIDE (_alt_partition_new_sdram_controller_0_load_addr = LOADADDR(.new_sdram_controller_0));
-
-    .onchip_flash_0_data :
-    {
-        PROVIDE (_alt_partition_onchip_flash_0_data_start = ABSOLUTE(.));
-        *(.onchip_flash_0_data .onchip_flash_0_data. onchip_flash_0_data.*)
-        . = ALIGN(4);
-        PROVIDE (_alt_partition_onchip_flash_0_data_end = ABSOLUTE(.));
-    } > onchip_flash_0_data
-
-    PROVIDE (_alt_partition_onchip_flash_0_data_load_addr = LOADADDR(.onchip_flash_0_data));
 
     /*
      * Stabs debugging sections.
@@ -347,7 +347,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x41000000;
+__alt_data_end = 0x1800000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -363,4 +363,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x41000000 );
+PROVIDE( __alt_heap_limit    = 0x1800000 );

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_0' in SOPC Builder design 'candy_avb_test_qsys'
  * SOPC Builder design path: ../../candy_avb_test_qsys.sopcinfo
  *
- * Generated: Wed Feb 13 08:59:48 JST 2019
+ * Generated: Wed Jul 03 07:55:19 JST 2019
  */
 
 /*
@@ -63,7 +63,9 @@
 #include "altera_avalon_sysid_qsys.h"
 #include "altera_avalon_timer.h"
 #include "altera_avalon_uart.h"
+#include "altera_modular_adc.h"
 #include "altera_onchip_flash.h"
+#include "eth_ocm.h"
 
 /*
  * Allocate the device storage
@@ -72,11 +74,11 @@
 ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( NIOS2_0, nios2_0);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAGUART_0, jtaguart_0);
 ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID_QSYS_0, sysid_qsys_0);
-ALTERA_AVALON_TIMER_INSTANCE ( TIMER_0, timer_0);
-ALTERA_AVALON_TIMER_INSTANCE ( TIMER_1, timer_1);
-ALTERA_AVALON_TIMER_INSTANCE ( TIMER_2, timer_2);
-ALTERA_AVALON_UART_INSTANCE ( UART_0, uart_0);
+ALTERA_AVALON_TIMER_INSTANCE ( SYS_CLK_TIMER, sys_clk_timer);
+ALTERA_AVALON_UART_INSTANCE ( UART, uart);
+ALTERA_MODULAR_ADC_INSTANCE ( MODULAR_ADC_0, modular_adc_0);
 ALTERA_ONCHIP_FLASH_DATA_CSR_INSTANCE ( ONCHIP_FLASH_0, ONCHIP_FLASH_0_DATA, ONCHIP_FLASH_0_CSR, onchip_flash_0);
+ETH_OCM_INSTANCE ( ETH_OCM_0, eth_ocm_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -99,11 +101,11 @@ void alt_irq_init ( const void* base )
 
 void alt_sys_init( void )
 {
-    ALTERA_AVALON_TIMER_INIT ( TIMER_0, timer_0);
-    ALTERA_AVALON_TIMER_INIT ( TIMER_1, timer_1);
-    ALTERA_AVALON_TIMER_INIT ( TIMER_2, timer_2);
+    ALTERA_AVALON_TIMER_INIT ( SYS_CLK_TIMER, sys_clk_timer);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAGUART_0, jtaguart_0);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
-    ALTERA_AVALON_UART_INIT ( UART_0, uart_0);
+    ALTERA_AVALON_UART_INIT ( UART, uart);
+    ALTERA_MODULAR_ADC_INIT ( MODULAR_ADC_0, modular_adc_0);
     ALTERA_ONCHIP_FLASH_INIT ( ONCHIP_FLASH_0, onchip_flash_0);
+    ETH_OCM_INIT ( ETH_OCM_0, eth_ocm_0);
 }

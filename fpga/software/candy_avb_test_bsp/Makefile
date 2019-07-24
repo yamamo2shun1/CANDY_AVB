@@ -250,6 +250,13 @@ altera_avalon_uart_driver_C_LIB_SRCS := \
 	$(altera_avalon_uart_driver_SRCS_ROOT)/src/altera_avalon_uart_read.c \
 	$(altera_avalon_uart_driver_SRCS_ROOT)/src/altera_avalon_uart_write.c
 
+# altera_modular_adc_driver sources root 
+altera_modular_adc_driver_SRCS_ROOT := drivers
+
+# altera_modular_adc_driver sources 
+altera_modular_adc_driver_C_LIB_SRCS := \
+	$(altera_modular_adc_driver_SRCS_ROOT)/src/altera_modular_adc.c
+
 # altera_nios2_gen2_hal_driver sources root 
 altera_nios2_gen2_hal_driver_SRCS_ROOT := HAL
 
@@ -293,6 +300,15 @@ altera_onchip_flash_driver_SRCS_ROOT := drivers
 # altera_onchip_flash_driver sources 
 altera_onchip_flash_driver_C_LIB_SRCS := \
 	$(altera_onchip_flash_driver_SRCS_ROOT)/src/altera_onchip_flash.c
+
+# eth_ocm_driver sources root 
+eth_ocm_driver_SRCS_ROOT := drivers
+
+# eth_ocm_driver sources 
+eth_ocm_driver_C_LIB_SRCS := \
+	$(eth_ocm_driver_SRCS_ROOT)/src/ins_eth_ocm.c \
+	$(eth_ocm_driver_SRCS_ROOT)/src/eth_ocm_phy.c \
+	$(eth_ocm_driver_SRCS_ROOT)/src/eth_ocm_phy_profiles.c
 
 # hal sources root 
 hal_SRCS_ROOT := HAL
@@ -360,8 +376,10 @@ COMPONENT_C_LIB_SRCS += \
 	$(altera_avalon_sysid_qsys_driver_C_LIB_SRCS) \
 	$(altera_avalon_timer_driver_C_LIB_SRCS) \
 	$(altera_avalon_uart_driver_C_LIB_SRCS) \
+	$(altera_modular_adc_driver_C_LIB_SRCS) \
 	$(altera_nios2_gen2_hal_driver_C_LIB_SRCS) \
 	$(altera_onchip_flash_driver_C_LIB_SRCS) \
+	$(eth_ocm_driver_C_LIB_SRCS) \
 	$(hal_C_LIB_SRCS)
 
 # Assemble all component assembly source files 

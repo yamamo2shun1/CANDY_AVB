@@ -3,7 +3,7 @@
 # Machine generated for CPU 'nios2_0' in SOPC Builder design 'candy_avb_test_qsys'
 # SOPC Builder design path: ../../candy_avb_test_qsys.sopcinfo
 #
-# Generated: Wed Feb 13 08:59:48 JST 2019
+# Generated: Wed Jul 03 13:24:57 JST 2019
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,8 +46,8 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
-# new_sdram_controller_0
-memory 0x40800000 0x41000000 cache
-
 # onchip_flash_0_data
-memory 0x41040000 0x4106e000 cache
+memory 0x80000 0xae000 cache
+
+# new_sdram_controller_0
+memory 0x1000000 0x1800000 cache

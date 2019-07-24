@@ -152,14 +152,14 @@ SOPC_SYSID_FLAG += --id=0
 ELF_PATCH_FLAG  += --id 0
 
 # The SOPC System ID Base Address 
-# setting SOPC_SYSID_BASE_ADDRESS is 0x410810c8
-SOPC_SYSID_FLAG += --sidp=0x410810c8
-ELF_PATCH_FLAG  += --sidp 0x410810c8
+# setting SOPC_SYSID_BASE_ADDRESS is 0x1ad0
+SOPC_SYSID_FLAG += --sidp=0x1ad0
+ELF_PATCH_FLAG  += --sidp 0x1ad0
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1549732459
-SOPC_SYSID_FLAG += --timestamp=1549732459
-ELF_PATCH_FLAG  += --timestamp 1549732459
+# setting SOPC_TIMESTAMP is 1562191520
+SOPC_SYSID_FLAG += --timestamp=1562191520
+ELF_PATCH_FLAG  += --timestamp 1562191520
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 
@@ -176,6 +176,24 @@ ELF_PATCH_FLAG  += --timestamp 1549732459
 
 # Small-footprint (polled mode) driver none 
 # setting altera_avalon_uart_driver.enable_small_driver is false
+
+# Enable uncached packet allocation for InterNiche Stack none 
+# setting eth_ocm_driver.enable_uncached_packets is false
+
+# Maximum number of PHY profiles to support none 
+# setting eth_ocm_driver.max_supported_phy_profiles is 3
+
+# Enable support for National DP83848C PHY profile none 
+# setting eth_ocm_driver.support_dp83848c is true
+
+# Enable support for Intel LXT972A PHY profile none 
+# setting eth_ocm_driver.support_lxt972a is false
+
+# Enable support for Marvell 88E1111 PHY profile none 
+# setting eth_ocm_driver.support_mvl88e1111 is false
+
+# Enable support for Intel VSC8641 PHY profile none 
+# setting eth_ocm_driver.support_vsc8641 is false
 
 # Build a custom version of newlib with the specified space-separated compiler 
 # flags. The custom newlib build will be placed in the <bsp root>/newlib 
@@ -378,6 +396,13 @@ ALT_INCLUDE_DIRS += $(ALT_LIBRARY_ROOT_DIR)/HAL/inc
 #------------------------------------------------------------------------------
 
 ALT_CPPFLAGS += -DALT_SINGLE_THREADED
+
+#------------------------------------------------------------------------------
+#        SOFTWARE COMPONENT & DRIVER SETTING-PRODUCED DEFINITIONS
+#------------------------------------------------------------------------------
+
+ALT_CPPFLAGS += -DETH_OCM_PHY_MAX_PROFILES=3
+ALT_CPPFLAGS += -DETH_OCM_PHY_SUPPORT_DP83848C
 
 #END MANAGED
 

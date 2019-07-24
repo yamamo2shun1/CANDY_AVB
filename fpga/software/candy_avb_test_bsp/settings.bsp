@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2019/02/17 12:47:02</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1550375222459</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2019/07/04 7:20:55</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1562192455320</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_test_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\candy_avb_test_qsys.sopcinfo</SopcDesignFile>
@@ -14,7 +14,7 @@
                 <SettingName>hal.sys_clk_timer</SettingName>
                 <Identifier>ALT_SYS_CLK</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>timer_0</Value>
+                <Value>sys_clk_timer</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of the system clock timer device. This device provides a periodic interrupt ("tick") and is typically required for RTOS use. This setting defines the value of ALT_SYS_CLK in system.h.</Description>
@@ -922,89 +922,167 @@
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
+        <Setting>
+                <SettingName>eth_ocm_driver.enable_uncached_packets</SettingName>
+                <Identifier>ALTERA_TRIPLE_SPEED_MAC</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>true</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Enable uncached packet allocation for InterNiche Stack</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
+                <SettingName>eth_ocm_driver.max_supported_phy_profiles</SettingName>
+                <Identifier>ETH_OCM_PHY_MAX_PROFILES</Identifier>
+                <Type>DecimalNumber</Type>
+                <Value>3</Value>
+                <DefaultValue>3</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Maximum number of PHY profiles to support</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
+                <SettingName>eth_ocm_driver.support_lxt972a</SettingName>
+                <Identifier>ETH_OCM_PHY_SUPPORT_LXT972A</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>false</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Enable support for Intel LXT972A PHY profile</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
+                <SettingName>eth_ocm_driver.support_mvl88e1111</SettingName>
+                <Identifier>ETH_OCM_PHY_SUPPORT_MVL88E1111</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>true</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Enable support for Marvell 88E1111 PHY profile</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
+                <SettingName>eth_ocm_driver.support_dp83848c</SettingName>
+                <Identifier>ETH_OCM_PHY_SUPPORT_DP83848C</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>true</Value>
+                <DefaultValue>true</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Enable support for National DP83848C PHY profile</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
+        <Setting>
+                <SettingName>eth_ocm_driver.support_vsc8641</SettingName>
+                <Identifier>ETH_OCM_PHY_SUPPORT_VSC8641</Identifier>
+                <Type>BooleanDefineOnly</Type>
+                <Value>false</Value>
+                <DefaultValue>false</DefaultValue>
+                <DestinationFile>public_mk_define</DestinationFile>
+                <Description>Enable support for Intel VSC8641 PHY profile</Description>
+                <Restrictions>none</Restrictions>
+                <Enabled>false</Enabled>
+                <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        </Setting>
         <MemoryMap>
-                <slaveDescriptor>avalon_wb_0</slaveDescriptor>
-                <addressRange>0x00000000 - 0x3FFFFFFF</addressRange>
-                <addressSpan>1073741824</addressSpan>
+                <slaveDescriptor>modular_adc_0_sample_store_csr</slaveDescriptor>
+                <addressRange>0x00001800 - 0x000019FF</addressRange>
+                <addressSpan>512</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>new_sdram_controller_0</slaveDescriptor>
-                <addressRange>0x40800000 - 0x40FFFFFF</addressRange>
-                <addressSpan>8388608</addressSpan>
-                <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>onchip_flash_0_data</slaveDescriptor>
-                <addressRange>0x41040000 - 0x4106DFFF</addressRange>
-                <addressSpan>188416</addressSpan>
-                <attributes>flash, memory, non-volatile</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>timer_2</slaveDescriptor>
-                <addressRange>0x41081000 - 0x4108101F</addressRange>
+                <slaveDescriptor>sys_clk_timer</slaveDescriptor>
+                <addressRange>0x00001A00 - 0x00001A1F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>timer_0</slaveDescriptor>
-                <addressRange>0x41081020 - 0x4108103F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes>timer</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>timer_1</slaveDescriptor>
-                <addressRange>0x41081040 - 0x4108105F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes>timer</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>uart_0</slaveDescriptor>
-                <addressRange>0x41081060 - 0x4108107F</addressRange>
+                <slaveDescriptor>uart</slaveDescriptor>
+                <addressRange>0x00001A60 - 0x00001A7F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_4</slaveDescriptor>
-                <addressRange>0x41081080 - 0x4108108F</addressRange>
+                <slaveDescriptor>pio_1</slaveDescriptor>
+                <addressRange>0x00001A80 - 0x00001A8F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_1</slaveDescriptor>
-                <addressRange>0x41081090 - 0x4108109F</addressRange>
+                <slaveDescriptor>pio_4</slaveDescriptor>
+                <addressRange>0x00001A90 - 0x00001A9F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_0</slaveDescriptor>
-                <addressRange>0x410810A0 - 0x410810AF</addressRange>
+                <addressRange>0x00001AA0 - 0x00001AAF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>altpll_0</slaveDescriptor>
-                <addressRange>0x410810B0 - 0x410810BF</addressRange>
+                <addressRange>0x00001AB0 - 0x00001ABF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>modular_adc_0_sequencer_csr</slaveDescriptor>
+                <addressRange>0x00001AC0 - 0x00001AC7</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>onchip_flash_0_csr</slaveDescriptor>
-                <addressRange>0x410810C0 - 0x410810C7</addressRange>
+                <addressRange>0x00001AC8 - 0x00001ACF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x410810C8 - 0x410810CF</addressRange>
+                <addressRange>0x00001AD0 - 0x00001AD7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtaguart_0</slaveDescriptor>
-                <addressRange>0x410810D0 - 0x410810D7</addressRange>
+                <addressRange>0x00001AD8 - 0x00001ADF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>onchip_flash_0_data</slaveDescriptor>
+                <addressRange>0x00080000 - 0x000ADFFF</addressRange>
+                <addressSpan>188416</addressSpan>
+                <attributes>flash, memory, non-volatile</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>eth_ocm_0</slaveDescriptor>
+                <addressRange>0x00880000 - 0x00880FFF</addressRange>
+                <addressSpan>4096</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>new_sdram_controller_0</slaveDescriptor>
+                <addressRange>0x01000000 - 0x017FFFFF</addressRange>
+                <addressSpan>8388608</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>avalon_wb</slaveDescriptor>
+                <addressRange>0x40000000 - 0x7FFFFFFF</addressRange>
+                <addressSpan>1073741824</addressSpan>
+                <attributes/>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
