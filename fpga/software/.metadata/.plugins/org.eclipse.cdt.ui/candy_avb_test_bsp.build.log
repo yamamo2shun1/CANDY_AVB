@@ -1,6 +1,18 @@
-12:47:08 **** Incremental Build of configuration Nios II for project candy_avb_test_bsp ****
+14:31:01 **** Incremental Build of configuration Nios II for project candy_avb_test_bsp ****
 make all 
-[BSP build complete]
+Makefile not up to date.
+../../candy_avb_test_qsys.sopcinfo has been modified since the BSP was generated.
 
-12:47:09 Build Finished (took 1s.253ms)
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+
+14:31:02 Build Finished (took 1s.206ms)
 
