@@ -79,9 +79,9 @@
  *    SSSInitialTask() instantiates all of the MicroC/OS-II resources.
  * 
  */
-void LEDManagementTask();
-void LED7SegLightshowTask();
-void SSSSimpleSocketServerTask();
+void SigmaDSPManagementTask();
+void SigmaDSPCommunicateTask();
+void OSCServerTask();
 
 void SSSCreateOSDataStructs();
 void SSSCreateTasks();
@@ -91,8 +91,8 @@ void SSSCreateTasks();
  * 
  *  MicroC/OS-II only allows one task (thread) per priority number.   
  */
-#define LED_MANAGEMENT_TASK_PRIORITY            7
-#define LED_7SEG_LIGHTSHOW_TASK_PRIORITY        18
+#define SIGMA_DSP_MANAGEMENT_TASK_PRIORITY      7
+#define SIGMA_DSP_COMMUNICATE_TASK_PRIORITY     18
 #define SSS_SIMPLE_SOCKET_SERVER_TASK_PRIORITY  10
 #define SSS_INITIAL_TASK_PRIORITY               5
 
@@ -156,13 +156,13 @@ typedef struct SSS_SOCKET
  * Handle to our MicroC/OS-II Command Queue for sending commands received 
  * on the TCP-IP socket from the SSSSimpleSocketServerTask to the LEDTask.
  */
-extern OS_EVENT *SSSLEDCommandQ;
+extern OS_EVENT *SigmaDSPCommandQ;
 
 /*
  * Handle to our MicroC/OS-II LED Event Flag.  Each flag corresponds to one of
  * the LEDs on the Nios Development board, D0 - D7. 
  */
-extern OS_FLAG_GRP *SSSLEDEventFlag;
+extern OS_FLAG_GRP *SigmaDSPEventFlag;
 
 /*
  * Handle to our MicroC/OS-II LED Lightshow Semaphore. The semaphore is checked 
@@ -173,7 +173,7 @@ extern OS_FLAG_GRP *SSSLEDEventFlag;
  * command sent from the SSSSimpleSocketServerTask when user sends the toggle 
  * lightshow command over the TCPIP socket.
  */
-extern OS_EVENT *SSSLEDLightshowSem;
+extern OS_EVENT *SigmaDSPCommunicateSem;
 
 #endif /* __OSC_SERVER_H__ */
 

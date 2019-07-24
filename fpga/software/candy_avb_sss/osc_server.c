@@ -56,15 +56,15 @@
  * the Q for sending commands received on the TCP-IP socket from the 
  * SSSSimpleSocketServerTask to the LEDManagementTask.
  */
-OS_EVENT  *SSSLEDCommandQ;
-#define SSS_LED_COMMAND_Q_SIZE  30  /* Message capacity of SSSLEDCommandQ */
-void *SSSLEDCommandQTbl[SSS_LED_COMMAND_Q_SIZE]; /*Storage for SSSLEDCommandQ*/
+OS_EVENT  *SigmaDSPCommandQ;
+#define SIGMA_DSP_COMMAND_Q_SIZE  30  /* Message capacity of SSSLEDCommandQ */
+void *SigmaDSPCommandQTbl[SIGMA_DSP_COMMAND_Q_SIZE]; /*Storage for SSSLEDCommandQ*/
 
 /*
  * Handle to our MicroC/OS-II LED Event Flag.  Each flag corresponds to one of
  * the LEDs on the Nios Development board, D0 - D7. 
  */
-OS_FLAG_GRP *SSSLEDEventFlag;
+OS_FLAG_GRP *SigmaDSPEventFlag;
 
 /*
  * Handle to our MicroC/OS-II LED Lightshow Semaphore. The semaphore is checked 
@@ -75,14 +75,14 @@ OS_FLAG_GRP *SSSLEDEventFlag;
  * command sent from the SSSSimpleSocketServerTask when the user sends a toggle 
  * lightshow command over the TCPIP socket.
  */
-OS_EVENT *SSSLEDLightshowSem;
+OS_EVENT *SigmaDSPCommunicateSem;
 
 /* Definition of Task Stacks for tasks not invoked by TK_NEWTASK 
  * (do not use NicheStack) 
  */
 
-OS_STK    LEDManagementTaskStk[TASK_STACKSIZE];
-OS_STK    LED7SegLightshowTaskStk[TASK_STACKSIZE];
+OS_STK    SigmaDSPManagementTaskStk[TASK_STACKSIZE];
+OS_STK    SigmaDSPCommunicateTaskStk[TASK_STACKSIZE];
 
 /*
  * Create our MicroC/OS-II resources. All of the resources beginning with 
@@ -97,11 +97,10 @@ void SSSCreateOSDataStructs(void)
   * received on the TCP/IP socket from the SSSSimpleSocketServerTask()
   * to the LEDManagementTask().
   */
-  SSSLEDCommandQ = OSQCreate(&SSSLEDCommandQTbl[0], SSS_LED_COMMAND_Q_SIZE);
-  if (!SSSLEDCommandQ)
+  SigmaDSPCommandQ = OSQCreate(&SigmaDSPCommandQTbl[0], SIGMA_DSP_COMMAND_Q_SIZE);
+  if (!SigmaDSPCommandQ)
   {
-     alt_uCOSIIErrorHandler(EXPANDED_DIAGNOSIS_CODE, 
-     "Failed to create SSSLEDCommandQ.\n");
+     alt_uCOSIIErrorHandler(EXPANDED_DIAGNOSIS_CODE, "Failed to create SSSLEDCommandQ.\n");
   }
   
  /* Create our MicroC/OS-II LED Lightshow Semaphore.  The semaphore is checked 
@@ -112,19 +111,18 @@ void SSSCreateOSDataStructs(void)
   * command sent from the SSSSimpleSocketServerTask when the user sends the 
   * toggle lightshow command over the TCPIP socket.
   */
-  SSSLEDLightshowSem = OSSemCreate(1);
-  if (!SSSLEDLightshowSem)
+  SigmaDSPCommunicateSem = OSSemCreate(1);
+  if (!SigmaDSPCommunicateSem)
   {
-     alt_uCOSIIErrorHandler(EXPANDED_DIAGNOSIS_CODE, 
-                            "Failed to create SSSLEDLightshowSem.\n");
+     alt_uCOSIIErrorHandler(EXPANDED_DIAGNOSIS_CODE, "Failed to create SSSLEDLightshowSem.\n");
   }
   
  /*
   * Create our MicroC/OS-II LED Event Flag.  Each flag corresponds to one of
   * the LEDs on the Nios Development board, D0 - D7. 
   */   
-  SSSLEDEventFlag = OSFlagCreate(0, &error_code);
-  if (!SSSLEDEventFlag)
+  SigmaDSPEventFlag = OSFlagCreate(0, &error_code);
+  if (!SigmaDSPEventFlag)
   {
      alt_uCOSIIErrorHandler(error_code, 0);
   }
@@ -134,33 +132,31 @@ void SSSCreateTasks(void)
 {
    INT8U error_code;
   
-   error_code = OSTaskCreateExt(LED7SegLightshowTask,
+   error_code = OSTaskCreateExt(SigmaDSPCommunicateTask,
                              NULL,
-                             (void *)&LED7SegLightshowTaskStk[TASK_STACKSIZE-1],
-                             LED_7SEG_LIGHTSHOW_TASK_PRIORITY,
-                             LED_7SEG_LIGHTSHOW_TASK_PRIORITY,
-                             LED7SegLightshowTaskStk,
+                             (void *)&SigmaDSPCommunicateTaskStk[TASK_STACKSIZE-1],
+                             SIGMA_DSP_COMMUNICATE_TASK_PRIORITY,
+                             SIGMA_DSP_COMMUNICATE_TASK_PRIORITY,
+                             SigmaDSPCommunicateTaskStk,
                              TASK_STACKSIZE,
                              NULL,
                              0);
-   
    alt_uCOSIIErrorHandler(error_code, 0);
   
-   error_code = OSTaskCreateExt(LEDManagementTask,
+   error_code = OSTaskCreateExt(SigmaDSPManagementTask,
                               NULL,
-                              (void *)&LEDManagementTaskStk[TASK_STACKSIZE-1],
-                              LED_MANAGEMENT_TASK_PRIORITY,
-                              LED_MANAGEMENT_TASK_PRIORITY,
-                              LEDManagementTaskStk,
+                              (void *)&SigmaDSPManagementTaskStk[TASK_STACKSIZE-1],
+                              SIGMA_DSP_MANAGEMENT_TASK_PRIORITY,
+                              SIGMA_DSP_MANAGEMENT_TASK_PRIORITY,
+                              SigmaDSPManagementTaskStk,
                               TASK_STACKSIZE,
                               NULL,
                               0);
-
    alt_uCOSIIErrorHandler(error_code, 0);
 
 }
 
-void SSSSimpleSocketServerTask()
+void OSCServerTask()
 {
   struct sockaddr_in addr;
 
