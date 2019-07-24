@@ -30,23 +30,17 @@
  */
 
 
-/* <stdlib.h>: Contains C "rand()" function. */
 #include <stdlib.h> 
-
-/* <stdio.h>: Contains C "printf()" function. */
 #include <stdio.h>  
 
-/* MicroC/OS-II definitions */
 #include "includes.h" 
 
-/* Device driver accessor macros for peripherial I/O component 
- * (used for leds).) */
 #include "altera_avalon_pio_regs.h"
 
-/* Simple Socket Server definitions */
 #include "alt_error_handler.h"
 #include "osc_server.h"
 
+#include "SigmaStudioFW.h"
 
 /*
  * led_bit_toggle() sets or clears a bit in led_8_val, which corresponds
@@ -60,16 +54,16 @@ void led_bit_toggle(OS_FLAGS bit)
     OS_FLAGS  led_8_val;
     INT8U error_code;
     
-    led_8_val = OSFlagQuery(SSSLEDEventFlag, &error_code);
+    led_8_val = OSFlagQuery(SigmaDSPEventFlag, &error_code);
     alt_uCOSIIErrorHandler(error_code, 0);
     if (bit & led_8_val)
     {
-       led_8_val = OSFlagPost(SSSLEDEventFlag, bit, OS_FLAG_CLR, &error_code);
+       led_8_val = OSFlagPost(SigmaDSPEventFlag, bit, OS_FLAG_CLR, &error_code);
        alt_uCOSIIErrorHandler(error_code, 0);
     }
     else
     {
-       led_8_val = OSFlagPost(SSSLEDEventFlag, bit, OS_FLAG_SET, &error_code);
+       led_8_val = OSFlagPost(SigmaDSPEventFlag, bit, OS_FLAG_SET, &error_code);
        alt_uCOSIIErrorHandler(error_code, 0);
     }
     #ifdef LED_PIO_BASE
@@ -88,17 +82,24 @@ void led_bit_toggle(OS_FLAGS bit)
  * 
  */ 
  
-void LED7SegLightshowTask()
+void SigmaDSPCommunicateTask()
 {
    INT8U error_code;
-   INT16U  __attribute__ ((unused))  led_7_seg_val;  /* Attribute suppresses "unused variable" warning. */
 
-   static INT8U led_toggle = 0;
+   //ADAU1761 RESET
+   IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_4_BASE, 1);
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_4_BASE, 0);
+   usleep(1000 * 20);
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_4_BASE, 1);
+
+   i2c_setup(0x00, 0xB3);
+
+   default_download_IC_1();
+   default_download_IC_2();
 
    /* This is a task which does not terminate, so loop forever. */   
    while(1)
    {
-    
       /* Wait 50 milliseconds between pattern updates, to make the pattern slow
        * enough for the human eye, and more impotantly, to give up control so
        * MicroC/OS-II can schedule other lower priority tasks. */ 
@@ -106,30 +107,13 @@ void LED7SegLightshowTask()
       
       /* Check that we still have the SSSLEDLightshowSem semaphore. If we don't,
        * then wait until the LEDManagement task gives it back to us. */
-      OSSemPend(SSSLEDLightshowSem, 0, &error_code);
+      OSSemPend(SigmaDSPCommunicateSem, 0, &error_code);
       alt_uCOSIIErrorHandler(error_code, 0);
    
       /* Write a random value to 7-segment LEDs */
-      #if SEVEN_SEG_PIO_BASE
-         led_7_seg_val = rand();
-         IOWR_ALTERA_AVALON_PIO_DATA(SEVEN_SEG_PIO_BASE, led_7_seg_val);
-      #endif
       
-#if 0
-      switch (led_toggle)
-      {
-      case 0:
-    	  IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 0x01);
-    	  led_toggle = 1;
-    	  break;
-      case 1:
-    	  IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE, 0x02);
-    	  led_toggle = 0;
-    	  break;
-      }
-#endif
 
-      error_code = OSSemPost(SSSLEDLightshowSem);
+      error_code = OSSemPost(SigmaDSPCommunicateSem);
       alt_uCOSIIErrorHandler(error_code, 0);
       
    }
@@ -144,18 +128,18 @@ void LED7SegLightshowTask()
  * in-coming message command from the SSSSimpleSocketServerTask. 
  */
  
-void LEDManagementTask()
+void SigmaDSPManagementTask()
 {
   
-  INT32U led_command; 
-  BOOLEAN SSSLEDLightshowActive;
+  INT32U sigma_dsp_command;
+  BOOLEAN SigmaDSPCommunicateActive;
   INT8U error_code;
   
-  SSSLEDLightshowActive = OS_TRUE;
+  SigmaDSPCommunicateActive = OS_TRUE;
   
   while(1)
   {
-    led_command = (INT32U)OSQPend(SSSLEDCommandQ, 0, &error_code);
+    sigma_dsp_command = (INT32U)OSQPend(SigmaDSPCommandQ, 0, &error_code);
    
     alt_uCOSIIErrorHandler(error_code, 0);
         
