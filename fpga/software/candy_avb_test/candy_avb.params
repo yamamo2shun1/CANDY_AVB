@@ -1,0 +1,130 @@
+Cell Name         = Single 1
+Parameter Name    = GainS200Alg1gain_target
+Parameter Address = 8
+Parameter Value   = 0.316227793693542
+Parameter Data :
+0x00, 0x28, 0x7A, 0x27, 
+
+
+
+Cell Name         = Single 1
+Parameter Name    = GainS200Alg1alpha
+Parameter Address = 8190
+Parameter Data :
+0x00, 0x7F, 0xF2, 0x59, 
+0x00, 0x00, 0x0D, 0xA7, 
+
+
+
+Cell Name         = Single 1
+Parameter Name    = Gain1940AlgNS1
+Parameter Address = 11
+Parameter Value   = 0.316227793693542
+Parameter Data :
+0x00, 0x28, 0x7A, 0x27, 
+
+
+
+Cell Name         = Single 2
+Parameter Name    = GainS200Alg2gain_target
+Parameter Address = 8
+Parameter Value   = 0.316227793693542
+Parameter Data :
+0x00, 0x28, 0x7A, 0x27, 
+
+
+
+Cell Name         = Single 2
+Parameter Name    = GainS200Alg2alpha
+Parameter Address = 8190
+Parameter Data :
+0x00, 0x7F, 0xF2, 0x59, 
+0x00, 0x00, 0x0D, 0xA7, 
+
+
+
+Cell Name         = Single 2
+Parameter Name    = Gain1940AlgNS2
+Parameter Address = 11
+Parameter Value   = 0.316227793693542
+Parameter Data :
+0x00, 0x28, 0x7A, 0x27, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = NonModRamAlloc
+Parameter Address = 0
+Parameter Value   = 4094
+Parameter Data :
+0x00, 0x00, 0x0F, 0xFE, 
+
+
+
+Cell Name         = None - Framework
+Parameter Name    = NonModRamAlloc
+Parameter Address = 0
+Parameter Value   = 4094
+Parameter Data :
+0x00, 0x00, 0x0F, 0xFE, 
+
+
+
+Parameter data for: IC 1 (Hexadecimal format starting at parameter address 0)
+See also candy_avb.hex file
+0x00 , 	0x00 , 	0x0F , 	0xFE , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x28 , 	0x7A , 	0x27 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x28 , 	0x7A , 	0x27 , 	
+
+Parameter data for: IC 1 (Binary format starting at parameter address 0)
+00000000	00000000	00001111	11111110	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00101000	01111010	00100111	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00101000	01111010	00100111	
+
+Parameter data for: IC 2 (Hexadecimal format starting at parameter address 0)
+See also candy_avb.hex file
+0x00 , 	0x00 , 	0x0F , 	0xFE , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x28 , 	0x7A , 	0x27 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x00 , 	0x00 , 	0x00 , 	
+0x00 , 	0x28 , 	0x7A , 	0x27 , 	
+
+Parameter data for: IC 2 (Binary format starting at parameter address 0)
+00000000	00000000	00001111	11111110	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00101000	01111010	00100111	
+00000000	00000000	00000000	00000000	
+00000000	00000000	00000000	00000000	
+00000000	00101000	01111010	00100111	
+

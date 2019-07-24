@@ -144,8 +144,27 @@ ELF := candy_avb_test.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += hello_world.c
 C_SRCS += SigmaStudioFW.c
-CXX_SRCS :=
-ASM_SRCS :=
+C_SRCS += FreeRTOS/Common_Demo_Tasks/BlockQ.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/GenQTest.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/PollQ.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/QPeek.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/blocktim.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/comtest.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/countsem.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/death.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/dynamic.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/flash.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/integer.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/recmutex.c
+C_SRCS += FreeRTOS/Common_Demo_Tasks/semtest.c
+C_SRCS += FreeRTOS/ParTest/ParTest.c
+C_SRCS += FreeRTOS/Source/list.c
+C_SRCS += FreeRTOS/Source/portable/GCC/NiosII/port.c
+C_SRCS += FreeRTOS/Source/portable/MemMang/heap_2.c
+C_SRCS += FreeRTOS/Source/queue.c
+C_SRCS += FreeRTOS/Source/tasks.c
+C_SRCS += FreeRTOS/serial.c
+ASM_SRCS := FreeRTOS/Source/portable/GCC/NiosII/port_asm.S
 
 
 # Path to root of object file tree.
@@ -181,7 +200,17 @@ SYS_LIB :=
 BSP_ROOT_DIR := ../candy_avb_test_bsp/
 
 # List of application specific include directories, library directories and library names
-APP_INCLUDE_DIRS :=
+APP_INCLUDE_DIRS += FreeRTOS
+APP_INCLUDE_DIRS += FreeRTOS/Common_Demo_Tasks
+APP_INCLUDE_DIRS += FreeRTOS/Common_Demo_Tasks/include
+APP_INCLUDE_DIRS += FreeRTOS/Source
+APP_INCLUDE_DIRS += FreeRTOS/Source/include
+APP_INCLUDE_DIRS += FreeRTOS/Source/portable/MemMang
+APP_INCLUDE_DIRS += FreeRTOS/Source/portable/GCC/NiosII
+APP_INCLUDE_DIRS += FreeRTOS/ParTest
+APP_INCLUDE_DIRS += FreeRTOS-Plus-UDP/Source/include
+APP_INCLUDE_DIRS += FreeRTOS-Plus-UDP/Source/portable/NetworkInterface/include
+APP_INCLUDE_DIRS += FreeRTOS-Plus-UDP/Source/portable/Compiler/GCC
 APP_LIBRARY_DIRS :=
 APP_LIBRARY_NAMES :=
 
