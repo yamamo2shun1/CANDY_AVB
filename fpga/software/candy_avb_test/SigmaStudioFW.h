@@ -20,6 +20,7 @@
 #ifndef __SIGMASTUDIOFW_H__
 #define __SIGMASTUDIOFW_H__
 
+#include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -33,7 +34,7 @@
 
 // 0x40 = 0100 0000 -> 0x10 = 0001 0000
 // 0x30 ] 0011 0000 -> 0x0C = 0000 1100
-#define I2C_BASEADDR (AVALON_WB_0_BASE + 0x40)
+#define I2C_BASEADDR  (AVALON_WB_BASE + 0x40)
 
 #define I2C_PRERL 0x00//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x00) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x0))
 #define I2C_PRERH 0x01//(AVALON_WB_0_BASE + ((I2C_BASEADDR + 0x01) << 2))//(*(volatile unsigned char *) (I2C_BASEADDR + 0x1))

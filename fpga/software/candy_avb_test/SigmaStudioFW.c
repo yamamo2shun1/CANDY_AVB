@@ -60,7 +60,7 @@ bool i2c_write_byte(uint8_t data)
 
 	if (IORD(I2C_BASEADDR, I2C_SR) & 0x80)
 	{
-		printf("I2C_SR %x %x\n", IORD(I2C_BASEADDR, I2C_SR));
+		printf("I2C_SR %d\n", IORD(I2C_BASEADDR, I2C_SR));
 		return false;
 	}
 	else
@@ -93,8 +93,6 @@ bool i2c_write_byte_stop(uint8_t data)
 
 bool i2c_multiple_write(uint8_t devAddress, uint16_t controlAddress, uint8_t data[], uint16_t len)
 {
-	bool state = false;
-
 	if (!i2c_start(devAddress, 0x00))
 	{
 		printf("I2C start failed.\n");
@@ -103,7 +101,6 @@ bool i2c_multiple_write(uint8_t devAddress, uint16_t controlAddress, uint8_t dat
 
 	usleep(100);
 
-	uint8_t test = (controlAddress >> 8) & 0xFF;
 	if (!i2c_write_byte((controlAddress >> 8) & 0xFF))
 	{
 		printf("I2C caddrH write failed.\n");
