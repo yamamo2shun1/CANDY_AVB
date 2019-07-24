@@ -1,0 +1,20 @@
+MicroC/OS-II Licensing Terms
+============================
+
+Micrium's uC/OS-II is a real-time operating system (RTOS) available in source code.  
+This is not open-source software. 
+
+This RTOS can be used free of charge for non-commercial purposes and academic projects only, 
+any other use of the code is subject to the terms of an end-user license agreement 
+for more information please see the license file included in the BSP project or contact Micrium.
+
+Anyone planning to use a Micrium RTOS in a commercial product must purchase a commercial license 
+from the owner of the software, Silicon Laboratories Inc.  
+
+Licensing information is available at:
+
+Phone: +1 954-217-2036
+Email: sales@micrium.com
+URL: www.micrium.com
+
+Do not use this code if you do not agree to these conditions.
