@@ -9,7 +9,7 @@ entity AVALON2WB is
 		csi_reset_n: in std_logic; -- reset clock interface
 		
 		-- Avalon-MM
-		avs_s1_address:       in  std_logic_vector(27 downto 0);-- := (others => '0'); -- s1 slave interface
+		avs_s1_address:       in  std_logic_vector(7 downto 0);-- := (others => '0'); -- s1 slave interface
 		avs_s1_chipselect:    in  std_logic;
 		avs_s1_byteenable:    in  std_logic_vector(3 downto 0);                     -- s1 slave interface
 		avs_s1_read:          in  std_logic;-- := '0';                                 -- s1 slave interface
@@ -105,7 +105,8 @@ architecture structural of AVALON2WB is
 			elsif (csi_clk'event and csi_clk = '1') then
 			--	if (avs_s1_read = '1' or avs_s1_write = '1') then
 				if (avs_s1_chipselect = '1' and (avs_s1_read = '1' or avs_s1_write = '1')) then
-					ADR_O <= "00" & avs_s1_address(27 downto 0) & byte_adr_b01;
+--					ADR_O <= "00" & avs_s1_address(27 downto 0) & byte_adr_b01;
+					ADR_O <= "0000000000000000000000" & avs_s1_address(7 downto 0) & byte_adr_b01;
 				end if;
 			end if;
 		end process;

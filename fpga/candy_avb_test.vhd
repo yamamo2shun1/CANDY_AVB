@@ -254,14 +254,14 @@ architecture RTL of CANDY_AVB is
 --		);
 --	end component;
 	
-	constant p_wb_offset_low: std_logic_vector(31 downto 0) := X"00000000";
-	constant p_wb_offset_hi:  std_logic_vector(31 downto 0) := X"3FFFFFFF";
---	constant p_wb_offset_low: std_logic_vector(31 downto 0) := X"40000000";
---	constant p_wb_offset_hi:  std_logic_vector(31 downto 0) := X"7FFFFFFF";
-	constant p_wb_i2c_low:    std_logic_vector(31 downto 0) := p_wb_offset_low + X"00000040";
-	constant p_wb_i2c_hi:     std_logic_vector(31 downto 0) := p_wb_offset_low + X"0000007F";
---	constant p_wb_eth_low:    std_logic_vector(31 downto 0) := p_wb_offset_low + X"00001000";
---	constant p_wb_eth_hi:     std_logic_vector(31 downto 0) := p_wb_offset_low + X"000017FF";
+--	constant p_wb_offset_low: std_logic_vector(31 downto 0) := X"00000000";
+--	constant p_wb_offset_hi:  std_logic_vector(31 downto 0) := X"3FFFFFFF";
+--	constant p_wb_i2c_low:    std_logic_vector(31 downto 0) := p_wb_offset_low + X"00000040";
+--	constant p_wb_i2c_hi:     std_logic_vector(31 downto 0) := p_wb_offset_low + X"0000007F";
+	constant p_wb_offset_low: std_logic_vector(11 downto 0) := X"000";
+	constant p_wb_offset_hi:  std_logic_vector(11 downto 0) := X"3FF";--X"3FFFFFFF";
+	constant p_wb_i2c_low:    std_logic_vector(11 downto 0) := p_wb_offset_low + X"040";
+	constant p_wb_i2c_hi:     std_logic_vector(11 downto 0) := p_wb_offset_low + X"07F";
 	
 	signal altpll_locked_export:  std_logic;
 	signal adc_pll_locked_export: std_logic;
