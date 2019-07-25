@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2019/07/23 16:48:50</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1563868130559</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2019/07/25 18:12:52</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1564045972881</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_sss_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\candy_avb_test_qsys.sopcinfo</SopcDesignFile>
@@ -1986,8 +1986,8 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>avalon_wb</slaveDescriptor>
-                <addressRange>0x40000000 - 0x7FFFFFFF</addressRange>
-                <addressSpan>1073741824</addressSpan>
+                <addressRange>0x40000000 - 0x400003FF</addressRange>
+                <addressSpan>1024</addressSpan>
                 <attributes/>
         </MemoryMap>
         <LinkerSection>
