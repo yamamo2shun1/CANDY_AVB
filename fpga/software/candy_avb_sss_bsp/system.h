@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_0' in SOPC Builder design 'candy_avb_test_qsys'
  * SOPC Builder design path: ../../candy_avb_test_qsys.sopcinfo
  *
- * Generated: Thu Jul 25 18:12:59 JST 2019
+ * Generated: Thu Jul 25 18:39:05 JST 2019
  */
 
 /*
@@ -68,7 +68,7 @@
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x00000000
 #define ALT_CPU_CPU_IMPLEMENTATION "fast"
-#define ALT_CPU_DATA_ADDR_WIDTH 0x1f
+#define ALT_CPU_DATA_ADDR_WIDTH 0x18
 #define ALT_CPU_DCACHE_BYPASS_MASK 0x80000000
 #define ALT_CPU_DCACHE_LINE_SIZE 32
 #define ALT_CPU_DCACHE_LINE_SIZE_LOG2 5
@@ -109,7 +109,7 @@
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x00000000
 #define NIOS2_CPU_IMPLEMENTATION "fast"
-#define NIOS2_DATA_ADDR_WIDTH 0x1f
+#define NIOS2_DATA_ADDR_WIDTH 0x18
 #define NIOS2_DCACHE_BYPASS_MASK 0x80000000
 #define NIOS2_DCACHE_LINE_SIZE 32
 #define NIOS2_DCACHE_LINE_SIZE_LOG2 5
@@ -173,19 +173,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtaguart_0"
-#define ALT_STDERR_BASE 0xa01718
+#define ALT_STDERR_BASE 0xa01b18
 #define ALT_STDERR_DEV jtaguart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtaguart_0"
-#define ALT_STDIN_BASE 0xa01718
+#define ALT_STDIN_BASE 0xa01b18
 #define ALT_STDIN_DEV jtaguart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtaguart_0"
-#define ALT_STDOUT_BASE 0xa01718
+#define ALT_STDOUT_BASE 0xa01b18
 #define ALT_STDOUT_DEV jtaguart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -209,7 +209,7 @@
  *
  */
 
-#define ALTPLL_0_BASE 0xa016f0
+#define ALTPLL_0_BASE 0xa01af0
 #define ALTPLL_0_IRQ -1
 #define ALTPLL_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define ALTPLL_0_NAME "/dev/altpll_0"
@@ -224,7 +224,7 @@
  */
 
 #define ALT_MODULE_CLASS_avalon_wb avalon_wb
-#define AVALON_WB_BASE 0x40000000
+#define AVALON_WB_BASE 0xa01000
 #define AVALON_WB_IRQ -1
 #define AVALON_WB_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define AVALON_WB_NAME "/dev/avalon_wb"
@@ -267,7 +267,7 @@
  */
 
 #define ALT_MODULE_CLASS_eth_tse_0 altera_eth_tse
-#define ETH_TSE_0_BASE 0xa01000
+#define ETH_TSE_0_BASE 0xa01400
 #define ETH_TSE_0_ENABLE_MACLITE 0
 #define ETH_TSE_0_FIFO_WIDTH 32
 #define ETH_TSE_0_IRQ -1
@@ -307,7 +307,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtaguart_0 altera_avalon_jtag_uart
-#define JTAGUART_0_BASE 0xa01718
+#define JTAGUART_0_BASE 0xa01b18
 #define JTAGUART_0_IRQ 1
 #define JTAGUART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAGUART_0_NAME "/dev/jtaguart_0"
@@ -325,7 +325,7 @@
  */
 
 #define ALT_MODULE_CLASS_modular_adc_0_sample_store_csr altera_modular_adc
-#define MODULAR_ADC_0_SAMPLE_STORE_CSR_BASE 0xa01400
+#define MODULAR_ADC_0_SAMPLE_STORE_CSR_BASE 0xa01800
 #define MODULAR_ADC_0_SAMPLE_STORE_CSR_CORE_VARIANT 0
 #define MODULAR_ADC_0_SAMPLE_STORE_CSR_CSD_LENGTH 2
 #define MODULAR_ADC_0_SAMPLE_STORE_CSR_CSD_SLOT_0 "CH3"
@@ -428,7 +428,7 @@
  */
 
 #define ALT_MODULE_CLASS_modular_adc_0_sequencer_csr altera_modular_adc
-#define MODULAR_ADC_0_SEQUENCER_CSR_BASE 0xa01700
+#define MODULAR_ADC_0_SEQUENCER_CSR_BASE 0xa01b00
 #define MODULAR_ADC_0_SEQUENCER_CSR_CORE_VARIANT 0
 #define MODULAR_ADC_0_SEQUENCER_CSR_CSD_LENGTH 2
 #define MODULAR_ADC_0_SEQUENCER_CSR_CSD_SLOT_0 "CH3"
@@ -531,7 +531,7 @@
  */
 
 #define ALT_MODULE_CLASS_msgdma_rx_csr altera_msgdma
-#define MSGDMA_RX_CSR_BASE 0xa01680
+#define MSGDMA_RX_CSR_BASE 0xa01a80
 #define MSGDMA_RX_CSR_BURST_ENABLE 0
 #define MSGDMA_RX_CSR_BURST_WRAPPING_SUPPORT 0
 #define MSGDMA_RX_CSR_CHANNEL_ENABLE 0
@@ -569,7 +569,7 @@
  */
 
 #define ALT_MODULE_CLASS_msgdma_rx_prefetcher_csr altera_msgdma
-#define MSGDMA_RX_PREFETCHER_CSR_BASE 0xa01660
+#define MSGDMA_RX_PREFETCHER_CSR_BASE 0xa01a60
 #define MSGDMA_RX_PREFETCHER_CSR_BURST_ENABLE 0
 #define MSGDMA_RX_PREFETCHER_CSR_BURST_WRAPPING_SUPPORT 0
 #define MSGDMA_RX_PREFETCHER_CSR_CHANNEL_ENABLE 0
@@ -607,7 +607,7 @@
  */
 
 #define ALT_MODULE_CLASS_msgdma_tx_csr altera_msgdma
-#define MSGDMA_TX_CSR_BASE 0xa016a0
+#define MSGDMA_TX_CSR_BASE 0xa01aa0
 #define MSGDMA_TX_CSR_BURST_ENABLE 0
 #define MSGDMA_TX_CSR_BURST_WRAPPING_SUPPORT 0
 #define MSGDMA_TX_CSR_CHANNEL_ENABLE 0
@@ -645,7 +645,7 @@
  */
 
 #define ALT_MODULE_CLASS_msgdma_tx_prefetcher_csr altera_msgdma
-#define MSGDMA_TX_PREFETCHER_CSR_BASE 0xa01640
+#define MSGDMA_TX_PREFETCHER_CSR_BASE 0xa01a40
 #define MSGDMA_TX_PREFETCHER_CSR_BURST_ENABLE 0
 #define MSGDMA_TX_PREFETCHER_CSR_BURST_WRAPPING_SUPPORT 0
 #define MSGDMA_TX_PREFETCHER_CSR_CHANNEL_ENABLE 0
@@ -722,7 +722,7 @@
  */
 
 #define ALT_MODULE_CLASS_onchip_flash_0_csr altera_onchip_flash
-#define ONCHIP_FLASH_0_CSR_BASE 0xa01708
+#define ONCHIP_FLASH_0_CSR_BASE 0xa01b08
 #define ONCHIP_FLASH_0_CSR_BYTES_PER_PAGE 4096
 #define ONCHIP_FLASH_0_CSR_IRQ -1
 #define ONCHIP_FLASH_0_CSR_IRQ_INTERRUPT_CONTROLLER_ID -1
@@ -784,7 +784,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_0 altera_avalon_pio
-#define PIO_0_BASE 0xa016e0
+#define PIO_0_BASE 0xa01ae0
 #define PIO_0_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_0_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_0_CAPTURE 0
@@ -811,7 +811,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_1 altera_avalon_pio
-#define PIO_1_BASE 0xa016c0
+#define PIO_1_BASE 0xa01ac0
 #define PIO_1_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_1_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_1_CAPTURE 0
@@ -838,7 +838,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_4 altera_avalon_pio
-#define PIO_4_BASE 0xa016d0
+#define PIO_4_BASE 0xa01ad0
 #define PIO_4_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_4_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define PIO_4_CAPTURE 0
@@ -866,7 +866,7 @@
 
 #define ALT_MODULE_CLASS_sys_clk_timer altera_avalon_timer
 #define SYS_CLK_TIMER_ALWAYS_RUN 0
-#define SYS_CLK_TIMER_BASE 0xa01600
+#define SYS_CLK_TIMER_BASE 0xa01a00
 #define SYS_CLK_TIMER_COUNTER_SIZE 32
 #define SYS_CLK_TIMER_FIXED_PERIOD 1
 #define SYS_CLK_TIMER_FREQ 100000000
@@ -891,13 +891,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0xa01710
+#define SYSID_QSYS_0_BASE 0xa01b10
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1564044988
+#define SYSID_QSYS_0_TIMESTAMP 1564046875
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -907,7 +907,7 @@
  */
 
 #define ALT_MODULE_CLASS_uart altera_avalon_uart
-#define UART_BASE 0xa01620
+#define UART_BASE 0xa01a20
 #define UART_BAUD 115200
 #define UART_DATA_BITS 8
 #define UART_FIXED_BAUD 1

@@ -28,7 +28,7 @@
 // ------------------------------------------
 // Generation parameters:
 //   output_name:         candy_avb_test_qsys_mm_interconnect_0_rsp_demux_006
-//   ST_DATA_W:           113
+//   ST_DATA_W:           106
 //   ST_CHANNEL_W:        21
 //   NUM_OUTPUTS:         2
 //   VALID_WIDTH:         1
@@ -46,7 +46,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_demux_006
     // Sink
     // -------------------
     input  [1-1      : 0]   sink_valid,
-    input  [113-1    : 0]   sink_data, // ST_DATA_W=113
+    input  [106-1    : 0]   sink_data, // ST_DATA_W=106
     input  [21-1 : 0]   sink_channel, // ST_CHANNEL_W=21
     input                         sink_startofpacket,
     input                         sink_endofpacket,
@@ -56,14 +56,14 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_demux_006
     // Sources 
     // -------------------
     output reg                      src0_valid,
-    output reg [113-1    : 0] src0_data, // ST_DATA_W=113
+    output reg [106-1    : 0] src0_data, // ST_DATA_W=106
     output reg [21-1 : 0] src0_channel, // ST_CHANNEL_W=21
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,
     input                           src0_ready,
 
     output reg                      src1_valid,
-    output reg [113-1    : 0] src1_data, // ST_DATA_W=113
+    output reg [106-1    : 0] src1_data, // ST_DATA_W=106
     output reg [21-1 : 0] src1_channel, // ST_CHANNEL_W=21
     output reg                      src1_startofpacket,
     output reg                      src1_endofpacket,

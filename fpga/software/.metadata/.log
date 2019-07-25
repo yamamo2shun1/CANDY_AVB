@@ -6122,3 +6122,18 @@ org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
 
 !ENTRY org.eclipse.debug.core 4 125 2019-07-25 18:18:03.189
 !MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-07-25 18:40:24.712
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0xa01b10 --id=0x0 --timestamp=1564046875 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_sss/candy_avb_sss.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-07-25 18:40:27.821
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0xa01b10 --id=0x0 --timestamp=1564046875]
+
+!ENTRY org.eclipse.debug.core 4 125 2019-07-25 18:42:27.925
+!MESSAGE Inferior terminated
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-07-25 18:42:46.773
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --sidp=0xa01b10 --id=0x0 --timestamp=1564046875 /cygdrive/c/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/software/candy_avb_sss/candy_avb_sss.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-07-25 18:42:49.863
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-BlasterII on localhost [USB-1]' --device=1 --instance=0 --tcpport=auto --sidp=0xa01b10 --id=0x0 --timestamp=1564046875]
