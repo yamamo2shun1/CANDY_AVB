@@ -5,7 +5,7 @@
 <stringAttribute key="byteStreamDeviceCableName" value="USB-BlasterII on localhost [USB-1]"/>
 <stringAttribute key="byteStreamDeviceDeviceID" value="1"/>
 <stringAttribute key="byteStreamDeviceInstanceID" value="0"/>
-<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="55314"/>
+<stringAttribute key="com.altera.sbtgui.launch.REMOTE_PORT" value="59422"/>
 <booleanAttribute key="downloadProgram" value="true"/>
 <stringAttribute key="elfFile" value="C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_sss\candy_avb_sss.elf"/>
 <stringAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value=""/>

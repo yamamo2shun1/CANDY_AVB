@@ -2,22 +2,26 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="alt_tse_phy_print_prof" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="alt_tse_phy_print_prof"/>
-			<item value="profile no."/>
-			<item value="no phy connected"/>
-			<item value="st_size"/>
-			<item value="stfrom"/>
-			<item value="from_addr"/>
-			<item value="recvfrom"/>
-			<item value="already"/>
+			<item value="get_bo"/>
+			<item value="get_mac_addr"/>
+			<item value="printf"/>
+			<item value="getos"/>
+			<item value="memcp"/>
+			<item value="process"/>
+			<item value="WORD"/>
+			<item value="BOOL"/>
 		</list>
 		<list key="replacehistory">
+			<item value="INT16U"/>
+			<item value="BOOLEAN"/>
+			<item value="INT16S"/>
+			<item value="INT8U"/>
 			<item value=","/>
 		</list>
 	</section>
