@@ -112,7 +112,7 @@ architecture rtl of candy_avb_test_qsys is
 
 	component AVALON2WB is
 		port (
-			avs_s1_address       : in  std_logic_vector(27 downto 0) := (others => 'X'); -- address
+			avs_s1_address       : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- address
 			avs_s1_byteenable    : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
 			avs_s1_read          : in  std_logic                     := 'X';             -- read
 			avs_s1_write         : in  std_logic                     := 'X';             -- write
@@ -605,7 +605,7 @@ architecture rtl of candy_avb_test_qsys is
 			altpll_0_pll_slave_read                                    : out std_logic;                                        -- read
 			altpll_0_pll_slave_readdata                                : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
 			altpll_0_pll_slave_writedata                               : out std_logic_vector(31 downto 0);                    -- writedata
-			avalon_wb_s1_address                                       : out std_logic_vector(27 downto 0);                    -- address
+			avalon_wb_s1_address                                       : out std_logic_vector(7 downto 0);                     -- address
 			avalon_wb_s1_write                                         : out std_logic;                                        -- write
 			avalon_wb_s1_read                                          : out std_logic;                                        -- read
 			avalon_wb_s1_readdata                                      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
@@ -1063,7 +1063,7 @@ architecture rtl of candy_avb_test_qsys is
 	signal mm_interconnect_0_avalon_wb_s1_chipselect                        : std_logic;                     -- mm_interconnect_0:avalon_wb_s1_chipselect -> avalon_wb:avs_s1_chipselect
 	signal mm_interconnect_0_avalon_wb_s1_readdata                          : std_logic_vector(31 downto 0); -- avalon_wb:avs_s1_readdata -> mm_interconnect_0:avalon_wb_s1_readdata
 	signal mm_interconnect_0_avalon_wb_s1_waitrequest                       : std_logic;                     -- avalon_wb:avs_s1_waitrequest -> mm_interconnect_0:avalon_wb_s1_waitrequest
-	signal mm_interconnect_0_avalon_wb_s1_address                           : std_logic_vector(27 downto 0); -- mm_interconnect_0:avalon_wb_s1_address -> avalon_wb:avs_s1_address
+	signal mm_interconnect_0_avalon_wb_s1_address                           : std_logic_vector(7 downto 0);  -- mm_interconnect_0:avalon_wb_s1_address -> avalon_wb:avs_s1_address
 	signal mm_interconnect_0_avalon_wb_s1_read                              : std_logic;                     -- mm_interconnect_0:avalon_wb_s1_read -> avalon_wb:avs_s1_read
 	signal mm_interconnect_0_avalon_wb_s1_byteenable                        : std_logic_vector(3 downto 0);  -- mm_interconnect_0:avalon_wb_s1_byteenable -> avalon_wb:avs_s1_byteenable
 	signal mm_interconnect_0_avalon_wb_s1_readdatavalid                     : std_logic;                     -- avalon_wb:avs_s1_readdatavalid -> mm_interconnect_0:avalon_wb_s1_readdatavalid

@@ -44,10 +44,10 @@
 
 module candy_avb_test_qsys_mm_interconnect_0_router_default_decode
   #(
-     parameter DEFAULT_CHANNEL = 15,
+     parameter DEFAULT_CHANNEL = 13,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
-               DEFAULT_DESTID = 1 
+               DEFAULT_DESTID = 11 
    )
   (output [99 - 95 : 0] default_destination_id,
    output [21-1 : 0] default_wr_channel,
@@ -154,13 +154,13 @@ module candy_avb_test_qsys_mm_interconnect_0_router
     localparam PAD17 = log2ceil(64'ha01718 - 64'ha01710); 
     localparam PAD18 = log2ceil(64'ha01720 - 64'ha01718); 
     localparam PAD19 = log2ceil(64'ha04000 - 64'ha02000); 
-    localparam PAD20 = log2ceil(64'h80000000 - 64'h40000000); 
+    localparam PAD20 = log2ceil(64'h40000400 - 64'h40000000); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h80000000;
+    localparam ADDR_RANGE = 64'h40000400;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -333,7 +333,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
     end
 
-    // ( 0x40000000 .. 0x80000000 )
+    // ( 0x40000000 .. 0x40000400 )
     if ( {address[RG:PAD20],{PAD20{1'b0}}} == 31'h40000000   ) begin
             src_channel = 21'b000001000000000000000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;

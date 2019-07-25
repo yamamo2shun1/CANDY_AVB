@@ -444,7 +444,7 @@
    {
       datum _sortIndex
       {
-         value = "19";
+         value = "17";
          type = "int";
       }
    }
@@ -461,32 +461,11 @@
          type = "String";
       }
    }
-   element eth_ocm_0
-   {
-      datum _sortIndex
-      {
-         value = "14";
-         type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "0";
-         type = "boolean";
-      }
-   }
-   element eth_ocm_0.control_port
-   {
-      datum baseAddress
-      {
-         value = "8912896";
-         type = "String";
-      }
-   }
    element eth_tse_0
    {
       datum _sortIndex
       {
-         value = "16";
+         value = "14";
          type = "int";
       }
    }
@@ -552,7 +531,7 @@
    {
       datum _sortIndex
       {
-         value = "17";
+         value = "15";
          type = "int";
       }
    }
@@ -576,7 +555,7 @@
    {
       datum _sortIndex
       {
-         value = "18";
+         value = "16";
          type = "int";
       }
    }
@@ -811,19 +790,6 @@
          type = "String";
       }
    }
-   element wb_avalon
-   {
-      datum _sortIndex
-      {
-         value = "15";
-         type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "0";
-         type = "boolean";
-      }
-   }
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
@@ -889,7 +855,6 @@
    internal="eth_tse_0.mac_misc_connection"
    type="conduit"
    dir="end" />
- <interface name="eth_ocm" internal="eth_ocm_0.global" />
  <interface
    name="eth_rx_clk"
    internal="eth_tse_0.pcs_mac_rx_clock_connection"
@@ -905,7 +870,6 @@
    internal="eth_tse_0.pcs_mac_tx_clock_connection"
    type="clock"
    dir="end" />
- <interface name="m_wb" internal="wb_avalon.conduit" />
  <interface
    name="new_sdram_controller_0_wire"
    internal="new_sdram_controller_0.wire"
@@ -1133,17 +1097,6 @@
   <parameter name="useNonDefaultInitFile" value="false" />
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
- </module>
- <module name="eth_ocm_0" kind="eth_ocm" version="9.1" enabled="0">
-  <parameter name="MDIO_CLOCK_DIVIDER" value="50" />
-  <parameter name="MEM_WIDTH" value="32" />
-  <parameter name="RX_BURST_ENABLE" value="true" />
-  <parameter name="RX_BURST_TARGET" value="8" />
-  <parameter name="RX_FIFO_DEPTH" value="4096" />
-  <parameter name="TOTAL_DESCRIPTORS" value="128" />
-  <parameter name="TX_BURST_ENABLE" value="true" />
-  <parameter name="TX_BURST_TARGET" value="8" />
-  <parameter name="TX_FIFO_DEPTH" value="128" />
  </module>
  <module name="eth_tse_0" kind="altera_eth_tse" version="18.1" enabled="1">
   <parameter name="AUTO_DEVICE" value="10M16SAU169C8G" />
@@ -1800,11 +1753,6 @@
   <parameter name="useEopRegister" value="false" />
   <parameter name="useRelativePathForSimFile" value="false" />
  </module>
- <module
-   name="wb_avalon"
-   kind="Wishbone_Avalon_Bridge"
-   version="1.0"
-   enabled="0" />
  <connection
    kind="avalon"
    version="18.1"
@@ -1812,15 +1760,6 @@
    end="jtaguart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00a01718" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="18.1"
-   start="nios2_0.data_master"
-   end="eth_ocm_0.control_port">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00880000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2099,11 +2038,6 @@
    version="18.1"
    start="altpll_0.c0"
    end="modular_adc_0.adc_pll_clock" />
- <connection
-   kind="clock"
-   version="18.1"
-   start="altpll_0.c1"
-   end="eth_ocm_0.avalon_clock" />
  <connection kind="clock" version="18.1" start="altpll_0.c1" end="avalon_wb.clk" />
  <connection
    kind="clock"
@@ -2141,7 +2075,6 @@
    version="18.1"
    start="altpll_0.c1"
    end="modular_adc_0.clock" />
- <connection kind="clock" version="18.1" start="altpll_0.c1" end="wb_avalon.clock" />
  <connection kind="clock" version="18.1" start="altpll_0.c1" end="msgdma_rx.clock" />
  <connection kind="clock" version="18.1" start="altpll_0.c1" end="msgdma_tx.clock" />
  <connection
@@ -2164,13 +2097,6 @@
    version="18.1"
    start="clk_0.clk"
    end="altpll_0.inclk_interface" />
- <connection
-   kind="interrupt"
-   version="18.1"
-   start="nios2_0.irq"
-   end="eth_ocm_0.avalon_irq">
-  <parameter name="irqNumber" value="0" />
- </connection>
  <connection
    kind="interrupt"
    version="18.1"
@@ -2209,11 +2135,6 @@
    end="modular_adc_0.sample_store_irq">
   <parameter name="irqNumber" value="5" />
  </connection>
- <connection
-   kind="reset"
-   version="18.1"
-   start="clk_0.clk_reset"
-   end="eth_ocm_0.avalon_clock_reset" />
  <connection
    kind="reset"
    version="18.1"
@@ -2262,11 +2183,6 @@
    kind="reset"
    version="18.1"
    start="clk_0.clk_reset"
-   end="wb_avalon.reset" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="clk_0.clk_reset"
    end="descriptor_memory.reset1" />
  <connection
    kind="reset"
@@ -2288,11 +2204,6 @@
    version="18.1"
    start="clk_0.clk_reset"
    end="modular_adc_0.reset_sink" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="nios2_0.debug_reset_request"
-   end="eth_ocm_0.avalon_clock_reset" />
  <connection
    kind="reset"
    version="18.1"
@@ -2353,11 +2264,6 @@
    version="18.1"
    start="nios2_0.debug_reset_request"
    end="pio_1.reset" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="nios2_0.debug_reset_request"
-   end="wb_avalon.reset" />
  <connection
    kind="reset"
    version="18.1"

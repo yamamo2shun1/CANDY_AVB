@@ -65,7 +65,7 @@ module candy_avb_test_qsys_mm_interconnect_0 (
 		output wire        altpll_0_pll_slave_read,                                    //                                                     .read
 		input  wire [31:0] altpll_0_pll_slave_readdata,                                //                                                     .readdata
 		output wire [31:0] altpll_0_pll_slave_writedata,                               //                                                     .writedata
-		output wire [27:0] avalon_wb_s1_address,                                       //                                         avalon_wb_s1.address
+		output wire [7:0]  avalon_wb_s1_address,                                       //                                         avalon_wb_s1.address
 		output wire        avalon_wb_s1_write,                                         //                                                     .write
 		output wire        avalon_wb_s1_read,                                          //                                                     .read
 		input  wire [31:0] avalon_wb_s1_readdata,                                      //                                                     .readdata
@@ -3222,7 +3222,7 @@ module candy_avb_test_qsys_mm_interconnect_0 (
 	);
 
 	altera_merlin_slave_translator #(
-		.AV_ADDRESS_W                   (28),
+		.AV_ADDRESS_W                   (8),
 		.AV_DATA_W                      (32),
 		.UAV_DATA_W                     (32),
 		.AV_BURSTCOUNT_W                (1),

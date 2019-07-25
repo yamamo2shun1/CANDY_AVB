@@ -1,5 +1,5 @@
 Flow report for CANDY_AVB
-Tue Jul 23 16:33:20 2019
+Thu Jul 25 18:10:45 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jul 23 16:32:51 2019       ;
+; Flow Status                        ; Successful - Thu Jul 25 18:10:14 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; CANDY_AVB                                   ;
 ; Top-level Entity Name              ; CANDY_AVB                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M16SAU169C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 12,180 / 15,840 ( 77 % )                    ;
-;     Total combinational functions  ; 9,427 / 15,840 ( 60 % )                     ;
-;     Dedicated logic registers      ; 8,274 / 15,840 ( 52 % )                     ;
-; Total registers                    ; 8342                                        ;
+; Total logic elements               ; 12,090 / 15,840 ( 76 % )                    ;
+;     Total combinational functions  ; 9,388 / 15,840 ( 59 % )                     ;
+;     Dedicated logic registers      ; 8,254 / 15,840 ( 52 % )                     ;
+; Total registers                    ; 8322                                        ;
 ; Total pins                         ; 86 / 130 ( 66 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 232,144 / 562,176 ( 41 % )                  ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/23/2019 16:25:35 ;
+; Start date & time ; 07/25/2019 18:02:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CANDY_AVB           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 ; Assignment Name                     ; Value                                                                 ; Default Value                        ; Entity Name         ; Section Id ;
 +-------------------------------------+-----------------------------------------------------------------------+--------------------------------------+---------------------+------------+
 ; AUTO_SHIFT_REGISTER_RECOGNITION     ; Always                                                                ; Auto                                 ; --                  ; --         ;
-; COMPILER_SIGNATURE_ID               ; 84440843672872.156386673330584                                        ; --                                   ; --                  ; --         ;
+; COMPILER_SIGNATURE_ID               ; 84440843672872.156404534409304                                        ; --                                   ; --                  ; --         ;
 ; CYCLONEII_OPTIMIZATION_TECHNIQUE    ; Area                                                                  ; Balanced                             ; --                  ; --         ;
 ; ENABLE_SIGNALTAP                    ; On                                                                    ; --                                   ; --                  ; --         ;
 ; FLOW_ENABLE_POWER_ANALYZER          ; On                                                                    ; Off                                  ; --                  ; --         ;
@@ -103,7 +103,7 @@ refer to the applicable agreement for further details.
 ; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.regmap              ; --                                   ; --                  ; --         ;
 ; SLD_FILE                            ; candy_avb_test_qsys/synthesis/candy_avb_test_qsys.debuginfo           ; --                                   ; --                  ; --         ;
 ; SLD_FILE                            ; db/stp2_auto_stripped.stp                                             ; --                                   ; --                  ; --         ;
-; SLD_INFO                            ; QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1563866610 ; --                                   ; candy_avb_test_qsys ; --         ;
+; SLD_INFO                            ; QSYS_NAME candy_avb_test_qsys HAS_SOPCINFO 1 GENERATION_ID 1564044988 ; --                                   ; candy_avb_test_qsys ; --         ;
 ; SOPCINFO_FILE                       ; candy_avb_test_qsys/synthesis/../../candy_avb_test_qsys.sopcinfo      ; --                                   ; --                  ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                                    ; --                                   ; --                  ; --         ;
 ; USE_SIGNALTAP_FILE                  ; output_files/stp2.stp                                                 ; --                                   ; --                  ; --         ;
@@ -118,12 +118,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:03:31     ; 1.0                     ; 5256 MB             ; 00:03:59                           ;
-; Fitter               ; 00:02:46     ; 1.4                     ; 5798 MB             ; 00:04:41                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4747 MB             ; 00:00:06                           ;
-; Power Analyzer       ; 00:00:25     ; 2.1                     ; 4965 MB             ; 00:00:47                           ;
-; Timing Analyzer      ; 00:00:27     ; 2.3                     ; 4978 MB             ; 00:00:48                           ;
-; Total                ; 00:07:15     ; --                      ; --                  ; 00:10:21                           ;
+; Analysis & Synthesis ; 00:03:43     ; 1.0                     ; 5243 MB             ; 00:04:04                           ;
+; Fitter               ; 00:02:57     ; 1.4                     ; 5817 MB             ; 00:04:55                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4748 MB             ; 00:00:08                           ;
+; Power Analyzer       ; 00:00:24     ; 1.9                     ; 4963 MB             ; 00:00:43                           ;
+; Timing Analyzer      ; 00:00:29     ; 2.3                     ; 4973 MB             ; 00:00:51                           ;
+; Total                ; 00:07:41     ; --                      ; --                  ; 00:10:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Jul 23 16:29:22 2019
+Analysis & Synthesis Status : Successful - Thu Jul 25 18:06:31 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : CANDY_AVB
 Top-level Entity Name : CANDY_AVB
 Family : MAX 10
-Total logic elements : 13,397
-    Total combinational functions : 9,411
-    Dedicated logic registers : 8,384
-Total registers : 8384
+Total logic elements : 13,338
+    Total combinational functions : 9,372
+    Dedicated logic registers : 8,364
+Total registers : 8364
 Total pins : 86
 Total virtual pins : 0
 Total memory bits : 232,144

@@ -1,5 +1,5 @@
 Timing Analyzer report for CANDY_AVB
-Tue Jul 23 16:33:20 2019
+Thu Jul 25 18:10:45 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -94,14 +94,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.27        ;
+; Average used               ; 2.26        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  44.9%      ;
-;     Processor 3            ;  42.1%      ;
-;     Processor 4            ;  39.7%      ;
+;     Processor 2            ;  44.0%      ;
+;     Processor 3            ;  41.9%      ;
+;     Processor 4            ;  39.8%      ;
 +----------------------------+-------------+
 
 
@@ -110,13 +110,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                         ; Status ; Read at                  ;
 +---------------------------------------------------------------------------------------+--------+--------------------------+
-; candy_avb_test_qsys/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Tue Jul 23 16:33:03 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Tue Jul 23 16:33:03 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/altera_onchip_flash.sdc                      ; OK     ; Tue Jul 23 16:33:03 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/candy_avb_test_qsys_nios2_0_cpu.sdc          ; OK     ; Tue Jul 23 16:33:03 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/altera_modular_adc_control.sdc               ; OK     ; Tue Jul 23 16:33:04 2019 ;
-; candy_avb_test_qsys/synthesis/submodules/altera_eth_tse_mac.sdc                       ; OK     ; Tue Jul 23 16:33:04 2019 ;
-; candy_avb_test.sdc                                                                    ; OK     ; Tue Jul 23 16:33:04 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_reset_controller.sdc                  ; OK     ; Thu Jul 25 18:10:27 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Thu Jul 25 18:10:27 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_onchip_flash.sdc                      ; OK     ; Thu Jul 25 18:10:27 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/candy_avb_test_qsys_nios2_0_cpu.sdc          ; OK     ; Thu Jul 25 18:10:27 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_modular_adc_control.sdc               ; OK     ; Thu Jul 25 18:10:27 2019 ;
+; candy_avb_test_qsys/synthesis/submodules/altera_eth_tse_mac.sdc                       ; OK     ; Thu Jul 25 18:10:28 2019 ;
+; candy_avb_test.sdc                                                                    ; OK     ; Thu Jul 25 18:10:28 2019 ;
 +---------------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -143,11 +143,11 @@ refer to the applicable agreement for further details.
 +------------+-----------------+-----------------------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                  ; Note                                                          ;
 +------------+-----------------+-----------------------------+---------------------------------------------------------------+
-; 40.32 MHz  ; 40.32 MHz       ; ETH_RX_CLK                  ;                                                               ;
-; 40.58 MHz  ; 40.58 MHz       ; ETH_TX_CLK                  ;                                                               ;
-; 84.65 MHz  ; 84.65 MHz       ; u0|altpll_0|sd1|pll7|clk[1] ;                                                               ;
-; 96.77 MHz  ; 96.77 MHz       ; altera_reserved_tck         ;                                                               ;
-; 252.65 MHz ; 250.0 MHz       ; CLK                         ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 39.4 MHz   ; 39.4 MHz        ; ETH_TX_CLK                  ;                                                               ;
+; 40.26 MHz  ; 40.26 MHz       ; ETH_RX_CLK                  ;                                                               ;
+; 85.09 MHz  ; 85.09 MHz       ; u0|altpll_0|sd1|pll7|clk[1] ;                                                               ;
+; 103.78 MHz ; 103.78 MHz      ; altera_reserved_tck         ;                                                               ;
+; 272.78 MHz ; 250.0 MHz       ; CLK                         ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+-----------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -157,11 +157,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; -1.814 ; -306.697      ;
-; ETH_TX_CLK                  ; 2.688  ; 0.000         ;
-; ETH_RX_CLK                  ; 15.196 ; 0.000         ;
-; CLK                         ; 16.875 ; 0.000         ;
-; altera_reserved_tck         ; 44.833 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; -1.753 ; -205.365      ;
+; ETH_TX_CLK                  ; 2.559  ; 0.000         ;
+; ETH_RX_CLK                  ; 15.160 ; 0.000         ;
+; CLK                         ; 17.167 ; 0.000         ;
+; altera_reserved_tck         ; 45.182 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -170,11 +170,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; 0.199 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 0.273 ; 0.000         ;
 ; ETH_RX_CLK                  ; 0.276 ; 0.000         ;
+; ETH_TX_CLK                  ; 0.355 ; 0.000         ;
 ; altera_reserved_tck         ; 0.361 ; 0.000         ;
-; CLK                         ; 0.363 ; 0.000         ;
-; ETH_TX_CLK                  ; 0.386 ; 0.000         ;
+; CLK                         ; 0.364 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -183,11 +183,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; 3.903  ; 0.000         ;
-; CLK                         ; 18.483 ; 0.000         ;
-; ETH_TX_CLK                  ; 35.211 ; 0.000         ;
-; ETH_RX_CLK                  ; 35.786 ; 0.000         ;
-; altera_reserved_tck         ; 45.642 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 2.909  ; 0.000         ;
+; CLK                         ; 18.738 ; 0.000         ;
+; ETH_TX_CLK                  ; 35.264 ; 0.000         ;
+; ETH_RX_CLK                  ; 35.938 ; 0.000         ;
+; altera_reserved_tck         ; 47.923 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -196,11 +196,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; altera_reserved_tck         ; 1.161 ; 0.000         ;
-; CLK                         ; 1.171 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[1] ; 1.508 ; 0.000         ;
-; ETH_RX_CLK                  ; 2.485 ; 0.000         ;
-; ETH_TX_CLK                  ; 2.618 ; 0.000         ;
+; CLK                         ; 0.988 ; 0.000         ;
+; altera_reserved_tck         ; 1.512 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 2.051 ; 0.000         ;
+; ETH_RX_CLK                  ; 2.344 ; 0.000         ;
+; ETH_TX_CLK                  ; 2.669 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -209,26 +209,26 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------+--------+---------------+
 ; Clock                                                     ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1]                               ; 2.816  ; 0.000         ;
-; CLK                                                       ; 10.148 ; 0.000         ;
-; ETH_RX_CLK                                                ; 19.545 ; 0.000         ;
-; ETH_TX_CLK                                                ; 19.587 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1]                               ; 2.715  ; 0.000         ;
+; CLK                                                       ; 10.152 ; 0.000         ;
+; ETH_RX_CLK                                                ; 19.543 ; 0.000         ;
+; ETH_TX_CLK                                                ; 19.608 ; 0.000         ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; 44.780 ; 0.000         ;
-; altera_reserved_tck                                       ; 49.659 ; 0.000         ;
-; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.685 ; 0.000         ;
+; altera_reserved_tck                                       ; 49.653 ; 0.000         ;
+; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.684 ; 0.000         ;
 +-----------------------------------------------------------+--------+---------------+
 
 
 -----------------------------------------------
 ; Slow 1200mV 85C Model Metastability Summary ;
 -----------------------------------------------
-Worst-Case MTBF of Design is 1.31e+07 years or 4.12e+14 seconds.
+Worst-Case MTBF of Design is 2.42e+08 years or 7.62e+15 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
 Number of Synchronizer Chains Found: 373
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.515
-Worst Case Available Settling Time: 8.285 ns
+Worst Case Available Settling Time: 8.709 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -242,11 +242,11 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------+-----------------+-----------------------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                  ; Note                                                          ;
 +------------+-----------------+-----------------------------+---------------------------------------------------------------+
-; 40.13 MHz  ; 40.13 MHz       ; ETH_RX_CLK                  ;                                                               ;
-; 42.59 MHz  ; 42.59 MHz       ; ETH_TX_CLK                  ;                                                               ;
-; 88.07 MHz  ; 88.07 MHz       ; u0|altpll_0|sd1|pll7|clk[1] ;                                                               ;
-; 99.96 MHz  ; 99.96 MHz       ; altera_reserved_tck         ;                                                               ;
-; 262.74 MHz ; 250.0 MHz       ; CLK                         ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 40.14 MHz  ; 40.14 MHz       ; ETH_RX_CLK                  ;                                                               ;
+; 41.53 MHz  ; 41.53 MHz       ; ETH_TX_CLK                  ;                                                               ;
+; 88.52 MHz  ; 88.52 MHz       ; u0|altpll_0|sd1|pll7|clk[1] ;                                                               ;
+; 107.3 MHz  ; 107.3 MHz       ; altera_reserved_tck         ;                                                               ;
+; 296.56 MHz ; 250.0 MHz       ; CLK                         ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+-----------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -256,11 +256,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; -1.356 ; -117.451      ;
-; ETH_TX_CLK                  ; 2.891  ; 0.000         ;
-; ETH_RX_CLK                  ; 15.080 ; 0.000         ;
-; CLK                         ; 17.027 ; 0.000         ;
-; altera_reserved_tck         ; 44.998 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; -1.298 ; -51.207       ;
+; ETH_TX_CLK                  ; 2.786  ; 0.000         ;
+; ETH_RX_CLK                  ; 15.086 ; 0.000         ;
+; CLK                         ; 17.461 ; 0.000         ;
+; altera_reserved_tck         ; 45.340 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -269,11 +269,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; 0.178 ; 0.000         ;
-; ETH_RX_CLK                  ; 0.253 ; 0.000         ;
-; ETH_TX_CLK                  ; 0.320 ; 0.000         ;
-; altera_reserved_tck         ; 0.324 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 0.247 ; 0.000         ;
+; ETH_RX_CLK                  ; 0.251 ; 0.000         ;
+; altera_reserved_tck         ; 0.323 ; 0.000         ;
 ; CLK                         ; 0.325 ; 0.000         ;
+; ETH_TX_CLK                  ; 0.330 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -282,11 +282,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; 4.274  ; 0.000         ;
-; CLK                         ; 18.598 ; 0.000         ;
-; ETH_TX_CLK                  ; 35.611 ; 0.000         ;
-; ETH_RX_CLK                  ; 36.177 ; 0.000         ;
-; altera_reserved_tck         ; 45.850 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 3.182  ; 0.000         ;
+; CLK                         ; 18.848 ; 0.000         ;
+; ETH_TX_CLK                  ; 35.661 ; 0.000         ;
+; ETH_RX_CLK                  ; 36.316 ; 0.000         ;
+; altera_reserved_tck         ; 48.041 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -295,11 +295,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; CLK                         ; 1.050 ; 0.000         ;
-; altera_reserved_tck         ; 1.072 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[1] ; 1.349 ; 0.000         ;
-; ETH_RX_CLK                  ; 2.222 ; 0.000         ;
-; ETH_TX_CLK                  ; 2.306 ; 0.000         ;
+; CLK                         ; 0.903 ; 0.000         ;
+; altera_reserved_tck         ; 1.347 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 1.835 ; 0.000         ;
+; ETH_RX_CLK                  ; 2.093 ; 0.000         ;
+; ETH_TX_CLK                  ; 2.368 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -308,26 +308,26 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------------+--------+---------------+
 ; Clock                                                     ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1]                               ; 2.767  ; 0.000         ;
-; CLK                                                       ; 10.164 ; 0.000         ;
-; ETH_TX_CLK                                                ; 19.435 ; 0.000         ;
-; ETH_RX_CLK                                                ; 19.565 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1]                               ; 2.615  ; 0.000         ;
+; CLK                                                       ; 10.172 ; 0.000         ;
+; ETH_TX_CLK                                                ; 19.433 ; 0.000         ;
+; ETH_RX_CLK                                                ; 19.564 ; 0.000         ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; 44.883 ; 0.000         ;
-; altera_reserved_tck                                       ; 49.693 ; 0.000         ;
-; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.684 ; 0.000         ;
+; altera_reserved_tck                                       ; 49.685 ; 0.000         ;
+; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.686 ; 0.000         ;
 +-----------------------------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
 ; Slow 1200mV 0C Model Metastability Summary ;
 ----------------------------------------------
-Worst-Case MTBF of Design is 6.5e+07 years or 2.05e+15 seconds.
+Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
 Number of Synchronizer Chains Found: 373
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.515
-Worst Case Available Settling Time: 8.375 ns
+Worst Case Available Settling Time: 8.788 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -341,11 +341,11 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; 2.138  ; 0.000         ;
-; ETH_TX_CLK                  ; 5.293  ; 0.000         ;
-; ETH_RX_CLK                  ; 15.427 ; 0.000         ;
-; CLK                         ; 19.134 ; 0.000         ;
-; altera_reserved_tck         ; 48.103 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 2.126  ; 0.000         ;
+; ETH_TX_CLK                  ; 5.232  ; 0.000         ;
+; ETH_RX_CLK                  ; 15.429 ; 0.000         ;
+; CLK                         ; 19.344 ; 0.000         ;
+; altera_reserved_tck         ; 48.331 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -354,9 +354,9 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; 0.060 ; 0.000         ;
-; ETH_RX_CLK                  ; 0.093 ; 0.000         ;
-; ETH_TX_CLK                  ; 0.119 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 0.093 ; 0.000         ;
+; ETH_RX_CLK                  ; 0.096 ; 0.000         ;
+; ETH_TX_CLK                  ; 0.108 ; 0.000         ;
 ; altera_reserved_tck         ; 0.152 ; 0.000         ;
 ; CLK                         ; 0.153 ; 0.000         ;
 +-----------------------------+-------+---------------+
@@ -367,11 +367,11 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1] ; 7.238  ; 0.000         ;
-; CLK                         ; 19.747 ; 0.000         ;
-; ETH_TX_CLK                  ; 37.800 ; 0.000         ;
-; ETH_RX_CLK                  ; 38.020 ; 0.000         ;
-; altera_reserved_tck         ; 48.251 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 6.881  ; 0.000         ;
+; CLK                         ; 19.845 ; 0.000         ;
+; ETH_TX_CLK                  ; 37.877 ; 0.000         ;
+; ETH_RX_CLK                  ; 38.090 ; 0.000         ;
+; altera_reserved_tck         ; 49.367 ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -380,11 +380,11 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; altera_reserved_tck         ; 0.470 ; 0.000         ;
-; CLK                         ; 0.478 ; 0.000         ;
-; u0|altpll_0|sd1|pll7|clk[1] ; 0.618 ; 0.000         ;
-; ETH_RX_CLK                  ; 1.169 ; 0.000         ;
-; ETH_TX_CLK                  ; 1.267 ; 0.000         ;
+; CLK                         ; 0.409 ; 0.000         ;
+; altera_reserved_tck         ; 0.604 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1] ; 0.857 ; 0.000         ;
+; ETH_RX_CLK                  ; 1.116 ; 0.000         ;
+; ETH_TX_CLK                  ; 1.245 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -393,12 +393,12 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------------------------------------+--------+---------------+
 ; Clock                                                     ; Slack  ; End Point TNS ;
 +-----------------------------------------------------------+--------+---------------+
-; u0|altpll_0|sd1|pll7|clk[1]                               ; 2.954  ; 0.000         ;
-; CLK                                                       ; 9.742  ; 0.000         ;
-; ETH_TX_CLK                                                ; 19.203 ; 0.000         ;
-; ETH_RX_CLK                                                ; 19.259 ; 0.000         ;
+; u0|altpll_0|sd1|pll7|clk[1]                               ; 2.927  ; 0.000         ;
+; CLK                                                       ; 9.752  ; 0.000         ;
+; ETH_TX_CLK                                                ; 19.198 ; 0.000         ;
+; ETH_RX_CLK                                                ; 19.258 ; 0.000         ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; 44.901 ; 0.000         ;
-; altera_reserved_tck                                       ; 49.417 ; 0.000         ;
+; altera_reserved_tck                                       ; 49.413 ; 0.000         ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 90.691 ; 0.000         ;
 +-----------------------------------------------------------+--------+---------------+
 
@@ -412,7 +412,7 @@ Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 Number of Synchronizer Chains Found: 373
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 0.515
-Worst Case Available Settling Time: 9.242 ns
+Worst Case Available Settling Time: 9.442 ns
 
 Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -426,21 +426,21 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +------------------------------------------------------------+----------+-------+----------+---------+---------------------+
 ; Clock                                                      ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------------------------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                                           ; -1.814   ; 0.060 ; 3.903    ; 0.470   ; 2.767               ;
-;  CLK                                                       ; 16.875   ; 0.153 ; 18.483   ; 0.478   ; 9.742               ;
-;  ETH_RX_CLK                                                ; 15.080   ; 0.093 ; 35.786   ; 1.169   ; 19.259              ;
-;  ETH_TX_CLK                                                ; 2.688    ; 0.119 ; 35.211   ; 1.267   ; 19.203              ;
-;  altera_reserved_tck                                       ; 44.833   ; 0.152 ; 45.642   ; 0.470   ; 49.417              ;
+; Worst-case Slack                                           ; -1.753   ; 0.093 ; 2.909    ; 0.409   ; 2.615               ;
+;  CLK                                                       ; 17.167   ; 0.153 ; 18.738   ; 0.409   ; 9.752               ;
+;  ETH_RX_CLK                                                ; 15.086   ; 0.096 ; 35.938   ; 1.116   ; 19.258              ;
+;  ETH_TX_CLK                                                ; 2.559    ; 0.108 ; 35.264   ; 1.245   ; 19.198              ;
+;  altera_reserved_tck                                       ; 45.182   ; 0.152 ; 47.923   ; 0.604   ; 49.413              ;
 ;  u0|altpll_0|sd1|pll7|clk[0]                               ; N/A      ; N/A   ; N/A      ; N/A     ; 44.780              ;
-;  u0|altpll_0|sd1|pll7|clk[1]                               ; -1.814   ; 0.060 ; 3.903    ; 0.618   ; 2.767               ;
+;  u0|altpll_0|sd1|pll7|clk[1]                               ; -1.753   ; 0.093 ; 2.909    ; 0.857   ; 2.615               ;
 ;  u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; N/A      ; N/A   ; N/A      ; N/A     ; 90.684              ;
-; Design-wide TNS                                            ; -306.697 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+; Design-wide TNS                                            ; -205.365 ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  CLK                                                       ; 0.000    ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  ETH_RX_CLK                                                ; 0.000    ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  ETH_TX_CLK                                                ; 0.000    ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  altera_reserved_tck                                       ; 0.000    ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  u0|altpll_0|sd1|pll7|clk[0]                               ; N/A      ; N/A   ; N/A      ; N/A     ; 0.000               ;
-;  u0|altpll_0|sd1|pll7|clk[1]                               ; -306.697 ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
+;  u0|altpll_0|sd1|pll7|clk[1]                               ; -205.365 ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; N/A      ; N/A   ; N/A      ; N/A     ; 0.000               ;
 +------------------------------------------------------------+----------+-------+----------+---------+---------------------+
 
@@ -838,7 +838,7 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                ; To Clock                                                  ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 1570       ; 0          ; 44       ; 4        ;
+; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 1585       ; 0          ; 44       ; 4        ;
 ; u0|altpll_0|sd1|pll7|clk[1]                               ; altera_reserved_tck                                       ; false path ; 0          ; 0        ; 0        ;
 ; CLK                                                       ; CLK                                                       ; 194        ; 0          ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[1]                               ; CLK                                                       ; 10         ; 0          ; 0        ; 0        ;
@@ -852,7 +852,7 @@ Typical MTBF values are calculated based on the nominal silicon characteristics,
 ; ETH_RX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[1]                               ; 199        ; 0          ; 0        ; 0        ;
 ; ETH_TX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[1]                               ; 12         ; 0          ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[1]                               ; 14         ; 1          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[1]                               ; u0|altpll_0|sd1|pll7|clk[1]                               ; 1094633    ; 348        ; 197      ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[1]                               ; u0|altpll_0|sd1|pll7|clk[1]                               ; 1153836    ; 348        ; 197      ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|altpll_0|sd1|pll7|clk[1]                               ; 2          ; 0          ; 0        ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 2          ; 0          ; 0        ; 0        ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
@@ -864,7 +864,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
 ; From Clock                                                ; To Clock                                                  ; RR Paths   ; FR Paths   ; RF Paths ; FF Paths ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
-; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 1570       ; 0          ; 44       ; 4        ;
+; altera_reserved_tck                                       ; altera_reserved_tck                                       ; 1585       ; 0          ; 44       ; 4        ;
 ; u0|altpll_0|sd1|pll7|clk[1]                               ; altera_reserved_tck                                       ; false path ; 0          ; 0        ; 0        ;
 ; CLK                                                       ; CLK                                                       ; 194        ; 0          ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[1]                               ; CLK                                                       ; 10         ; 0          ; 0        ; 0        ;
@@ -878,7 +878,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; ETH_RX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[1]                               ; 199        ; 0          ; 0        ; 0        ;
 ; ETH_TX_CLK                                                ; u0|altpll_0|sd1|pll7|clk[1]                               ; 12         ; 0          ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[0]                               ; u0|altpll_0|sd1|pll7|clk[1]                               ; 14         ; 1          ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[1]                               ; u0|altpll_0|sd1|pll7|clk[1]                               ; 1094633    ; 348        ; 197      ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[1]                               ; u0|altpll_0|sd1|pll7|clk[1]                               ; 1153836    ; 348        ; 197      ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|altpll_0|sd1|pll7|clk[1]                               ; 2          ; 0          ; 0        ; 0        ;
 ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 2          ; 0          ; 0        ; 0        ;
 +-----------------------------------------------------------+-----------------------------------------------------------+------------+------------+----------+----------+
@@ -897,7 +897,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; u0|altpll_0|sd1|pll7|clk[1] ; ETH_RX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
 ; ETH_TX_CLK                  ; ETH_TX_CLK                                                ; 844      ; 0        ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[1] ; ETH_TX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[1] ; u0|altpll_0|sd1|pll7|clk[1]                               ; 5218     ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[1] ; u0|altpll_0|sd1|pll7|clk[1]                               ; 5198     ; 0        ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[1] ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 6        ; 0        ; 0        ; 0        ;
 +-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -915,7 +915,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; u0|altpll_0|sd1|pll7|clk[1] ; ETH_RX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
 ; ETH_TX_CLK                  ; ETH_TX_CLK                                                ; 844      ; 0        ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[1] ; ETH_TX_CLK                                                ; 3        ; 0        ; 0        ; 0        ;
-; u0|altpll_0|sd1|pll7|clk[1] ; u0|altpll_0|sd1|pll7|clk[1]                               ; 5218     ; 0        ; 0        ; 0        ;
+; u0|altpll_0|sd1|pll7|clk[1] ; u0|altpll_0|sd1|pll7|clk[1]                               ; 5198     ; 0        ; 0        ; 0        ;
 ; u0|altpll_0|sd1|pll7|clk[1] ; u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc ; 6        ; 0        ; 0        ; 0        ;
 +-----------------------------+-----------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -1173,7 +1173,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jul 23 16:32:53 2019
+    Info: Processing started: Thu Jul 25 18:10:16 2019
 Info: Command: quartus_sta CANDY_AVB -c CANDY_AVB
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1238,56 +1238,56 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.814
+Info (332146): Worst-case setup slack is -1.753
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.814            -306.697 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     2.688               0.000 ETH_TX_CLK 
-    Info (332119):    15.196               0.000 ETH_RX_CLK 
-    Info (332119):    16.875               0.000 CLK 
-    Info (332119):    44.833               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.199
+    Info (332119):    -1.753            -205.365 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     2.559               0.000 ETH_TX_CLK 
+    Info (332119):    15.160               0.000 ETH_RX_CLK 
+    Info (332119):    17.167               0.000 CLK 
+    Info (332119):    45.182               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.273
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.199               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     0.273               0.000 u0|altpll_0|sd1|pll7|clk[1] 
     Info (332119):     0.276               0.000 ETH_RX_CLK 
+    Info (332119):     0.355               0.000 ETH_TX_CLK 
     Info (332119):     0.361               0.000 altera_reserved_tck 
-    Info (332119):     0.363               0.000 CLK 
-    Info (332119):     0.386               0.000 ETH_TX_CLK 
-Info (332146): Worst-case recovery slack is 3.903
+    Info (332119):     0.364               0.000 CLK 
+Info (332146): Worst-case recovery slack is 2.909
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.903               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):    18.483               0.000 CLK 
-    Info (332119):    35.211               0.000 ETH_TX_CLK 
-    Info (332119):    35.786               0.000 ETH_RX_CLK 
-    Info (332119):    45.642               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 1.161
+    Info (332119):     2.909               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):    18.738               0.000 CLK 
+    Info (332119):    35.264               0.000 ETH_TX_CLK 
+    Info (332119):    35.938               0.000 ETH_RX_CLK 
+    Info (332119):    47.923               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.988
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.161               0.000 altera_reserved_tck 
-    Info (332119):     1.171               0.000 CLK 
-    Info (332119):     1.508               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     2.485               0.000 ETH_RX_CLK 
-    Info (332119):     2.618               0.000 ETH_TX_CLK 
-Info (332146): Worst-case minimum pulse width slack is 2.816
+    Info (332119):     0.988               0.000 CLK 
+    Info (332119):     1.512               0.000 altera_reserved_tck 
+    Info (332119):     2.051               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     2.344               0.000 ETH_RX_CLK 
+    Info (332119):     2.669               0.000 ETH_TX_CLK 
+Info (332146): Worst-case minimum pulse width slack is 2.715
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.816               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):    10.148               0.000 CLK 
-    Info (332119):    19.545               0.000 ETH_RX_CLK 
-    Info (332119):    19.587               0.000 ETH_TX_CLK 
+    Info (332119):     2.715               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):    10.152               0.000 CLK 
+    Info (332119):    19.543               0.000 ETH_RX_CLK 
+    Info (332119):    19.608               0.000 ETH_TX_CLK 
     Info (332119):    44.780               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):    49.659               0.000 altera_reserved_tck 
-    Info (332119):    90.685               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):    49.653               0.000 altera_reserved_tck 
+    Info (332119):    90.684               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
 Info (332114): Report Metastability: Found 373 synchronizer chains.
-    Info (332114): Worst-Case MTBF of Design is 1.31e+07 years or 4.12e+14 seconds.
+    Info (332114): Worst-Case MTBF of Design is 2.42e+08 years or 7.62e+15 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
     Info (332114): Number of Synchronizer Chains Found: 373
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.515
-    Info (332114): Worst Case Available Settling Time: 8.285 ns
+    Info (332114): Worst Case Available Settling Time: 8.709 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -1303,56 +1303,56 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): From: u0|modular_adc_0|control_internal|adc_inst|adcblock_instance|primitive_instance|clkin_from_pll_c0  to: candy_avb_test_qsys:u0|candy_avb_test_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance|eoc
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.356
+Info (332146): Worst-case setup slack is -1.298
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.356            -117.451 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     2.891               0.000 ETH_TX_CLK 
-    Info (332119):    15.080               0.000 ETH_RX_CLK 
-    Info (332119):    17.027               0.000 CLK 
-    Info (332119):    44.998               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.178
+    Info (332119):    -1.298             -51.207 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     2.786               0.000 ETH_TX_CLK 
+    Info (332119):    15.086               0.000 ETH_RX_CLK 
+    Info (332119):    17.461               0.000 CLK 
+    Info (332119):    45.340               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.247
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.178               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     0.253               0.000 ETH_RX_CLK 
-    Info (332119):     0.320               0.000 ETH_TX_CLK 
-    Info (332119):     0.324               0.000 altera_reserved_tck 
+    Info (332119):     0.247               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     0.251               0.000 ETH_RX_CLK 
+    Info (332119):     0.323               0.000 altera_reserved_tck 
     Info (332119):     0.325               0.000 CLK 
-Info (332146): Worst-case recovery slack is 4.274
+    Info (332119):     0.330               0.000 ETH_TX_CLK 
+Info (332146): Worst-case recovery slack is 3.182
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.274               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):    18.598               0.000 CLK 
-    Info (332119):    35.611               0.000 ETH_TX_CLK 
-    Info (332119):    36.177               0.000 ETH_RX_CLK 
-    Info (332119):    45.850               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 1.050
+    Info (332119):     3.182               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):    18.848               0.000 CLK 
+    Info (332119):    35.661               0.000 ETH_TX_CLK 
+    Info (332119):    36.316               0.000 ETH_RX_CLK 
+    Info (332119):    48.041               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.903
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.050               0.000 CLK 
-    Info (332119):     1.072               0.000 altera_reserved_tck 
-    Info (332119):     1.349               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     2.222               0.000 ETH_RX_CLK 
-    Info (332119):     2.306               0.000 ETH_TX_CLK 
-Info (332146): Worst-case minimum pulse width slack is 2.767
+    Info (332119):     0.903               0.000 CLK 
+    Info (332119):     1.347               0.000 altera_reserved_tck 
+    Info (332119):     1.835               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     2.093               0.000 ETH_RX_CLK 
+    Info (332119):     2.368               0.000 ETH_TX_CLK 
+Info (332146): Worst-case minimum pulse width slack is 2.615
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.767               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):    10.164               0.000 CLK 
-    Info (332119):    19.435               0.000 ETH_TX_CLK 
-    Info (332119):    19.565               0.000 ETH_RX_CLK 
+    Info (332119):     2.615               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):    10.172               0.000 CLK 
+    Info (332119):    19.433               0.000 ETH_TX_CLK 
+    Info (332119):    19.564               0.000 ETH_RX_CLK 
     Info (332119):    44.883               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):    49.693               0.000 altera_reserved_tck 
-    Info (332119):    90.684               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
+    Info (332119):    49.685               0.000 altera_reserved_tck 
+    Info (332119):    90.686               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
 Info (332114): Report Metastability: Found 373 synchronizer chains.
-    Info (332114): Worst-Case MTBF of Design is 6.5e+07 years or 2.05e+15 seconds.
+    Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
     Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
 
     Info (332114): Number of Synchronizer Chains Found: 373
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.515
-    Info (332114): Worst Case Available Settling Time: 8.375 ns
+    Info (332114): Worst Case Available Settling Time: 8.788 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -1365,47 +1365,47 @@ Info (332097): The following timing edges are non-unate.  The Timing Analyzer wi
     Info (332098): Cell: altera_internal_jtag  from: tck  to: tckutap
     Info (332098): From: u0|modular_adc_0|control_internal|adc_inst|adcblock_instance|primitive_instance|clkin_from_pll_c0  to: candy_avb_test_qsys:u0|candy_avb_test_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance|eoc
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
-Info (332146): Worst-case setup slack is 2.138
+Info (332146): Worst-case setup slack is 2.126
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.138               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     5.293               0.000 ETH_TX_CLK 
-    Info (332119):    15.427               0.000 ETH_RX_CLK 
-    Info (332119):    19.134               0.000 CLK 
-    Info (332119):    48.103               0.000 altera_reserved_tck 
-Info (332146): Worst-case hold slack is 0.060
+    Info (332119):     2.126               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     5.232               0.000 ETH_TX_CLK 
+    Info (332119):    15.429               0.000 ETH_RX_CLK 
+    Info (332119):    19.344               0.000 CLK 
+    Info (332119):    48.331               0.000 altera_reserved_tck 
+Info (332146): Worst-case hold slack is 0.093
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.060               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     0.093               0.000 ETH_RX_CLK 
-    Info (332119):     0.119               0.000 ETH_TX_CLK 
+    Info (332119):     0.093               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     0.096               0.000 ETH_RX_CLK 
+    Info (332119):     0.108               0.000 ETH_TX_CLK 
     Info (332119):     0.152               0.000 altera_reserved_tck 
     Info (332119):     0.153               0.000 CLK 
-Info (332146): Worst-case recovery slack is 7.238
+Info (332146): Worst-case recovery slack is 6.881
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.238               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):    19.747               0.000 CLK 
-    Info (332119):    37.800               0.000 ETH_TX_CLK 
-    Info (332119):    38.020               0.000 ETH_RX_CLK 
-    Info (332119):    48.251               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.470
+    Info (332119):     6.881               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):    19.845               0.000 CLK 
+    Info (332119):    37.877               0.000 ETH_TX_CLK 
+    Info (332119):    38.090               0.000 ETH_RX_CLK 
+    Info (332119):    49.367               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.409
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.470               0.000 altera_reserved_tck 
-    Info (332119):     0.478               0.000 CLK 
-    Info (332119):     0.618               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     1.169               0.000 ETH_RX_CLK 
-    Info (332119):     1.267               0.000 ETH_TX_CLK 
-Info (332146): Worst-case minimum pulse width slack is 2.954
+    Info (332119):     0.409               0.000 CLK 
+    Info (332119):     0.604               0.000 altera_reserved_tck 
+    Info (332119):     0.857               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     1.116               0.000 ETH_RX_CLK 
+    Info (332119):     1.245               0.000 ETH_TX_CLK 
+Info (332146): Worst-case minimum pulse width slack is 2.927
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.954               0.000 u0|altpll_0|sd1|pll7|clk[1] 
-    Info (332119):     9.742               0.000 CLK 
-    Info (332119):    19.203               0.000 ETH_TX_CLK 
-    Info (332119):    19.259               0.000 ETH_RX_CLK 
+    Info (332119):     2.927               0.000 u0|altpll_0|sd1|pll7|clk[1] 
+    Info (332119):     9.752               0.000 CLK 
+    Info (332119):    19.198               0.000 ETH_TX_CLK 
+    Info (332119):    19.258               0.000 ETH_RX_CLK 
     Info (332119):    44.901               0.000 u0|altpll_0|sd1|pll7|clk[0] 
-    Info (332119):    49.417               0.000 altera_reserved_tck 
+    Info (332119):    49.413               0.000 altera_reserved_tck 
     Info (332119):    90.691               0.000 u0|onchip_flash_0|altera_onchip_flash_block|ufm_block|osc 
 Info (332114): Report Metastability: Found 373 synchronizer chains.
     Info (332114): Worst-Case MTBF of Design is 1e+09 years or 3.15e+16 seconds.
@@ -1414,7 +1414,7 @@ Info (332114): Report Metastability: Found 373 synchronizer chains.
     Info (332114): Number of Synchronizer Chains Found: 373
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.515
-    Info (332114): Worst Case Available Settling Time: 9.242 ns
+    Info (332114): Worst Case Available Settling Time: 9.442 ns
     Info (332114): 
     Info (332114): Worst-Case MTBF values are calculated based on the worst-case silicon characteristics, with worst-case operating conditions.
     Info (332114):   - Under worst-case conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 1.5
@@ -1423,9 +1423,9 @@ Info (332114): Report Metastability: Found 373 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4978 megabytes
-    Info: Processing ended: Tue Jul 23 16:33:20 2019
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Peak virtual memory: 4973 megabytes
+    Info: Processing ended: Thu Jul 25 18:10:45 2019
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:51
 
 

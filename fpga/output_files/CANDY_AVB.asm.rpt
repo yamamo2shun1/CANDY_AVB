@@ -1,5 +1,5 @@
 Assembler report for CANDY_AVB
-Tue Jul 23 16:32:24 2019
+Thu Jul 25 18:09:49 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jul 23 16:32:24 2019 ;
+; Assembler Status      ; Successful - Thu Jul 25 18:09:49 2019 ;
 ; Revision Name         ; CANDY_AVB                             ;
 ; Top-level Entity Name ; CANDY_AVB                             ;
 ; Family                ; MAX 10                                ;
@@ -80,8 +80,8 @@ refer to the applicable agreement for further details.
 +----------------+------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                        ;
 +----------------+------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x008699E1                                                                                     ;
-; Checksum       ; 0x008699E1                                                                                     ;
+; JTAG usercode  ; 0x008613C7                                                                                     ;
+; Checksum       ; 0x008613C7                                                                                     ;
 +----------------+------------------------------------------------------------------------------------------------+
 
 
@@ -91,15 +91,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Jul 23 16:32:18 2019
+    Info: Processing started: Thu Jul 25 18:09:41 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off CANDY_AVB -c CANDY_AVB
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4747 megabytes
-    Info: Processing ended: Tue Jul 23 16:32:25 2019
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4748 megabytes
+    Info: Processing ended: Thu Jul 25 18:09:49 2019
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
