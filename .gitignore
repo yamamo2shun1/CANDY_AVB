@@ -1,5 +1,6 @@
 fpga/db/
 fpga/incremental_db/
+fpga/output_files/
 fpga/software/candy_avb_test/obj/
 fpga/software/candy_avb_test_bsp/obj/
 fpga/software/candy_avb_sss/obj/
