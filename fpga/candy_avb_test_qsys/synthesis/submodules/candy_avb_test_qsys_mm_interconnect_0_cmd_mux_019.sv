@@ -38,9 +38,9 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:         candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
-//   NUM_INPUTS:          2
-//   ARBITRATION_SHARES:  1 1
+//   output_name:         candy_avb_test_qsys_mm_interconnect_0_cmd_mux_019
+//   NUM_INPUTS:          5
+//   ARBITRATION_SHARES:  1 1 1 1 1
 //   ARBITRATION_SCHEME   "round-robin"
 //   PIPELINE_ARB:        1
 //   PKT_TRANS_LOCK:      65 (arbitration locking enabled)
@@ -48,7 +48,7 @@
 //   ST_CHANNEL_W:        22
 // ------------------------------------------
 
-module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
+module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_019
 (
     // ----------------------
     // Sinks
@@ -66,6 +66,27 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
     input                       sink1_startofpacket,
     input                       sink1_endofpacket,
     output                      sink1_ready,
+
+    input                       sink2_valid,
+    input [107-1   : 0]  sink2_data,
+    input [22-1: 0]  sink2_channel,
+    input                       sink2_startofpacket,
+    input                       sink2_endofpacket,
+    output                      sink2_ready,
+
+    input                       sink3_valid,
+    input [107-1   : 0]  sink3_data,
+    input [22-1: 0]  sink3_channel,
+    input                       sink3_startofpacket,
+    input                       sink3_endofpacket,
+    output                      sink3_ready,
+
+    input                       sink4_valid,
+    input [107-1   : 0]  sink4_data,
+    input [22-1: 0]  sink4_channel,
+    input                       sink4_startofpacket,
+    input                       sink4_endofpacket,
+    output                      sink4_ready,
 
 
     // ----------------------
@@ -85,7 +106,7 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
     input reset
 );
     localparam PAYLOAD_W        = 107 + 22 + 2;
-    localparam NUM_INPUTS       = 2;
+    localparam NUM_INPUTS       = 5;
     localparam SHARE_COUNTER_W  = 1;
     localparam PIPELINE_ARB     = 1;
     localparam ST_DATA_W        = 107;
@@ -107,13 +128,22 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
 
     wire [PAYLOAD_W - 1 : 0] sink0_payload;
     wire [PAYLOAD_W - 1 : 0] sink1_payload;
+    wire [PAYLOAD_W - 1 : 0] sink2_payload;
+    wire [PAYLOAD_W - 1 : 0] sink3_payload;
+    wire [PAYLOAD_W - 1 : 0] sink4_payload;
 
     assign valid[0] = sink0_valid;
     assign valid[1] = sink1_valid;
+    assign valid[2] = sink2_valid;
+    assign valid[3] = sink3_valid;
+    assign valid[4] = sink4_valid;
 
     wire [NUM_INPUTS - 1 : 0] eop;
     assign eop[0] = sink0_endofpacket;
     assign eop[1] = sink1_endofpacket;
+    assign eop[2] = sink2_endofpacket;
+    assign eop[3] = sink3_endofpacket;
+    assign eop[4] = sink4_endofpacket;
 
     // ------------------------------------------
     // ------------------------------------------
@@ -124,6 +154,9 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
     always @* begin
       lock[0] = sink0_data[65];
       lock[1] = sink1_data[65];
+      lock[2] = sink2_data[65];
+      lock[3] = sink3_data[65];
+      lock[4] = sink4_data[65];
     end
     reg [NUM_INPUTS - 1 : 0] locked = '0;
     always @(posedge clk or posedge reset) begin
@@ -165,8 +198,14 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
     // Input  |  arb shares  |  counter load value
     // 0      |      1       |  0
     // 1      |      1       |  0
+    // 2      |      1       |  0
+    // 3      |      1       |  0
+    // 4      |      1       |  0
      wire [SHARE_COUNTER_W - 1 : 0] share_0 = 1'd0;
      wire [SHARE_COUNTER_W - 1 : 0] share_1 = 1'd0;
+     wire [SHARE_COUNTER_W - 1 : 0] share_2 = 1'd0;
+     wire [SHARE_COUNTER_W - 1 : 0] share_3 = 1'd0;
+     wire [SHARE_COUNTER_W - 1 : 0] share_4 = 1'd0;
 
     // ------------------------------------------
     // Choose the share value corresponding to the grant.
@@ -175,7 +214,10 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
     always @* begin
       next_grant_share =
     share_0 & { SHARE_COUNTER_W {next_grant[0]} } |
-    share_1 & { SHARE_COUNTER_W {next_grant[1]} };
+    share_1 & { SHARE_COUNTER_W {next_grant[1]} } |
+    share_2 & { SHARE_COUNTER_W {next_grant[2]} } |
+    share_3 & { SHARE_COUNTER_W {next_grant[3]} } |
+    share_4 & { SHARE_COUNTER_W {next_grant[4]} };
     end
 
     // ------------------------------------------
@@ -298,13 +340,19 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
 
     assign sink0_ready = src_ready && grant[0];
     assign sink1_ready = src_ready && grant[1];
+    assign sink2_ready = src_ready && grant[2];
+    assign sink3_ready = src_ready && grant[3];
+    assign sink4_ready = src_ready && grant[4];
 
     assign src_valid = |(grant & valid);
 
     always @* begin
       src_payload =
       sink0_payload & {PAYLOAD_W {grant[0]} } |
-      sink1_payload & {PAYLOAD_W {grant[1]} };
+      sink1_payload & {PAYLOAD_W {grant[1]} } |
+      sink2_payload & {PAYLOAD_W {grant[2]} } |
+      sink3_payload & {PAYLOAD_W {grant[3]} } |
+      sink4_payload & {PAYLOAD_W {grant[4]} };
     end
 
     // ------------------------------------------
@@ -315,6 +363,12 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_mux_006
     sink0_startofpacket,sink0_endofpacket};
     assign sink1_payload = {sink1_channel,sink1_data,
     sink1_startofpacket,sink1_endofpacket};
+    assign sink2_payload = {sink2_channel,sink2_data,
+    sink2_startofpacket,sink2_endofpacket};
+    assign sink3_payload = {sink3_channel,sink3_data,
+    sink3_startofpacket,sink3_endofpacket};
+    assign sink4_payload = {sink4_channel,sink4_data,
+    sink4_startofpacket,sink4_endofpacket};
 
     assign {src_channel,src_data,src_startofpacket,src_endofpacket} = src_payload;
 endmodule

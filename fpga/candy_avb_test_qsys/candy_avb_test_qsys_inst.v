@@ -67,6 +67,17 @@
 		.wb_dat_i                          (<connected-to-wb_dat_i>),                          //                            .dat_i
 		.wb_ack_i                          (<connected-to-wb_ack_i>),                          //                            .ack_i
 		.wb_err_i                          (<connected-to-wb_err_i>),                          //                            .err_i
-		.wb_rty_i                          (<connected-to-wb_rty_i>)                           //                            .rty_i
+		.wb_rty_i                          (<connected-to-wb_rty_i>),                          //                            .rty_i
+		.avmm_waitrequest                  (<connected-to-avmm_waitrequest>),                  //                        avmm.waitrequest
+		.avmm_readdata                     (<connected-to-avmm_readdata>),                     //                            .readdata
+		.avmm_readdatavalid                (<connected-to-avmm_readdatavalid>),                //                            .readdatavalid
+		.avmm_burstcount                   (<connected-to-avmm_burstcount>),                   //                            .burstcount
+		.avmm_writedata                    (<connected-to-avmm_writedata>),                    //                            .writedata
+		.avmm_address                      (<connected-to-avmm_address>),                      //                            .address
+		.avmm_write                        (<connected-to-avmm_write>),                        //                            .write
+		.avmm_read                         (<connected-to-avmm_read>),                         //                            .read
+		.avmm_byteenable                   (<connected-to-avmm_byteenable>),                   //                            .byteenable
+		.avmm_debugaccess                  (<connected-to-avmm_debugaccess>),                  //                            .debugaccess
+		.avmm_clk_clk                      (<connected-to-avmm_clk_clk>)                       //                    avmm_clk.clk
 	);
 

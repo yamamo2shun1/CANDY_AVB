@@ -49,7 +49,7 @@ module candy_avb_test_qsys_sysid_qsys_0 (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1564046875 : 0;
+  assign readdata = address ? 1564115654 : 0;
 
 endmodule
 

@@ -27,11 +27,11 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:         candy_avb_test_qsys_mm_interconnect_0_cmd_demux_005
+//   output_name:         candy_avb_test_qsys_mm_interconnect_0_rsp_demux_014
 //   ST_DATA_W:           107
 //   ST_CHANNEL_W:        22
-//   NUM_OUTPUTS:         3
-//   VALID_WIDTH:         22
+//   NUM_OUTPUTS:         4
+//   VALID_WIDTH:         1
 // ------------------------------------------
 
 //------------------------------------------
@@ -40,12 +40,12 @@
 // 15610 - Warning: Design contains x input pin(s) that do not drive logic
 //------------------------------------------
 
-module candy_avb_test_qsys_mm_interconnect_0_cmd_demux_005
+module candy_avb_test_qsys_mm_interconnect_0_rsp_demux_014
 (
     // -------------------
     // Sink
     // -------------------
-    input  [22-1      : 0]   sink_valid,
+    input  [1-1      : 0]   sink_valid,
     input  [107-1    : 0]   sink_data, // ST_DATA_W=107
     input  [22-1 : 0]   sink_channel, // ST_CHANNEL_W=22
     input                         sink_startofpacket,
@@ -76,6 +76,13 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_demux_005
     output reg                      src2_endofpacket,
     input                           src2_ready,
 
+    output reg                      src3_valid,
+    output reg [107-1    : 0] src3_data, // ST_DATA_W=107
+    output reg [22-1 : 0] src3_channel, // ST_CHANNEL_W=22
+    output reg                      src3_startofpacket,
+    output reg                      src3_endofpacket,
+    input                           src3_ready,
+
 
     // -------------------
     // Clock & Reset
@@ -87,7 +94,7 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_demux_005
 
 );
 
-    localparam NUM_OUTPUTS = 3;
+    localparam NUM_OUTPUTS = 4;
     wire [NUM_OUTPUTS - 1 : 0] ready_vector;
 
     // -------------------
@@ -99,21 +106,28 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_demux_005
         src0_endofpacket   = sink_endofpacket;
         src0_channel       = sink_channel >> NUM_OUTPUTS;
 
-        src0_valid         = sink_channel[0] && sink_valid[0];
+        src0_valid         = sink_channel[0] && sink_valid;
 
         src1_data          = sink_data;
         src1_startofpacket = sink_startofpacket;
         src1_endofpacket   = sink_endofpacket;
         src1_channel       = sink_channel >> NUM_OUTPUTS;
 
-        src1_valid         = sink_channel[1] && sink_valid[1];
+        src1_valid         = sink_channel[1] && sink_valid;
 
         src2_data          = sink_data;
         src2_startofpacket = sink_startofpacket;
         src2_endofpacket   = sink_endofpacket;
         src2_channel       = sink_channel >> NUM_OUTPUTS;
 
-        src2_valid         = sink_channel[2] && sink_valid[2];
+        src2_valid         = sink_channel[2] && sink_valid;
+
+        src3_data          = sink_data;
+        src3_startofpacket = sink_startofpacket;
+        src3_endofpacket   = sink_endofpacket;
+        src3_channel       = sink_channel >> NUM_OUTPUTS;
+
+        src3_valid         = sink_channel[3] && sink_valid;
 
     end
 
@@ -123,8 +137,9 @@ module candy_avb_test_qsys_mm_interconnect_0_cmd_demux_005
     assign ready_vector[0] = src0_ready;
     assign ready_vector[1] = src1_ready;
     assign ready_vector[2] = src2_ready;
+    assign ready_vector[3] = src3_ready;
 
-    assign sink_ready = |(sink_channel & {{19{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & {{18{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
 
 endmodule
 

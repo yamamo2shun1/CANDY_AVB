@@ -42,12 +42,12 @@
 
 `timescale 1 ns / 1 ns
 
-module candy_avb_test_qsys_mm_interconnect_0_router_006_default_decode
+module candy_avb_test_qsys_mm_interconnect_0_router_027_default_decode
   #(
      parameter DEFAULT_CHANNEL = 0,
                DEFAULT_WR_CHANNEL = -1,
                DEFAULT_RD_CHANNEL = -1,
-               DEFAULT_DESTID = 12 
+               DEFAULT_DESTID = 6 
    )
   (output [93 - 89 : 0] default_destination_id,
    output [22-1 : 0] default_wr_channel,
@@ -81,7 +81,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router_006_default_decode
 endmodule
 
 
-module candy_avb_test_qsys_mm_interconnect_0_router_006
+module candy_avb_test_qsys_mm_interconnect_0_router_027
 (
     // -------------------
     // Clock & Reset
@@ -120,7 +120,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router_006
     localparam PKT_PROTECTION_L = 95;
     localparam ST_DATA_W = 107;
     localparam ST_CHANNEL_W = 22;
-    localparam DECODER_TYPE = 0;
+    localparam DECODER_TYPE = 1;
 
     localparam PKT_TRANS_WRITE = 63;
     localparam PKT_TRANS_READ  = 64;
@@ -134,13 +134,12 @@ module candy_avb_test_qsys_mm_interconnect_0_router_006
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h1000000 - 64'h800000); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h1000000;
+    localparam ADDR_RANGE = 64'h0;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -150,6 +149,7 @@ module candy_avb_test_qsys_mm_interconnect_0_router_006
     localparam RG = RANGE_ADDR_WIDTH;
     localparam REAL_ADDRESS_RANGE = OPTIMIZED_ADDR_H - PKT_ADDR_L;
 
+    reg [PKT_DEST_ID_W-1 : 0] destid;
 
     // -------------------------------------------------------
     // Pass almost everything through, untouched
@@ -158,16 +158,22 @@ module candy_avb_test_qsys_mm_interconnect_0_router_006
     assign src_valid         = sink_valid;
     assign src_startofpacket = sink_startofpacket;
     assign src_endofpacket   = sink_endofpacket;
-    wire [PKT_DEST_ID_W-1:0] default_destid;
     wire [22-1 : 0] default_src_channel;
 
 
 
 
+    // -------------------------------------------------------
+    // Write and read transaction signals
+    // -------------------------------------------------------
+    wire write_transaction;
+    assign write_transaction = sink_data[PKT_TRANS_WRITE];
+    wire read_transaction;
+    assign read_transaction  = sink_data[PKT_TRANS_READ];
 
 
-    candy_avb_test_qsys_mm_interconnect_0_router_006_default_decode the_default_decode(
-      .default_destination_id (default_destid),
+    candy_avb_test_qsys_mm_interconnect_0_router_027_default_decode the_default_decode(
+      .default_destination_id (),
       .default_wr_channel   (),
       .default_rd_channel   (),
       .default_src_channel  (default_src_channel)
@@ -176,19 +182,35 @@ module candy_avb_test_qsys_mm_interconnect_0_router_006
     always @* begin
         src_data    = sink_data;
         src_channel = default_src_channel;
-        src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = default_destid;
 
         // --------------------------------------------------
-        // Address Decoder
-        // Sets the channel and destination ID based on the address
+        // DestinationID Decoder
+        // Sets the channel based on the destination ID.
         // --------------------------------------------------
-           
-         
-          // ( 800000 .. 1000000 )
-          src_channel = 22'b1;
-          src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 12;
-	     
-        
+        destid      = sink_data[PKT_DEST_ID_H : PKT_DEST_ID_L];
+
+
+
+        if (destid == 6 ) begin
+            src_channel = 22'b00001;
+        end
+
+        if (destid == 3  && read_transaction) begin
+            src_channel = 22'b00010;
+        end
+
+        if (destid == 0  && read_transaction) begin
+            src_channel = 22'b00100;
+        end
+
+        if (destid == 4  && write_transaction) begin
+            src_channel = 22'b01000;
+        end
+
+        if (destid == 1  && write_transaction) begin
+            src_channel = 22'b10000;
+        end
+
 
 end
 

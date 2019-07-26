@@ -39,13 +39,13 @@
 // ------------------------------------------
 // Generation parameters:
 //   output_name:         candy_avb_test_qsys_mm_interconnect_0_rsp_mux
-//   NUM_INPUTS:          21
-//   ARBITRATION_SHARES:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+//   NUM_INPUTS:          22
+//   ARBITRATION_SHARES:  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 //   ARBITRATION_SCHEME   "no-arb"
 //   PIPELINE_ARB:        0
-//   PKT_TRANS_LOCK:      64 (arbitration locking enabled)
-//   ST_DATA_W:           106
-//   ST_CHANNEL_W:        21
+//   PKT_TRANS_LOCK:      65 (arbitration locking enabled)
+//   ST_DATA_W:           107
+//   ST_CHANNEL_W:        22
 // ------------------------------------------
 
 module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
@@ -54,159 +54,166 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     // Sinks
     // ----------------------
     input                       sink0_valid,
-    input [106-1   : 0]  sink0_data,
-    input [21-1: 0]  sink0_channel,
+    input [107-1   : 0]  sink0_data,
+    input [22-1: 0]  sink0_channel,
     input                       sink0_startofpacket,
     input                       sink0_endofpacket,
     output                      sink0_ready,
 
     input                       sink1_valid,
-    input [106-1   : 0]  sink1_data,
-    input [21-1: 0]  sink1_channel,
+    input [107-1   : 0]  sink1_data,
+    input [22-1: 0]  sink1_channel,
     input                       sink1_startofpacket,
     input                       sink1_endofpacket,
     output                      sink1_ready,
 
     input                       sink2_valid,
-    input [106-1   : 0]  sink2_data,
-    input [21-1: 0]  sink2_channel,
+    input [107-1   : 0]  sink2_data,
+    input [22-1: 0]  sink2_channel,
     input                       sink2_startofpacket,
     input                       sink2_endofpacket,
     output                      sink2_ready,
 
     input                       sink3_valid,
-    input [106-1   : 0]  sink3_data,
-    input [21-1: 0]  sink3_channel,
+    input [107-1   : 0]  sink3_data,
+    input [22-1: 0]  sink3_channel,
     input                       sink3_startofpacket,
     input                       sink3_endofpacket,
     output                      sink3_ready,
 
     input                       sink4_valid,
-    input [106-1   : 0]  sink4_data,
-    input [21-1: 0]  sink4_channel,
+    input [107-1   : 0]  sink4_data,
+    input [22-1: 0]  sink4_channel,
     input                       sink4_startofpacket,
     input                       sink4_endofpacket,
     output                      sink4_ready,
 
     input                       sink5_valid,
-    input [106-1   : 0]  sink5_data,
-    input [21-1: 0]  sink5_channel,
+    input [107-1   : 0]  sink5_data,
+    input [22-1: 0]  sink5_channel,
     input                       sink5_startofpacket,
     input                       sink5_endofpacket,
     output                      sink5_ready,
 
     input                       sink6_valid,
-    input [106-1   : 0]  sink6_data,
-    input [21-1: 0]  sink6_channel,
+    input [107-1   : 0]  sink6_data,
+    input [22-1: 0]  sink6_channel,
     input                       sink6_startofpacket,
     input                       sink6_endofpacket,
     output                      sink6_ready,
 
     input                       sink7_valid,
-    input [106-1   : 0]  sink7_data,
-    input [21-1: 0]  sink7_channel,
+    input [107-1   : 0]  sink7_data,
+    input [22-1: 0]  sink7_channel,
     input                       sink7_startofpacket,
     input                       sink7_endofpacket,
     output                      sink7_ready,
 
     input                       sink8_valid,
-    input [106-1   : 0]  sink8_data,
-    input [21-1: 0]  sink8_channel,
+    input [107-1   : 0]  sink8_data,
+    input [22-1: 0]  sink8_channel,
     input                       sink8_startofpacket,
     input                       sink8_endofpacket,
     output                      sink8_ready,
 
     input                       sink9_valid,
-    input [106-1   : 0]  sink9_data,
-    input [21-1: 0]  sink9_channel,
+    input [107-1   : 0]  sink9_data,
+    input [22-1: 0]  sink9_channel,
     input                       sink9_startofpacket,
     input                       sink9_endofpacket,
     output                      sink9_ready,
 
     input                       sink10_valid,
-    input [106-1   : 0]  sink10_data,
-    input [21-1: 0]  sink10_channel,
+    input [107-1   : 0]  sink10_data,
+    input [22-1: 0]  sink10_channel,
     input                       sink10_startofpacket,
     input                       sink10_endofpacket,
     output                      sink10_ready,
 
     input                       sink11_valid,
-    input [106-1   : 0]  sink11_data,
-    input [21-1: 0]  sink11_channel,
+    input [107-1   : 0]  sink11_data,
+    input [22-1: 0]  sink11_channel,
     input                       sink11_startofpacket,
     input                       sink11_endofpacket,
     output                      sink11_ready,
 
     input                       sink12_valid,
-    input [106-1   : 0]  sink12_data,
-    input [21-1: 0]  sink12_channel,
+    input [107-1   : 0]  sink12_data,
+    input [22-1: 0]  sink12_channel,
     input                       sink12_startofpacket,
     input                       sink12_endofpacket,
     output                      sink12_ready,
 
     input                       sink13_valid,
-    input [106-1   : 0]  sink13_data,
-    input [21-1: 0]  sink13_channel,
+    input [107-1   : 0]  sink13_data,
+    input [22-1: 0]  sink13_channel,
     input                       sink13_startofpacket,
     input                       sink13_endofpacket,
     output                      sink13_ready,
 
     input                       sink14_valid,
-    input [106-1   : 0]  sink14_data,
-    input [21-1: 0]  sink14_channel,
+    input [107-1   : 0]  sink14_data,
+    input [22-1: 0]  sink14_channel,
     input                       sink14_startofpacket,
     input                       sink14_endofpacket,
     output                      sink14_ready,
 
     input                       sink15_valid,
-    input [106-1   : 0]  sink15_data,
-    input [21-1: 0]  sink15_channel,
+    input [107-1   : 0]  sink15_data,
+    input [22-1: 0]  sink15_channel,
     input                       sink15_startofpacket,
     input                       sink15_endofpacket,
     output                      sink15_ready,
 
     input                       sink16_valid,
-    input [106-1   : 0]  sink16_data,
-    input [21-1: 0]  sink16_channel,
+    input [107-1   : 0]  sink16_data,
+    input [22-1: 0]  sink16_channel,
     input                       sink16_startofpacket,
     input                       sink16_endofpacket,
     output                      sink16_ready,
 
     input                       sink17_valid,
-    input [106-1   : 0]  sink17_data,
-    input [21-1: 0]  sink17_channel,
+    input [107-1   : 0]  sink17_data,
+    input [22-1: 0]  sink17_channel,
     input                       sink17_startofpacket,
     input                       sink17_endofpacket,
     output                      sink17_ready,
 
     input                       sink18_valid,
-    input [106-1   : 0]  sink18_data,
-    input [21-1: 0]  sink18_channel,
+    input [107-1   : 0]  sink18_data,
+    input [22-1: 0]  sink18_channel,
     input                       sink18_startofpacket,
     input                       sink18_endofpacket,
     output                      sink18_ready,
 
     input                       sink19_valid,
-    input [106-1   : 0]  sink19_data,
-    input [21-1: 0]  sink19_channel,
+    input [107-1   : 0]  sink19_data,
+    input [22-1: 0]  sink19_channel,
     input                       sink19_startofpacket,
     input                       sink19_endofpacket,
     output                      sink19_ready,
 
     input                       sink20_valid,
-    input [106-1   : 0]  sink20_data,
-    input [21-1: 0]  sink20_channel,
+    input [107-1   : 0]  sink20_data,
+    input [22-1: 0]  sink20_channel,
     input                       sink20_startofpacket,
     input                       sink20_endofpacket,
     output                      sink20_ready,
+
+    input                       sink21_valid,
+    input [107-1   : 0]  sink21_data,
+    input [22-1: 0]  sink21_channel,
+    input                       sink21_startofpacket,
+    input                       sink21_endofpacket,
+    output                      sink21_ready,
 
 
     // ----------------------
     // Source
     // ----------------------
     output                      src_valid,
-    output [106-1    : 0] src_data,
-    output [21-1 : 0] src_channel,
+    output [107-1    : 0] src_data,
+    output [22-1 : 0] src_channel,
     output                      src_startofpacket,
     output                      src_endofpacket,
     input                       src_ready,
@@ -217,13 +224,13 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     input clk,
     input reset
 );
-    localparam PAYLOAD_W        = 106 + 21 + 2;
-    localparam NUM_INPUTS       = 21;
+    localparam PAYLOAD_W        = 107 + 22 + 2;
+    localparam NUM_INPUTS       = 22;
     localparam SHARE_COUNTER_W  = 1;
     localparam PIPELINE_ARB     = 0;
-    localparam ST_DATA_W        = 106;
-    localparam ST_CHANNEL_W     = 21;
-    localparam PKT_TRANS_LOCK   = 64;
+    localparam ST_DATA_W        = 107;
+    localparam ST_CHANNEL_W     = 22;
+    localparam PKT_TRANS_LOCK   = 65;
 
     // ------------------------------------------
     // Signals
@@ -259,6 +266,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     wire [PAYLOAD_W - 1 : 0] sink18_payload;
     wire [PAYLOAD_W - 1 : 0] sink19_payload;
     wire [PAYLOAD_W - 1 : 0] sink20_payload;
+    wire [PAYLOAD_W - 1 : 0] sink21_payload;
 
     assign valid[0] = sink0_valid;
     assign valid[1] = sink1_valid;
@@ -281,6 +289,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     assign valid[18] = sink18_valid;
     assign valid[19] = sink19_valid;
     assign valid[20] = sink20_valid;
+    assign valid[21] = sink21_valid;
 
 
     // ------------------------------------------
@@ -290,27 +299,28 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     // ------------------------------------------
     reg [NUM_INPUTS - 1 : 0] lock;
     always @* begin
-      lock[0] = sink0_data[64];
-      lock[1] = sink1_data[64];
-      lock[2] = sink2_data[64];
-      lock[3] = sink3_data[64];
-      lock[4] = sink4_data[64];
-      lock[5] = sink5_data[64];
-      lock[6] = sink6_data[64];
-      lock[7] = sink7_data[64];
-      lock[8] = sink8_data[64];
-      lock[9] = sink9_data[64];
-      lock[10] = sink10_data[64];
-      lock[11] = sink11_data[64];
-      lock[12] = sink12_data[64];
-      lock[13] = sink13_data[64];
-      lock[14] = sink14_data[64];
-      lock[15] = sink15_data[64];
-      lock[16] = sink16_data[64];
-      lock[17] = sink17_data[64];
-      lock[18] = sink18_data[64];
-      lock[19] = sink19_data[64];
-      lock[20] = sink20_data[64];
+      lock[0] = sink0_data[65];
+      lock[1] = sink1_data[65];
+      lock[2] = sink2_data[65];
+      lock[3] = sink3_data[65];
+      lock[4] = sink4_data[65];
+      lock[5] = sink5_data[65];
+      lock[6] = sink6_data[65];
+      lock[7] = sink7_data[65];
+      lock[8] = sink8_data[65];
+      lock[9] = sink9_data[65];
+      lock[10] = sink10_data[65];
+      lock[11] = sink11_data[65];
+      lock[12] = sink12_data[65];
+      lock[13] = sink13_data[65];
+      lock[14] = sink14_data[65];
+      lock[15] = sink15_data[65];
+      lock[16] = sink16_data[65];
+      lock[17] = sink17_data[65];
+      lock[18] = sink18_data[65];
+      lock[19] = sink19_data[65];
+      lock[20] = sink20_data[65];
+      lock[21] = sink21_data[65];
     end
 
     assign last_cycle = src_valid & src_ready & src_endofpacket & ~(|(lock & grant));
@@ -362,6 +372,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     // 18      |      1       |  0
     // 19      |      1       |  0
     // 20      |      1       |  0
+    // 21      |      1       |  0
      wire [SHARE_COUNTER_W - 1 : 0] share_0 = 1'd0;
      wire [SHARE_COUNTER_W - 1 : 0] share_1 = 1'd0;
      wire [SHARE_COUNTER_W - 1 : 0] share_2 = 1'd0;
@@ -383,6 +394,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
      wire [SHARE_COUNTER_W - 1 : 0] share_18 = 1'd0;
      wire [SHARE_COUNTER_W - 1 : 0] share_19 = 1'd0;
      wire [SHARE_COUNTER_W - 1 : 0] share_20 = 1'd0;
+     wire [SHARE_COUNTER_W - 1 : 0] share_21 = 1'd0;
 
     // ------------------------------------------
     // Choose the share value corresponding to the grant.
@@ -410,7 +422,8 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     share_17 & { SHARE_COUNTER_W {next_grant[17]} } |
     share_18 & { SHARE_COUNTER_W {next_grant[18]} } |
     share_19 & { SHARE_COUNTER_W {next_grant[19]} } |
-    share_20 & { SHARE_COUNTER_W {next_grant[20]} };
+    share_20 & { SHARE_COUNTER_W {next_grant[20]} } |
+    share_21 & { SHARE_COUNTER_W {next_grant[21]} };
     end
 
     // ------------------------------------------
@@ -514,11 +527,14 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
 
     wire final_packet_20 = 1'b1;
 
+    wire final_packet_21 = 1'b1;
+
 
     // ------------------------------------------
     // Concatenate all final_packet signals (wire or reg) into a handy vector.
     // ------------------------------------------
     wire [NUM_INPUTS - 1 : 0] final_packet = {
+    final_packet_21,
     final_packet_20,
     final_packet_19,
     final_packet_18,
@@ -644,6 +660,7 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     assign sink18_ready = src_ready && grant[18];
     assign sink19_ready = src_ready && grant[19];
     assign sink20_ready = src_ready && grant[20];
+    assign sink21_ready = src_ready && grant[21];
 
     assign src_valid = |(grant & valid);
 
@@ -669,7 +686,8 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
       sink17_payload & {PAYLOAD_W {grant[17]} } |
       sink18_payload & {PAYLOAD_W {grant[18]} } |
       sink19_payload & {PAYLOAD_W {grant[19]} } |
-      sink20_payload & {PAYLOAD_W {grant[20]} };
+      sink20_payload & {PAYLOAD_W {grant[20]} } |
+      sink21_payload & {PAYLOAD_W {grant[21]} };
     end
 
     // ------------------------------------------
@@ -718,6 +736,8 @@ module candy_avb_test_qsys_mm_interconnect_0_rsp_mux
     sink19_startofpacket,sink19_endofpacket};
     assign sink20_payload = {sink20_channel,sink20_data,
     sink20_startofpacket,sink20_endofpacket};
+    assign sink21_payload = {sink21_channel,sink21_data,
+    sink21_startofpacket,sink21_endofpacket};
 
     assign {src_channel,src_data,src_startofpacket,src_endofpacket} = src_payload;
 endmodule

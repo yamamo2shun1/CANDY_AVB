@@ -68,7 +68,18 @@ module candy_avb_test_qsys (
 	wb_dat_i,
 	wb_ack_i,
 	wb_err_i,
-	wb_rty_i);	
+	wb_rty_i,
+	avmm_waitrequest,
+	avmm_readdata,
+	avmm_readdatavalid,
+	avmm_burstcount,
+	avmm_writedata,
+	avmm_address,
+	avmm_write,
+	avmm_read,
+	avmm_byteenable,
+	avmm_debugaccess,
+	avmm_clk_clk);	
 
 	input		adc_pll_locked_export;
 	output		altpll_locked_export;
@@ -139,4 +150,15 @@ module candy_avb_test_qsys (
 	input		wb_ack_i;
 	input		wb_err_i;
 	input		wb_rty_i;
+	input		avmm_waitrequest;
+	input	[31:0]	avmm_readdata;
+	input		avmm_readdatavalid;
+	output	[0:0]	avmm_burstcount;
+	output	[31:0]	avmm_writedata;
+	output	[7:0]	avmm_address;
+	output		avmm_write;
+	output		avmm_read;
+	output	[3:0]	avmm_byteenable;
+	output		avmm_debugaccess;
+	output		avmm_clk_clk;
 endmodule

@@ -8,12 +8,16 @@ Progress: Adding avalon_wb [avalon_wb 1.0]
 Progress: Parameterizing module avalon_wb
 Progress: Adding clk_0 [clock_source 18.1]
 Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 18.1]
+Progress: Parameterizing module clock_bridge_0
 Progress: Adding descriptor_memory [altera_avalon_onchip_memory2 18.1]
 Progress: Parameterizing module descriptor_memory
 Progress: Adding eth_tse_0 [altera_eth_tse 18.1]
 Progress: Parameterizing module eth_tse_0
 Progress: Adding jtaguart_0 [altera_avalon_jtag_uart 18.1]
 Progress: Parameterizing module jtaguart_0
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 18.1]
+Progress: Parameterizing module mm_bridge_0
 Progress: Adding modular_adc_0 [altera_modular_adc 18.1]
 Progress: Parameterizing module modular_adc_0
 Progress: Adding msgdma_rx [altera_msgdma 18.1]
@@ -65,12 +69,16 @@ Progress: Adding avalon_wb [avalon_wb 1.0]
 Progress: Parameterizing module avalon_wb
 Progress: Adding clk_0 [clock_source 18.1]
 Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 18.1]
+Progress: Parameterizing module clock_bridge_0
 Progress: Adding descriptor_memory [altera_avalon_onchip_memory2 18.1]
 Progress: Parameterizing module descriptor_memory
 Progress: Adding eth_tse_0 [altera_eth_tse 18.1]
 Progress: Parameterizing module eth_tse_0
 Progress: Adding jtaguart_0 [altera_avalon_jtag_uart 18.1]
 Progress: Parameterizing module jtaguart_0
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 18.1]
+Progress: Parameterizing module mm_bridge_0
 Progress: Adding modular_adc_0 [altera_modular_adc 18.1]
 Progress: Parameterizing module modular_adc_0
 Progress: Adding msgdma_rx [altera_msgdma 18.1]
@@ -116,43 +124,44 @@ Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
 Info: altpll_0: "candy_avb_test_qsys" instantiated altpll "altpll_0"
 Info: avalon_wb: "candy_avb_test_qsys" instantiated avalon_wb "avalon_wb"
 Info: descriptor_memory: Starting RTL generation for module 'candy_avb_test_qsys_descriptor_memory'
-Info: descriptor_memory:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=candy_avb_test_qsys_descriptor_memory --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0123_descriptor_memory_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0123_descriptor_memory_gen//candy_avb_test_qsys_descriptor_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: descriptor_memory:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=candy_avb_test_qsys_descriptor_memory --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0064_descriptor_memory_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0064_descriptor_memory_gen//candy_avb_test_qsys_descriptor_memory_component_configuration.pl  --do_build_sim=0  ]
 Info: descriptor_memory: Done RTL generation for module 'candy_avb_test_qsys_descriptor_memory'
 Info: descriptor_memory: "candy_avb_test_qsys" instantiated altera_avalon_onchip_memory2 "descriptor_memory"
 Info: eth_tse_0: "candy_avb_test_qsys" instantiated altera_eth_tse "eth_tse_0"
 Info: jtaguart_0: Starting RTL generation for module 'candy_avb_test_qsys_jtaguart_0'
-Info: jtaguart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=candy_avb_test_qsys_jtaguart_0 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0124_jtaguart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0124_jtaguart_0_gen//candy_avb_test_qsys_jtaguart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtaguart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=candy_avb_test_qsys_jtaguart_0 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0065_jtaguart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0065_jtaguart_0_gen//candy_avb_test_qsys_jtaguart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtaguart_0: Done RTL generation for module 'candy_avb_test_qsys_jtaguart_0'
 Info: jtaguart_0: "candy_avb_test_qsys" instantiated altera_avalon_jtag_uart "jtaguart_0"
+Info: mm_bridge_0: "candy_avb_test_qsys" instantiated altera_avalon_mm_bridge "mm_bridge_0"
 Info: modular_adc_0: "candy_avb_test_qsys" instantiated altera_modular_adc "modular_adc_0"
 Info: msgdma_rx: "candy_avb_test_qsys" instantiated altera_msgdma "msgdma_rx"
 Info: msgdma_tx: "candy_avb_test_qsys" instantiated altera_msgdma "msgdma_tx"
 Info: new_sdram_controller_0: Starting RTL generation for module 'candy_avb_test_qsys_new_sdram_controller_0'
-Info: new_sdram_controller_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=candy_avb_test_qsys_new_sdram_controller_0 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0125_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0125_new_sdram_controller_0_gen//candy_avb_test_qsys_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: new_sdram_controller_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=candy_avb_test_qsys_new_sdram_controller_0 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0067_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0067_new_sdram_controller_0_gen//candy_avb_test_qsys_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
 Info: new_sdram_controller_0: Done RTL generation for module 'candy_avb_test_qsys_new_sdram_controller_0'
 Info: new_sdram_controller_0: "candy_avb_test_qsys" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
 Info: nios2_0: "candy_avb_test_qsys" instantiated altera_nios2_gen2 "nios2_0"
 Info: onchip_flash_0: Generating top-level entity altera_onchip_flash
 Info: onchip_flash_0: "candy_avb_test_qsys" instantiated altera_onchip_flash "onchip_flash_0"
 Info: pio_0: Starting RTL generation for module 'candy_avb_test_qsys_pio_0'
-Info: pio_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=candy_avb_test_qsys_pio_0 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0127_pio_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0127_pio_0_gen//candy_avb_test_qsys_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=candy_avb_test_qsys_pio_0 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0069_pio_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0069_pio_0_gen//candy_avb_test_qsys_pio_0_component_configuration.pl  --do_build_sim=0  ]
 Info: pio_0: Done RTL generation for module 'candy_avb_test_qsys_pio_0'
 Info: pio_0: "candy_avb_test_qsys" instantiated altera_avalon_pio "pio_0"
 Info: pio_1: Starting RTL generation for module 'candy_avb_test_qsys_pio_1'
-Info: pio_1:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=candy_avb_test_qsys_pio_1 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0128_pio_1_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0128_pio_1_gen//candy_avb_test_qsys_pio_1_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_1:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=candy_avb_test_qsys_pio_1 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0070_pio_1_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0070_pio_1_gen//candy_avb_test_qsys_pio_1_component_configuration.pl  --do_build_sim=0  ]
 Info: pio_1: Done RTL generation for module 'candy_avb_test_qsys_pio_1'
 Info: pio_1: "candy_avb_test_qsys" instantiated altera_avalon_pio "pio_1"
 Info: pio_4: Starting RTL generation for module 'candy_avb_test_qsys_pio_4'
-Info: pio_4:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=candy_avb_test_qsys_pio_4 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0129_pio_4_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0129_pio_4_gen//candy_avb_test_qsys_pio_4_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_4:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=candy_avb_test_qsys_pio_4 --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0071_pio_4_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0071_pio_4_gen//candy_avb_test_qsys_pio_4_component_configuration.pl  --do_build_sim=0  ]
 Info: pio_4: Done RTL generation for module 'candy_avb_test_qsys_pio_4'
 Info: pio_4: "candy_avb_test_qsys" instantiated altera_avalon_pio "pio_4"
 Info: sys_clk_timer: Starting RTL generation for module 'candy_avb_test_qsys_sys_clk_timer'
-Info: sys_clk_timer:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=candy_avb_test_qsys_sys_clk_timer --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0130_sys_clk_timer_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0130_sys_clk_timer_gen//candy_avb_test_qsys_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=candy_avb_test_qsys_sys_clk_timer --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0072_sys_clk_timer_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0072_sys_clk_timer_gen//candy_avb_test_qsys_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
 Info: sys_clk_timer: Done RTL generation for module 'candy_avb_test_qsys_sys_clk_timer'
 Info: sys_clk_timer: "candy_avb_test_qsys" instantiated altera_avalon_timer "sys_clk_timer"
 Info: sysid_qsys_0: "candy_avb_test_qsys" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
 Info: uart: Starting RTL generation for module 'candy_avb_test_qsys_uart'
-Info: uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=candy_avb_test_qsys_uart --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0132_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0132_uart_gen//candy_avb_test_qsys_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=candy_avb_test_qsys_uart --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0074_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0074_uart_gen//candy_avb_test_qsys_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: uart: Done RTL generation for module 'candy_avb_test_qsys_uart'
 Info: uart: "candy_avb_test_qsys" instantiated altera_avalon_uart "uart"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -176,6 +185,7 @@ Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_019: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_020: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_021: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "candy_avb_test_qsys" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "candy_avb_test_qsys" instantiated altera_irq_mapper "irq_mapper"
 Info: avalon_st_adapter: "candy_avb_test_qsys" instantiated altera_avalon_st_adapter "avalon_st_adapter"
@@ -189,25 +199,25 @@ Info: prefetcher_internal: "msgdma_rx" instantiated altera_msgdma_prefetcher "pr
 Info: write_mstr_internal: "msgdma_rx" instantiated dma_write_master "write_mstr_internal"
 Info: read_mstr_internal: "msgdma_tx" instantiated dma_read_master "read_mstr_internal"
 Info: cpu: Starting RTL generation for module 'candy_avb_test_qsys_nios2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=candy_avb_test_qsys_nios2_0_cpu --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0143_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5263893431967228519.dir/0143_cpu_gen//candy_avb_test_qsys_nios2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2019.07.25 18:29:32 (*) Starting Nios II generation
-Info: cpu: # 2019.07.25 18:29:32 (*)   Checking for plaintext license.
-Info: cpu: # 2019.07.25 18:29:32 (*)   Plaintext license not found.
-Info: cpu: # 2019.07.25 18:29:32 (*)   Checking for encrypted license (non-evaluation).
-Info: cpu: # 2019.07.25 18:29:33 (*)   Encrypted license found.  SOF will not be time-limited.
-Info: cpu: # 2019.07.25 18:29:33 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2019.07.25 18:29:33 (*)   Creating all objects for CPU
-Info: cpu: # 2019.07.25 18:29:33 (*)     Testbench
-Info: cpu: # 2019.07.25 18:29:34 (*)     Instruction decoding
-Info: cpu: # 2019.07.25 18:29:34 (*)       Instruction fields
-Info: cpu: # 2019.07.25 18:29:34 (*)       Instruction decodes
-Info: cpu: # 2019.07.25 18:29:35 (*)       Signals for RTL simulation waveforms
-Info: cpu: # 2019.07.25 18:29:35 (*)       Instruction controls
-Info: cpu: # 2019.07.25 18:29:35 (*)     Pipeline frontend
-Info: cpu: # 2019.07.25 18:29:35 (*)     Pipeline backend
-Info: cpu: # 2019.07.25 18:29:39 (*)   Generating RTL from CPU objects
-Info: cpu: # 2019.07.25 18:29:41 (*)   Creating encrypted RTL
-Info: cpu: # 2019.07.25 18:29:42 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=candy_avb_test_qsys_nios2_0_cpu --dir=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0085_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/shun/AppData/Local/Temp/alt8102_5256226065860952901.dir/0085_cpu_gen//candy_avb_test_qsys_nios2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2019.07.26 13:36:01 (*) Starting Nios II generation
+Info: cpu: # 2019.07.26 13:36:01 (*)   Checking for plaintext license.
+Info: cpu: # 2019.07.26 13:36:01 (*)   Plaintext license not found.
+Info: cpu: # 2019.07.26 13:36:01 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2019.07.26 13:36:02 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2019.07.26 13:36:02 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2019.07.26 13:36:02 (*)   Creating all objects for CPU
+Info: cpu: # 2019.07.26 13:36:02 (*)     Testbench
+Info: cpu: # 2019.07.26 13:36:03 (*)     Instruction decoding
+Info: cpu: # 2019.07.26 13:36:03 (*)       Instruction fields
+Info: cpu: # 2019.07.26 13:36:03 (*)       Instruction decodes
+Info: cpu: # 2019.07.26 13:36:04 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2019.07.26 13:36:04 (*)       Instruction controls
+Info: cpu: # 2019.07.26 13:36:04 (*)     Pipeline frontend
+Info: cpu: # 2019.07.26 13:36:04 (*)     Pipeline backend
+Info: cpu: # 2019.07.26 13:36:08 (*)   Generating RTL from CPU objects
+Info: cpu: # 2019.07.26 13:36:12 (*)   Creating encrypted RTL
+Info: cpu: # 2019.07.26 13:36:13 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'candy_avb_test_qsys_nios2_0_cpu'
 Info: cpu: "nios2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_0_data_master_translator"
@@ -221,8 +231,8 @@ Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_
 Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
 Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
 Info: router_014: "mm_interconnect_0" instantiated altera_merlin_router "router_014"
-Info: router_021: "mm_interconnect_0" instantiated altera_merlin_router "router_021"
-Info: router_026: "mm_interconnect_0" instantiated altera_merlin_router "router_026"
+Info: router_022: "mm_interconnect_0" instantiated altera_merlin_router "router_022"
+Info: router_027: "mm_interconnect_0" instantiated altera_merlin_router "router_027"
 Info: nios2_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_0_data_master_limiter"
 Info: Reusing file C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/candy_avb_test_qsys/synthesis/submodules/altera_avalon_sc_fifo.v
 Info: new_sdram_controller_0_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "new_sdram_controller_0_s1_burst_adapter"
@@ -233,14 +243,14 @@ Info: cmd_demux_005: "mm_interconnect_0" instantiated altera_merlin_demultiplexe
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: cmd_mux_006: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_006"
 Info: Reusing file C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/candy_avb_test_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
-Info: cmd_mux_013: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_013"
+Info: cmd_mux_014: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_014"
 Info: Reusing file C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/candy_avb_test_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
-Info: cmd_mux_018: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_018"
+Info: cmd_mux_019: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_019"
 Info: Reusing file C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/candy_avb_test_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux_006: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_006"
 Info: rsp_demux_008: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_008"
-Info: rsp_demux_013: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_013"
-Info: rsp_demux_018: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_018"
+Info: rsp_demux_014: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_014"
+Info: rsp_demux_019: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_019"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
 Info: Reusing file C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/candy_avb_test_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
@@ -254,10 +264,10 @@ Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock
 Info: Reusing file C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/candy_avb_test_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v
 Info: Reusing file C:/Users/shun/Desktop/CurrentProjects/CANDY/CANDY_AVB/fpga/candy_avb_test_qsys/synthesis/submodules/altera_std_synchronizer_nocut.v
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
-Info: avalon_st_adapter_013: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_013"
+Info: avalon_st_adapter_014: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_014"
 Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: error_adapter_0: "avalon_st_adapter_013" instantiated error_adapter "error_adapter_0"
-Info: candy_avb_test_qsys: Done "candy_avb_test_qsys" with 67 modules, 244 files
+Info: error_adapter_0: "avalon_st_adapter_014" instantiated error_adapter "error_adapter_0"
+Info: candy_avb_test_qsys: Done "candy_avb_test_qsys" with 68 modules, 245 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

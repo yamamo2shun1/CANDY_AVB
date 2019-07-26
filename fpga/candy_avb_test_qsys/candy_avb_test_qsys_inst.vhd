@@ -68,7 +68,18 @@
 			wb_dat_i                          : in    std_logic_vector(31 downto 0) := (others => 'X'); -- dat_i
 			wb_ack_i                          : in    std_logic                     := 'X';             -- ack_i
 			wb_err_i                          : in    std_logic                     := 'X';             -- err_i
-			wb_rty_i                          : in    std_logic                     := 'X'              -- rty_i
+			wb_rty_i                          : in    std_logic                     := 'X';             -- rty_i
+			avmm_waitrequest                  : in    std_logic                     := 'X';             -- waitrequest
+			avmm_readdata                     : in    std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			avmm_readdatavalid                : in    std_logic                     := 'X';             -- readdatavalid
+			avmm_burstcount                   : out   std_logic_vector(0 downto 0);                     -- burstcount
+			avmm_writedata                    : out   std_logic_vector(31 downto 0);                    -- writedata
+			avmm_address                      : out   std_logic_vector(7 downto 0);                     -- address
+			avmm_write                        : out   std_logic;                                        -- write
+			avmm_read                         : out   std_logic;                                        -- read
+			avmm_byteenable                   : out   std_logic_vector(3 downto 0);                     -- byteenable
+			avmm_debugaccess                  : out   std_logic;                                        -- debugaccess
+			avmm_clk_clk                      : out   std_logic                                         -- clk
 		);
 	end component candy_avb_test_qsys;
 
@@ -142,6 +153,17 @@
 			wb_dat_i                          => CONNECTED_TO_wb_dat_i,                          --                            .dat_i
 			wb_ack_i                          => CONNECTED_TO_wb_ack_i,                          --                            .ack_i
 			wb_err_i                          => CONNECTED_TO_wb_err_i,                          --                            .err_i
-			wb_rty_i                          => CONNECTED_TO_wb_rty_i                           --                            .rty_i
+			wb_rty_i                          => CONNECTED_TO_wb_rty_i,                          --                            .rty_i
+			avmm_waitrequest                  => CONNECTED_TO_avmm_waitrequest,                  --                        avmm.waitrequest
+			avmm_readdata                     => CONNECTED_TO_avmm_readdata,                     --                            .readdata
+			avmm_readdatavalid                => CONNECTED_TO_avmm_readdatavalid,                --                            .readdatavalid
+			avmm_burstcount                   => CONNECTED_TO_avmm_burstcount,                   --                            .burstcount
+			avmm_writedata                    => CONNECTED_TO_avmm_writedata,                    --                            .writedata
+			avmm_address                      => CONNECTED_TO_avmm_address,                      --                            .address
+			avmm_write                        => CONNECTED_TO_avmm_write,                        --                            .write
+			avmm_read                         => CONNECTED_TO_avmm_read,                         --                            .read
+			avmm_byteenable                   => CONNECTED_TO_avmm_byteenable,                   --                            .byteenable
+			avmm_debugaccess                  => CONNECTED_TO_avmm_debugaccess,                  --                            .debugaccess
+			avmm_clk_clk                      => CONNECTED_TO_avmm_clk_clk                       --                    avmm_clk.clk
 		);
 

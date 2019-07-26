@@ -2,6 +2,17 @@
 		port (
 			adc_pll_locked_export             : in    std_logic                     := 'X';             -- export
 			altpll_locked_export              : out   std_logic;                                        -- export
+			avmm_waitrequest                  : in    std_logic                     := 'X';             -- waitrequest
+			avmm_readdata                     : in    std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			avmm_readdatavalid                : in    std_logic                     := 'X';             -- readdatavalid
+			avmm_burstcount                   : out   std_logic_vector(0 downto 0);                     -- burstcount
+			avmm_writedata                    : out   std_logic_vector(31 downto 0);                    -- writedata
+			avmm_address                      : out   std_logic_vector(7 downto 0);                     -- address
+			avmm_write                        : out   std_logic;                                        -- write
+			avmm_read                         : out   std_logic;                                        -- read
+			avmm_byteenable                   : out   std_logic_vector(3 downto 0);                     -- byteenable
+			avmm_debugaccess                  : out   std_logic;                                        -- debugaccess
+			avmm_clk_clk                      : out   std_logic;                                        -- clk
 			clk_clk                           : in    std_logic                     := 'X';             -- clk
 			codec_clk_clk                     : out   std_logic;                                        -- clk
 			codec_reset_export                : out   std_logic;                                        -- export

@@ -3,7 +3,7 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="351" />
+   <connections preferredWidth="383" />
    <irq preferredWidth="34" />
    <export preferredWidth="227" />
    <name preferredWidth="223" />
@@ -11,7 +11,8 @@
    <description preferredWidth="187" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
+ <library
+   expandedCategories="Library/Basic Functions,Library/Interface Protocols/Audio &amp; Video,Library/Basic Functions/Simulation; Debug and Verification,Library/University Program,Library,Library/Basic Functions/Simulation; Debug and Verification/Simulation,Project,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Basic Functions/Configuration and Programming,Library/DSP/Video and Image Processing,Library/University Program/Audio &amp; Video,Library/Basic Functions/On Chip Memory,Library/Basic Functions/Bridges and Adaptors/Clock,Library/Interface Protocols/Ethernet/Reference Design Components,Library/Basic Functions/Clocks; PLLs and Resets,Library/Interface Protocols/Ethernet,Library/Qsys Interconnect,Library/University Program/Audio &amp; Video/Video,Library/Qsys Interconnect/Interrupt,Library/Basic Functions/Bridges and Adaptors,Library/Qsys Interconnect/Memory-Mapped Alpha,Library/DSP,Library/University Program/Clock,Library/Interface Protocols" />
  <window width="1920" height="1160" x="0" y="0" />
  <hdlexample language="VHDL" />
  <generation synthesis="VHDL" />

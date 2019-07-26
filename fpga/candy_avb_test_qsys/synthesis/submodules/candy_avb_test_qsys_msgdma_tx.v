@@ -7,18 +7,18 @@
 
 `timescale 1 ps / 1 ps
 module candy_avb_test_qsys_msgdma_tx (
-		output wire [22:0] mm_read_address,                            //                 mm_read.address
+		output wire [23:0] mm_read_address,                            //                 mm_read.address
 		output wire        mm_read_read,                               //                        .read
 		output wire [3:0]  mm_read_byteenable,                         //                        .byteenable
 		input  wire [31:0] mm_read_readdata,                           //                        .readdata
 		input  wire        mm_read_waitrequest,                        //                        .waitrequest
 		input  wire        mm_read_readdatavalid,                      //                        .readdatavalid
-		output wire [12:0] descriptor_read_master_address,             //  descriptor_read_master.address
+		output wire [24:0] descriptor_read_master_address,             //  descriptor_read_master.address
 		output wire        descriptor_read_master_read,                //                        .read
 		input  wire [31:0] descriptor_read_master_readdata,            //                        .readdata
 		input  wire        descriptor_read_master_waitrequest,         //                        .waitrequest
 		input  wire        descriptor_read_master_readdatavalid,       //                        .readdatavalid
-		output wire [12:0] descriptor_write_master_address,            // descriptor_write_master.address
+		output wire [24:0] descriptor_write_master_address,            // descriptor_write_master.address
 		output wire        descriptor_write_master_write,              //                        .write
 		output wire [3:0]  descriptor_write_master_byteenable,         //                        .byteenable
 		output wire [31:0] descriptor_write_master_writedata,          //                        .writedata
@@ -116,7 +116,7 @@ module candy_avb_test_qsys_msgdma_tx (
 		.DATA_WIDTH                 (32),
 		.DATA_BYTEENABLE_WIDTH      (4),
 		.DESCRIPTOR_WIDTH           (128),
-		.ADDRESS_WIDTH              (13),
+		.ADDRESS_WIDTH              (25),
 		.RESPONSE_FIFO_DEPTH        (256),
 		.RESPONSE_FIFO_DEPTH_LOG2   (8)
 	) prefetcher_internal (
@@ -162,7 +162,7 @@ module candy_avb_test_qsys_msgdma_tx (
 		.CHANNEL_WIDTH             (8),
 		.BYTE_ENABLE_WIDTH         (4),
 		.BYTE_ENABLE_WIDTH_LOG2    (2),
-		.ADDRESS_WIDTH             (23),
+		.ADDRESS_WIDTH             (24),
 		.FIFO_DEPTH_LOG2           (8),
 		.SYMBOL_WIDTH              (8),
 		.NUMBER_OF_SYMBOLS         (4),
