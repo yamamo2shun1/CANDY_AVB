@@ -104,31 +104,6 @@ architecture RTL of CANDY_AVB is
 			wb_rty_i                          : in    std_logic                     := 'X';             -- rty
 			adc_pll_locked_export             : in    std_logic                     := 'X';             -- export
          altpll_locked_export              : out   std_logic;                                        -- export
---			m_wb_ack_o                        : out   std_logic                     := 'X';             -- ack_i
---			m_wb_adr_i                        : in    std_logic_vector(31 downto 0);                    -- adr_o
---			m_wb_cyc_i                        : in    std_logic;                                        -- cyc_o
---			m_wb_dat_o                        : out   std_logic_vector(31 downto 0) := (others => 'X'); -- dat_i
---			m_wb_dat_i                        : in    std_logic_vector(31 downto 0);                    -- dat_o
---			m_wb_err_o                        : out   std_logic                     := 'X';             -- err_i
---			m_wb_rty_o                        : out   std_logic                     := 'X';             -- rty_i
---			m_wb_sel_i                        : in    std_logic_vector(3 downto 0);                     -- sel_o
---			m_wb_stb_i                        : in    std_logic;                                        -- stb_o
---			m_wb_we_i                         : in    std_logic                                         -- we_o
---			eth_interrupt_export              : inout std_logic                     := 'X';             -- export
---			eth_ocm_mtxd_pad_o                : out   std_logic_vector(3 downto 0);                     -- mtxd_pad_o
---			eth_ocm_mtx_clk_pad_i             : in    std_logic                     := 'X';             -- mtx_clk_pad_i
---			eth_ocm_mtxen_pad_o               : out   std_logic;                                        -- mtxen_pad_o
---			eth_ocm_mtxerr_pad_o              : out   std_logic;                                        -- mtxerr_pad_o
---			eth_ocm_mrx_clk_pad_i             : in    std_logic                     := 'X';             -- mrx_clk_pad_i
---			eth_ocm_mrxd_pad_i                : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mrxd_pad_i
---			eth_ocm_mrxdv_pad_i               : in    std_logic                     := 'X';             -- mrxdv_pad_i
---			eth_ocm_mrxerr_pad_i              : in    std_logic                     := 'X';             -- mrxerr_pad_i
---			eth_ocm_mcoll_pad_i               : in    std_logic                     := 'X';             -- mcoll_pad_i
---			eth_ocm_mcrs_pad_i                : in    std_logic                     := 'X';             -- mcrs_pad_i
---			eth_ocm_mdc_pad_o                 : out   std_logic;                                        -- mdc_pad_o
---			eth_ocm_md_pad_i                  : in    std_logic                     := 'X';             -- md_pad_i
---			eth_ocm_md_pad_o                  : out   std_logic;                                        -- md_pad_o
---			eth_ocm_md_padoe_o                : out   std_logic                                         -- md_padoe_o
 			eth_mii_rx_d                      : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- mii_rx_d
 			eth_mii_rx_dv                     : in    std_logic                     := 'X';             -- mii_rx_dv
          eth_mii_rx_err                    : in    std_logic                     := 'X';             -- mii_rx_err
@@ -143,7 +118,18 @@ architecture RTL of CANDY_AVB is
          eth_mdio_mdio_out                 : out   std_logic;                                        -- mdio_out
          eth_mdio_mdio_oen                 : out   std_logic;                                        -- mdio_oen
 			eth_tx_clk_clk                    : in    std_logic                     := 'X';             -- clk
-         eth_rx_clk_clk                    : in    std_logic                     := 'X'              -- clk
+         eth_rx_clk_clk                    : in    std_logic                     := 'X';             -- clk
+			avmm_waitrequest                  : in    std_logic                     := 'X';             -- waitrequest
+         avmm_readdata                     : in    std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+--			avmm_readdatavalid                : in    std_logic                     := 'X';             -- readdatavalid
+--			avmm_burstcount                   : out   std_logic_vector(0 downto 0);                     -- burstcount
+         avmm_writedata                    : out   std_logic_vector(31 downto 0);                    -- writedata
+         avmm_address                      : out   std_logic_vector(7 downto 0);                     -- address
+         avmm_write                        : out   std_logic;                                        -- write
+         avmm_read                         : out   std_logic;                                        -- read
+--			avmm_byteenable                   : out   std_logic_vector(3 downto 0);                     -- byteenable
+--			avmm_debugaccess                  : out   std_logic;                                        -- debugaccess
+         avmm_clk_clk                      : out   std_logic                                         -- clk
 		);
 	end component candy_avb_test_qsys;
 
@@ -188,72 +174,19 @@ architecture RTL of CANDY_AVB is
 			LRCLK_O_SLV:  out std_logic;
 			BITCLK_O_SLV: out std_logic;
 			DATA_I_SLV:   in  std_logic;
-			DATA_O_SLV:   out std_logic
+			DATA_O_SLV:   out std_logic;
+			
+			avs_s1_clk:           in std_logic;
+			avs_s1_address:       in  std_logic_vector(7 downto 0);
+			avs_s1_read:          in  std_logic;
+			avs_s1_write:         in  std_logic;
+			avs_s1_writedata:     in  std_logic_vector(31 downto 0);
+			avs_s1_waitrequest:   out std_logic;
+			avs_s1_readdata:      out std_logic_vector(31 downto 0)
+--			avs_s1_readdatavalid: out std_logic
 		);
 	end component;
-	
---	component eth_top
---		port(
---			-- WISHBONE common
---			wb_clk_i: in  std_logic;
---			wb_rst_i: in  std_logic;
---			wb_dat_i: in  std_logic_vector(31 downto 0);
---			wb_dat_o: out std_logic_vector(31 downto 0);
---
--- 			-- WISHBONE slave
---			wb_adr_i: in  std_logic_vector(11 downto 2);
---			--wb_adr_i: in  std_logic_vector(9 downto 0);
---			wb_sel_i: in  std_logic_vector(3 downto 0);
---			wb_we_i:  in  std_logic;
---			wb_cyc_i: in  std_logic;
---			wb_stb_i: in  std_logic;
---			wb_ack_o: out std_logic;
---			wb_err_o: out std_logic;
---
---			-- WISHBONE master
---			m_wb_adr_o: out std_logic_vector(31 downto 0);
---			m_wb_sel_o: out std_logic_vector(3 downto 0);
---			m_wb_we_o:  out std_logic;
---			m_wb_dat_o: out std_logic_vector(31 downto 0);
---			m_wb_dat_i: in  std_logic_vector(31 downto 0);
---			m_wb_cyc_o: out std_logic;
---			m_wb_stb_o: out std_logic;
---			m_wb_ack_i: in  std_logic;
---			m_wb_err_i: in  std_logic;
---
-----			-- for ETH_WISHBONE_B3
-----			m_wb_cti_o: out std_logic_vector(2 downto 0);
-----			m_wb_bte_o: out std_logic_vector(1 downto 0);
---
---			-- TX
---			mtx_clk_pad_i: in  std_logic;
---			mtxd_pad_o:    out std_logic_vector(3 downto 0);
---			mtxen_pad_o:   out std_logic;
---			mtxerr_pad_o:  out std_logic;
---
---			-- RX
---			mrx_clk_pad_i: in std_logic;
---			mrxd_pad_i:    in std_logic_vector(3 downto 0);
---			mrxdv_pad_i:   in std_logic;
---			mrxerr_pad_i:  in std_logic;
---			mcoll_pad_i:   in std_logic;
---			mcrs_pad_i:    in std_logic;
---  
---			-- MIIM
---			mdc_pad_o:  out std_logic;
---			md_pad_i:   in  std_logic;
---			md_pad_o:   out std_logic;
---			md_padoe_o: out std_logic;
---			int_o:      out std_logic
---
---			-- Bist
---			-- debug chain signals
---			-- mbist_si_i,  -- bist scan serial in
---			-- mbist_so_o,  -- bist scan serial out
---			-- mbist_ctrl_i -- bist chain shift control
---		);
---	end component;
-	
+		
 --	constant p_wb_offset_low: std_logic_vector(31 downto 0) := X"00000000";
 --	constant p_wb_offset_hi:  std_logic_vector(31 downto 0) := X"3FFFFFFF";
 --	constant p_wb_i2c_low:    std_logic_vector(31 downto 0) := p_wb_offset_low + X"00000040";
@@ -303,31 +236,16 @@ architecture RTL of CANDY_AVB is
 	signal sda_o:   std_logic;
 	signal sda_oen: std_logic;
 	
---	-- eth
---	signal cyc_i_eth: std_logic;
---	signal stb_i_eth: std_logic;
---	signal we_i_eth: std_logic;
---	signal adr_i_eth: std_logic_vector(11 downto 2);
---	signal dat_o_eth: std_logic_vector(31 downto 0);
---	signal ack_o_eth: std_logic;
---	signal sel_i_eth: std_logic_vector(3 downto 0);
---	signal err_o_eth: std_logic;
---	
---	signal m_adr_i: std_logic_vector(31 downto 0);
---	signal m_sel_i: std_logic_vector(3 downto 0);
---	signal m_we_i:  std_logic;
---	signal m_dat_i: std_logic_vector(31 downto 0);
---	signal m_dat_o: std_logic_vector(31 downto 0);
---	signal m_cyc_i: std_logic;
---	signal m_stb_i: std_logic;
---	signal m_ack_o: std_logic;
---	signal m_err_o: std_logic;
---	signal m_rty_o: std_logic;
-	
---	signal m_cti_i: std_logic_vector(2 downto 0);
---	signal m_bte_o: std_logic_vector(1 downto 0);
-	
 	signal eth_mii_tx_er: std_logic;
+	
+	signal avs_m1_clk_clk:       std_logic;
+	signal avs_m1_address:       std_logic_vector(7 downto 0);
+	signal avs_m1_read:          std_logic;
+	signal avs_m1_write:         std_logic;
+	signal avs_m1_writedata:     std_logic_vector(31 downto 0);
+	signal avs_m1_waitrequest:   std_logic;
+	signal avs_m1_readdata:      std_logic_vector(31 downto 0);
+	signal avs_m1_readdatavalid: std_logic;
 	
 	begin
 		adc_pll_locked_export <= altpll_locked_export;
@@ -344,7 +262,6 @@ architecture RTL of CANDY_AVB is
 				new_sdram_controller_0_wire_cke   => DRAM_CKE,              --                            .cke
 				new_sdram_controller_0_wire_cs_n  => DRAM_CS,               --                            .cs_n
 				new_sdram_controller_0_wire_dq    => DRAM_DQ,               --                            .dq
-			 --new_sdram_controller_0_wire_dqm   => DRAM_UDQM & DRAM_LDQM, --                            .dqm
 				new_sdram_controller_0_wire_dqm(1) => DRAM_UDQM,            --                            .dqm
 				new_sdram_controller_0_wire_dqm(0) => DRAM_LDQM,            --                            .dqm
 				new_sdram_controller_0_wire_ras_n => DRAM_RAS,              --                            .ras_n
@@ -370,31 +287,6 @@ architecture RTL of CANDY_AVB is
 				wb_rty_i                          => wb_rty,                --                            .rty
 				adc_pll_locked_export             => adc_pll_locked_export, --              adc_pll_locked.export
             altpll_locked_export              => altpll_locked_export,  --               altpll_locked.export
---				m_wb_ack_o                        => m_ack_o,               --                        m_wb.ack_i
---				m_wb_adr_i                        => m_adr_i,               --                            .adr_o
---				m_wb_cyc_i                        => m_cyc_i,               --                            .cyc_o
---				m_wb_dat_o                        => m_dat_o,               --                            .dat_i
---				m_wb_dat_i                        => m_dat_i,               --                            .dat_o
---				m_wb_err_o                        => m_err_o,               --                            .err_i
---				m_wb_rty_o                        => m_rty_o,               --                            .rty_i
---				m_wb_sel_i                        => m_sel_i,               --                            .sel_o
---				m_wb_stb_i                        => m_stb_i,               --                            .stb_o
---				m_wb_we_i                         => m_we_i                 --                            .we_o
---				eth_interrupt_export              => ETH_INTERRUPT,         --               eth_interrupt.export
---				eth_ocm_mtxd_pad_o            	 => ETH_MII_TXD,           --                     eth_ocm.mtxd_pad_o
---				eth_ocm_mtx_clk_pad_i           	 => ETH_TX_CLK,            --                            .mtx_clk_pad_i
---				eth_ocm_mtxen_pad_o               => ETH_MII_TX_EN,         --                            .mtxen_pad_o
---				eth_ocm_mtxerr_pad_o              => eth_mii_tx_err,        --                            .mtxerr_pad_o
---				eth_ocm_mrx_clk_pad_i             => ETH_RX_CLK,            --                            .mrx_clk_pad_i
---				eth_ocm_mrxd_pad_i                => ETH_MII_RXD,           --                            .mrxd_pad_i
---				eth_ocm_mrxdv_pad_i               => ETH_MII_RX_DV,         --                            .mrxdv_pad_i
---				eth_ocm_mrxerr_pad_i              => ETH_MII_RX_ER,         --                            .mrxerr_pad_i
---				eth_ocm_mcoll_pad_i               => ETH_MII_COL,           --                            .mcoll_pad_i
---				eth_ocm_mcrs_pad_i                => ETH_MII_CRS,           --                            .mcrs_pad_i
---				eth_ocm_mdc_pad_o                 => ETH_MDC,               --                            .mdc_pad_o
---				eth_ocm_md_pad_i                  => mdio_in,               --                            .md_pad_i
---				eth_ocm_md_pad_o                  => mdio_out,              --                            .md_pad_o
---				eth_ocm_md_padoe_o                => mdio_oen               --                            .md_padoe_o
 				eth_mii_rx_d                      => ETH_MII_RXD,           --                         eth.mii_rx_d
             eth_mii_rx_dv                     => ETH_MII_RX_DV,         --                            .mii_rx_dv
             eth_mii_rx_err                    => ETH_MII_RX_ER,         --                            .mii_rx_err
@@ -409,7 +301,18 @@ architecture RTL of CANDY_AVB is
             eth_mdio_mdio_out                 => mdio_out,              --                            .mdio_out
             eth_mdio_mdio_oen                 => mdio_oen,              --                            .mdio_oen
 				eth_tx_clk_clk                    => ETH_TX_CLK,            --                  eth_tx_clk.clk
-            eth_rx_clk_clk                    => ETH_RX_CLK             --                  eth_rx_clk.clk
+            eth_rx_clk_clk                    => ETH_RX_CLK,            --                  eth_rx_clk.clk
+				avmm_waitrequest                  => avs_m1_waitrequest,    --                        avmm.waitrequest
+            avmm_readdata                     => avs_m1_readdata,       --                            .readdata
+--				avmm_readdatavalid                => avs_m1_readdatavalid,  --                            .readdatavalid
+--				avmm_burstcount                   => avs_m1_burstcount,     --                            .burstcount
+            avmm_writedata                    => avs_m1_writedata,      --                            .writedata
+            avmm_address                      => avs_m1_address,        --                            .address
+            avmm_write                        => avs_m1_write,          --                            .write
+            avmm_read                         => avs_m1_read,           --                            .read
+--				avmm_byteenable                   => avs_m1_byteenable,     --                            .byteenable
+--				avmm_debugaccess                  => avs_m1_debugaccess,    --                            .debugaccess
+				avmm_clk_clk                      => avs_m1_clk_clk         --                    avmm_clk.clk
 			);
 			
 		u1 : i2c_master_top generic map (ARST_LVL => '0') port map (
@@ -443,96 +346,30 @@ architecture RTL of CANDY_AVB is
 				LRCLK_O_SLV  => CODEC_LRCLOCK(1),
 				BITCLK_O_SLV => CODEC_BITCLOCK(1),
 				DATA_I_SLV   => CODEC_DATA_OUT(1),
-				DATA_O_SLV   => CODEC_DATA_IN(1)
+				DATA_O_SLV   => CODEC_DATA_IN(1),
+				
+				avs_s1_clk           => avs_m1_clk_clk,
+				avs_s1_address       => avs_m1_address,
+				avs_s1_read          => avs_m1_read,
+				avs_s1_write         => avs_m1_write,
+				avs_s1_writedata     => avs_m1_writedata,
+				avs_s1_waitrequest   => avs_m1_waitrequest,
+				avs_s1_readdata      => avs_m1_readdata
+--				avs_s1_readdatavalid => avs_m1_readdatavalid
 			);
-		
---		u3 : eth_top port map (
---				-- WISHBONE common
---				wb_clk_i => wb_clk,
---				wb_rst_i => wb_rst,
---				wb_dat_i => wb_dati,
---				wb_dat_o => dat_o_eth,
---
---				-- WISHBONE slave
---				wb_adr_i => adr_i_eth,
---				wb_sel_i => sel_i_eth,
---				wb_we_i  => we_i_eth,
---				wb_cyc_i => cyc_i_eth,
---				wb_stb_i => stb_i_eth,
---				wb_ack_o => ack_o_eth,
---				wb_err_o => err_o_eth,
---
---				-- WISHBONE master
---				m_wb_adr_o => m_adr_i,
---				m_wb_sel_o => m_sel_i,
---				m_wb_we_o  => m_we_i,
---				m_wb_dat_o => m_dat_i,
---				m_wb_dat_i => m_dat_o,
---				m_wb_cyc_o => m_cyc_i,
---				m_wb_stb_o => m_stb_i,
---				m_wb_ack_i => m_ack_o,
---				m_wb_err_i => m_err_o,
---
-----				-- for ETH_WISHBONE_B3
-----				m_wb_cti_o => m_cti_o,
-----				m_wb_bte_o => m_bte_o,
---
---				-- TX
---				mtx_clk_pad_i => ETH_TX_CLK,
---				mtxd_pad_o    => ETH_MII_TXD,
---				mtxen_pad_o   => ETH_MII_TX_EN,
---				mtxerr_pad_o  => eth_mii_tx_er,
---
---				-- RX
---				mrx_clk_pad_i => ETH_RX_CLK,
---				mrxd_pad_i    => ETH_MII_RXD,
---				mrxdv_pad_i   => ETH_MII_RX_DV,
---				mrxerr_pad_i  => ETH_MII_RX_ER,
---				mcoll_pad_i   => ETH_MII_COL,
---				mcrs_pad_i    => ETH_MII_CRS,
---  
---				-- MIIM
---				mdc_pad_o  => ETH_MDC,
---				md_pad_i   => mdio_in,
---				md_pad_o   => mdio_out,
---				md_padoe_o => mdio_oen,
---				int_o      => ETH_INTERRUPT
---
---				-- Bist
---				-- debug chain signals
---				-- mbist_si_i,  -- bist scan serial in
---				-- mbist_so_o,  -- bist scan serial out
---				-- mbist_ctrl_i -- bist chain shift control
---			);
-		
+				
 		-- I2C
 		sel_i_i2c <= '1' when ((wb_adr >= p_wb_i2c_low) and (wb_adr <= p_wb_i2c_hi)) else '0';
 		cyc_i_i2c <= wb_cyc when (sel_i_i2c = '1') else '0';
 		stb_i_i2c <= wb_stb when (sel_i_i2c = '1') else '0';
 		adr_i_i2c <= wb_adr(4 downto 2);
 		we_i_i2c  <= wb_we when (sel_i_i2c = '1') else '0';
-
---		-- ETH
---		-- sel_i_eth <= "1111" when ((wb_adr >= p_wb_eth_low) and (wb_adr <= p_wb_eth_hi)) else "0000";
---		-- cyc_i_eth <= wb_cyc when (sel_i_eth = "1111") else '0';
---		-- stb_i_eth <= wb_stb when (sel_i_eth = "1111") else '0';
---		-- adr_i_eth <= wb_adr(11 downto 2);
---		-- we_i_eth  <= wb_we when (sel_i_eth = "1111") else '0';
---		sel_i_eth <= wb_sel when ((wb_adr >= p_wb_eth_low) and (wb_adr <= p_wb_eth_hi)) else "0000";
---		cyc_i_eth <= wb_cyc when (sel_i_eth > "0000") else '0';
---		stb_i_eth <= wb_stb when (sel_i_eth > "0000") else '0';
---		adr_i_eth <= wb_adr(11 downto 2);
---		we_i_eth  <= wb_we when (sel_i_eth > "0000") else '0';
 		
 		wb_dato <= (dat_o_i2c & dat_o_i2c & dat_o_i2c & dat_o_i2c) when (sel_i_i2c = '1') else
-----					  dat_o_eth when (sel_i_eth = "1111") else
---					  dat_o_eth when (sel_i_eth > "0000") else
 					  X"00000000";
 		
 		wb_ack <= '1' when (wb_ack_dff = '1') else
 					 ack_o_i2c when (sel_i_i2c = '1') else
-----					 ack_o_eth when (sel_i_eth = "1111") else
---					 ack_o_eth when (sel_i_eth > "0000") else
 					 wb_stb;
 		
 		process(wb_clk, rstn)
@@ -541,8 +378,6 @@ architecture RTL of CANDY_AVB is
 				wb_ack_dff <= '0';
 			elsif (wb_clk'event and wb_clk = '1') then
 				if ((sel_i_i2c = '1') and (ack_o_i2c = '1')) then
-----					((sel_i_eth = "1111") and (ack_o_eth = '1')) then
---					((sel_i_eth > "0000") and (ack_o_eth = '1')) then
 					wb_ack_dff <= '1';
 				else
 					if (wb_stb = '0') then
