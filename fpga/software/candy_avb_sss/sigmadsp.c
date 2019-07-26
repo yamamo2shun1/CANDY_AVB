@@ -36,11 +36,36 @@
 #include "includes.h" 
 
 #include "altera_avalon_pio_regs.h"
+#include "altera_modular_adc.h"
+
+#include "sys/alt_irq.h"
+#include "sys/alt_cache.h"
 
 #include "alt_error_handler.h"
 #include "osc_server.h"
 
 #include "SigmaStudioFW.h"
+
+uint32_t adc[2] = {0};
+volatile uint32_t adc_busy = 0;
+
+void adc_callback(void *context)
+{
+	alt_adc_word_read(MODULAR_ADC_0_SAMPLE_STORE_CSR_BASE, adc, 2);
+	adc_busy = 0;
+}
+
+void adc_init(void)
+{
+	adc_stop(MODULAR_ADC_0_SEQUENCER_CSR_BASE);
+	adc_set_mode_run_once(MODULAR_ADC_0_SEQUENCER_CSR_BASE);
+	alt_adc_register_callback
+	(
+		altera_modular_adc_open(MODULAR_ADC_0_SEQUENCER_CSR_NAME),
+		(alt_adc_callback) adc_callback, NULL,
+		MODULAR_ADC_0_SAMPLE_STORE_CSR_BASE
+	);
+}
 
 /*
  * led_bit_toggle() sets or clears a bit in led_8_val, which corresponds
@@ -73,14 +98,6 @@ void led_bit_toggle(OS_FLAGS bit)
       
     return;
 }
-      
-/*
- *    LED7SegLightshowTask displays an LED Lightshow by writing random values 
- * to the 7 segment LEDs, U8 and U9.  The show is started and stopped in 
- * response to a command from the SSSSimpleSocketServerTask, via 
- * SSSLEDLightshowSem semaphore controlled in LEDManagementTask.
- * 
- */ 
  
 void SigmaDSPCommunicateTask()
 {
@@ -97,6 +114,17 @@ void SigmaDSPCommunicateTask()
    default_download_IC_1();
    default_download_IC_2();
 
+   adc_init();
+   adc_busy = 1;
+   adc_start(MODULAR_ADC_0_SEQUENCER_CSR_BASE);
+
+   //IOWR(MM_BRIDGE_0_BASE, 0x000, 112);
+   //IOWR(MM_BRIDGE_0_BASE, 0x000, 345);
+   //int test = IORD(MM_BRIDGE_0_BASE, 0x000);
+   printf("--------------------------\n");
+   printf("test = %d\n", 0);
+   printf("--------------------------\n");
+
    /* This is a task which does not terminate, so loop forever. */   
    while(1)
    {
@@ -104,7 +132,18 @@ void SigmaDSPCommunicateTask()
        * enough for the human eye, and more impotantly, to give up control so
        * MicroC/OS-II can schedule other lower priority tasks. */ 
       OSTimeDlyHMSM(0,0,0,500);
-      
+
+      if (adc_busy == 0)
+      {
+    	  printf("adc = {%lu, %lu}", adc[0], adc[1]);
+
+    	  IOWR(MM_BRIDGE_0_BASE, 0x000, adc[0]);
+    	  IOWR(MM_BRIDGE_0_BASE, 0x001, adc[1]);
+
+    	  adc_busy = 1;
+    	  adc_start(MODULAR_ADC_0_SEQUENCER_CSR_BASE);
+       }
+
       /* Check that we still have the SSSLEDLightshowSem semaphore. If we don't,
        * then wait until the LEDManagement task gives it back to us. */
       OSSemPend(SigmaDSPCommunicateSem, 0, &error_code);

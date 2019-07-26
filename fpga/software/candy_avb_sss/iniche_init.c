@@ -36,10 +36,6 @@
 
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
-#include "altera_modular_adc.h"
-
-#include "sys/alt_irq.h"
-#include "sys/alt_cache.h"
 
 #include "osc_server.h"
 
@@ -69,27 +65,6 @@ struct inet_taskinfo ssstask = {
       4,
       APP_STACK_SIZE,
 };
-
-INT32U adc[2] = {0};
-volatile INT32U adc_busy = 0;
-
-void adc_callback(void *context)
-{
-	alt_adc_word_read(MODULAR_ADC_0_SAMPLE_STORE_CSR_BASE, adc, 2);
-	adc_busy = 0;
-}
-
-void adc_init(void)
-{
-	adc_stop(MODULAR_ADC_0_SEQUENCER_CSR_BASE);
-	adc_set_mode_run_once(MODULAR_ADC_0_SEQUENCER_CSR_BASE);
-	alt_adc_register_callback
-	(
-		altera_modular_adc_open(MODULAR_ADC_0_SEQUENCER_CSR_NAME),
-		(alt_adc_callback) adc_callback, NULL,
-		MODULAR_ADC_0_SAMPLE_STORE_CSR_BASE
-	);
-}
 
 /* SSSInitialTask will initialize the NicheStack
  * TCP/IP Stack and then initialize the rest of the Simple Socket Server example 

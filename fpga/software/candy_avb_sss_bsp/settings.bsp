@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2019/07/25 18:39:04</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1564047544816</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2019/07/26 14:32:13</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1564119133771</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_sss_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\candy_avb_test_qsys.sopcinfo</SopcDesignFile>
@@ -1872,123 +1872,129 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>new_sdram_controller_0</slaveDescriptor>
-                <addressRange>0x00000000 - 0x007FFFFF</addressRange>
+                <addressRange>0x00800000 - 0x00FFFFFF</addressRange>
                 <addressSpan>8388608</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_flash_0_data</slaveDescriptor>
-                <addressRange>0x00900000 - 0x0098BFFF</addressRange>
+                <addressRange>0x01100000 - 0x0118BFFF</addressRange>
                 <addressSpan>573440</addressSpan>
                 <attributes>flash, memory, non-volatile</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>descriptor_memory</slaveDescriptor>
+                <addressRange>0x01200000 - 0x01201FFF</addressRange>
+                <addressSpan>8192</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>avalon_wb</slaveDescriptor>
-                <addressRange>0x00A01000 - 0x00A013FF</addressRange>
+                <addressRange>0x01203000 - 0x012033FF</addressRange>
                 <addressSpan>1024</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>eth_tse_0</slaveDescriptor>
-                <addressRange>0x00A01400 - 0x00A017FF</addressRange>
+                <addressRange>0x01203400 - 0x012037FF</addressRange>
                 <addressSpan>1024</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>modular_adc_0_sample_store_csr</slaveDescriptor>
-                <addressRange>0x00A01800 - 0x00A019FF</addressRange>
+                <addressRange>0x01203800 - 0x012039FF</addressRange>
                 <addressSpan>512</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>mm_bridge_0</slaveDescriptor>
+                <addressRange>0x01203A00 - 0x01203AFF</addressRange>
+                <addressSpan>256</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sys_clk_timer</slaveDescriptor>
-                <addressRange>0x00A01A00 - 0x00A01A1F</addressRange>
+                <addressRange>0x01203B00 - 0x01203B1F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>uart</slaveDescriptor>
-                <addressRange>0x00A01A20 - 0x00A01A3F</addressRange>
+                <addressRange>0x01203B20 - 0x01203B3F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_tx_prefetcher_csr</slaveDescriptor>
-                <addressRange>0x00A01A40 - 0x00A01A5F</addressRange>
+                <addressRange>0x01203B40 - 0x01203B5F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_rx_prefetcher_csr</slaveDescriptor>
-                <addressRange>0x00A01A60 - 0x00A01A7F</addressRange>
+                <addressRange>0x01203B60 - 0x01203B7F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_rx_csr</slaveDescriptor>
-                <addressRange>0x00A01A80 - 0x00A01A9F</addressRange>
+                <addressRange>0x01203B80 - 0x01203B9F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_tx_csr</slaveDescriptor>
-                <addressRange>0x00A01AA0 - 0x00A01ABF</addressRange>
+                <addressRange>0x01203BA0 - 0x01203BBF</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_1</slaveDescriptor>
-                <addressRange>0x00A01AC0 - 0x00A01ACF</addressRange>
+                <addressRange>0x01203BC0 - 0x01203BCF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_4</slaveDescriptor>
-                <addressRange>0x00A01AD0 - 0x00A01ADF</addressRange>
+                <addressRange>0x01203BD0 - 0x01203BDF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pio_0</slaveDescriptor>
-                <addressRange>0x00A01AE0 - 0x00A01AEF</addressRange>
+                <addressRange>0x01203BE0 - 0x01203BEF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>altpll_0</slaveDescriptor>
-                <addressRange>0x00A01AF0 - 0x00A01AFF</addressRange>
+                <addressRange>0x01203BF0 - 0x01203BFF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>modular_adc_0_sequencer_csr</slaveDescriptor>
-                <addressRange>0x00A01B00 - 0x00A01B07</addressRange>
+                <addressRange>0x01203C00 - 0x01203C07</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_flash_0_csr</slaveDescriptor>
-                <addressRange>0x00A01B08 - 0x00A01B0F</addressRange>
+                <addressRange>0x01203C08 - 0x01203C0F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x00A01B10 - 0x00A01B17</addressRange>
+                <addressRange>0x01203C10 - 0x01203C17</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtaguart_0</slaveDescriptor>
-                <addressRange>0x00A01B18 - 0x00A01B1F</addressRange>
+                <addressRange>0x01203C18 - 0x01203C1F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>descriptor_memory</slaveDescriptor>
-                <addressRange>0x00A02000 - 0x00A03FFF</addressRange>
-                <addressSpan>8192</addressSpan>
-                <attributes>memory</attributes>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
