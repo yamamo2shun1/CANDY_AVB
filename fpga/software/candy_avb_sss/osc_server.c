@@ -229,6 +229,19 @@ void OSCServerTask()
     			}
 
     		}
+    		else if (compareOSCAddress("/adc"))
+    		{
+    			switch (getIntArgumentAtIndex(0))
+    			{
+    			case 0:
+    				IOWR(MM_BRIDGE_0_BASE, 0x00, getIntArgumentAtIndex(1));
+    				break;
+    			case 1:
+    				IOWR(MM_BRIDGE_0_BASE, 0x01, getIntArgumentAtIndex(1));
+    				break;
+    			}
+
+    		}
     	}
     }
   } /* while(1) */
