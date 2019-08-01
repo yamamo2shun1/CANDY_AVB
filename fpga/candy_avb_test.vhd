@@ -166,6 +166,7 @@ architecture RTL of CANDY_AVB is
 			DATA_WIDTH: integer range 0 to 32 := 32
 		);
 		port(
+			CLK:      in std_logic;
 			RESET:    in std_logic;
 			LRCLK_I_MST:  in  std_logic;
 			BITCLK_I_MST: in  std_logic;
@@ -338,6 +339,7 @@ architecture RTL of CANDY_AVB is
 			);
 	
 		u2 : i2s_to_codec generic map (DATA_WIDTH => 32) port map (
+				CLK          => CLK,
 				RESET        => RST,
 				LRCLK_I_MST  => CODEC_LRCLOCK(0),
 				BITCLK_I_MST => CODEC_BITCLOCK(0),
