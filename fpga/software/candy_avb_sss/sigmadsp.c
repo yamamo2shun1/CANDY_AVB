@@ -131,14 +131,23 @@ void SigmaDSPCommunicateTask()
       /* Wait 50 milliseconds between pattern updates, to make the pattern slow
        * enough for the human eye, and more impotantly, to give up control so
        * MicroC/OS-II can schedule other lower priority tasks. */ 
-      OSTimeDlyHMSM(0,0,0,500);
+      //OSTimeDlyHMSM(0,0,0,5);
+	  OSTimeDly(10);
 
       if (adc_busy == 0)
       {
-    	  printf("adc = {%lu, %lu}", adc[0], adc[1]);
+    	  //printf("adc = {%lu, %lu}", adc[0], adc[1]);
 
-    	  IOWR(MM_BRIDGE_0_BASE, 0x000, adc[0]);
-    	  IOWR(MM_BRIDGE_0_BASE, 0x001, adc[1]);
+#if 1
+#if 1
+    	  IOWR(MM_BRIDGE_0_BASE, 0x00, adc[0]);
+    	  IOWR(MM_BRIDGE_0_BASE, 0x01, adc[1]);
+#else
+    	  IOWR(MM_BRIDGE_0_BASE, 0x00, 2048);
+#endif
+#endif
+
+    	  //printf("adc0 = %d\n", IORD(MM_BRIDGE_0_BASE, 0x00));
 
     	  adc_busy = 1;
     	  adc_start(MODULAR_ADC_0_SEQUENCER_CSR_BASE);
