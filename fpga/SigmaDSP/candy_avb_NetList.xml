@@ -20,28 +20,74 @@
             <Algorithm name="ICSigma200In1" friendlyname="Analog+Digital Inputs" cell="Input1 ">
                 <Link pin="O_C0_A0_P1_out" dir="out" link="Link0" />
                 <Link pin="O_C0_A0_P2_out" dir="out" link="Link1" />
-                <Link pin="O_C0_A0_P3_out" dir="out" link="Link4" />
-                <Link pin="O_C0_A0_P4_out" dir="out" link="Link5" />
+                <Link pin="O_C0_A0_P3_out" dir="out" link="Link40" />
+                <Link pin="O_C0_A0_P4_out" dir="out" link="Link41" />
             </Algorithm>
-            <Algorithm name="GainS200Alg1" friendlyname="Gain (RC slew)" cell="Single 1 ">
-                <Link pin="I_C23_A0_P1_in" dir="in" link="Link0" />
-                <Link pin="O_C23_A0_P2_out" dir="out" link="Link8" />
+            <Algorithm name="stereoDemuxSlew1" friendlyname="Stereo SW Slew" cell="ph ln sw1 ">
+                <Link pin="I_C46_A0_P1_in" dir="in" link="Link0" />
+                <Link pin="I_C46_A0_P2_in" dir="in" link="Link1" />
+                <Link pin="O_C46_A0_P3_out" dir="out" link="Link4" />
+                <Link pin="O_C46_A0_P4_out" dir="out" link="Link5" />
+                <Link pin="O_C46_A0_P5_out" dir="out" link="Link8" />
+                <Link pin="O_C46_A0_P6_out" dir="out" link="Link9" />
             </Algorithm>
-            <Algorithm name="Gain1940AlgNS1" friendlyname="Gain (no slew)" cell="Single 1 ">
-                <Link pin="I_C23_A1_P1_in" dir="in" link="Link1" />
-                <Link pin="O_C23_A1_P2_out" dir="out" link="Link9" />
+            <Algorithm name="PEQ1Chan1" friendlyname="PEQ1Chan - Double Precision" cell="phono eq1 ">
+                <Link pin="I_C90_A0_P1_in" dir="in" link="Link8" />
+                <Link pin="I_C90_A0_P3_in" dir="in" link="Link9" />
+                <Link pin="O_C90_A0_P2_out" dir="out" link="Link14" />
+                <Link pin="O_C90_A0_P4_out" dir="out" link="Link15" />
+            </Algorithm>
+            <Algorithm name="SWGain1940DBAlg5" friendlyname="Gain (RC Slew)" cell="master gain ">
+                <Link pin="I_C236_A0_P1_in" dir="in" link="Link40" />
+                <Link pin="I_C236_A0_P3_in" dir="in" link="Link41" />
+                <Link pin="O_C236_A0_P2_out" dir="out" link="Link32" />
+                <Link pin="O_C236_A0_P4_out" dir="out" link="Link33" />
+            </Algorithm>
+            <Algorithm name="SWGain1940DBAlg1" friendlyname="Gain (RC Slew)" cell="phono gain1 ">
+                <Link pin="I_C100_A0_P1_in" dir="in" link="Link14" />
+                <Link pin="I_C100_A0_P3_in" dir="in" link="Link15" />
+                <Link pin="O_C100_A0_P2_out" dir="out" link="Link16" />
+                <Link pin="O_C100_A0_P4_out" dir="out" link="Link17" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out1" friendlyname="1761 output" cell="Output1 ">
-                <Link pin="I_C11_A0_P1_in" dir="in" link="Link4" />
+                <Link pin="I_C11_A0_P1_in" dir="in" link="Link32" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out2" friendlyname="1761 output" cell="Output2 ">
-                <Link pin="I_C13_A0_P1_in" dir="in" link="Link5" />
+                <Link pin="I_C13_A0_P1_in" dir="in" link="Link33" />
+            </Algorithm>
+            <Algorithm name="EQwSubDualDPDatOptAl1" friendlyname="2 Channel - Double Precision, Optimized Dat" cell="Mid EQ1 ">
+                <Link pin="I_C110_A0_P1_in" dir="in" link="Link16" />
+                <Link pin="I_C110_A0_P2_in" dir="in" link="Link17" />
+                <Link pin="O_C110_A0_P3_out" dir="out" link="Link20" />
+                <Link pin="O_C110_A0_P4_out" dir="out" link="Link21" />
+            </Algorithm>
+            <Algorithm name="SingleCtrlMixer19401" friendlyname="Signal MixerC" cell="Mg1 ">
+                <Link pin="I_C120_A0_P2_in" dir="in" link="Link4" />
+                <Link pin="I_C120_A0_P3_in" dir="in" link="Link20" />
+                <Link pin="O_C120_A0_P1_out" dir="out" link="Link24" />
+            </Algorithm>
+            <Algorithm name="SingleCtrlMixer19402" friendlyname="Signal MixerC" cell="Mg3 ">
+                <Link pin="I_C122_A0_P2_in" dir="in" link="Link5" />
+                <Link pin="I_C122_A0_P3_in" dir="in" link="Link21" />
+                <Link pin="O_C122_A0_P1_out" dir="out" link="Link25" />
+            </Algorithm>
+            <Algorithm name="SWGain1940DBAlg3" friendlyname="Gain (RC Slew)" cell="gain1 ">
+                <Link pin="I_C187_A0_P1_in" dir="in" link="Link24" />
+                <Link pin="I_C187_A0_P3_in" dir="in" link="Link25" />
+                <Link pin="O_C187_A0_P2_out" dir="out" link="Link28" />
+                <Link pin="O_C187_A0_P4_out" dir="out" link="Link29" />
+            </Algorithm>
+            <Algorithm name="EQwSubDualDPDatOptAl3" friendlyname="2 Channel - Double Precision, Optimized Dat" cell="eq1 ">
+                <Link pin="I_C205_A0_P1_in" dir="in" link="Link28" />
+                <Link pin="I_C205_A0_P2_in" dir="in" link="Link29" />
+                <Link pin="O_C205_A0_P3_out" dir="out" link="Link36" />
+                <Link pin="O_C205_A0_P4_out" dir="out" link="Link37" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out5" friendlyname="1761 output" cell="Output5 ">
-                <Link pin="I_C73_A0_P1_in" dir="in" link="Link8" />
+                <Link pin="I_C73_A0_P1_in" dir="in" link="Link36" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out6" friendlyname="1761 output" cell="Output6 ">
-                <Link pin="I_C75_A0_P1_in" dir="in" link="Link9" />
+                <Link pin="I_C75_A0_P1_in" dir="in" link="Link37" />
             </Algorithm>
         </Schematic>
     </IC>
@@ -50,28 +96,74 @@
             <Algorithm name="ICSigma200In2" friendlyname="Analog+Digital Inputs" cell="Input2 ">
                 <Link pin="O_C20_A0_P1_out" dir="out" link="Link2" />
                 <Link pin="O_C20_A0_P2_out" dir="out" link="Link3" />
-                <Link pin="O_C20_A0_P3_out" dir="out" link="Link6" />
-                <Link pin="O_C20_A0_P4_out" dir="out" link="Link7" />
+                <Link pin="O_C20_A0_P3_out" dir="out" link="Link42" />
+                <Link pin="O_C20_A0_P4_out" dir="out" link="Link43" />
             </Algorithm>
-            <Algorithm name="GainS200Alg2" friendlyname="Gain (RC slew)" cell="Single 2 ">
-                <Link pin="I_C16_A0_P1_in" dir="in" link="Link2" />
-                <Link pin="O_C16_A0_P2_out" dir="out" link="Link10" />
+            <Algorithm name="stereoDemux1940ns1" friendlyname="Stereo" cell="ph ln sw2 ">
+                <Link pin="I_C143_A0_P1_in" dir="in" link="Link2" />
+                <Link pin="I_C143_A0_P2_in" dir="in" link="Link3" />
+                <Link pin="O_C143_A0_P3_out" dir="out" link="Link6" />
+                <Link pin="O_C143_A0_P4_out" dir="out" link="Link7" />
+                <Link pin="O_C143_A0_P5_out" dir="out" link="Link10" />
+                <Link pin="O_C143_A0_P6_out" dir="out" link="Link11" />
             </Algorithm>
-            <Algorithm name="Gain1940AlgNS2" friendlyname="Gain (no slew)" cell="Single 2 ">
-                <Link pin="I_C16_A1_P1_in" dir="in" link="Link3" />
-                <Link pin="O_C16_A1_P2_out" dir="out" link="Link11" />
+            <Algorithm name="PEQ1Chan2" friendlyname="PEQ1Chan - Double Precision" cell="phono eq2 ">
+                <Link pin="I_C91_A0_P1_in" dir="in" link="Link10" />
+                <Link pin="I_C91_A0_P3_in" dir="in" link="Link11" />
+                <Link pin="O_C91_A0_P2_out" dir="out" link="Link12" />
+                <Link pin="O_C91_A0_P4_out" dir="out" link="Link13" />
+            </Algorithm>
+            <Algorithm name="SWGain1940DBAlg6" friendlyname="Gain (RC Slew)" cell="monitor gain ">
+                <Link pin="I_C237_A0_P1_in" dir="in" link="Link42" />
+                <Link pin="I_C237_A0_P3_in" dir="in" link="Link43" />
+                <Link pin="O_C237_A0_P2_out" dir="out" link="Link34" />
+                <Link pin="O_C237_A0_P4_out" dir="out" link="Link35" />
+            </Algorithm>
+            <Algorithm name="SWGain1940DBAlg2" friendlyname="Gain (RC Slew)" cell="phono gain2 ">
+                <Link pin="I_C101_A0_P1_in" dir="in" link="Link12" />
+                <Link pin="I_C101_A0_P3_in" dir="in" link="Link13" />
+                <Link pin="O_C101_A0_P2_out" dir="out" link="Link18" />
+                <Link pin="O_C101_A0_P4_out" dir="out" link="Link19" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out7" friendlyname="1761 output" cell="Output7 ">
-                <Link pin="I_C72_A0_P1_in" dir="in" link="Link6" />
+                <Link pin="I_C72_A0_P1_in" dir="in" link="Link34" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out8" friendlyname="1761 output" cell="Output8 ">
-                <Link pin="I_C79_A0_P1_in" dir="in" link="Link7" />
+                <Link pin="I_C79_A0_P1_in" dir="in" link="Link35" />
+            </Algorithm>
+            <Algorithm name="EQwSubDualDPDatOptAl2" friendlyname="2 Channel - Double Precision, Optimized Dat" cell="Mid EQ2 ">
+                <Link pin="I_C111_A0_P1_in" dir="in" link="Link18" />
+                <Link pin="I_C111_A0_P2_in" dir="in" link="Link19" />
+                <Link pin="O_C111_A0_P3_out" dir="out" link="Link22" />
+                <Link pin="O_C111_A0_P4_out" dir="out" link="Link23" />
+            </Algorithm>
+            <Algorithm name="SingleCtrlMixer19403" friendlyname="Signal MixerC" cell="Mg2 ">
+                <Link pin="I_C121_A0_P2_in" dir="in" link="Link6" />
+                <Link pin="I_C121_A0_P3_in" dir="in" link="Link22" />
+                <Link pin="O_C121_A0_P1_out" dir="out" link="Link26" />
+            </Algorithm>
+            <Algorithm name="SingleCtrlMixer19404" friendlyname="Signal MixerC" cell="Mg4 ">
+                <Link pin="I_C123_A0_P2_in" dir="in" link="Link7" />
+                <Link pin="I_C123_A0_P3_in" dir="in" link="Link23" />
+                <Link pin="O_C123_A0_P1_out" dir="out" link="Link27" />
+            </Algorithm>
+            <Algorithm name="SWGain1940DBAlg4" friendlyname="Gain (RC Slew)" cell="gain2 ">
+                <Link pin="I_C188_A0_P1_in" dir="in" link="Link26" />
+                <Link pin="I_C188_A0_P3_in" dir="in" link="Link27" />
+                <Link pin="O_C188_A0_P2_out" dir="out" link="Link30" />
+                <Link pin="O_C188_A0_P4_out" dir="out" link="Link31" />
+            </Algorithm>
+            <Algorithm name="EQwSubDualDPDatOptAl4" friendlyname="2 Channel - Double Precision, Optimized Dat" cell="eq2 ">
+                <Link pin="I_C206_A0_P1_in" dir="in" link="Link30" />
+                <Link pin="I_C206_A0_P2_in" dir="in" link="Link31" />
+                <Link pin="O_C206_A0_P3_out" dir="out" link="Link38" />
+                <Link pin="O_C206_A0_P4_out" dir="out" link="Link39" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out3" friendlyname="1761 output" cell="Output3 ">
-                <Link pin="I_C15_A0_P1_in" dir="in" link="Link10" />
+                <Link pin="I_C15_A0_P1_in" dir="in" link="Link38" />
             </Algorithm>
             <Algorithm name="ICSigmaLP1Out4" friendlyname="1761 output" cell="Output4 ">
-                <Link pin="I_C18_A0_P1_in" dir="in" link="Link11" />
+                <Link pin="I_C18_A0_P1_in" dir="in" link="Link39" />
             </Algorithm>
         </Schematic>
     </IC>

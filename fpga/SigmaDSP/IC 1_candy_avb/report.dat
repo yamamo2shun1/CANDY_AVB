@@ -1,1 +1,7 @@
-OPCODE_COUNT,Program_Count,64
+newDATA_BASE2,Data_Address,85
+newCOEFF_BASE0,Parameter_Number,32
+newDATA_BASE2,Data_Address,126
+newCOEFF_BASE0,Parameter_Number,45
+newCOEFF_BASE1,Parameter_Number,50
+newCOEFF_BASE2,Parameter_Number,55
+OPCODE_COUNT,Program_Count,213

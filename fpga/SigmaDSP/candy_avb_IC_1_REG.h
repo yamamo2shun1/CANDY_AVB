@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\SigmaDSP\candy_avb_IC_1_REG.h
  *
- * Created:        Monday, February 18, 2019 4:34:40 PM
+ * Created:        Friday, August 2, 2019 8:19:01 AM
  * Description:    candy_avb:IC 1 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -263,7 +263,7 @@
 /* CRC Ideal_4  - Registers (IC 1) */
 #define REG_CRC_IDEAL_4_IC_1_ADDR                 0x40C3
 #define REG_CRC_IDEAL_4_IC_1_BYTE                 1
-#define REG_CRC_IDEAL_4_IC_1_VALUE                0x3D
+#define REG_CRC_IDEAL_4_IC_1_VALUE                0x24
 
 /* CRC Enable  - Registers (IC 1) */
 #define REG_CRC_ENABLE_IC_1_ADDR                  0x40C4
@@ -890,7 +890,7 @@
 #define R47_CRC_IDEAL_3_IC_1_SHIFT                0
 
 /* CRC Ideal_4 (IC 1) */
-#define R48_CRC_IDEAL_4_IC_1                      0x3D   /* 00111101b	[7:0] */
+#define R48_CRC_IDEAL_4_IC_1                      0x24   /* 00100100b	[7:0] */
 #define R48_CRC_IDEAL_4_IC_1_MASK                 0xFF
 #define R48_CRC_IDEAL_4_IC_1_SHIFT                0
 

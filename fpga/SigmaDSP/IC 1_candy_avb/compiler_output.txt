@@ -1,37 +1,46 @@
-Sigma Studio Version 4.2. Build 1, Rev 1755
+Sigma Studio Version 4.4. Build 0, Rev 1780
 
 Analog Devices Compiler for the 3rd generation SigmaDSP core.
-Build date = 8/23/2018 at 9:56 AM
+Build date = 6/26/2019 at 7:33 AM
 
 ## Summary ##
 (Note: Estimates are based on a 48 kHz sample rate)
 
 Instructions used:
-65	(out of a possible 1024 )
+230	(out of a possible 1024 )
 Modulo Data RAM used (X Memory):
-6	(out of a possible 4096 )
+144	(out of a possible 4096 )
 Non Modulo Data RAM used (X Memory):
-2	(out of a possible 4096 )
+0	(out of a possible 4096 )
 Parameter RAM used (Y Memory):
-12	(out of a possible 1024 )
+61	(out of a possible 1024 )
 
 Instance                      		Mips	Inst	Data	Coeff	Other
                               			(max)
+phono eq1                     		54	54	42	15
+ph ln sw1                     		26	26	11	2
 Beginning                     		19	19	0	1
+eq1                           		17	17	44	19	using:	Biquad Looping DP
+Mid EQ1                       		17	17	20	9	using:	Biquad Looping DP
 SafeLoadCode                  		15	15	0	7
-Single 1                      		10	10	4	4
+gain1                         		13	13	7	2
+phono gain1                   		13	13	7	2
+master gain                   		13	13	7	2
 Input1                        		8	8	4	0
 End                           		5	5	0	0
+Mg3                           		3	3	1	1
+Mg1                           		3	3	1	1
 Output1                       		2	2	0	0
 Output5                       		2	2	0	0
 Output6                       		2	2	0	0
 Output2                       		2	2	0	0
 
 Subroutines called:
+* Biquad Looping DP           		100	16	0	0
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Total                      			65	65	8	12
+Total                      			314	230	144	61
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-(%)                          			6%	6%	0%	1%
+(%)                          			31%	22%	4%	6%
 
 Files written:  
 program_data.dat - load file for downloading code using ADI loader

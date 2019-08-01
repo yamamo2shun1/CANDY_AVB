@@ -1,7 +1,7 @@
 /*
  * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\SigmaDSP\candy_avb_IC_2_REG.h
  *
- * Created:        Monday, February 18, 2019 4:34:40 PM
+ * Created:        Friday, August 2, 2019 8:19:01 AM
  * Description:    candy_avb:IC 2 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -248,7 +248,7 @@
 /* CRC Ideal_1  - Registers (IC 2) */
 #define REG_CRC_IDEAL_1_IC_2_ADDR                 0x40C0
 #define REG_CRC_IDEAL_1_IC_2_BYTE                 1
-#define REG_CRC_IDEAL_1_IC_2_VALUE                0x7F
+#define REG_CRC_IDEAL_1_IC_2_VALUE                0x28
 
 /* CRC Ideal_2  - Registers (IC 2) */
 #define REG_CRC_IDEAL_2_IC_2_ADDR                 0x40C1
@@ -258,12 +258,12 @@
 /* CRC Ideal_3  - Registers (IC 2) */
 #define REG_CRC_IDEAL_3_IC_2_ADDR                 0x40C2
 #define REG_CRC_IDEAL_3_IC_2_BYTE                 1
-#define REG_CRC_IDEAL_3_IC_2_VALUE                0x7F
+#define REG_CRC_IDEAL_3_IC_2_VALUE                0x6F
 
 /* CRC Ideal_4  - Registers (IC 2) */
 #define REG_CRC_IDEAL_4_IC_2_ADDR                 0x40C3
 #define REG_CRC_IDEAL_4_IC_2_BYTE                 1
-#define REG_CRC_IDEAL_4_IC_2_VALUE                0x3D
+#define REG_CRC_IDEAL_4_IC_2_VALUE                0xB
 
 /* CRC Enable  - Registers (IC 2) */
 #define REG_CRC_ENABLE_IC_2_ADDR                  0x40C4
@@ -875,7 +875,7 @@
 #define R44_DEJITTER_IC_2_SHIFT                   0
 
 /* CRC Ideal_1 (IC 2) */
-#define R45_CRC_IDEAL_1_IC_2                      0x7F   /* 01111111b	[7:0] */
+#define R45_CRC_IDEAL_1_IC_2                      0x28   /* 00101000b	[7:0] */
 #define R45_CRC_IDEAL_1_IC_2_MASK                 0xFF
 #define R45_CRC_IDEAL_1_IC_2_SHIFT                0
 
@@ -885,12 +885,12 @@
 #define R46_CRC_IDEAL_2_IC_2_SHIFT                0
 
 /* CRC Ideal_3 (IC 2) */
-#define R47_CRC_IDEAL_3_IC_2                      0x7F   /* 01111111b	[7:0] */
+#define R47_CRC_IDEAL_3_IC_2                      0x6F   /* 01101111b	[7:0] */
 #define R47_CRC_IDEAL_3_IC_2_MASK                 0xFF
 #define R47_CRC_IDEAL_3_IC_2_SHIFT                0
 
 /* CRC Ideal_4 (IC 2) */
-#define R48_CRC_IDEAL_4_IC_2                      0x3D   /* 00111101b	[7:0] */
+#define R48_CRC_IDEAL_4_IC_2                      0x0B   /* 00001011b	[7:0] */
 #define R48_CRC_IDEAL_4_IC_2_MASK                 0xFF
 #define R48_CRC_IDEAL_4_IC_2_SHIFT                0
 

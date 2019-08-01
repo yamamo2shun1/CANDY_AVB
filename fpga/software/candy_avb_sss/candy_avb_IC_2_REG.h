@@ -1,7 +1,7 @@
 /*
- * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\software\candy_avb_test\candy_avb_IC_2_REG.h
+ * File:           C:\Users\shun\Desktop\CurrentProjects\CANDY\CANDY_AVB\fpga\SigmaDSP\candy_avb_IC_2_REG.h
  *
- * Created:        Monday, February 18, 2019 4:34:48 PM
+ * Created:        Friday, August 2, 2019 8:19:01 AM
  * Description:    candy_avb:IC 2 control register definitions.
  *
  * This software is distributed in the hope that it will be useful,
@@ -33,7 +33,7 @@
 /* PLLCrlRegister  - Registers (IC 2) */
 #define REG_PLLCRLREGISTER_IC_2_ADDR              0x4002
 #define REG_PLLCRLREGISTER_IC_2_BYTE              6
-#define REG_PLLCRLREGISTER_IC_2_VALUE             0x00FD000C2001
+#define REG_PLLCRLREGISTER_IC_2_VALUE             0x007D000C2303
 
 /* MicCtrlRegister  - Registers (IC 2) */
 #define REG_MICCTRLREGISTER_IC_2_ADDR             0x4008
@@ -248,7 +248,7 @@
 /* CRC Ideal_1  - Registers (IC 2) */
 #define REG_CRC_IDEAL_1_IC_2_ADDR                 0x40C0
 #define REG_CRC_IDEAL_1_IC_2_BYTE                 1
-#define REG_CRC_IDEAL_1_IC_2_VALUE                0x7F
+#define REG_CRC_IDEAL_1_IC_2_VALUE                0x28
 
 /* CRC Ideal_2  - Registers (IC 2) */
 #define REG_CRC_IDEAL_2_IC_2_ADDR                 0x40C1
@@ -258,12 +258,12 @@
 /* CRC Ideal_3  - Registers (IC 2) */
 #define REG_CRC_IDEAL_3_IC_2_ADDR                 0x40C2
 #define REG_CRC_IDEAL_3_IC_2_BYTE                 1
-#define REG_CRC_IDEAL_3_IC_2_VALUE                0x7F
+#define REG_CRC_IDEAL_3_IC_2_VALUE                0x6F
 
 /* CRC Ideal_4  - Registers (IC 2) */
 #define REG_CRC_IDEAL_4_IC_2_ADDR                 0x40C3
 #define REG_CRC_IDEAL_4_IC_2_BYTE                 1
-#define REG_CRC_IDEAL_4_IC_2_VALUE                0x3D
+#define REG_CRC_IDEAL_4_IC_2_VALUE                0xB
 
 /* CRC Enable  - Registers (IC 2) */
 #define REG_CRC_ENABLE_IC_2_ADDR                  0x40C4
@@ -400,12 +400,12 @@
 
 /* PLLCrlRegister (IC 2) */
 #define R2_PLL_POWER_DOWN_IC_2                    0x1    /* 1b	[0] */
-#define R2_PLL_LOCK_IC_2                          0x0    /* 0b	[1] */
-#define R2_PLL_TYPE_IC_2                          0x0    /* 0b	[8] */
-#define R2_INPUT_DIVIDER_IC_2                     0x0    /* 00b	[10:9] */
+#define R2_PLL_LOCK_IC_2                          0x1    /* 1b	[1] */
+#define R2_PLL_TYPE_IC_2                          0x1    /* 1b	[8] */
+#define R2_INPUT_DIVIDER_IC_2                     0x1    /* 01b	[10:9] */
 #define R2_R_FEEDBACK_IC_2                        0x4    /* 0100b	[14:11] */
 #define R2_N_NUMERATOR_IC_2                       0x000C /* 0000000000001100b	[31:16] */
-#define R2_M_DENOMINATOR_IC_2                     0x00FD /* 0000000011111101b	[47:32] */
+#define R2_M_DENOMINATOR_IC_2                     0x007D /* 0000000001111101b	[47:32] */
 #define R2_PLL_POWER_DOWN_IC_2_MASK               0x1
 #define R2_PLL_POWER_DOWN_IC_2_SHIFT              0
 #define R2_PLL_LOCK_IC_2_MASK                     0x2
@@ -875,7 +875,7 @@
 #define R44_DEJITTER_IC_2_SHIFT                   0
 
 /* CRC Ideal_1 (IC 2) */
-#define R45_CRC_IDEAL_1_IC_2                      0x7F   /* 01111111b	[7:0] */
+#define R45_CRC_IDEAL_1_IC_2                      0x28   /* 00101000b	[7:0] */
 #define R45_CRC_IDEAL_1_IC_2_MASK                 0xFF
 #define R45_CRC_IDEAL_1_IC_2_SHIFT                0
 
@@ -885,12 +885,12 @@
 #define R46_CRC_IDEAL_2_IC_2_SHIFT                0
 
 /* CRC Ideal_3 (IC 2) */
-#define R47_CRC_IDEAL_3_IC_2                      0x7F   /* 01111111b	[7:0] */
+#define R47_CRC_IDEAL_3_IC_2                      0x6F   /* 01101111b	[7:0] */
 #define R47_CRC_IDEAL_3_IC_2_MASK                 0xFF
 #define R47_CRC_IDEAL_3_IC_2_SHIFT                0
 
 /* CRC Ideal_4 (IC 2) */
-#define R48_CRC_IDEAL_4_IC_2                      0x3D   /* 00111101b	[7:0] */
+#define R48_CRC_IDEAL_4_IC_2                      0x0B   /* 00001011b	[7:0] */
 #define R48_CRC_IDEAL_4_IC_2_MASK                 0xFF
 #define R48_CRC_IDEAL_4_IC_2_SHIFT                0
 
